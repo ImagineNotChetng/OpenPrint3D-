@@ -1,4 +1,4 @@
-OpenPrint3D — An Open, Slicer-Independent Profile Format
+# OpenPrint3D — An Open, Slicer-Independent Profile Format
 
 OpenPrint3D is an open proposal for standardizing printer, filament, and process profiles in a simple, neutral JSON format.
 It’s designed to make 3D-printing configurations easier to share, easier to maintain, and easier for tools or slicers to import — without replacing or competing with existing slicers.
