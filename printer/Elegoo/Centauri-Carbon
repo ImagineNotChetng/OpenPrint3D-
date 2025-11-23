@@ -1,16 +1,16 @@
 {
   "op3d_schema": "printer",
   "op3d_schema_version": "0.1.0",
-
   "id": "Elegoo/Centauri-Carbon",
+
   "manufacturer": "Elegoo",
   "model": "Centauri Carbon",
   "variant": "Stock",
 
   "build_volume": {
-    "x": 256,
-    "y": 256,
-    "z": 256,
+    "x": 280,
+    "y": 280,
+    "z": 270,
     "shape": "rectangular",
     "origin": "front_left"
   },
@@ -18,16 +18,25 @@
   "kinematics": "corexy",
 
   "axes": {
-    "x": { "max_speed": 500, "max_accel": 10000 },
-    "y": { "max_speed": 500, "max_accel": 10000 },
-    "z": { "max_speed": 30, "max_accel": 500 }
+    "x": {
+      "max_speed": 500,
+      "max_accel": 10000
+    },
+    "y": {
+      "max_speed": 500,
+      "max_accel": 10000
+    },
+    "z": {
+      "max_speed": 30,
+      "max_accel": 500
+    }
   },
 
   "extruders": [
     {
       "id": "tool0",
       "nozzle_diameter": 0.4,
-      "max_temp": 320,
+      "max_temp": 300,
       "min_temp": 170,
       "retraction_supported": true
     }
@@ -71,5 +80,10 @@
     "high_speed"
   ],
 
-  "notes": "Base profile for stock Centauri Carbon. Use process + filament profiles on top of this."
+  "notes": "Base profile for the stock Elegoo Centauri Carbon. Use process + filament profiles to generate slicer-specific configs.",
+
+  "x_cura": {},
+  "x_prusaslicer": {},
+  "x_orca": {},
+  "x_bambu": {}
 }
