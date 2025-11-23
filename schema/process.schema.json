@@ -1,0 +1,275 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://openprint3d.org/schema/process.schema.json",
+  "title": "OpenPrint3D Process Profile",
+  "description": "Schema for OpenPrint3D process profiles (layering, speed, quality intent).",
+  "type": "object",
+  "required": [
+    "op3d_schema",
+    "op3d_schema_version",
+    "id",
+    "name",
+    "intent"
+  ],
+  "properties": {
+    "op3d_schema": {
+      "type": "string",
+      "const": "process",
+      "description": "Discriminator for this schema type."
+    },
+    "op3d_schema_version": {
+      "type": "string",
+      "pattern": "^[0-9]+\\.[0-9]+\\.[0-9]+$",
+      "description": "Semantic version of the process schema, e.g. 0.1.0."
+    },
+    "id": {
+      "type": "string",
+      "description": "Stable identifier, e.g. 'Standard/0.20mm-quality'."
+    },
+
+    "name": {
+      "type": "string",
+      "description": "Human-readable name, e.g. '0.20mm Quality'."
+    },
+
+    "intent": {
+      "type": "string",
+      "enum": [
+        "draft",
+        "standard",
+        "quality",
+        "high_detail",
+        "mechanical",
+        "flexible",
+        "functional"
+      ],
+      "description": "High-level purpose of this process profile."
+    },
+
+    "layer_height": {
+      "type": "object",
+      "properties": {
+        "min": {
+          "type": "number",
+          "description": "Minimum reasonable layer height (mm)."
+        },
+        "max": {
+          "type": "number",
+          "description": "Maximum reasonable layer height (mm)."
+        },
+        "default": {
+          "type": "number",
+          "description": "Typical or recommended layer height (mm)."
+        }
+      },
+      "additionalProperties": false
+    },
+
+    "wall_settings": {
+      "type": "object",
+      "properties": {
+        "wall_count": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "top_layers": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "bottom_layers": {
+          "type": "integer",
+          "minimum": 0
+        }
+      },
+      "additionalProperties": false
+    },
+
+    "infill": {
+      "type": "object",
+      "properties": {
+        "density_default": {
+          "type": "number",
+          "description": "Default infill density (0–100%)."
+        },
+        "density_range": {
+          "type": "object",
+          "properties": {
+            "min": { "type": "number" },
+            "max": { "type": "number" }
+          },
+          "additionalProperties": false
+        },
+        "recommended_patterns": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "description": "e.g. 'gyroid', 'grid', 'cubic'."
+          }
+        }
+      },
+      "additionalProperties": false
+    },
+
+    "speed": {
+      "type": "object",
+      "properties": {
+        "outer_wall": {
+          "type": "number",
+          "description": "Outer wall print speed (mm/s)."
+        },
+        "inner_wall": {
+          "type": "number",
+          "description": "Inner wall print speed (mm/s)."
+        },
+        "infill": {
+          "type": "number",
+          "description": "Infill print speed (mm/s)."
+        },
+        "top_bottom": {
+          "type": "number",
+          "description": "Top/bottom print speed (mm/s)."
+        },
+        "travel": {
+          "type": "number",
+          "description": "Travel speed (mm/s)."
+        }
+      },
+      "additionalProperties": false
+    },
+
+    "accel": {
+      "type": "object",
+      "properties": {
+        "default": {
+          "type": "number",
+          "description": "Default acceleration (mm/s²)."
+        },
+        "outer_wall": {
+          "type": "number",
+          "description": "Outer wall acceleration (mm/s²)."
+        },
+        "infill": {
+          "type": "number",
+          "description": "Infill acceleration (mm/s²)."
+        }
+      },
+      "additionalProperties": false
+    },
+
+    "retraction": {
+      "type": "object",
+      "properties": {
+        "distance": {
+          "type": "number",
+          "description": "Retraction distance (mm)."
+        },
+        "speed": {
+          "type": "number",
+          "description": "Retraction speed (mm/s)."
+        }
+      },
+      "additionalProperties": false
+    },
+
+    "cooling": {
+      "type": "object",
+      "properties": {
+        "fan_default": {
+          "type": "number",
+          "description": "Default fan speed (0–100%)."
+        },
+        "fan_min_layer_time": {
+          "type": "number",
+          "description": "Minimum layer time before cooling kicks in (seconds)."
+        }
+      },
+      "additionalProperties": false
+    },
+
+    "supports": {
+      "type": "object",
+      "properties": {
+        "enabled_default": {
+          "type": "boolean",
+          "description": "Whether supports are enabled by default."
+        },
+        "overhang_threshold": {
+          "type": "number",
+          "description": "Overhang angle from vertical at which supports are recommended (degrees)."
+        }
+      },
+      "additionalProperties": false
+    },
+
+    "adhesion": {
+      "type": "object",
+      "properties": {
+        "default_type": {
+          "type": "string",
+          "enum": ["none", "brim", "raft", "skirt"]
+        },
+        "brim_width": {
+          "type": "number",
+          "description": "Default brim width (mm) if brim is used."
+        }
+      },
+      "additionalProperties": false
+    },
+
+    "quality_bias": {
+      "type": "object",
+      "description": "High-level tuning hints for slicers.",
+      "properties": {
+        "priority": {
+          "type": "string",
+          "enum": ["speed", "balanced", "quality"]
+        }
+      },
+      "additionalProperties": false
+    },
+
+    "external_ids": {
+      "type": "object",
+      "description": "Arbitrary external identifiers (internal IDs, presets, etc.).",
+      "patternProperties": {
+        "^[a-zA-Z0-9_.-]+$": { "type": "string" }
+      },
+      "additionalProperties": false
+    },
+
+    "links": {
+      "type": "object",
+      "description": "Useful URLs (docs, preset source, etc.).",
+      "patternProperties": {
+        "^[a-zA-Z0-9_.-]+$": {
+          "type": "string",
+          "format": "uri"
+        }
+      },
+      "additionalProperties": false
+    },
+
+    "tags": {
+      "type": "array",
+      "items": { "type": "string" }
+    },
+
+    "notes": {
+      "type": "string"
+    },
+
+    "x_cura": { "type": "object" },
+    "x_prusaslicer": { "type": "object" },
+    "x_orca": { "type": "object" },
+    "x_bambu": { "type": "object" }
+  },
+
+  "patternProperties": {
+    "^x_[a-zA-Z0-9_.-]+$": {
+      "type": "object",
+      "description": "Vendor- or slicer-specific extensions."
+    }
+  },
+
+  "additionalProperties": false
+}
