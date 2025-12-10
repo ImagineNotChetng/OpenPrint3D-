@@ -16,13 +16,8 @@ jobs:
         uses: actions/setup-python@v5
         with:
           python-version: "3.x"
-
-      # Optional: only if you use jsonschema or similar in validator.py
-      # - name: Install dependencies
-      #   run: |
-      #     pip install -r requirements.txt
-
-       - name: Get changed files (JSON only)
+      
+      - name: Get changed files (JSON only)
         id: changed
         shell: bash
         run: |
