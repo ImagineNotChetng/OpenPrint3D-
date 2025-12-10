@@ -25,4 +25,85 @@ jobs:
 
       - name: Run OpenPrint3D validator
         run: |
-          python tools/validate_schema.py profiles/
+name: Validate OpenPrint3D Schemas
+
+on:
+  pull_request:
+    branches: [ main ]
+  workflow_dispatch:
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.x"
+
+      # Optional: only if you use jsonschema or similar in validator.py
+      # - name: Install dependencies
+      #   run: |
+      #     pip install -r requirements.txt
+
+      - name: Get changed files (JSON only)
+        id: changed
+        run: |
+          if [ "${{ github.event_name }}" = "pull_request" ]; then
+            files=$(git diff --name-only \
+              ${{ github.event.pull_request.base.sha }} \
+              ${{ github.event.pull_request.head.sha }} \
+              | grep '\.json$' || true)
+          else
+            # Manual run: just grab all tracked JSON
+            files=$(git ls-files '*.json')
+          fi
+
+          echo "files<<EOF" >> "$GITHUB_OUTPUT"
+          echo "$files" >> "$GITHUB_OUTPUT"
+          echo "EOF" >> "$GITHUB_OUTPUT"
+
+      - name: Validate printer schemas
+        run: |
+          files=$(echo "${{ steps.changed.outputs.files }}" | grep '^printer/' || true)
+          if [ -z "$files" ]; then
+            echo "No printer JSON files changed. Skipping."
+            exit 0
+          fi
+
+          echo "Validating printer files:"
+          echo "$files"
+
+          python tools/validate_schema.py schema/printer.schema.json $files
+
+      - name: Validate filament schemas
+        run: |
+          files=$(echo "${{ steps.changed.outputs.files }}" | grep '^filament/' || true)
+          if [ -z "$files" ]; then
+            echo "No filament JSON files changed. Skipping."
+            exit 0
+          fi
+
+          echo "Validating filament files:"
+          echo "$files"
+
+          python tools/validate_schema.py schema/filament.schema.json $files
+
+      - name: Validate process schemas
+        run: |
+          files=$(echo "${{ steps.changed.outputs.files }}" | grep '^process/' || true)
+          if [ -z "$files" ]; then
+            echo "No process JSON files changed. Skipping."
+            exit 0
+          fi
+
+          echo "Validating process files:"
+          echo "$files"
+
+          python tools/validate_schema.py schema/process.schema.json $files
+
+          
