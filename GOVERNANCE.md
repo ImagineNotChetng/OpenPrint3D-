@@ -58,7 +58,7 @@ If maintainers cannot agree after good-faith discussion:
 
 ### Changes to Governance
 Modifications to this GOVERNANCE.md must:
-- Be proposed via a GitHub pull request, and
+- Be proposed via a GitHub issue and/or pull request, and
 - Be approved by the Project Lead after community review.
 
 ---
