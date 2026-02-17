@@ -33,7 +33,7 @@
     },
     "id": {
       "type": "string",
-      "pattern": "^[A-Za-z0-9]+/[A-Za-z0-9-_]+$",
+      "pattern": "^[A-Za-z0-9_.-]+/[A-Za-z0-9_.- ]+$",
       "description": "Stable identifier in format 'Brand/Name', e.g. 'Hatchbox/PLA'."
     },
     "maintainer": {
@@ -77,6 +77,7 @@
         "PC",
         "PP",
         "PVA",
+        "PVOH",
         "BVOH",
         "HIPS",
         "PVB",
@@ -86,6 +87,13 @@
         "CPE",
         "PMMA",
         "CA",
+        "POM",
+        "PA66",
+        "PBAT",
+        "PC-HT",
+        "PPS",
+        "Nylon",
+        "ULTEM",
         "Other"
       ],
       "description": "Base material type."
@@ -188,7 +196,7 @@
       "properties": {
         "sensitive_to_moisture": { "type": "boolean", "default": false },
         "enclosure_recommended": { "type": "boolean", "default": false },
-        "max_ambient_temp": { "type": "number", "minimum": 10, "maximum": 50 }
+        "max_ambient_temp": { "type": "number", "minimum": 10, "maximum": 150 }
       }
     },
     "volumetric_speed": {

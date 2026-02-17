@@ -36,7 +36,7 @@
     },
     "id": {
       "type": "string",
-      "pattern": "^[A-Za-z0-9]+/[A-Za-z0-9-_]+$",
+      "pattern": "^[A-Za-z0-9]+/[A-Za-z0-9-_.]+$",
       "description": "Stable identifier in format 'Brand/Model', e.g. 'BambuLab/X1-Carbon'."
     },
     "maintainer": {
@@ -99,6 +99,11 @@
         "hybrid_corexy",
         "scara",
         "bed_slinger",
+        "msla",
+        "sla",
+        "lfs",
+        "idex",
+        "cross",
         "other"
       ]
     },
@@ -139,10 +144,10 @@
         "required": ["id", "nozzle_diameter"],
         "properties": {
           "id": { "type": "string" },
-          "nozzle_diameter": { "type": "number", "minimum": 0.1, "maximum": 2.0 },
+          "nozzle_diameter": { "type": "number", "minimum": 0.01, "maximum": 2.0 },
           "nozzle_material": {
             "type": "string",
-            "enum": ["brass", "hardened-steel", "stainless-steel", "other"]
+            "enum": ["brass", "hardened-steel", "stainless-steel", "other", "n/a"]
           },
           "max_temp": { "type": "number", "minimum": 150, "maximum": 500 },
           "min_temp": { "type": "number", "minimum": 100, "maximum": 300 },
@@ -175,7 +180,7 @@
       "properties": {
         "flavor": {
           "type": "string",
-          "enum": ["marlin", "klipper", "reprap", "bambu", "proprietary", "other"]
+          "enum": ["marlin", "klipper", "reprap", "bambu", "proprietary", "prusa", "ideaMaker", "s3g", "other"]
         },
         "identifier": { "type": "string" }
       },
