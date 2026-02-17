@@ -1,0 +1,28 @@
+{
+  "op3d_schema": "process",
+  "op3d_schema_version": "0.1.0",
+  "id": "Standard/0.20mm-structural",
+  "maintainer": {
+    "name": "OpenPrint3D Community",
+    "maintainer_type": "community",
+    "website": "https://github.com/OpenPrint3D/OpenPrint3D"
+  },
+  "name": "0.20mm Structural",
+  "intent": "mechanical",
+  "layer_height": { "min": 0.16, "max": 0.24, "default": 0.20 },
+  "wall_settings": { "wall_count": 5, "top_layers": 6, "bottom_layers": 6 },
+  "infill": {
+    "density_default": 40,
+    "density_range": { "min": 25, "max": 80 },
+    "recommended_patterns": ["cubic", "gyroid", "triangles"]
+  },
+  "speed": { "outer_wall": 40, "inner_wall": 60, "infill": 80, "top_bottom": 35, "travel": 150 },
+  "accel": { "default": 2500, "outer_wall": 1500, "infill": 4000 },
+  "retraction": { "distance": 0.8, "speed": 38 },
+  "cooling": { "fan_default": 80, "fan_min_layer_time": 12 },
+  "supports": { "enabled_default": false, "overhang_threshold": 50 },
+  "adhesion": { "default_type": "brim", "brim_width": 8 },
+  "quality_bias": { "priority": "quality" },
+  "tags": ["structural", "mechanical", "strong", "functional", "0.20mm"],
+  "notes": "Structural profile optimized for strength. Extra walls, high infill, slower speeds for better layer adhesion. Use for load-bearing and functional parts."
+}

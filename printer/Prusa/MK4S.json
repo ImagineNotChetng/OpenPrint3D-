@@ -1,0 +1,38 @@
+{
+  "op3d_schema": "printer",
+  "op3d_schema_version": "0.1.0",
+  "id": "Prusa/MK4S",
+  "maintainer": {
+    "name": "OpenPrint3D Community",
+    "maintainer_type": "community",
+    "website": "https://github.com/OpenPrint3D/OpenPrint3D"
+  },
+  "manufacturer": "Prusa Research",
+  "model": "MK4S",
+  "variant": "Stock",
+  "build_volume": { "x": 250, "y": 210, "z": 220, "shape": "rectangular", "origin": "front_left" },
+  "kinematics": "bed_slinger",
+  "axes": {
+    "x": { "max_speed": 350, "max_accel": 10000 },
+    "y": { "max_speed": 350, "max_accel": 10000 },
+    "z": { "max_speed": 12, "max_accel": 200 }
+  },
+  "extruders": [{
+    "id": "tool0",
+    "nozzle_diameter": 0.4,
+    "nozzle_material": "brass",
+    "max_temp": 290,
+    "min_temp": 170,
+    "retraction_supported": true
+  }],
+  "bed": { "heated": true, "max_temp": 120, "surface_type": "PEI-spring-steel" },
+  "chamber": { "heated": false, "passive": false },
+  "firmware": { "flavor": "klipper", "identifier": "Prusa Firmware (Buddy board, Input Shaper)" },
+  "network": { "has_wifi": true, "has_ethernet": false, "supports_lan_api": true },
+  "links": {
+    "product_page": "https://www.prusa3d.com/product/original-prusa-mk4s/",
+    "documentation": "https://help.prusa3d.com/tag/mk4s"
+  },
+  "tags": ["premium", "input-shaper", "direct-drive", "open-source", "loadcell", "nextruder"],
+  "notes": "Prusa MK4S. Nextruder with load cell for automatic first-layer calibration. Input Shaper for high-speed printing. Open-source firmware. Wi-Fi with Prusa Connect."
+}

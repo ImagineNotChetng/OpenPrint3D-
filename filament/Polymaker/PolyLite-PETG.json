@@ -1,0 +1,30 @@
+{
+  "op3d_schema": "filament",
+  "op3d_schema_version": "0.1.0",
+  "id": "Polymaker/PolyLite-PETG",
+  "maintainer": {
+    "name": "OpenPrint3D Community",
+    "maintainer_type": "community",
+    "website": "https://github.com/OpenPrint3D/OpenPrint3D"
+  },
+  "brand": "Polymaker",
+  "name": "PolyLite PETG 1.75mm",
+  "material": "PETG",
+  "diameter": 1.75,
+  "density": 1.27,
+  "nozzle": { "min": 230, "max": 250, "recommended": 240 },
+  "bed": { "min": 70, "max": 85, "recommended": 80 },
+  "fan": { "min": 20, "max": 60, "recommended": 40 },
+  "drying": { "temperature": 65, "duration_hours": 6 },
+  "environment": {
+    "sensitive_to_moisture": true,
+    "enclosure_recommended": false,
+    "max_ambient_temp": 35
+  },
+  "volumetric_speed": 12,
+  "links": {
+    "product_page": "https://polymaker.com/products/polylite-petg"
+  },
+  "tags": ["petg", "polymaker", "polylite", "1.75mm"],
+  "notes": "Polymaker PolyLite PETG. Low odor PETG with good clarity. Reduced stringing compared to generic PETG."
+}

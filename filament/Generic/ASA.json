@@ -1,7 +1,7 @@
 {
   "op3d_schema": "filament",
   "op3d_schema_version": "0.1.0",
-  "id": "Generic/PLA",
+  "id": "Generic/ASA",
 
   "maintainer": {
     "name": "OpenPrint3D",
@@ -10,47 +10,47 @@
   },
 
   "brand": "Generic",
-  "name": "Generic PLA 1.75mm",
-  "material": "PLA",
+  "name": "Generic ASA 1.75mm",
+  "material": "ASA",
 
   "color": "white",
   "diameter": 1.75,
-  "density": 1.24,
+  "density": 1.05,
 
   "nozzle": {
-    "min": 190,
-    "max": 230,
-    "recommended": 210
+    "min": 240,
+    "max": 280,
+    "recommended": 260
   },
 
   "bed": {
-    "min": 40,
-    "max": 60,
-    "recommended": 50
+    "min": 80,
+    "max": 110,
+    "recommended": 95
   },
 
   "fan": {
-    "min": 50,
-    "max": 100,
-    "recommended": 100
+    "min": 0,
+    "max": 50,
+    "recommended": 30
   },
 
   "drying": {
-    "temperature": 45,
+    "temperature": 80,
     "duration_hours": 4
   },
 
   "environment": {
     "sensitive_to_moisture": true,
-    "enclosure_recommended": false,
-    "max_ambient_temp": 30
+    "enclosure_recommended": true,
+    "max_ambient_temp": 40
   },
 
   "external_ids": {},
   "links": {},
-  "tags": ["pla", "generic", "1.75mm"],
+  "tags": ["asa", "generic", "1.75mm", "outdoor"],
 
-  "notes": "Generic PLA profile. Good for beginners, low warping, no enclosure needed.",
+  "notes": "Generic ASA profile. UV resistant, good for outdoor use. Requires enclosure, low fan.",
 
   "x_cura": {},
   "x_prusaslicer": {},

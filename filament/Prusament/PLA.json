@@ -1,0 +1,31 @@
+{
+  "op3d_schema": "filament",
+  "op3d_schema_version": "0.1.0",
+  "id": "Prusament/PLA",
+  "maintainer": {
+    "name": "OpenPrint3D Community",
+    "maintainer_type": "community",
+    "website": "https://github.com/OpenPrint3D/OpenPrint3D"
+  },
+  "brand": "Prusament",
+  "name": "Prusament PLA 1.75mm",
+  "material": "PLA",
+  "diameter": 1.75,
+  "density": 1.24,
+  "nozzle": { "min": 200, "max": 220, "recommended": 215 },
+  "bed": { "min": 40, "max": 60, "recommended": 50 },
+  "fan": { "min": 50, "max": 100, "recommended": 100 },
+  "drying": { "temperature": 45, "duration_hours": 4 },
+  "environment": {
+    "sensitive_to_moisture": true,
+    "enclosure_recommended": false,
+    "max_ambient_temp": 30
+  },
+  "volumetric_speed": 11.5,
+  "links": {
+    "product_page": "https://www.prusa3d.com/category/prusament-pla/",
+    "datasheet": "https://prusament.com/media/2024/04/TDS_PLA_EN.pdf"
+  },
+  "tags": ["pla", "prusament", "prusa", "1.75mm", "premium", "tight-tolerance"],
+  "notes": "Prusament PLA. Premium filament with ±0.02mm diameter tolerance. Every spool has a QR code with production data. Manufactured in-house by Prusa Research."
+}

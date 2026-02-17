@@ -1,0 +1,28 @@
+{
+  "op3d_schema": "process",
+  "op3d_schema_version": "0.1.0",
+  "id": "Standard/0.16mm-quality",
+  "maintainer": {
+    "name": "OpenPrint3D Community",
+    "maintainer_type": "community",
+    "website": "https://github.com/OpenPrint3D/OpenPrint3D"
+  },
+  "name": "0.16mm Quality",
+  "intent": "quality",
+  "layer_height": { "min": 0.12, "max": 0.20, "default": 0.16 },
+  "wall_settings": { "wall_count": 3, "top_layers": 6, "bottom_layers": 5 },
+  "infill": {
+    "density_default": 20,
+    "density_range": { "min": 10, "max": 50 },
+    "recommended_patterns": ["gyroid", "cubic", "grid"]
+  },
+  "speed": { "outer_wall": 40, "inner_wall": 70, "infill": 100, "top_bottom": 35, "travel": 150 },
+  "accel": { "default": 3000, "outer_wall": 1500, "infill": 5000 },
+  "retraction": { "distance": 0.7, "speed": 38 },
+  "cooling": { "fan_default": 100, "fan_min_layer_time": 12 },
+  "supports": { "enabled_default": false, "overhang_threshold": 55 },
+  "adhesion": { "default_type": "skirt", "brim_width": 5 },
+  "quality_bias": { "priority": "quality" },
+  "tags": ["quality", "0.16mm", "general-purpose", "visible-parts"],
+  "notes": "Quality profile with fine layer lines. Good for visible parts where surface finish matters but full detail mode is overkill."
+}

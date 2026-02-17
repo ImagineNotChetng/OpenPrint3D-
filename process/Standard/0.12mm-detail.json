@@ -1,0 +1,28 @@
+{
+  "op3d_schema": "process",
+  "op3d_schema_version": "0.1.0",
+  "id": "Standard/0.12mm-detail",
+  "maintainer": {
+    "name": "OpenPrint3D Community",
+    "maintainer_type": "community",
+    "website": "https://github.com/OpenPrint3D/OpenPrint3D"
+  },
+  "name": "0.12mm High Detail",
+  "intent": "high_detail",
+  "layer_height": { "min": 0.08, "max": 0.16, "default": 0.12 },
+  "wall_settings": { "wall_count": 4, "top_layers": 7, "bottom_layers": 5 },
+  "infill": {
+    "density_default": 15,
+    "density_range": { "min": 10, "max": 40 },
+    "recommended_patterns": ["gyroid", "cubic"]
+  },
+  "speed": { "outer_wall": 30, "inner_wall": 50, "infill": 80, "top_bottom": 25, "travel": 120 },
+  "accel": { "default": 2000, "outer_wall": 1000, "infill": 3000 },
+  "retraction": { "distance": 0.6, "speed": 35 },
+  "cooling": { "fan_default": 100, "fan_min_layer_time": 15 },
+  "supports": { "enabled_default": false, "overhang_threshold": 50 },
+  "adhesion": { "default_type": "skirt", "brim_width": 5 },
+  "quality_bias": { "priority": "quality" },
+  "tags": ["high-detail", "miniatures", "fine", "slow", "0.12mm"],
+  "notes": "Maximum detail profile for miniatures, figurines, and display pieces. Slow but produces near-invisible layer lines."
+}

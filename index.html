@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OpenPrint3D - Profile Manager</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header class="app-header">
+        <div class="logo">
+            <h1>OpenPrint3D</h1>
+            <span class="tagline">Profile Manager</span>
+        </div>
+        <nav class="main-nav">
+            <button class="nav-btn active" data-tab="browse">Browse</button>
+            <button class="nav-btn" data-tab="export">Export</button>
+            <button class="nav-btn" data-tab="relations">Relations</button>
+            <button class="nav-btn" data-tab="favorites">Favorites</button>
+        </nav>
+        <div class="header-actions">
+            <button id="refresh-btn" class="icon-btn" title="Refresh Data">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M23 4v6h-6M1 20v-6h6"/>
+                    <path d="M3.51 9a9 9 0 0 1 14.85-3.36L23 10M1 14l4.64 4.36A9 9 0 0 0 20.49 15"/>
+                </svg>
+            </button>
+        </div>
+    </header>
+
+    <main class="app-main">
+        <!-- Search & Filters Section -->
+        <section class="search-section">
+            <div class="search-bar">
+                <svg class="search-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <circle cx="11" cy="11" r="8"/>
+                    <path d="M21 21l-4.35-4.35"/>
+                </svg>
+                <input type="text" id="search-input" placeholder="Search printers, filaments, processes...">
+                <button id="clear-search" class="clear-btn" title="Clear search">&times;</button>
+            </div>
+            
+            <div class="filters-container">
+                <div class="filter-group">
+                    <label>Type</label>
+                    <select id="filter-type">
+                        <option value="all">All Types</option>
+                        <option value="printer">Printers</option>
+                        <option value="filament">Filaments</option>
+                        <option value="process">Processes</option>
+                    </select>
+                </div>
+                <div class="filter-group">
+                    <label>Material</label>
+                    <select id="filter-material">
+                        <option value="all">All Materials</option>
+                        <option value="PLA">PLA</option>
+                        <option value="PETG">PETG</option>
+                        <option value="ABS">ABS</option>
+                        <option value="TPU">TPU</option>
+                        <option value="ASA">ASA</option>
+                        <option value="PC">PC (Polycarbonate)</option>
+                        <option value="PP">PP (Polypropylene)</option>
+                        <option value="PVB">PVB</option>
+                        <option value="PA">PA (Nylon)</option>
+                        <option value="PEEK">PEEK</option>
+                    </select>
+                </div>
+                <div class="filter-group">
+                    <label>Brand</label>
+                    <select id="filter-brand">
+                        <option value="all">All Brands</option>
+                    </select>
+                </div>
+                <div class="filter-group">
+                    <label>Color</label>
+                    <select id="filter-color">
+                        <option value="all">All Colors</option>
+                    </select>
+                </div>
+                <button id="apply-filters" class="filter-btn">Apply Filters</button>
+                <button id="reset-filters" class="filter-btn secondary">Reset</button>
+            </div>
+        </section>
+
+        <!-- Tab Content -->
+        <div class="tab-content">
+            <!-- Browse Tab -->
+            <section id="browse-tab" class="tab-panel active">
+                <div class="results-header">
+                    <span id="results-count">0 items found</span>
+                    <div class="view-options">
+                        <select id="sort-by">
+                            <option value="name">Sort by Name</option>
+                            <option value="brand">Sort by Brand</option>
+                            <option value="material">Sort by Material</option>
+                        </select>
+                    </div>
+                </div>
+                <div id="results-grid" class="results-grid">
+                    <!-- Items will be rendered here -->
+                </div>
+            </section>
+
+            <!-- Export Tab -->
+            <section id="export-tab" class="tab-panel">
+                <div class="export-options">
+                    <h2>Export Profiles</h2>
+                    <p class="export-desc">Select profiles to export in your preferred format.</p>
+                    
+                    <div class="export-selection">
+                        <h3>Selected Items (<span id="export-count">0</span>)</h3>
+                        <div id="export-list" class="export-list"></div>
+                    </div>
+                    
+                    <div class="export-format">
+                        <label>Export Format</label>
+                        <select id="export-format">
+                            <option value="json">JSON</option>
+                            <option value="yaml">YAML</option>
+                        </select>
+                    </div>
+                    
+                    <button id="export-btn" class="export-btn">Export Selected</button>
+                </div>
+            </section>
+
+            <!-- Relations Tab -->
+            <section id="relations-tab" class="tab-panel">
+                <div class="relations-container">
+                    <div class="relation-filters">
+                        <h3>View Relationships</h3>
+                        <select id="relation-type">
+                            <option value="printer">Printer → Filaments</option>
+                            <option value="filament">Filament → Printers</option>
+                            <option value="process">Process → All</option>
+                        </select>
+                    </div>
+                    <div id="relations-graph" class="relations-graph">
+                        <!-- Relations will be visualized here -->
+                    </div>
+                </div>
+            </section>
+
+            <!-- Favorites Tab -->
+            <section id="favorites-tab" class="tab-panel">
+                <div class="favorites-container">
+                    <h2>Your Favorites</h2>
+                    <p class="favorites-desc">Quick access to your saved printers and filaments.</p>
+                    <div id="favorites-grid" class="favorites-grid">
+                        <!-- Favorites will be rendered here -->
+                    </div>
+                    <button id="clear-favorites" class="clear-favorites-btn">Clear All Favorites</button>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <!-- Item Detail Modal -->
+    <div id="detail-modal" class="modal">
+        <div class="modal-content">
+            <button class="modal-close">&times;</button>
+            <div id="modal-body"></div>
+        </div>
+    </div>
+
+    <!-- Toast Notifications -->
+    <div id="toast-container"></div>
+
+    <script src="js/app.js"></script>
+</body>
+</html>

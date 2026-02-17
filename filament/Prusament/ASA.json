@@ -1,0 +1,31 @@
+{
+  "op3d_schema": "filament",
+  "op3d_schema_version": "0.1.0",
+  "id": "Prusament/ASA",
+  "maintainer": {
+    "name": "OpenPrint3D Community",
+    "maintainer_type": "community",
+    "website": "https://github.com/OpenPrint3D/OpenPrint3D"
+  },
+  "brand": "Prusament",
+  "name": "Prusament ASA 1.75mm",
+  "material": "ASA",
+  "diameter": 1.75,
+  "density": 1.07,
+  "nozzle": { "min": 240, "max": 260, "recommended": 255 },
+  "bed": { "min": 95, "max": 110, "recommended": 105 },
+  "fan": { "min": 0, "max": 20, "recommended": 10 },
+  "drying": { "temperature": 65, "duration_hours": 6 },
+  "environment": {
+    "sensitive_to_moisture": true,
+    "enclosure_recommended": true,
+    "max_ambient_temp": 40
+  },
+  "volumetric_speed": 11,
+  "links": {
+    "product_page": "https://www.prusa3d.com/category/prusament-asa/",
+    "datasheet": "https://prusament.com/media/2024/04/TDS_ASA_EN.pdf"
+  },
+  "tags": ["asa", "prusament", "prusa", "1.75mm", "uv-resistant", "outdoor", "enclosure-required"],
+  "notes": "Prusament ASA. UV-stable alternative to ABS. Excellent for outdoor functional parts. Requires enclosure to prevent warping and cracking."
+}

@@ -1,0 +1,37 @@
+{
+  "op3d_schema": "printer",
+  "op3d_schema_version": "0.1.0",
+  "id": "Prusa/Mini-Plus",
+  "maintainer": {
+    "name": "OpenPrint3D Community",
+    "maintainer_type": "community",
+    "website": "https://github.com/OpenPrint3D/OpenPrint3D"
+  },
+  "manufacturer": "Prusa Research",
+  "model": "MINI+",
+  "variant": "Stock",
+  "build_volume": { "x": 180, "y": 180, "z": 180, "shape": "rectangular", "origin": "front_left" },
+  "kinematics": "bed_slinger",
+  "axes": {
+    "x": { "max_speed": 200, "max_accel": 2500 },
+    "y": { "max_speed": 200, "max_accel": 2500 },
+    "z": { "max_speed": 12, "max_accel": 200 }
+  },
+  "extruders": [{
+    "id": "tool0",
+    "nozzle_diameter": 0.4,
+    "nozzle_material": "brass",
+    "max_temp": 280,
+    "min_temp": 170,
+    "retraction_supported": true
+  }],
+  "bed": { "heated": true, "max_temp": 100, "surface_type": "PEI-spring-steel" },
+  "chamber": { "heated": false, "passive": false },
+  "firmware": { "flavor": "marlin", "identifier": "Prusa Firmware (Buddy board)" },
+  "network": { "has_wifi": true, "has_ethernet": true, "supports_lan_api": true },
+  "links": {
+    "product_page": "https://www.prusa3d.com/product/original-prusa-mini/"
+  },
+  "tags": ["compact", "bowden", "open-source", "prusa-connect"],
+  "notes": "Prusa MINI+. Compact footprint with Bowden extruder. Ethernet and Wi-Fi with Prusa Connect. Great second printer or space-constrained setups."
+}

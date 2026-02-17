@@ -1,0 +1,28 @@
+{
+  "op3d_schema": "process",
+  "op3d_schema_version": "0.1.0",
+  "id": "Speed/0.28mm-turbo",
+  "maintainer": {
+    "name": "OpenPrint3D Community",
+    "maintainer_type": "community",
+    "website": "https://github.com/OpenPrint3D/OpenPrint3D"
+  },
+  "name": "0.28mm Turbo",
+  "intent": "draft",
+  "layer_height": { "min": 0.24, "max": 0.32, "default": 0.28 },
+  "wall_settings": { "wall_count": 2, "top_layers": 3, "bottom_layers": 3 },
+  "infill": {
+    "density_default": 10,
+    "density_range": { "min": 5, "max": 30 },
+    "recommended_patterns": ["grid", "lines"]
+  },
+  "speed": { "outer_wall": 200, "inner_wall": 280, "infill": 350, "top_bottom": 180, "travel": 400 },
+  "accel": { "default": 15000, "outer_wall": 8000, "infill": 20000 },
+  "retraction": { "distance": 0.5, "speed": 50 },
+  "cooling": { "fan_default": 100, "fan_min_layer_time": 4 },
+  "supports": { "enabled_default": false, "overhang_threshold": 60 },
+  "adhesion": { "default_type": "brim", "brim_width": 5 },
+  "quality_bias": { "priority": "speed" },
+  "tags": ["turbo", "maximum-speed", "draft", "0.28mm", "corexy-only"],
+  "notes": "Maximum speed draft profile. Absolute fastest printing with acceptable results. Only for high-performance CoreXY printers with input shaper. Expect rough surface finish."
+}

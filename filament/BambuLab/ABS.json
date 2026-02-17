@@ -1,0 +1,30 @@
+{
+  "op3d_schema": "filament",
+  "op3d_schema_version": "0.1.0",
+  "id": "BambuLab/ABS",
+  "maintainer": {
+    "name": "OpenPrint3D Community",
+    "maintainer_type": "community",
+    "website": "https://github.com/OpenPrint3D/OpenPrint3D"
+  },
+  "brand": "Bambu Lab",
+  "name": "Bambu Lab ABS 1.75mm",
+  "material": "ABS",
+  "diameter": 1.75,
+  "density": 1.04,
+  "nozzle": { "min": 240, "max": 260, "recommended": 250 },
+  "bed": { "min": 90, "max": 110, "recommended": 100 },
+  "fan": { "min": 0, "max": 30, "recommended": 10 },
+  "drying": { "temperature": 65, "duration_hours": 6 },
+  "environment": {
+    "sensitive_to_moisture": true,
+    "enclosure_recommended": true,
+    "max_ambient_temp": 40
+  },
+  "volumetric_speed": 11,
+  "links": {
+    "product_page": "https://store.bambulab.com/products/abs-filament"
+  },
+  "tags": ["abs", "bambu", "bambulab", "1.75mm", "ams-compatible", "enclosure-required"],
+  "notes": "Bambu Lab ABS. RFID-tagged. Works well in enclosed Bambu printers (X1C, P1S). Enclosure strongly recommended."
+}

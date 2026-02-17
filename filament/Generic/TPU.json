@@ -1,7 +1,7 @@
 {
   "op3d_schema": "filament",
   "op3d_schema_version": "0.1.0",
-  "id": "Generic/PLA",
+  "id": "Generic/TPU",
 
   "maintainer": {
     "name": "OpenPrint3D",
@@ -10,34 +10,34 @@
   },
 
   "brand": "Generic",
-  "name": "Generic PLA 1.75mm",
-  "material": "PLA",
+  "name": "Generic TPU 1.75mm",
+  "material": "TPU",
 
-  "color": "white",
+  "color": "black",
   "diameter": 1.75,
-  "density": 1.24,
+  "density": 1.21,
 
   "nozzle": {
-    "min": 190,
-    "max": 230,
-    "recommended": 210
+    "min": 200,
+    "max": 240,
+    "recommended": 220
   },
 
   "bed": {
-    "min": 40,
-    "max": 60,
-    "recommended": 50
+    "min": 30,
+    "max": 50,
+    "recommended": 40
   },
 
   "fan": {
     "min": 50,
     "max": 100,
-    "recommended": 100
+    "recommended": 80
   },
 
   "drying": {
     "temperature": 45,
-    "duration_hours": 4
+    "duration_hours": 6
   },
 
   "environment": {
@@ -48,9 +48,9 @@
 
   "external_ids": {},
   "links": {},
-  "tags": ["pla", "generic", "1.75mm"],
+  "tags": ["tpu", "generic", "1.75mm", "flexible"],
 
-  "notes": "Generic PLA profile. Good for beginners, low warping, no enclosure needed.",
+  "notes": "Generic TPU profile. Flexible filament, requires slower print speeds. Very moisture sensitive.",
 
   "x_cura": {},
   "x_prusaslicer": {},

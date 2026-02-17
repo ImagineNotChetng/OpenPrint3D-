@@ -1,0 +1,37 @@
+{
+  "op3d_schema": "printer",
+  "op3d_schema_version": "0.1.0",
+  "id": "Creality/Ender-3-V3-SE",
+  "maintainer": {
+    "name": "OpenPrint3D Community",
+    "maintainer_type": "community",
+    "website": "https://github.com/OpenPrint3D/OpenPrint3D"
+  },
+  "manufacturer": "Creality",
+  "model": "Ender-3 V3 SE",
+  "variant": "Stock",
+  "build_volume": { "x": 220, "y": 220, "z": 250, "shape": "rectangular", "origin": "front_left" },
+  "kinematics": "bed_slinger",
+  "axes": {
+    "x": { "max_speed": 250, "max_accel": 2500 },
+    "y": { "max_speed": 250, "max_accel": 2500 },
+    "z": { "max_speed": 10, "max_accel": 100 }
+  },
+  "extruders": [{
+    "id": "tool0",
+    "nozzle_diameter": 0.4,
+    "nozzle_material": "brass",
+    "max_temp": 260,
+    "min_temp": 170,
+    "retraction_supported": true
+  }],
+  "bed": { "heated": true, "max_temp": 100, "surface_type": "PEI-textured" },
+  "chamber": { "heated": false, "passive": false },
+  "firmware": { "flavor": "marlin", "identifier": "Marlin 2.x (Creality)" },
+  "network": { "has_wifi": false, "has_ethernet": false, "supports_lan_api": false },
+  "links": {
+    "product_page": "https://www.creality.com/products/ender-3-v3-se"
+  },
+  "tags": ["budget", "beginner", "bed-slinger", "auto-level", "direct-drive"],
+  "notes": "Creality Ender-3 V3 SE. Budget-friendly with auto bed leveling, direct drive Sprite extruder, and PEI build plate. Great entry-level printer."
+}

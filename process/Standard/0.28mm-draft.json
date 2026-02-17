@@ -1,0 +1,28 @@
+{
+  "op3d_schema": "process",
+  "op3d_schema_version": "0.1.0",
+  "id": "Standard/0.28mm-draft",
+  "maintainer": {
+    "name": "OpenPrint3D Community",
+    "maintainer_type": "community",
+    "website": "https://github.com/OpenPrint3D/OpenPrint3D"
+  },
+  "name": "0.28mm Draft",
+  "intent": "draft",
+  "layer_height": { "min": 0.24, "max": 0.32, "default": 0.28 },
+  "wall_settings": { "wall_count": 2, "top_layers": 4, "bottom_layers": 3 },
+  "infill": {
+    "density_default": 15,
+    "density_range": { "min": 5, "max": 40 },
+    "recommended_patterns": ["grid", "lines"]
+  },
+  "speed": { "outer_wall": 80, "inner_wall": 120, "infill": 150, "top_bottom": 70, "travel": 200 },
+  "accel": { "default": 5000, "outer_wall": 3000, "infill": 8000 },
+  "retraction": { "distance": 0.8, "speed": 40 },
+  "cooling": { "fan_default": 80, "fan_min_layer_time": 8 },
+  "supports": { "enabled_default": false, "overhang_threshold": 60 },
+  "adhesion": { "default_type": "skirt", "brim_width": 5 },
+  "quality_bias": { "priority": "speed" },
+  "tags": ["draft", "fast", "prototyping", "0.28mm"],
+  "notes": "Fast draft profile for prototyping and test fits. Visible layer lines but significantly faster print times. Good for iteration."
+}
