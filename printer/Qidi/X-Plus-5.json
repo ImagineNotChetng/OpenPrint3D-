@@ -1,0 +1,77 @@
+{
+  "op3d_schema": "printer",
+  "op3d_schema_version": "0.1.0",
+  "id": "Qidi/X-Plus-5",
+  "maintainer": {
+    "name": "OpenPrint3D Community",
+    "maintainer_type": "community",
+    "website": "https://github.com/OpenPrint3D/OpenPrint3D"
+  },
+  "manufacturer": "Qidi",
+  "model": "X-Plus 5",
+  "variant": "Stock",
+  "build_volume": { "x": 300, "y": 300, "z": 320, "shape": "rectangular", "origin": "front_left" },
+  "kinematics": "corexy",
+  "axes": {
+    "x": { "max_speed": 700, "max_accel": 30000 },
+    "y": { "max_speed": 700, "max_accel": 30000 },
+    "z": { "max_speed": 25, "max_accel": 800 }
+  },
+  "extruders": [{
+    "id": "tool0",
+    "nozzle_diameter": 0.4,
+    "nozzle_material": "hardened-steel",
+    "max_temp": 370,
+    "min_temp": 180,
+    "retraction_supported": true
+  }],
+  "bed": { "heated": true, "max_temp": 120, "surface_type": "PEI-textured" },
+  "chamber": { "heated": true, "max_temp": 70, "passive": false },
+  "firmware": { "flavor": "klipper", "identifier": "Qidi X-Plus 5 Firmware" },
+  "network": { "has_wifi": true, "has_ethernet": true, "supports_lan_api": true },
+  "links": {
+    "product_page": "https://www.qidipro.com/x-plus-5"
+  },
+  "tags": ["corexy", "direct-drive", "high-speed", "klipper", "high-temp", "active-chamber", "enclosed"],
+  "notes": "Qidi X-Plus 5. Next-generation CoreXY with 300x300x320mm build volume. Features Klipper firmware with advanced input shaping, active chamber heating (70C), 370C max nozzle temp for industrial materials, and Ethernet connectivity.",
+  "x_cura": {
+    "definition": "qidi_xplus5",
+    "definition_changes": {
+      "machine_width": 300,
+      "machine_depth": 300,
+      "machine_height": 320,
+      "nozzle_size": 0.4,
+      "heated_bed": true,
+      "machine_heated_bed": true,
+      "bed_temperature": 60,
+      "nozzle_temperature": 200
+    }
+  },
+  "x_prusaslicer": {
+    "printer_model": "X-Plus 5",
+    "vendor": "Qidi",
+    "filament_diameter": 1.75,
+    "nozzle_diameter": 0.4,
+    "bed_shape": "rectangular",
+    "bed_size": "300x300",
+    "print_height": 320
+  },
+  "x_orca": {
+    "machine_name": "X-Plus 5",
+    "machine_manufacturer": "Qidi",
+    "bed_x": 300,
+    "bed_y": 300,
+    "height": 320,
+    "nozzle_diameter": 0.4,
+    "filament_diameter": 1.75
+  },
+  "x_bambu": {
+    "product_id": "qidi_xplus5",
+    "series": "X-Plus",
+    "support_lidar": false,
+    "support_ams": false,
+    "support_ams_lite": false,
+    "max_speed": 700,
+    "nozzle_type": "hardened-steel"
+  }
+}

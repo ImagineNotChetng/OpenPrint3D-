@@ -1,0 +1,84 @@
+{
+  "op3d_schema": "printer",
+  "op3d_schema_version": "0.1.0",
+  "id": "BambuLab/X1C-2026",
+  "maintainer": {
+    "name": "OpenPrint3D Community",
+    "maintainer_type": "community",
+    "website": "https://github.com/OpenPrint3D/OpenPrint3D"
+  },
+  "manufacturer": "Bambu Lab",
+  "model": "X1C 2026",
+  "variant": "Stock",
+  "build_volume": { "x": 280, "y": 280, "z": 280, "shape": "rectangular", "origin": "front_left" },
+  "kinematics": "corexy",
+  "axes": {
+    "x": { "max_speed": 700, "max_accel": 30000 },
+    "y": { "max_speed": 700, "max_accel": 30000 },
+    "z": { "max_speed": 30, "max_accel": 800 }
+  },
+  "extruders": [{
+    "id": "tool0",
+    "nozzle_diameter": 0.4,
+    "nozzle_material": "hardened-steel",
+    "max_temp": 350,
+    "min_temp": 170,
+    "retraction_supported": true
+  }],
+  "bed": { "heated": true, "max_temp": 130, "surface_type": "PEI-textured" },
+  "chamber": { "heated": true, "max_temp": 80, "passive": true },
+  "firmware": { "flavor": "bambu", "identifier": "Bambu Lab proprietary" },
+  "network": { "has_wifi": true, "has_ethernet": true, "supports_lan_api": true },
+  "links": {
+    "product_page": "https://bambulab.com/en/x1-series"
+  },
+  "tags": ["premium", "corexy", "enclosed", "ams-compatible", "lidar", "high-speed", "carbon-fiber", "input-shaping", "concept", "next-gen"],
+  "notes": "Bambu Lab X1C 2026 (Concept). Conceptual next-generation flagship CoreXY printer with expanded 280x280x280mm build volume, enhanced 700mm/s speed with 30000mm/s² acceleration, improved LiDAR first-layer inspection, active chamber heating up to 80C, 350C max nozzle temp for advanced materials, AMS 2.0 support, and Ethernet connectivity. This is a concept profile for future product.",
+  "x_cura": {
+    "definition": "bambulab_x1c_2026",
+    "definition_changes": {
+      "machine_width": 280,
+      "machine_depth": 280,
+      "machine_height": 280,
+      "nozzle_size": 0.4,
+      "heated_bed": true,
+      "machine_heated_bed": true,
+      "bed_temperature": 60,
+      "nozzle_temperature": 200
+    }
+  },
+  "x_prusaslicer": {
+    "printer_model": "X1C 2026",
+    "vendor": "Bambu Lab",
+    "filament_diameter": 1.75,
+    "nozzle_diameter": 0.4,
+    "bed_shape": "rectangular",
+    "bed_size": "280x280",
+    "print_height": 280,
+    "printer_technology": "FFF"
+  },
+  "x_orca": {
+    "machine_name": "X1C 2026",
+    "machine_manufacturer": "Bambu Lab",
+    "bed_x": 280,
+    "bed_y": 280,
+    "height": 280,
+    "nozzle_diameter": 0.4,
+    "filament_diameter": 1.75,
+    "support_ams": true,
+    "support_xc": true
+  },
+  "x_bambu": {
+    "product_id": "bambulab_x1c_2026_00",
+    "series": "X1",
+    "support_lidar": true,
+    "support_ams": true,
+    "support_ams_lite": false,
+    "support_xc": true,
+    "active_chamber_heating": true,
+    "max_speed": 700,
+    "nozzle_type": "hardened-steel",
+    "carbon_fiber_capable": true,
+    "has_ethernet": true
+  }
+}

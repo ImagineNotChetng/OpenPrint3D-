@@ -1,0 +1,78 @@
+{
+  "op3d_schema": "printer",
+  "op3d_schema_version": "0.1.0",
+  "id": "Sovol/SV11",
+  "maintainer": {
+    "name": "OpenPrint3D Community",
+    "maintainer_type": "community",
+    "website": "https://github.com/OpenPrint3D/OpenPrint3D"
+  },
+  "manufacturer": "Sovol",
+  "model": "SV11",
+  "variant": "Stock",
+  "build_volume": { "x": 300, "y": 300, "z": 300, "shape": "rectangular", "origin": "front_left" },
+  "kinematics": "corexy",
+  "axes": {
+    "x": { "max_speed": 800, "max_accel": 30000 },
+    "y": { "max_speed": 800, "max_accel": 30000 },
+    "z": { "max_speed": 30, "max_accel": 1500 }
+  },
+  "extruders": [{
+    "id": "tool0",
+    "nozzle_diameter": 0.4,
+    "nozzle_material": "hardened-steel",
+    "max_temp": 350,
+    "min_temp": 170,
+    "retraction_supported": true
+  }],
+  "bed": { "heated": true, "max_temp": 120, "surface_type": "PEI-textured" },
+  "chamber": { "heated": true, "max_temp": 60, "passive": false },
+  "firmware": { "flavor": "klipper", "identifier": "Sovol SV11 Firmware" },
+  "network": { "has_wifi": true, "has_ethernet": true, "supports_lan_api": true },
+  "links": { "product_page": "https://sovol3d.com/products/sv11-3d-printer" },
+  "tags": ["high-speed", "corexy", "direct-drive", "klipper", "800mm-s", "heated-chamber", "350c-capable", "enclosed"],
+  "notes": "Sovol SV11. High-speed enclosed CoreXY with active chamber heating up to 60C. 300x300x300mm build volume, 800mm/s max speed, and 350C hotend for engineering materials.",
+  "x_cura": {
+    "definition": "sovol_sv11",
+    "definition_changes": {
+      "machine_width": 300,
+      "machine_depth": 300,
+      "machine_height": 300,
+      "nozzle_size": 0.4,
+      "heated_bed": true,
+      "machine_heated_bed": true,
+      "bed_temperature": 60,
+      "nozzle_temperature": 200
+    }
+  },
+  "x_prusaslicer": {
+    "printer_model": "SV11",
+    "vendor": "Sovol",
+    "filament_diameter": 1.75,
+    "nozzle_diameter": 0.4,
+    "bed_shape": "rectangular",
+    "bed_size": "300x300",
+    "print_height": 300,
+    "printer_technology": "FFF"
+  },
+  "x_orca": {
+    "machine_name": "SV11",
+    "machine_manufacturer": "Sovol",
+    "bed_x": 300,
+    "bed_y": 300,
+    "height": 300,
+    "nozzle_diameter": 0.4,
+    "filament_diameter": 1.75,
+    "kinematics": "corexy"
+  },
+  "x_bambu": {
+    "product_id": "sovol_sv11",
+    "series": "SV",
+    "support_lidar": false,
+    "support_ams": false,
+    "support_ams_lite": true,
+    "max_speed": 800,
+    "nozzle_type": "hardened-steel",
+    "max_temp": 350
+  }
+}

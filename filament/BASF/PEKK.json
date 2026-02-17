@@ -1,0 +1,69 @@
+{
+  "op3d_schema": "filament",
+  "op3d_schema_version": "0.1.0",
+  "id": "BASF/PEKK",
+  "maintainer": {
+    "name": "OpenPrint3D Community",
+    "maintainer_type": "community",
+    "website": "https://github.com/OpenPrint3D/OpenPrint3D"
+  },
+  "brand": "BASF",
+  "name": "BASF PEKK 1.75mm",
+  "material": "PEKK",
+  "diameter": 1.75,
+  "density": 1.27,
+  "nozzle": { "min": 350, "max": 410, "recommended": 380 },
+  "bed": { "min": 100, "max": 140, "recommended": 120 },
+  "fan": { "min": 0, "max": 30, "recommended": 15 },
+  "drying": { "temperature": 100, "duration_hours": 4 },
+  "environment": {
+    "sensitive_to_moisture": true,
+    "enclosure_recommended": true,
+    "heated_chamber_recommended": true,
+    "max_ambient_temp": 50
+  },
+  "volumetric_speed": 10,
+  "printing_speed": { "min": 20, "max": 70, "recommended": 45 },
+  "links": {
+    "datasheet": "https://www.basf.com/global/en/products-and-industries/polyamines.html"
+  },
+  "tags": ["pekk", "high-performance", "engineering", "1.75mm", "basf"],
+  "notes": "BASF PEKK (Polyether Ketone Ketone) offers superior thermal and mechanical properties compared to PEEK. Excellent chemical resistance and higher glass transition temperature.",
+  "x_cura": {
+    "material": "peek",
+    "print_temperature": 380,
+    "print_temperature_layer_0": 395,
+    "bed_temperature": 120,
+    "bed_temperature_layer_0": 135,
+    "fan_speed": 15,
+    "fan_speed_layer_0": 0,
+    "cooling": "minimum"
+  },
+  "x_prusaslicer": {
+    "filament_type": "PEEK",
+    "temperature": 380,
+    "bed_temperature": 120,
+    "fan_speed": 15,
+    "first_layer_bed_temperature": 135,
+    "first_layer_temperature": 395
+  },
+  "x_orca": {
+    "filament_type": "PEEK",
+    "nozzle_temperature": 380,
+    "nozzle_temperature_initial_layer": 395,
+    "bed_temperature": 120,
+    "bed_temperature_initial_layer": 135,
+    "fan_speed": 15,
+    "fan_speed_initial_layer": 0
+  },
+  "x_bambu": {
+    "filament_type_id": "GPEE",
+    "drying_temperature": 100,
+    "drying_time": 4,
+    "nozzle_temperature": [350, 410],
+    "nozzle_temperature_initial_layer": [370, 420],
+    "bed_temperature": [100, 140],
+    "bed_temperature_initial_layer": [115, 145],
+    "fan_speed": [0, 30]
+  }
+}

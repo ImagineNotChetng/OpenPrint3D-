@@ -1,0 +1,32 @@
+{
+  "op3d_schema": "filament",
+  "op3d_schema_version": "0.1.0",
+  "id": "Prusament/PETG-Black",
+  "maintainer": {
+    "name": "OpenPrint3D Community",
+    "maintainer_type": "community",
+    "website": "https://github.com/OpenPrint3D/OpenPrint3D"
+  },
+  "brand": "Prusament",
+  "name": "Prusament PETG Black 1.75mm",
+  "material": "PETG",
+  "color": "black",
+  "diameter": 1.75,
+  "density": 1.27,
+  "nozzle": { "min": 230, "max": 250, "recommended": 240 },
+  "bed": { "min": 75, "max": 90, "recommended": 85 },
+  "fan": { "min": 20, "max": 50, "recommended": 30 },
+  "drying": { "temperature": 65, "duration_hours": 6 },
+  "environment": {
+    "sensitive_to_moisture": true,
+    "enclosure_recommended": false,
+    "max_ambient_temp": 35
+  },
+  "volumetric_speed": 12,
+  "links": {
+    "product_page": "https://www.prusa3d.com/category/prusament-petg/",
+    "datasheet": "https://prusament.com/media/2024/04/TDS_PETG_EN.pdf"
+  },
+  "tags": ["petg", "prusament", "prusa", "1.75mm", "black", "premium", "tight-tolerance"],
+  "notes": "Prusament PETG in Black. Premium PETG with ±0.02mm tolerance."
+}

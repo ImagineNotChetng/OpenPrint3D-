@@ -1,0 +1,60 @@
+{
+  "op3d_schema": "printer",
+  "op3d_schema_version": "0.1.0",
+  "id": "Sovol/SV08-Pro-Max",
+  "maintainer": {
+    "name": "OpenPrint3D Community",
+    "maintainer_type": "community",
+    "website": "https://github.com/OpenPrint3D/OpenPrint3D"
+  },
+  "manufacturer": "Sovol",
+  "model": "SV08 Pro Max",
+  "variant": "Max",
+  "build_volume": { "x": 450, "y": 450, "z": 500, "shape": "rectangular", "origin": "front_left" },
+  "kinematics": "corexy",
+  "axes": {
+    "x": { "max_speed": 600, "max_accel": 20000 },
+    "y": { "max_speed": 600, "max_accel": 20000 },
+    "z": { "max_speed": 20, "max_accel": 500 }
+  },
+  "extruders": [{
+    "id": "tool0",
+    "nozzle_diameter": 0.4,
+    "nozzle_material": "hardened-steel",
+    "max_temp": 400,
+    "min_temp": 180,
+    "retraction_supported": true
+  }],
+  "bed": { "heated": true, "max_temp": 130, "surface_type": "PEI-textured" },
+  "chamber": { "heated": true, "max_temp": 80, "passive": true },
+  "firmware": { "flavor": "klipper", "identifier": "Sovol SV08 Pro Max Firmware" },
+  "network": { "has_wifi": true, "has_ethernet": true, "supports_lan_api": true },
+  "links": {
+    "product_page": "https://sovol3d.com/products/sv08-pro-max-3d-printer"
+  },
+  "tags": ["large-format", "corexy", "direct-drive", "high-speed", "600mm-s", "extra-large-build", "400c-capable", "enclosed", "active-heating", "ethernet"],
+  "notes": "Sovol SV08 Pro Max. Extra-large CoreXY with massive 450x450x500mm build volume, active chamber heating to 80C, 400C hotend for high-temp materials, and ethernet connectivity.",
+  "x_cura": {
+    "definition": "sovol_sv08_pro_max",
+    "definition_changes": {
+      "machine_width": 450,
+      "machine_depth": 450,
+      "machine_height": 500,
+      "nozzle_size": 0.4,
+      "heated_bed": true,
+      "machine_heated_bed": true,
+      "bed_temperature": 60,
+      "nozzle_temperature": 200
+    }
+  },
+  "x_prusaslicer": {
+    "printer_model": "SV08 Pro Max",
+    "vendor": "Sovol",
+    "filament_diameter": 1.75,
+    "nozzle_diameter": 0.4,
+    "bed_shape": "rectangular",
+    "bed_size": "450x450",
+    "print_height": 500,
+    "printer_technology": "FFF"
+  }
+}

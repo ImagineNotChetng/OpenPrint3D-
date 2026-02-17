@@ -1,0 +1,55 @@
+{
+  "op3d_schema": "printer",
+  "op3d_schema_version": "0.1.0",
+  "id": "Phrozen/Sonic-Mighty-4K",
+  "maintainer": {
+    "name": "OpenPrint3D Community",
+    "maintainer_type": "community",
+    "website": "https://github.com/OpenPrint3D/OpenPrint3D"
+  },
+  "manufacturer": "Phrozen",
+  "model": "Sonic Mighty 4K",
+  "variant": "Stock",
+  "build_volume": { "x": 200, "y": 125, "z": 220, "shape": "rectangular", "origin": "front_left" },
+  "kinematics": "other",
+  "axes": {
+    "x": { "max_speed": 20, "max_accel": 100 },
+    "y": { "max_speed": 20, "max_accel": 100 },
+    "z": { "max_speed": 80, "max_accel": 400 }
+  },
+  "extruders": [],
+  "resolution": { "x": 0.035, "y": 0.035, "z": 0.01 },
+  "resin_tank": { "type": "fep", "lifetime_hours": 150 },
+  "light_source": { "type": "lcd-led", "wavelength": 405, "xy_resolution": 0.035 },
+  "bed": { "heated": false, "max_temp": 100, "surface_type": "metal-plate" },
+  "chamber": { "heated": false, "passive": false },
+  "firmware": { "flavor": "proprietary", "identifier": "Phrozen Sonic Mighty 4K Firmware" },
+  "network": { "has_wifi": false, "has_ethernet": false, "supports_lan_api": false },
+  "links": { "product_page": "https://phrozen3d.com/products/sonic-mighty-4k" },
+  "tags": ["sla", "msla", "4k", "high-resolution", "lcd-resin"],
+  "notes": "Phrozen Sonic Mighty 4K. MSLA resin printer with 35 micron XY resolution and 200x125x220mm build volume.",
+  "x_cura": {
+    "definition": "phrozen_sonicmighty4k",
+    "definition_changes": {}
+  },
+  "x_prusaslicer": {
+    "printer_model": "Sonic Mighty 4K",
+    "vendor": "Phrozen",
+    "printer_technology": "SLA",
+    "bed_shape": "rectangular",
+    "bed_size": "200x125",
+    "print_height": 220
+  },
+  "x_orca": {
+    "machine_name": "Sonic Mighty 4K",
+    "machine_manufacturer": "Phrozen",
+    "printer_technology": "SLA"
+  },
+  "x_bambu": {
+    "product_id": "phrozen_sonicmighty4k",
+    "series": "Sonic",
+    "support_lidar": false,
+    "support_ams": false,
+    "support_ams_lite": false
+  }
+}

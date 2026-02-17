@@ -1,0 +1,82 @@
+{
+  "op3d_schema": "printer",
+  "op3d_schema_version": "0.1.0",
+  "id": "BCN3D/SigmaD25",
+  "maintainer": {
+    "name": "OpenPrint3D Community",
+    "maintainer_type": "community",
+    "website": "https://github.com/OpenPrint3D/OpenPrint3D"
+  },
+  "manufacturer": "BCN3D",
+  "model": "Sigma D25",
+  "variant": "Stock",
+  "build_volume": { "x": 420, "y": 300, "z": 200, "shape": "rectangular", "origin": "front_left" },
+  "kinematics": "other",
+  "axes": {
+    "x": { "max_speed": 150, "max_accel": 3000 },
+    "y": { "max_speed": 150, "max_accel": 3000 },
+    "z": { "max_speed": 20, "max_accel": 500 }
+  },
+  "extruders": [{
+    "id": "tool0",
+    "nozzle_diameter": 0.4,
+    "nozzle_material": "brass",
+    "max_temp": 300,
+    "min_temp": 180,
+    "retraction_supported": true
+  }, {
+    "id": "tool1",
+    "nozzle_diameter": 0.4,
+    "nozzle_material": "brass",
+    "max_temp": 300,
+    "min_temp": 180,
+    "retraction_supported": true
+  }],
+  "bed": { "heated": true, "max_temp": 100, "surface_type": "PEI-smooth" },
+  "chamber": { "heated": false, "passive": true },
+  "firmware": { "flavor": "marlin", "identifier": "BCN3D Sigma D25 Firmware" },
+  "network": { "has_wifi": true, "has_ethernet": true, "supports_lan_api": true },
+  "links": {
+    "product_page": "https://www.bcn3d.com/3d-printer/sigma/"
+  },
+  "tags": ["premium", "idex", "dual-extruder", "large-build", "professional"],
+  "notes": "BCN3D Sigma D25. Professional FDM 3D printer with Independent Dual Extruder (IDEX) system.",
+  "x_cura": {
+    "definition": "bcn3d_sigma_d25",
+    "definition_changes": {
+      "machine_width": 420,
+      "machine_depth": 300,
+      "machine_height": 200,
+      "nozzle_size": 0.4,
+      "heated_bed": true,
+      "machine_heated_bed": true,
+      "bed_temperature": 60,
+      "nozzle_temperature": 210
+    }
+  },
+  "x_prusaslicer": {
+    "printer_model": "Sigma D25",
+    "vendor": "BCN3D",
+    "filament_diameter": 1.75,
+    "nozzle_diameter": 0.4,
+    "bed_shape": "rectangular",
+    "bed_size": "420x300",
+    "print_height": 200
+  },
+  "x_orca": {
+    "machine_name": "SigmaD25",
+    "machine_manufacturer": "BCN3D",
+    "bed_x": 420,
+    "bed_y": 300,
+    "height": 200,
+    "nozzle_diameter": 0.4,
+    "filament_diameter": 1.75
+  },
+  "x_bambu": {
+    "product_id": "bcn3d_sigma_d25",
+    "series": "Sigma",
+    "support_lidar": false,
+    "support_ams": false,
+    "support_ams_lite": false
+  }
+}

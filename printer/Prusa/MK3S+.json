@@ -1,0 +1,82 @@
+{
+  "op3d_schema": "printer",
+  "op3d_schema_version": "0.1.0",
+  "id": "Prusa/MK3S-Plus",
+  "maintainer": {
+    "name": "OpenPrint3D Community",
+    "maintainer_type": "community",
+    "website": "https://github.com/OpenPrint3D/OpenPrint3D"
+  },
+  "manufacturer": "Prusa Research",
+  "model": "MK3S+",
+  "variant": "Stock",
+  "build_volume": { "x": 250, "y": 210, "z": 210, "shape": "rectangular", "origin": "front_left" },
+  "kinematics": "bed_slinger",
+  "axes": {
+    "x": { "max_speed": 200, "max_accel": 10000 },
+    "y": { "max_speed": 200, "max_accel": 10000 },
+    "z": { "max_speed": 12, "max_accel": 500 }
+  },
+  "extruders": [{
+    "id": "tool0",
+    "nozzle_diameter": 0.4,
+    "nozzle_material": "brass",
+    "max_temp": 300,
+    "min_temp": 170,
+    "retraction_supported": true
+  }],
+  "bed": { "heated": true, "max_temp": 100, "surface_type": "PEI-smooth" },
+  "chamber": { "heated": false, "max_temp": 30, "passive": false },
+  "firmware": { "flavor": "marlin", "identifier": "Prusa MK3S+ Firmware" },
+  "network": { "has_wifi": false, "has_ethernet": false, "supports_lan_api": false },
+  "links": {
+    "product_page": "https://www.prusa3d.com/category/original-prusa-mk3s/"
+  },
+  "tags": ["i3-style", "reliable", "open-source", "multi-material"],
+  "notes": "Prusa MK3S+. Legendary reliability, Pinda probe, Filament Sensor, and MMU2S multi-material support.",
+  "x_cura": {
+    "definition": "prusa_mk3s_plus",
+    "definition_changes": {
+      "machine_width": 250,
+      "machine_depth": 210,
+      "machine_height": 210,
+      "nozzle_size": 0.4,
+      "heated_bed": true,
+      "machine_heated_bed": true,
+      "bed_temperature": 60,
+      "nozzle_temperature": 210
+    }
+  },
+  "x_prusaslicer": {
+    "printer_model": "MK3S+",
+    "vendor": "Prusa Research",
+    "filament_diameter": 1.75,
+    "nozzle_diameter": 0.4,
+    "bed_shape": "rectangular",
+    "bed_size": "250x210",
+    "print_height": 210,
+    "printer_technology": "FFF"
+  },
+  "x_orca": {
+    "machine_name": "MK3S+",
+    "machine_manufacturer": "Prusa",
+    "bed_x": 250,
+    "bed_y": 210,
+    "height": 210,
+    "nozzle_diameter": 0.4,
+    "filament_diameter": 1.75,
+    "support_ams": false,
+    "support_xc": false
+  },
+  "x_bambu": {
+    "product_id": "prusa_mk3s_plus_00",
+    "series": "MK3S+",
+    "support_lidar": false,
+    "support_ams": false,
+    "support_ams_lite": false,
+    "support_xc": false,
+    "active_chamber_heating": false,
+    "max_speed": 200,
+    "nozzle_type": "brass"
+  }
+}

@@ -1,0 +1,60 @@
+{
+  "op3d_schema": "printer",
+  "op3d_schema_version": "0.1.0",
+  "id": "Sovol/SV08-Pro",
+  "maintainer": {
+    "name": "OpenPrint3D Community",
+    "maintainer_type": "community",
+    "website": "https://github.com/OpenPrint3D/OpenPrint3D"
+  },
+  "manufacturer": "Sovol",
+  "model": "SV08 Pro",
+  "variant": "Stock",
+  "build_volume": { "x": 350, "y": 350, "z": 400, "shape": "rectangular", "origin": "front_left" },
+  "kinematics": "corexy",
+  "axes": {
+    "x": { "max_speed": 700, "max_accel": 25000 },
+    "y": { "max_speed": 700, "max_accel": 25000 },
+    "z": { "max_speed": 25, "max_accel": 700 }
+  },
+  "extruders": [{
+    "id": "tool0",
+    "nozzle_diameter": 0.4,
+    "nozzle_material": "hardened-steel",
+    "max_temp": 400,
+    "min_temp": 180,
+    "retraction_supported": true
+  }],
+  "bed": { "heated": true, "max_temp": 130, "surface_type": "PEI-textured" },
+  "chamber": { "heated": true, "max_temp": 70, "passive": true },
+  "firmware": { "flavor": "klipper", "identifier": "Sovol SV08 Pro Firmware" },
+  "network": { "has_wifi": true, "has_ethernet": true, "supports_lan_api": true },
+  "links": {
+    "product_page": "https://sovol3d.com/products/sv08-pro-3d-printer"
+  },
+  "tags": ["premium", "corexy", "direct-drive", "high-speed", "700mm-s", "large-build", "400c-capable", "enclosed", "active-heating", "ethernet"],
+  "notes": "Sovol SV08 Pro. Large-format CoreXY with 350x350x400mm build volume, 700mm/s speed, active chamber heating to 70C, 400C hotend for PEEK/PEI, and ethernet connectivity.",
+  "x_cura": {
+    "definition": "sovol_sv08_pro",
+    "definition_changes": {
+      "machine_width": 350,
+      "machine_depth": 350,
+      "machine_height": 400,
+      "nozzle_size": 0.4,
+      "heated_bed": true,
+      "machine_heated_bed": true,
+      "bed_temperature": 60,
+      "nozzle_temperature": 200
+    }
+  },
+  "x_prusaslicer": {
+    "printer_model": "SV08 Pro",
+    "vendor": "Sovol",
+    "filament_diameter": 1.75,
+    "nozzle_diameter": 0.4,
+    "bed_shape": "rectangular",
+    "bed_size": "350x350",
+    "print_height": 400,
+    "printer_technology": "FFF"
+  }
+}

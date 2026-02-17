@@ -1,0 +1,69 @@
+{
+  "op3d_schema": "filament",
+  "op3d_schema_version": "0.1.0",
+  "id": "MatterHackers/Carbon-Fiber-Nylon",
+  "maintainer": {
+    "name": "OpenPrint3D Community",
+    "maintainer_type": "community",
+    "website": "https://github.com/OpenPrint3D/OpenPrint3D"
+  },
+  "brand": "MatterHackers",
+  "name": "MatterHackers Carbon Fiber Nylon 1.75mm",
+  "material": "PA",
+  "variant": "Carbon Fiber",
+  "diameter": 1.75,
+  "density": 1.20,
+  "nozzle": { "min": 240, "max": 290, "recommended": 265 },
+  "bed": { "min": 70, "max": 100, "recommended": 85 },
+  "fan": { "min": 0, "max": 30, "recommended": 10 },
+  "drying": { "temperature": 80, "duration_hours": 6 },
+  "environment": {
+    "sensitive_to_moisture": true,
+    "enclosure_recommended": true,
+    "max_ambient_temp": 30
+  },
+  "volumetric_speed": 8,
+  "printing_speed": { "min": 30, "max": 80, "recommended": 50 },
+  "links": {
+    "product_page": "https://www.matterhackers.com/"
+  },
+  "tags": ["nylon", "carbon-fiber", "matterhackers", "1.75mm", "engineering", "high-strength", "high-temp"],
+  "notes": "MatterHackers Carbon Fiber Nylon. High-performance nylon reinforced with carbon fiber. Excellent strength, stiffness, and heat resistance. Requires enclosure and dry storage.",
+  "x_cura": {
+    "material": "nylon",
+    "print_temperature": 265,
+    "print_temperature_layer_0": 265,
+    "bed_temperature": 85,
+    "bed_temperature_layer_0": 85,
+    "fan_speed": 10,
+    "fan_speed_layer_0": 0,
+    "cooling": "limited"
+  },
+  "x_prusaslicer": {
+    "filament_type": "PA-CF",
+    "temperature": 265,
+    "bed_temperature": 85,
+    "fan_speed": 10,
+    "first_layer_bed_temperature": 85,
+    "first_layer_temperature": 265
+  },
+  "x_orca": {
+    "filament_type": "PA-CF",
+    "nozzle_temperature": 265,
+    "nozzle_temperature_initial_layer": 265,
+    "bed_temperature": 85,
+    "bed_temperature_initial_layer": 85,
+    "fan_speed": 10,
+    "fan_speed_initial_layer": 0
+  },
+  "x_bambu": {
+    "filament_type_id": "GPA1CF00",
+    "drying_temperature": 80,
+    "drying_time": 6,
+    "nozzle_temperature": [240, 290],
+    "nozzle_temperature_initial_layer": [240, 290],
+    "bed_temperature": [70, 100],
+    "bed_temperature_initial_layer": [70, 100],
+    "fan_speed": [0, 30]
+  }
+}

@@ -1,0 +1,77 @@
+{
+  "op3d_schema": "printer",
+  "op3d_schema_version": "0.1.0",
+  "id": "Creality/K1-SE-Plus",
+  "maintainer": {
+    "name": "OpenPrint3D Community",
+    "maintainer_type": "community",
+    "website": "https://github.com/OpenPrint3D/OpenPrint3D"
+  },
+  "manufacturer": "Creality",
+  "model": "K1 SE Plus",
+  "variant": "Stock",
+  "build_volume": { "x": 250, "y": 250, "z": 260, "shape": "rectangular", "origin": "front_left" },
+  "kinematics": "corexy",
+  "axes": {
+    "x": { "max_speed": 600, "max_accel": 20000 },
+    "y": { "max_speed": 600, "max_accel": 20000 },
+    "z": { "max_speed": 20, "max_accel": 1000 }
+  },
+  "extruders": [{
+    "id": "tool0",
+    "nozzle_diameter": 0.4,
+    "nozzle_material": "hardened-steel",
+    "max_temp": 320,
+    "min_temp": 170,
+    "retraction_supported": true
+  }],
+  "bed": { "heated": true, "max_temp": 110, "surface_type": "PEI-textured" },
+  "chamber": { "heated": false, "max_temp": 45, "passive": true },
+  "firmware": { "flavor": "klipper", "identifier": "Creality OS" },
+  "network": { "has_wifi": true, "has_ethernet": false, "supports_lan_api": true },
+  "links": { "product_page": "https://www.creality.com/products/k1-se-plus" },
+  "tags": ["high-speed", "corexy", "direct-drive", "600mm-s", "enclosed", "input-shaping"],
+  "notes": "Creality K1 SE Plus. Enhanced high-speed CoreXY with 250x250x260mm build volume. Features Klipper with input shaping, direct drive, enclosed chamber, and 320C max nozzle temp.",
+  "x_cura": {
+    "definition": "creality_k1seplus",
+    "definition_changes": {
+      "machine_width": 250,
+      "machine_depth": 250,
+      "machine_height": 260,
+      "nozzle_size": 0.4,
+      "heated_bed": true,
+      "machine_heated_bed": true,
+      "bed_temperature": 60,
+      "nozzle_temperature": 200
+    }
+  },
+  "x_prusaslicer": {
+    "printer_model": "K1 SE Plus",
+    "vendor": "Creality",
+    "filament_diameter": 1.75,
+    "nozzle_diameter": 0.4,
+    "bed_shape": "rectangular",
+    "bed_size": "250x250",
+    "print_height": 260,
+    "printer_technology": "FFF"
+  },
+  "x_orca": {
+    "machine_name": "K1 SE Plus",
+    "machine_manufacturer": "Creality",
+    "bed_x": 250,
+    "bed_y": 250,
+    "height": 260,
+    "nozzle_diameter": 0.4,
+    "filament_diameter": 1.75,
+    "kinematics": "corexy"
+  },
+  "x_bambu": {
+    "product_id": "creality_k1seplus",
+    "series": "K1",
+    "support_lidar": false,
+    "support_ams": false,
+    "support_ams_lite": false,
+    "max_speed": 600,
+    "nozzle_type": "hardened-steel"
+  }
+}

@@ -1,0 +1,61 @@
+{
+  "op3d_schema": "filament",
+  "op3d_schema_version": "0.1.0",
+  "id": "Generic/CA",
+
+  "maintainer": {
+    "name": "OpenPrint3D",
+    "maintainer_type": "community",
+    "website": "https://github.com/OpenPrint3D/OpenPrint3D"
+  },
+
+  "brand": "Generic",
+  "name": "Generic CA 1.75mm",
+  "material": "CA",
+
+  "color": "natural",
+  "diameter": 1.75,
+  "density": 1.30,
+
+  "nozzle": {
+    "min": 210,
+    "max": 250,
+    "recommended": 230
+  },
+
+  "bed": {
+    "min": 50,
+    "max": 80,
+    "recommended": 65
+  },
+
+  "fan": {
+    "min": 20,
+    "max": 80,
+    "recommended": 50
+  },
+
+  "drying": {
+    "temperature": 60,
+    "duration_hours": 4
+  },
+
+  "environment": {
+    "sensitive_to_moisture": true,
+    "enclosure_recommended": false,
+    "max_ambient_temp": 30
+  },
+
+  "volumetric_speed": 7,
+
+  "external_ids": {},
+  "links": {},
+  "tags": ["ca", "cellulose-acetate", "biodegradable", "eco-friendly", "1.75mm"],
+
+  "notes": "CA (Cellulose Acetate) is a semi-synthetic biodegradable polymer derived from cellulose. Good optical clarity and pleasant surface finish. More flexible than PLA. Hygroscopic - requires drying before use. Used for sustainable applications and aesthetic parts.",
+
+  "x_cura": {},
+  "x_prusaslicer": {},
+  "x_orca": {},
+  "x_bambu": {}
+}

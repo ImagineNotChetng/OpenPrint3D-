@@ -1,0 +1,37 @@
+{
+  "op3d_schema": "printer",
+  "op3d_schema_version": "0.1.0",
+  "id": "Creality/Ender-3-V3-KE-0.4mm",
+  "maintainer": {
+    "name": "OpenPrint3D Community",
+    "maintainer_type": "community",
+    "website": "https://github.com/OpenPrint3D/OpenPrint3D"
+  },
+  "manufacturer": "Creality",
+  "model": "Ender-3 V3 KE",
+  "variant": "0.4mm Nozzle",
+  "build_volume": { "x": 220, "y": 220, "z": 240, "shape": "rectangular", "origin": "front_left" },
+  "kinematics": "cartesian",
+  "axes": {
+    "x": { "max_speed": 200, "max_accel": 8000 },
+    "y": { "max_speed": 200, "max_accel": 8000 },
+    "z": { "max_speed": 20, "max_accel": 1000 }
+  },
+  "extruders": [{
+    "id": "tool0",
+    "nozzle_diameter": 0.4,
+    "nozzle_material": "brass",
+    "max_temp": 260,
+    "min_temp": 170,
+    "retraction_supported": true
+  }],
+  "bed": { "heated": true, "max_temp": 100, "surface_type": "pei" },
+  "chamber": { "heated": false, "max_temp": 100, "passive": true },
+  "firmware": { "flavor": "marlin", "identifier": "Creality Ender-3 V3 KE" },
+  "network": { "has_wifi": true, "has_ethernet": false, "supports_lan_api": false },
+  "links": {
+    "product_page": "https://www.creality.com/pages/ender-3-v3-ke"
+  },
+  "tags": ["fdm", "cartesian", "direct-drive", "auto-leveling", "0.4mm", "high-speed"],
+  "notes": "Ender-3 V3 KE with 0.4mm brass nozzle for standard printing."
+}

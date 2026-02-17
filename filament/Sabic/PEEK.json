@@ -1,0 +1,32 @@
+{
+  "op3d_schema": "filament",
+  "op3d_schema_version": "0.1.0",
+  "id": "Sabic/PEEK",
+  "maintainer": {
+    "name": "OpenPrint3D Community",
+    "maintainer_type": "community",
+    "website": "https://github.com/OpenPrint3D/OpenPrint3D"
+  },
+  "brand": "Sabic",
+  "name": "Sabic PEEK 1.75mm",
+  "material": "PEEK",
+  "diameter": 1.75,
+  "density": 1.30,
+  "nozzle": { "min": 365, "max": 415, "recommended": 395 },
+  "bed": { "min": 120, "max": 150, "recommended": 135 },
+  "fan": { "min": 0, "max": 25, "recommended": 10 },
+  "drying": { "temperature": 120, "duration_hours": 4 },
+  "environment": {
+    "sensitive_to_moisture": true,
+    "enclosure_recommended": true,
+    "heated_chamber_recommended": true,
+    "max_ambient_temp": 50
+  },
+  "volumetric_speed": 8,
+  "printing_speed": { "min": 20, "max": 60, "recommended": 40 },
+  "links": {
+    "datasheet": "https://www.sabic.com/en/products-specialties/peek"
+  },
+  "tags": ["peek", "high-performance", "engineering", "1.75mm", "sabic"],
+  "notes": "Sabic PEEK is a high-temperature resistant engineering thermoplastic with excellent chemical resistance and mechanical properties for demanding applications."
+}

@@ -1,0 +1,78 @@
+{
+  "op3d_schema": "printer",
+  "op3d_schema_version": "0.1.0",
+  "id": "Creality/Ender-7",
+  "maintainer": {
+    "name": "OpenPrint3D Community",
+    "maintainer_type": "community",
+    "website": "https://github.com/OpenPrint3D/OpenPrint3D"
+  },
+  "manufacturer": "Creality",
+  "model": "Ender-7",
+  "variant": "Stock",
+  "build_volume": { "x": 250, "y": 250, "z": 300, "shape": "rectangular", "origin": "front_left" },
+  "kinematics": "corexy",
+  "axes": {
+    "x": { "max_speed": 250, "max_accel": 10000 },
+    "y": { "max_speed": 250, "max_accel": 10000 },
+    "z": { "max_speed": 10, "max_accel": 500 }
+  },
+  "extruders": [{
+    "id": "tool0",
+    "nozzle_diameter": 0.4,
+    "nozzle_material": "brass",
+    "max_temp": 260,
+    "min_temp": 170,
+    "retraction_supported": true
+  }],
+  "bed": { "heated": true, "max_temp": 100, "surface_type": "coated-glass" },
+  "chamber": { "heated": false, "passive": true },
+  "firmware": { "flavor": "marlin", "identifier": "Creality Marlin" },
+  "network": { "has_wifi": false, "has_ethernet": false, "supports_lan_api": false },
+  "links": {
+    "product_page": "https://www.creality.com/products/ender-7-3d-printer"
+  },
+  "tags": ["high-speed", "corexy", "bowden", "250mm-s"],
+  "notes": "Creality Ender-7. High-speed CoreXY printer with 250x250x300mm build volume. Up to 250mm/s print speed with Bowden extruder.",
+  "x_cura": {
+    "definition": "creality_ender7",
+    "definition_changes": {
+      "machine_width": 250,
+      "machine_depth": 250,
+      "machine_height": 300,
+      "nozzle_size": 0.4,
+      "heated_bed": true,
+      "machine_heated_bed": true,
+      "bed_temperature": 60,
+      "nozzle_temperature": 200
+    }
+  },
+  "x_prusaslicer": {
+    "printer_model": "Ender-7",
+    "vendor": "Creality",
+    "filament_diameter": 1.75,
+    "nozzle_diameter": 0.4,
+    "bed_shape": "rectangular",
+    "bed_size": "250x250",
+    "print_height": 300,
+    "printer_technology": "FFF"
+  },
+  "x_orca": {
+    "machine_name": "Ender-7",
+    "machine_manufacturer": "Creality",
+    "bed_x": 250,
+    "bed_y": 250,
+    "height": 300,
+    "nozzle_diameter": 0.4,
+    "filament_diameter": 1.75,
+    "kinematics": "corexy"
+  },
+  "x_bambu": {
+    "product_id": "creality_ender7",
+    "series": "Ender",
+    "support_lidar": false,
+    "support_ams": false,
+    "support_ams_lite": false,
+    "max_speed": 250
+  }
+}

@@ -1,0 +1,69 @@
+{
+  "op3d_schema": "filament",
+  "op3d_schema_version": "0.1.0",
+  "id": "Polymaker/PA12-CF",
+  "maintainer": {
+    "name": "OpenPrint3D Community",
+    "maintainer_type": "community",
+    "website": "https://github.com/OpenPrint3D/OpenPrint3D"
+  },
+  "brand": "Polymaker",
+  "name": "Polymaker PA12-CF 1.75mm",
+  "material": "PA12",
+  "variant": "Carbon Fiber",
+  "diameter": 1.75,
+  "density": 1.18,
+  "nozzle": { "min": 250, "max": 290, "recommended": 270 },
+  "bed": { "min": 70, "max": 100, "recommended": 85 },
+  "fan": { "min": 0, "max": 30, "recommended": 10 },
+  "drying": { "temperature": 80, "duration_hours": 8 },
+  "environment": {
+    "sensitive_to_moisture": true,
+    "enclosure_recommended": true,
+    "max_ambient_temp": 28
+  },
+  "volumetric_speed": 8,
+  "printing_speed": { "min": 30, "max": 70, "recommended": 45 },
+  "links": {
+    "product_page": "https://www.polymaker.com/"
+  },
+  "tags": ["pa12", "polymaker", "1.75mm", "carbon-fiber", "carbon", "engineering", "nylon", "high-strength", "low-moisture-absorption"],
+  "notes": "Polymaker PA12-CF. Carbon fiber reinforced PA12 (Nylon 12). Excellent moisture resistance, high strength, and good dimensional stability. Lower warping than PA6.",
+  "x_cura": {
+    "material": "pa12",
+    "print_temperature": 270,
+    "print_temperature_layer_0": 270,
+    "bed_temperature": 85,
+    "bed_temperature_layer_0": 85,
+    "fan_speed": 10,
+    "fan_speed_layer_0": 0,
+    "cooling": "limited"
+  },
+  "x_prusaslicer": {
+    "filament_type": "PA12-CF",
+    "temperature": 270,
+    "bed_temperature": 85,
+    "fan_speed": 10,
+    "first_layer_bed_temperature": 85,
+    "first_layer_temperature": 270
+  },
+  "x_orca": {
+    "filament_type": "PA12-CF",
+    "nozzle_temperature": 270,
+    "nozzle_temperature_initial_layer": 270,
+    "bed_temperature": 85,
+    "bed_temperature_initial_layer": 85,
+    "fan_speed": 10,
+    "fan_speed_initial_layer": 0
+  },
+  "x_bambu": {
+    "filament_type_id": "GPA12CF0",
+    "drying_temperature": 80,
+    "drying_time": 8,
+    "nozzle_temperature": [250, 290],
+    "nozzle_temperature_initial_layer": [250, 290],
+    "bed_temperature": [70, 100],
+    "bed_temperature_initial_layer": [70, 100],
+    "fan_speed": [0, 30]
+  }
+}

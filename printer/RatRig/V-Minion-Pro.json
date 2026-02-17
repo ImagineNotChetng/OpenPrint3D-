@@ -1,0 +1,37 @@
+{
+  "op3d_schema": "printer",
+  "op3d_schema_version": "0.1.0",
+  "id": "RatRig/V-Minion-Pro",
+  "maintainer": {
+    "name": "OpenPrint3D Community",
+    "maintainer_type": "community",
+    "website": "https://github.com/OpenPrint3D/OpenPrint3D"
+  },
+  "manufacturer": "RatRig",
+  "model": "V-Minion Pro",
+  "variant": "Stock",
+  "build_volume": { "x": 200, "y": 200, "z": 200, "shape": "rectangular", "origin": "front_left" },
+  "kinematics": "cartesian",
+  "axes": {
+    "x": { "max_speed": 300, "max_accel": 8000 },
+    "y": { "max_speed": 300, "max_accel": 8000 },
+    "z": { "max_speed": 15, "max_accel": 500 }
+  },
+  "extruders": [{
+    "id": "tool0",
+    "nozzle_diameter": 0.4,
+    "nozzle_material": "brass",
+    "max_temp": 300,
+    "min_temp": 170,
+    "retraction_supported": true
+  }],
+  "bed": { "heated": true, "max_temp": 120, "surface_type": "PEI-spring-steel" },
+  "chamber": { "heated": false, "passive": true },
+  "firmware": { "flavor": "klipper", "identifier": "Klipper (RatRig)" },
+  "network": { "has_wifi": true, "has_ethernet": true, "supports_lan_api": true },
+  "links": {
+    "product_page": "https://ratrig.com/v-minion.html"
+  },
+  "tags": ["cartesian", "diy", "compact", "linear-rails", "eva", "budget-friendly"],
+  "notes": "RatRig V-Minion Pro. Enhanced V-Minion with 200x200x200mm build volume. Features 3060 aluminum frame, linear rails, EVA toolhead, and Klipper via RatOS."
+}

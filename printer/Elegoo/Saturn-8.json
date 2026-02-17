@@ -1,0 +1,77 @@
+{
+  "op3d_schema": "printer",
+  "op3d_schema_version": "0.1.0",
+  "id": "Elegoo/Saturn-8",
+  "maintainer": {
+    "name": "OpenPrint3D Community",
+    "maintainer_type": "community",
+    "website": "https://github.com/OpenPrint3D/OpenPrint3D"
+  },
+  "manufacturer": "Elegoo",
+  "model": "Saturn 8",
+  "variant": "Stock",
+  "build_volume": { "x": 290, "y": 162, "z": 280, "shape": "rectangular", "origin": "front_left" },
+  "kinematics": "other",
+  "axes": {
+    "x": { "max_speed": 150, "max_accel": 1000 },
+    "y": { "max_speed": 150, "max_accel": 1000 },
+    "z": { "max_speed": 100, "max_accel": 600 }
+  },
+  "extruders": [{
+    "id": "tool0",
+    "nozzle_diameter": 0.1,
+    "nozzle_material": "other",
+    "max_temp": 150,
+    "min_temp": 100,
+    "retraction_supported": false
+  }],
+  "bed": { "heated": false, "max_temp": 100, "surface_type": "build-plate" },
+  "chamber": { "heated": true, "max_temp": 35, "passive": false },
+  "firmware": { "flavor": "proprietary", "identifier": "Elegoo Saturn 8 Firmware" },
+  "network": { "has_wifi": true, "has_ethernet": false, "supports_lan_api": false },
+  "links": {
+    "product_page": "https://www.elegoo.com/products/saturn-8"
+  },
+  "tags": ["msla", "resin", "18k", "high-resolution", "tilt-release", "auto-leveling", "large-format"],
+  "notes": "Elegoo Saturn 8. 18K resolution MSLA resin printer with 290x162x280mm build volume. Features tilt release technology, smart tank heating up to 35°C, auto leveling, and WiFi connectivity.",
+  "x_cura": {
+    "definition": "elegoo_saturn8",
+    "definition_changes": {
+      "machine_width": 290,
+      "machine_depth": 162,
+      "machine_height": 280,
+      "nozzle_size": 0.035,
+      "heated_bed": false,
+      "machine_heated_bed": false,
+      "printer_technology": "SLA"
+    }
+  },
+  "x_prusaslicer": {
+    "printer_model": "Saturn 8",
+    "vendor": "Elegoo",
+    "bed_shape": "rectangular",
+    "bed_size": "290x162",
+    "print_height": 280,
+    "printer_technology": "SLA",
+    "display_width": 290,
+    "display_height": 162,
+    "display_pixels_x": 15360,
+    "display_pixels_y": 8640
+  },
+  "x_orca": {
+    "machine_name": "Saturn 8",
+    "machine_manufacturer": "Elegoo",
+    "bed_x": 290,
+    "bed_y": 162,
+    "height": 280,
+    "printer_type": "MSLA",
+    "resolution_x": 15360,
+    "resolution_y": 8640
+  },
+  "x_bambu": {
+    "product_id": "elegoo_saturn8",
+    "series": "Saturn",
+    "printer_type": "MSLA",
+    "resolution": "18K"
+  }
+}

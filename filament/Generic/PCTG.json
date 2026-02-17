@@ -1,0 +1,61 @@
+{
+  "op3d_schema": "filament",
+  "op3d_schema_version": "0.1.0",
+  "id": "Generic/PCTG",
+
+  "maintainer": {
+    "name": "OpenPrint3D",
+    "maintainer_type": "community",
+    "website": "https://github.com/OpenPrint3D/OpenPrint3D"
+  },
+
+  "brand": "Generic",
+  "name": "Generic PCTG 1.75mm",
+  "material": "PCTG",
+
+  "color": "natural",
+  "diameter": 1.75,
+  "density": 1.23,
+
+  "nozzle": {
+    "min": 230,
+    "max": 260,
+    "recommended": 245
+  },
+
+  "bed": {
+    "min": 60,
+    "max": 90,
+    "recommended": 75
+  },
+
+  "fan": {
+    "min": 0,
+    "max": 60,
+    "recommended": 30
+  },
+
+  "drying": {
+    "temperature": 70,
+    "duration_hours": 4
+  },
+
+  "environment": {
+    "sensitive_to_moisture": true,
+    "enclosure_recommended": false,
+    "max_ambient_temp": 35
+  },
+
+  "volumetric_speed": 8,
+
+  "external_ids": {},
+  "links": {},
+  "tags": ["pctg", "chemical-resistant", "impact-resistant", "1.75mm"],
+
+  "notes": "PCTG (Poly Cyclohexylenedimethylene Terephthalate Glycol) is a glycol-modified co-polyester similar to PETG but with higher impact strength and chemical resistance. Better clarity than PETG and easier to print than PET. Good for mechanical parts and containers.",
+
+  "x_cura": {},
+  "x_prusaslicer": {},
+  "x_orca": {},
+  "x_bambu": {}
+}

@@ -1,0 +1,69 @@
+{
+  "op3d_schema": "filament",
+  "op3d_schema_version": "0.1.0",
+  "id": "Fiberlogy/Easy-PLA",
+  "maintainer": {
+    "name": "OpenPrint3D Community",
+    "maintainer_type": "community",
+    "website": "https://github.com/OpenPrint3D/OpenPrint3D"
+  },
+  "brand": "Fiberlogy",
+  "name": "Fiberlogy Easy PLA 1.75mm",
+  "material": "PLA",
+  "variant": "Easy",
+  "diameter": 1.75,
+  "density": 1.24,
+  "nozzle": { "min": 190, "max": 220, "recommended": 200 },
+  "bed": { "min": 40, "max": 55, "recommended": 50 },
+  "fan": { "min": 50, "max": 100, "recommended": 100 },
+  "drying": { "temperature": 45, "duration_hours": 4 },
+  "environment": {
+    "sensitive_to_moisture": true,
+    "enclosure_recommended": false,
+    "max_ambient_temp": 28
+  },
+  "volumetric_speed": 12,
+  "printing_speed": { "min": 40, "max": 100, "recommended": 60 },
+  "links": {
+    "product_page": "https://fiberlogy.com/"
+  },
+  "tags": ["pla", "fiberlogy", "1.75mm", "easy", "beginner-friendly", "polish"],
+  "notes": "Fiberlogy Easy PLA. Polish manufacturer with easy-to-print formula. Excellent layer adhesion and minimal warping. Great for beginners and detailed prints.",
+  "x_cura": {
+    "material": "pla",
+    "print_temperature": 200,
+    "print_temperature_layer_0": 200,
+    "bed_temperature": 50,
+    "bed_temperature_layer_0": 50,
+    "fan_speed": 100,
+    "fan_speed_layer_0": 100,
+    "cooling": "maximum"
+  },
+  "x_prusaslicer": {
+    "filament_type": "PLA",
+    "temperature": 200,
+    "bed_temperature": 50,
+    "fan_speed": 100,
+    "first_layer_bed_temperature": 50,
+    "first_layer_temperature": 200
+  },
+  "x_orca": {
+    "filament_type": "PLA",
+    "nozzle_temperature": 200,
+    "nozzle_temperature_initial_layer": 200,
+    "bed_temperature": 50,
+    "bed_temperature_initial_layer": 50,
+    "fan_speed": 100,
+    "fan_speed_initial_layer": 100
+  },
+  "x_bambu": {
+    "filament_type_id": "GPLA",
+    "drying_temperature": 45,
+    "drying_time": 4,
+    "nozzle_temperature": [190, 220],
+    "nozzle_temperature_initial_layer": [190, 220],
+    "bed_temperature": [40, 55],
+    "bed_temperature_initial_layer": [40, 55],
+    "fan_speed": [50, 100]
+  }
+}

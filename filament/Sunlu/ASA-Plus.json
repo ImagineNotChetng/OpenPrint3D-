@@ -1,0 +1,69 @@
+{
+  "op3d_schema": "filament",
+  "op3d_schema_version": "0.1.0",
+  "id": "Sunlu/ASA-Plus",
+  "maintainer": {
+    "name": "OpenPrint3D Community",
+    "maintainer_type": "community",
+    "website": "https://github.com/OpenPrint3D/OpenPrint3D"
+  },
+  "brand": "Sunlu",
+  "name": "Sunlu ASA+ 1.75mm",
+  "material": "ASA",
+  "variant": "Plus",
+  "diameter": 1.75,
+  "density": 1.07,
+  "nozzle": { "min": 230, "max": 265, "recommended": 250 },
+  "bed": { "min": 80, "max": 100, "recommended": 90 },
+  "fan": { "min": 0, "max": 40, "recommended": 20 },
+  "drying": { "temperature": 60, "duration_hours": 4 },
+  "environment": {
+    "sensitive_to_moisture": true,
+    "enclosure_recommended": true,
+    "max_ambient_temp": 30
+  },
+  "volumetric_speed": 10,
+  "printing_speed": { "min": 40, "max": 80, "recommended": 60 },
+  "links": {
+    "product_page": "https://sunlu3d.com/collections/filament"
+  },
+  "tags": ["asa", "asa-plus", "sunlu", "1.75mm", "outdoor", "uv-resistant", "weather-resistant", "improved-formula"],
+  "notes": "Sunlu ASA+. UV-resistant alternative to ABS with improved weather resistance. Excellent for outdoor applications with minimal yellowing.",
+  "x_cura": {
+    "material": "asa",
+    "print_temperature": 250,
+    "print_temperature_layer_0": 250,
+    "bed_temperature": 90,
+    "bed_temperature_layer_0": 90,
+    "fan_speed": 20,
+    "fan_speed_layer_0": 0,
+    "cooling": "moderate"
+  },
+  "x_prusaslicer": {
+    "filament_type": "ASA",
+    "temperature": 250,
+    "bed_temperature": 90,
+    "fan_speed": 20,
+    "first_layer_bed_temperature": 90,
+    "first_layer_temperature": 250
+  },
+  "x_orca": {
+    "filament_type": "ASA",
+    "nozzle_temperature": 250,
+    "nozzle_temperature_initial_layer": 250,
+    "bed_temperature": 90,
+    "bed_temperature_initial_layer": 90,
+    "fan_speed": 20,
+    "fan_speed_initial_layer": 0
+  },
+  "x_bambu": {
+    "filament_type_id": "GASA00",
+    "drying_temperature": 70,
+    "drying_time": 4,
+    "nozzle_temperature": [230, 265],
+    "nozzle_temperature_initial_layer": [230, 265],
+    "bed_temperature": [80, 100],
+    "bed_temperature_initial_layer": [80, 100],
+    "fan_speed": [0, 40]
+  }
+}

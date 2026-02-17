@@ -1,0 +1,77 @@
+{
+  "op3d_schema": "printer",
+  "op3d_schema_version": "0.1.0",
+  "id": "Anycubic/K5",
+  "maintainer": {
+    "name": "OpenPrint3D Community",
+    "maintainer_type": "community",
+    "website": "https://github.com/OpenPrint3D/OpenPrint3D"
+  },
+  "manufacturer": "Anycubic",
+  "model": "K5",
+  "variant": "Stock",
+  "build_volume": { "x": 350, "y": 350, "z": 400, "shape": "rectangular", "origin": "front_left" },
+  "kinematics": "corexy",
+  "axes": {
+    "x": { "max_speed": 600, "max_accel": 20000 },
+    "y": { "max_speed": 600, "max_accel": 20000 },
+    "z": { "max_speed": 20, "max_accel": 500 }
+  },
+  "extruders": [{
+    "id": "tool0",
+    "nozzle_diameter": 0.4,
+    "nozzle_material": "hardened-steel",
+    "max_temp": 350,
+    "min_temp": 170,
+    "retraction_supported": true
+  }],
+  "bed": { "heated": true, "max_temp": 120, "surface_type": "PEI-textured" },
+  "chamber": { "heated": false, "max_temp": 50, "passive": true },
+  "firmware": { "flavor": "klipper", "identifier": "Anycubic K5 Firmware" },
+  "network": { "has_wifi": true, "has_ethernet": false, "supports_lan_api": true },
+  "links": {
+    "product_page": "https://www.anycubic.com/products/k5"
+  },
+  "tags": ["large-format", "high-speed", "corexy", "direct-drive", "auto-leveling", "klipper"],
+  "notes": "Anycubic K5. High-speed CoreXY printer with 350x350x400mm build volume. Features Klipper firmware, input shaping, LeviQ 3.0 auto-leveling, dual-gear direct drive extruder, and 350°C max nozzle temp.",
+  "x_cura": {
+    "definition": "anycubic_k5",
+    "definition_changes": {
+      "machine_width": 350,
+      "machine_depth": 350,
+      "machine_height": 400,
+      "nozzle_size": 0.4,
+      "heated_bed": true,
+      "machine_heated_bed": true,
+      "bed_temperature": 60,
+      "nozzle_temperature": 200
+    }
+  },
+  "x_prusaslicer": {
+    "printer_model": "K5",
+    "vendor": "Anycubic",
+    "filament_diameter": 1.75,
+    "nozzle_diameter": 0.4,
+    "bed_shape": "rectangular",
+    "bed_size": "350x350",
+    "print_height": 400
+  },
+  "x_orca": {
+    "machine_name": "K5",
+    "machine_manufacturer": "Anycubic",
+    "bed_x": 350,
+    "bed_y": 350,
+    "height": 400,
+    "nozzle_diameter": 0.4,
+    "filament_diameter": 1.75
+  },
+  "x_bambu": {
+    "product_id": "anycubic_k5",
+    "series": "K",
+    "support_lidar": false,
+    "support_ams": false,
+    "support_ams_lite": false,
+    "max_speed": 600,
+    "nozzle_type": "hardened-steel"
+  }
+}

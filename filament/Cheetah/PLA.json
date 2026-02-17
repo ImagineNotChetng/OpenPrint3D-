@@ -1,0 +1,30 @@
+{
+  "op3d_schema": "filament",
+  "op3d_schema_version": "0.1.0",
+  "id": "Cheetah/PLA",
+  "maintainer": {
+    "name": "OpenPrint3D Community",
+    "maintainer_type": "community",
+    "website": "https://github.com/OpenPrint3D/OpenPrint3D"
+  },
+  "brand": "Cheetah",
+  "name": "PLA 1.75mm",
+  "material": "PLA",
+  "diameter": 1.75,
+  "density": 1.24,
+  "nozzle": { "min": 190, "max": 220, "recommended": 205 },
+  "bed": { "min": 40, "max": 60, "recommended": 50 },
+  "fan": { "min": 80, "max": 100, "recommended": 100 },
+  "drying": { "temperature": 50, "duration_hours": 4 },
+  "environment": {
+    "sensitive_to_moisture": true,
+    "enclosure_recommended": false,
+    "max_ambient_temp": 30
+  },
+  "volumetric_speed": 12,
+  "links": {
+    "product_page": "https://www.cheetahfilaments.com/"
+  },
+  "tags": ["cheetah", "pla", "1.75mm"],
+  "notes": "Cheetah PLA. Fast-printing PLA with good layer adhesion and vibrant colors."
+}

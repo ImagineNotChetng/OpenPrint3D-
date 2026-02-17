@@ -1,0 +1,57 @@
+{
+  "op3d_schema": "printer",
+  "op3d_schema_version": "0.1.0",
+  "id": "Elegoo/Jupiter-Pro",
+  "maintainer": {
+    "name": "OpenPrint3D Community",
+    "maintainer_type": "community",
+    "website": "https://github.com/OpenPrint3D/OpenPrint3D"
+  },
+  "manufacturer": "Elegoo",
+  "model": "Jupiter Pro",
+  "variant": "8K",
+  "build_volume": { "x": 277, "y": 156, "z": 350, "shape": "rectangular", "origin": "front_left" },
+  "kinematics": "cartesian",
+  "axes": {
+    "x": { "max_speed": 35, "max_accel": 1200 },
+    "y": { "max_speed": 35, "max_accel": 1200 },
+    "z": { "max_speed": 8, "max_accel": 300 }
+  },
+  "extruders": [{
+    "id": "tool0",
+    "nozzle_diameter": 0.4,
+    "nozzle_material": "resin",
+    "max_temp": 100,
+    "min_temp": 170,
+    "retraction_supported": false
+  }],
+  "bed": { "heated": false, "max_temp": 100, "surface_type": "plate" },
+  "chamber": { "heated": false, "passive": false },
+  "firmware": { "flavor": "proprietary", "identifier": "Elegoo Jupiter Pro Firmware" },
+  "network": { "has_wifi": true, "has_ethernet": true, "supports_lan_api": true },
+  "links": {
+    "product_page": "https://www.elegoo.com/products/elegoo-jupiter-pro-8k-msla-3d-printer"
+  },
+  "tags": ["resin", "msla", "8k", "large-format", "auto-refill", "wifi", "ethernet"],
+  "notes": "Elegoo Jupiter Pro. Large-format 8K MSLA resin printer with 277x156x350mm build volume. Features 12.8-inch 8K monochrome LCD, 33 micron XY resolution, automatic resin feeding, WiFi connectivity, and built-in air purification.",
+  "x_cura": {
+    "definition": "elegoo_jupiterpro",
+    "definition_changes": {
+      "machine_width": 277,
+      "machine_depth": 156,
+      "machine_height": 350,
+      "nozzle_size": 0.4,
+      "machine_type": "mSLA"
+    }
+  },
+  "x_prusaslicer": {
+    "printer_model": "Jupiter Pro",
+    "vendor": "Elegoo",
+    "filament_diameter": 0,
+    "nozzle_diameter": 0.4,
+    "bed_shape": "rectangular",
+    "bed_size": "277x156",
+    "print_height": 350,
+    "printer_technology": "MSLA"
+  }
+}

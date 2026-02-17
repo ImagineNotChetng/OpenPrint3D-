@@ -1,0 +1,66 @@
+{
+  "op3d_schema": "printer",
+  "op3d_schema_version": "0.1.0",
+  "id": "Phrozen/Sonic-XL-4K",
+  "maintainer": {
+    "name": "OpenPrint3D Community",
+    "maintainer_type": "community",
+    "website": "https://github.com/OpenPrint3D/OpenPrint3D"
+  },
+  "manufacturer": "Phrozen",
+  "model": "Sonic XL 4K",
+  "variant": "2022",
+  "build_volume": { "x": 200, "y": 125, "z": 200, "shape": "rectangular", "origin": "center" },
+  "kinematics": "other",
+  "axes": {
+    "x": { "max_speed": 30, "max_accel": 150 },
+    "y": { "max_speed": 30, "max_accel": 150 },
+    "z": { "max_speed": 60, "max_accel": 300 }
+  },
+  "extruders": [],
+  "resolution": { "x": 0.052, "y": 0.052, "z": 0.01 },
+  "resin_tank": { "type": "fep", "lifetime_hours": 2000 },
+  "light_source": { "type": "lcd-monochrome", "wavelength": 405, "xy_resolution": 0.052 },
+  "bed": { "heated": true, "max_temp": 40, "surface_type": "metal-plate" },
+  "chamber": { "heated": true, "max_temp": 35, "passive": false },
+  "firmware": { "flavor": "proprietary", "identifier": "Phrozen OS" },
+  "network": { "has_wifi": true, "has_ethernet": true, "supports_lan_api": false },
+  "links": { "product_page": "https://phrozen3d.com/products/sonic-xl-4k" },
+  "tags": ["sla", "msla", "4k", "dental", "large-format", "monochrome-lcd", "resin"],
+  "notes": "Phrozen Sonic XL 4K. Professional dental LCD resin printer with 8.3\" 4K monochrome LCD, 52 micron XY resolution, and 200x125x200mm build volume. Features built-in heater for stable prints and up to 90mm/hr print speed.",
+  "x_cura": {
+    "definition": "phrozen_sonicxl4k",
+    "definition_changes": {
+      "machine_width": 200,
+      "machine_depth": 125,
+      "machine_height": 200,
+      "nozzle_size": 0.035,
+      "heated_bed": true,
+      "printer_technology": "MSLA"
+    }
+  },
+  "x_prusaslicer": {
+    "printer_model": "Sonic XL 4K",
+    "vendor": "Phrozen",
+    "printer_technology": "SLA",
+    "bed_shape": "rectangular",
+    "bed_size": "200x125",
+    "print_height": 200
+  },
+  "x_orca": {
+    "machine_name": "Sonic XL 4K",
+    "machine_manufacturer": "Phrozen",
+    "bed_x": 200,
+    "bed_y": 125,
+    "height": 200,
+    "nozzle_diameter": 0.035,
+    "printer_technology": "SLA"
+  },
+  "x_bambu": {
+    "product_id": "phrozen_sonicxl4k",
+    "series": "Sonic",
+    "support_lidar": false,
+    "support_ams": false,
+    "support_ams_lite": false
+  }
+}

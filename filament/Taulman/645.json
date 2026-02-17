@@ -1,0 +1,30 @@
+{
+  "op3d_schema": "filament",
+  "op3d_schema_version": "0.1.0",
+  "id": "Taulman/645",
+  "maintainer": {
+    "name": "OpenPrint3D Community",
+    "maintainer_type": "community",
+    "website": "https://github.com/OpenPrint3D/OpenPrint3D"
+  },
+  "brand": "Taulman3D",
+  "name": "Taulman 645 Nylon 1.75mm",
+  "material": "Nylon",
+  "diameter": 1.75,
+  "density": 1.14,
+  "nozzle": { "min": 245, "max": 275, "recommended": 260 },
+  "bed": { "min": 75, "max": 100, "recommended": 85 },
+  "fan": { "min": 0, "max": 20, "recommended": 0 },
+  "drying": { "temperature": 80, "duration_hours": 12 },
+  "environment": {
+    "sensitive_to_moisture": true,
+    "enclosure_recommended": true,
+    "max_ambient_temp": 40
+  },
+  "volumetric_speed": 8,
+  "links": {
+    "product_page": "https://taulman3d.com/645-nylon/"
+  },
+  "tags": ["nylon", "taulman", "645", "1.75mm", "engineering", "high-performance"],
+  "notes": "Taulman 645. Premium high-performance nylon with excellent tensile strength and chemical resistance. Requires hot enclosure and thorough drying. Low warping tendency for a nylon."
+}

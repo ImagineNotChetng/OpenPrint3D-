@@ -1,0 +1,32 @@
+{
+  "op3d_schema": "filament",
+  "op3d_schema_version": "0.1.0",
+  "id": "DuPont/ZytelHTN",
+  "maintainer": {
+    "name": "OpenPrint3D Community",
+    "maintainer_type": "community",
+    "website": "https://github.com/OpenPrint3D/OpenPrint3D"
+  },
+  "brand": "DuPont",
+  "name": "DuPont Zytel HTN 1.75mm",
+  "material": "PA66",
+  "diameter": 1.75,
+  "density": 1.20,
+  "nozzle": { "min": 280, "max": 330, "recommended": 305 },
+  "bed": { "min": 90, "max": 120, "recommended": 105 },
+  "fan": { "min": 20, "max": 60, "recommended": 40 },
+  "drying": { "temperature": 100, "duration_hours": 4 },
+  "environment": {
+    "sensitive_to_moisture": true,
+    "enclosure_recommended": true,
+    "heated_chamber_recommended": false,
+    "max_ambient_temp": 25
+  },
+  "volumetric_speed": 10,
+  "printing_speed": { "min": 25, "max": 70, "recommended": 50 },
+  "links": {
+    "datasheet": "https://www.dupont.com/brands/zytel-htn.html"
+  },
+  "tags": ["zytel", "htn", "ppa", "high-performance", "engineering", "1.75mm", "dupont"],
+  "notes": "DuPont Zytel HTN (PPA - Polyphthalamide) is a high-performance polyamide with superior heat resistance and mechanical properties for demanding applications."
+}

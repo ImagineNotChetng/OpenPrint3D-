@@ -1,0 +1,31 @@
+{
+  "op3d_schema": "filament",
+  "op3d_schema_version": "0.1.0",
+  "id": "Covestro/Desmopan",
+  "maintainer": {
+    "name": "OpenPrint3D Community",
+    "maintainer_type": "community",
+    "website": "https://github.com/OpenPrint3D/OpenPrint3D"
+  },
+  "brand": "Covestro",
+  "name": "Covestro Desmopan TPU 1.75mm",
+  "material": "TPU",
+  "diameter": 1.75,
+  "density": 1.21,
+  "nozzle": { "min": 200, "max": 240, "recommended": 220 },
+  "bed": { "min": 30, "max": 50, "recommended": 40 },
+  "fan": { "min": 50, "max": 100, "recommended": 80 },
+  "drying": { "temperature": 60, "duration_hours": 4 },
+  "environment": {
+    "sensitive_to_moisture": true,
+    "enclosure_recommended": false,
+    "max_ambient_temp": 28
+  },
+  "volumetric_speed": 8,
+  "printing_speed": { "min": 15, "max": 45, "recommended": 30 },
+  "links": {
+    "datasheet": "https://www.covestro.com/en/products-and-solutions/desmopan"
+  },
+  "tags": ["tpu", "thermoplastic", "polyurethane", "desmopan", "flexible", "1.75mm", "covestro"],
+  "notes": "Covestro Desmopan is a high-quality thermoplastic polyurethane with excellent flexibility, abrasion resistance, and mechanical properties."
+}

@@ -1,0 +1,71 @@
+{
+  "op3d_schema": "printer",
+  "op3d_schema_version": "0.1.0",
+  "id": "Elegoo/Saturn-6-Ultra",
+  "maintainer": {
+    "name": "OpenPrint3D Community",
+    "maintainer_type": "community",
+    "website": "https://github.com/OpenPrint3D/OpenPrint3D"
+  },
+  "manufacturer": "Elegoo",
+  "model": "Saturn 6 Ultra",
+  "variant": "Stock",
+  "build_volume": { "x": 273.6, "y": 153.6, "z": 280, "shape": "rectangular", "origin": "front_left" },
+  "kinematics": "other",
+  "axes": {
+    "x": { "max_speed": 150, "max_accel": 1000 },
+    "y": { "max_speed": 150, "max_accel": 1000 },
+    "z": { "max_speed": 100, "max_accel": 600 }
+  },
+  "extruders": [{
+    "id": "tool0",
+    "nozzle_diameter": 0.1,
+    "nozzle_material": "other",
+    "max_temp": 150,
+    "min_temp": 100,
+    "retraction_supported": false
+  }],
+  "bed": { "heated": false, "max_temp": 100, "surface_type": "build-plate" },
+  "chamber": { "heated": true, "max_temp": 35, "passive": false },
+  "firmware": { "flavor": "proprietary", "identifier": "Elegoo Saturn 6 Ultra Firmware" },
+  "network": { "has_wifi": true, "has_ethernet": true, "supports_lan_api": true },
+  "links": {
+    "product_page": "https://www.elegoo.com/products/elegoo-saturn-6-ultra"
+  },
+  "tags": ["msla", "resin", "20k", "high-resolution", "tilt-release", "auto-leveling", "ethernet", "ai-camera"],
+  "notes": "Elegoo Saturn 6 Ultra. 20K resolution MSLA resin printer with 273.6x153.6x280mm build volume. Features tilt release technology, smart tank heating at 35°C, auto leveling, ethernet connectivity, and built-in AI camera for print monitoring.",
+  "x_cura": {
+    "definition": "elegoo_saturn6_ultra",
+    "definition_changes": {
+      "machine_width": 274,
+      "machine_depth": 154,
+      "machine_height": 280,
+      "nozzle_size": 0.035,
+      "heated_bed": false,
+      "machine_heated_bed": false,
+      "printer_technology": "SLA"
+    }
+  },
+  "x_prusaslicer": {
+    "printer_model": "Saturn 6 Ultra",
+    "vendor": "Elegoo",
+    "bed_shape": "rectangular",
+    "bed_size": "274x154",
+    "print_height": 280,
+    "printer_technology": "SLA",
+    "display_width": 273.6,
+    "display_height": 153.6,
+    "display_pixels_x": 19200,
+    "display_pixels_y": 10800
+  },
+  "x_orca": {
+    "machine_name": "Saturn 6 Ultra",
+    "machine_manufacturer": "Elegoo",
+    "bed_x": 274,
+    "bed_y": 154,
+    "height": 280,
+    "printer_type": "MSLA",
+    "resolution_x": 19200,
+    "resolution_y": 10800
+  }
+}

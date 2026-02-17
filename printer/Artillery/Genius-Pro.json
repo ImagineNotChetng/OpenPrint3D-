@@ -1,0 +1,75 @@
+{
+  "op3d_schema": "printer",
+  "op3d_schema_version": "0.1.0",
+  "id": "Artillery/Genius-Pro",
+  "maintainer": {
+    "name": "OpenPrint3D Community",
+    "maintainer_type": "community",
+    "website": "https://github.com/OpenPrint3D/OpenPrint3D"
+  },
+  "manufacturer": "Artillery",
+  "model": "Genius Pro",
+  "variant": "Stock",
+  "build_volume": { "x": 220, "y": 220, "z": 250, "shape": "rectangular", "origin": "front_left" },
+  "kinematics": "cartesian",
+  "axes": {
+    "x": { "max_speed": 300, "max_accel": 10000 },
+    "y": { "max_speed": 300, "max_accel": 10000 },
+    "z": { "max_speed": 12, "max_accel": 500 }
+  },
+  "extruders": [{
+    "id": "tool0",
+    "nozzle_diameter": 0.4,
+    "nozzle_material": "brass",
+    "max_temp": 280,
+    "min_temp": 170,
+    "retraction_supported": true
+  }],
+  "bed": { "heated": true, "max_temp": 110, "surface_type": "glass" },
+  "chamber": { "heated": false, "passive": false },
+  "firmware": { "flavor": "marlin", "identifier": "Artillery Genius Pro Firmware" },
+  "network": { "has_wifi": true, "has_ethernet": false, "supports_lan_api": false },
+  "links": {
+    "product_page": "https://artillery3d.com/products/genius-pro"
+  },
+  "tags": ["budget", "cartesian", "direct-drive", "glass-bed", "silent-drivers"],
+  "notes": "Artillery Genius Pro. Budget-friendly cartesian printer with 220x220x250mm build volume. Features direct drive, TMC2208 silent steppers, and GPIO for accessories.",
+  "x_cura": {
+    "definition": "artillery_geniuspro",
+    "definition_changes": {
+      "machine_width": 220,
+      "machine_depth": 220,
+      "machine_height": 250,
+      "nozzle_size": 0.4,
+      "heated_bed": true,
+      "machine_heated_bed": true,
+      "bed_temperature": 60,
+      "nozzle_temperature": 200
+    }
+  },
+  "x_prusaslicer": {
+    "printer_model": "Genius Pro",
+    "vendor": "Artillery",
+    "filament_diameter": 1.75,
+    "nozzle_diameter": 0.4,
+    "bed_shape": "rectangular",
+    "bed_size": "220x220",
+    "print_height": 250
+  },
+  "x_orca": {
+    "machine_name": "Genius Pro",
+    "machine_manufacturer": "Artillery",
+    "bed_x": 220,
+    "bed_y": 220,
+    "height": 250,
+    "nozzle_diameter": 0.4,
+    "filament_diameter": 1.75
+  },
+  "x_bambu": {
+    "product_id": "artillery_geniuspro",
+    "series": "Genius",
+    "support_lidar": false,
+    "support_ams": false,
+    "support_ams_lite": false
+  }
+}

@@ -1,0 +1,75 @@
+{
+  "op3d_schema": "printer",
+  "op3d_schema_version": "0.1.0",
+  "id": "Qidi/X-Max-3-Plus",
+  "maintainer": {
+    "name": "OpenPrint3D Community",
+    "maintainer_type": "community",
+    "website": "https://github.com/OpenPrint3D/OpenPrint3D"
+  },
+  "manufacturer": "Qidi",
+  "model": "X-Max 3 Plus",
+  "variant": "Stock",
+  "build_volume": { "x": 350, "y": 350, "z": 350, "shape": "rectangular", "origin": "front_left" },
+  "kinematics": "corexy",
+  "axes": {
+    "x": { "max_speed": 600, "max_accel": 10000 },
+    "y": { "max_speed": 600, "max_accel": 10000 },
+    "z": { "max_speed": 20, "max_accel": 500 }
+  },
+  "extruders": [{
+    "id": "tool0",
+    "nozzle_diameter": 0.4,
+    "nozzle_material": "hardened-steel",
+    "max_temp": 350,
+    "min_temp": 180,
+    "retraction_supported": true
+  }],
+  "bed": { "heated": true, "max_temp": 130, "surface_type": "PEI-textured" },
+  "chamber": { "heated": true, "max_temp": 65, "passive": false },
+  "firmware": { "flavor": "klipper", "identifier": "Qidi X-Max 3 Plus Firmware" },
+  "network": { "has_wifi": true, "has_ethernet": true, "supports_lan_api": true },
+  "links": {
+    "product_page": "https://www.qidipro.com/x-max-3-plus"
+  },
+  "tags": ["high-speed", "corexy", "direct-drive", "350c-capable", "large-build", "enclosed", "heated-chamber"],
+  "notes": "Qidi X-Max 3 Plus. Expanded version of X-Max 3 with 350x350x350mm build volume, hardened steel nozzle up to 350°C, and heated chamber up to 65°C.",
+  "x_cura": {
+    "definition": "qidi_xmax3plus",
+    "definition_changes": {
+      "machine_width": 350,
+      "machine_depth": 350,
+      "machine_height": 350,
+      "nozzle_size": 0.4,
+      "heated_bed": true,
+      "machine_heated_bed": true,
+      "bed_temperature": 60,
+      "nozzle_temperature": 200
+    }
+  },
+  "x_prusaslicer": {
+    "printer_model": "X-Max 3 Plus",
+    "vendor": "Qidi",
+    "filament_diameter": 1.75,
+    "nozzle_diameter": 0.4,
+    "bed_shape": "rectangular",
+    "bed_size": "350x350",
+    "print_height": 350
+  },
+  "x_orca": {
+    "machine_name": "X-Max 3 Plus",
+    "machine_manufacturer": "Qidi",
+    "bed_x": 350,
+    "bed_y": 350,
+    "height": 350,
+    "nozzle_diameter": 0.4,
+    "filament_diameter": 1.75
+  },
+  "x_bambu": {
+    "product_id": "qidi_xmax3plus",
+    "series": "X-Max",
+    "support_lidar": false,
+    "support_ams": false,
+    "support_ams_lite": false
+  }
+}

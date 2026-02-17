@@ -1,0 +1,38 @@
+{
+  "op3d_schema": "printer",
+  "op3d_schema_version": "0.1.0",
+  "id": "Prusa/MK3-5S",
+  "maintainer": {
+    "name": "OpenPrint3D Community",
+    "maintainer_type": "community",
+    "website": "https://github.com/OpenPrint3D/OpenPrint3D"
+  },
+  "manufacturer": "Prusa Research",
+  "model": "MK3.5S",
+  "variant": "Stock",
+  "build_volume": { "x": 250, "y": 210, "z": 210, "shape": "rectangular", "origin": "front_left" },
+  "kinematics": "bed_slinger",
+  "axes": {
+    "x": { "max_speed": 300, "max_accel": 8000 },
+    "y": { "max_speed": 300, "max_accel": 8000 },
+    "z": { "max_speed": 12, "max_accel": 200 }
+  },
+  "extruders": [{
+    "id": "tool0",
+    "nozzle_diameter": 0.4,
+    "nozzle_material": "brass",
+    "max_temp": 300,
+    "min_temp": 170,
+    "retraction_supported": true
+  }],
+  "bed": { "heated": true, "max_temp": 120, "surface_type": "smooth-pei" },
+  "chamber": { "heated": false, "passive": false },
+  "firmware": { "flavor": "klipper", "identifier": "Prusa Firmware (Buddy board, Input Shaper)" },
+  "network": { "has_wifi": true, "has_ethernet": false, "supports_lan_api": true },
+  "links": {
+    "product_page": "https://www.prusa3d.com/product/original-prusa-mk3-5/",
+    "documentation": "https://help.prusa3d.com/category/mk3-5_342"
+  },
+  "tags": ["premium", "bed-slinger", "direct-drive", "input-shaper", "nextruder", "loadcell"],
+  "notes": "Prusa MK3.5S. Upgraded MK3.5 with Input Shaper for high-speed printing. Features Nextruder with load cell for automatic bed leveling, Buddy board, and Prusa Connect."
+}

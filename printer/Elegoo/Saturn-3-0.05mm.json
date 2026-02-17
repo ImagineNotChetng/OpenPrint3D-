@@ -1,0 +1,37 @@
+{
+  "op3d_schema": "printer",
+  "op3d_schema_version": "0.1.0",
+  "id": "Elegoo/Saturn-3-0.05mm",
+  "maintainer": {
+    "name": "OpenPrint3D Community",
+    "maintainer_type": "community",
+    "website": "https://github.com/OpenPrint3D/OpenPrint3D"
+  },
+  "manufacturer": "Elegoo",
+  "model": "Saturn 3",
+  "variant": "0.05mm",
+  "build_volume": { "x": 218.88, "y": 122.88, "z": 220, "shape": "rectangular", "origin": "front_left" },
+  "kinematics": "other",
+  "axes": {
+    "x": { "max_speed": 150, "max_accel": 1000 },
+    "y": { "max_speed": 150, "max_accel": 1000 },
+    "z": { "max_speed": 80, "max_accel": 500 }
+  },
+  "extruders": [{
+    "id": "tool0",
+    "nozzle_diameter": 0.1,
+    "nozzle_material": "other",
+    "max_temp": 150,
+    "min_temp": 100,
+    "retraction_supported": false
+  }],
+  "bed": { "heated": false, "max_temp": 100, "surface_type": "build-plate" },
+  "chamber": { "heated": true, "max_temp": 30, "passive": false },
+  "firmware": { "flavor": "proprietary", "identifier": "Elegoo Saturn 3 Firmware" },
+  "network": { "has_wifi": true, "has_ethernet": false, "supports_lan_api": false },
+  "links": {
+    "product_page": "https://www.elegoo.com/products/elegoo-saturn-3"
+  },
+  "tags": ["msla", "resin", "12k", "high-resolution", "tilt-release"],
+  "notes": "Elegoo Saturn 3. 12K resolution MSLA resin printer with 218.88x122.88x220mm build volume."
+}

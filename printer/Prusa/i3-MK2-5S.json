@@ -1,0 +1,76 @@
+{
+  "op3d_schema": "printer",
+  "op3d_schema_version": "0.1.0",
+  "id": "Prusa/i3-MK2-5S",
+  "maintainer": {
+    "name": "OpenPrint3D Community",
+    "maintainer_type": "community",
+    "website": "https://github.com/OpenPrint3D/OpenPrint3D"
+  },
+  "manufacturer": "Prusa",
+  "model": "i3 MK2.5S",
+  "variant": "Stock",
+  "build_volume": { "x": 250, "y": 210, "z": 210, "shape": "rectangular", "origin": "front_left" },
+  "kinematics": "cartesian",
+  "axes": {
+    "x": { "max_speed": 180, "max_accel": 8000 },
+    "y": { "max_speed": 180, "max_accel": 8000 },
+    "z": { "max_speed": 12, "max_accel": 1000 }
+  },
+  "extruders": [{
+    "id": "tool0",
+    "nozzle_diameter": 0.4,
+    "nozzle_material": "brass",
+    "max_temp": 280,
+    "min_temp": 180,
+    "retraction_supported": true
+  }],
+  "bed": { "heated": true, "max_temp": 110, "surface_type": "smooth-pei" },
+  "chamber": { "heated": false, "passive": false },
+  "firmware": { "flavor": "reprap", "identifier": "Prusa Firmware 3.x" },
+  "network": { "has_wifi": false, "has_ethernet": false, "supports_lan_api": false },
+  "links": {
+    "product_page": "https://www.prusa3d.com/category/original-prusa-i3-mk25s/"
+  },
+  "tags": ["open-source", "direct-drive", "reliable", "mmu-compatible", "removable-bed"],
+  "notes": "Prusa i3 MK2.5S. Final MK2 variant with MK3-style extruder, silent mode, and improved cooling. Features removable PEI spring steel bed, power panic, and IR sensor for filament detection. Released 2019. MMU2S compatible.",
+  "x_cura": {
+    "definition": "prusa_i3_mk25s",
+    "definition_changes": {
+      "machine_width": 250,
+      "machine_depth": 210,
+      "machine_height": 210,
+      "nozzle_size": 0.4,
+      "heated_bed": true,
+      "machine_heated_bed": true,
+      "bed_temperature": 60,
+      "nozzle_temperature": 200
+    }
+  },
+  "x_prusaslicer": {
+    "printer_model": "i3 MK2.5S",
+    "vendor": "Prusa",
+    "filament_diameter": 1.75,
+    "nozzle_diameter": 0.4,
+    "bed_shape": "rectangular",
+    "bed_size": "250x210",
+    "print_height": 210,
+    "printer_technology": "FFF"
+  },
+  "x_orca": {
+    "machine_name": "i3 MK2.5S",
+    "machine_manufacturer": "Prusa",
+    "bed_x": 250,
+    "bed_y": 210,
+    "height": 210,
+    "nozzle_diameter": 0.4,
+    "filament_diameter": 1.75
+  },
+  "x_bambu": {
+    "product_id": "prusa_i3_mk25s",
+    "series": "MK2",
+    "support_lidar": false,
+    "support_ams": false,
+    "support_ams_lite": false
+  }
+}

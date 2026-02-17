@@ -1,0 +1,74 @@
+{
+  "op3d_schema": "printer",
+  "op3d_schema_version": "0.1.0",
+  "id": "Formlabs/Form-4L",
+  "maintainer": {
+    "name": "OpenPrint3D Community",
+    "maintainer_type": "community",
+    "website": "https://github.com/OpenPrint3D/OpenPrint3D"
+  },
+  "manufacturer": "Formlabs",
+  "model": "Form 4L",
+  "variant": "Stock",
+  "build_volume": { "x": 353, "y": 199, "z": 350, "shape": "rectangular", "origin": "center" },
+  "kinematics": "sla",
+  "axes": {
+    "x": { "max_speed": 200, "max_accel": 5000 },
+    "y": { "max_speed": 200, "max_accel": 5000 },
+    "z": { "max_speed": 50, "max_accel": 500 }
+  },
+  "extruders": [{
+    "id": "laser",
+    "nozzle_diameter": 0.025,
+    "nozzle_material": "n/a",
+    "max_temp": 150,
+    "min_temp": 100,
+    "retraction_supported": false
+  }],
+  "bed": { "heated": true, "max_temp": 60, "surface_type": "flexible-film" },
+  "chamber": { "heated": true, "max_temp": 35, "passive": false },
+  "firmware": { "flavor": "other", "identifier": "Formlabs Form 4L OS" },
+  "network": { "has_wifi": true, "has_ethernet": false, "supports_lan_api": false },
+  "links": {
+    "product_page": "https://formlabs.com/3d-printers/form-4l/"
+  },
+  "tags": ["sla", "resin", "enclosed", "auto-leveling", "wifi", "post-processing", "large-format"],
+  "notes": "Formlabs Form 4L. Large-format desktop SLA resin 3D printer with 353x199x350mm build volume. Features 25-micron XY resolution, auto-resin handling, fast peel times, and WiFi connectivity. Requires post-processing.",
+  "x_cura": {
+    "definition": "formlabs_form_4l",
+    "definition_changes": {
+      "machine_width": 353,
+      "machine_depth": 199,
+      "machine_height": 350,
+      "nozzle_size": 0.025,
+      "heated_bed": true,
+      "machine_heated_bed": true,
+      "printer_technology": "SLA"
+    }
+  },
+  "x_prusaslicer": {
+    "printer_model": "Form 4L",
+    "vendor": "Formlabs",
+    "filament_diameter": 1.75,
+    "nozzle_diameter": 0.025,
+    "bed_shape": "rectangular",
+    "bed_size": "353x199",
+    "print_height": 350
+  },
+  "x_orca": {
+    "machine_name": "Form_4L",
+    "machine_manufacturer": "Formlabs",
+    "bed_x": 353,
+    "bed_y": 199,
+    "height": 350,
+    "nozzle_diameter": 0.025,
+    "filament_diameter": 1.75
+  },
+  "x_bambu": {
+    "product_id": "formlabs_form_4l",
+    "series": "Form",
+    "support_lidar": false,
+    "support_ams": false,
+    "support_ams_lite": false
+  }
+}

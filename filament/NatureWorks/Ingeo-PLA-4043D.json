@@ -1,0 +1,31 @@
+{
+  "op3d_schema": "filament",
+  "op3d_schema_version": "0.1.0",
+  "id": "NatureWorks/IngeoPLA",
+  "maintainer": {
+    "name": "OpenPrint3D Community",
+    "maintainer_type": "community",
+    "website": "https://github.com/OpenPrint3D/OpenPrint3D"
+  },
+  "brand": "NatureWorks",
+  "name": "NatureWorks Ingeo PLA 4043D 1.75mm",
+  "material": "PLA",
+  "diameter": 1.75,
+  "density": 1.24,
+  "nozzle": { "min": 190, "max": 220, "recommended": 205 },
+  "bed": { "min": 40, "max": 60, "recommended": 50 },
+  "fan": { "min": 50, "max": 100, "recommended": 100 },
+  "drying": { "temperature": 45, "duration_hours": 4 },
+  "environment": {
+    "sensitive_to_moisture": true,
+    "enclosure_recommended": false,
+    "max_ambient_temp": 28
+  },
+  "volumetric_speed": 12,
+  "printing_speed": { "min": 40, "max": 100, "recommended": 60 },
+  "links": {
+    "datasheet": "https://www.natureworksllc.com/Products/Ingeo-Biopolymers"
+  },
+  "tags": ["pla", "ingeo", "biopolymer", "1.75mm", "natureworks"],
+  "notes": "NatureWorks Ingeo 4043D is a general-purpose PLA biopolymer with excellent printability and good mechanical properties. FDA approved for food contact."
+}

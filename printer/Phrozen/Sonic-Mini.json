@@ -1,0 +1,61 @@
+{
+  "op3d_schema": "printer",
+  "op3d_schema_version": "0.1.0",
+  "id": "Phrozen/Sonic-Mini",
+  "maintainer": {
+    "name": "OpenPrint3D Community",
+    "maintainer_type": "community",
+    "website": "https://github.com/OpenPrint3D/OpenPrint3D"
+  },
+  "manufacturer": "Phrozen",
+  "model": "Sonic Mini",
+  "variant": "Stock",
+  "build_volume": { "x": 120, "y": 68, "z": 130, "shape": "rectangular", "origin": "center" },
+  "kinematics": "other",
+  "axes": {
+    "x": { "max_speed": 20, "max_accel": 100 },
+    "y": { "max_speed": 20, "max_accel": 100 },
+    "z": { "max_speed": 80, "max_accel": 400 }
+  },
+  "extruders": [],
+  "resolution": { "x": 0.035, "y": 0.035, "z": 0.01 },
+  "resin_tank": { "type": "fep", "lifetime_hours": 2000 },
+  "light_source": { "type": "lcd-monochrome", "wavelength": 405, "xy_resolution": 0.035 },
+  "bed": { "heated": false, "max_temp": 100, "surface_type": "metal-plate" },
+  "chamber": { "heated": false, "passive": false },
+  "firmware": { "flavor": "proprietary", "identifier": "Phrozen OS" },
+  "network": { "has_wifi": false, "has_ethernet": false, "supports_lan_api": false },
+  "links": { "product_page": "https://phrozen3d.com/products/sonic-mini" },
+  "tags": ["sla", "msla", "monochrome-lcd", "entry-level", "fast-printing", "resin"],
+  "notes": "Phrozen Sonic Mini. Entry-level MSLA resin printer with 5.5\" monochrome LCD, 35 micron XY resolution, and 120x68x130mm build volume. Features fast print speeds up to 1 second per layer.",
+  "x_cura": {
+    "definition": "phrozen_sonicmini",
+    "definition_changes": {
+      "machine_width": 120,
+      "machine_depth": 68,
+      "machine_height": 130,
+      "nozzle_size": 0.035,
+      "printer_technology": "MSLA"
+    }
+  },
+  "x_prusaslicer": {
+    "printer_model": "Sonic Mini",
+    "vendor": "Phrozen",
+    "printer_technology": "SLA",
+    "bed_shape": "rectangular",
+    "bed_size": "120x68",
+    "print_height": 130
+  },
+  "x_orca": {
+    "machine_name": "Sonic Mini",
+    "machine_manufacturer": "Phrozen",
+    "printer_technology": "SLA"
+  },
+  "x_bambu": {
+    "product_id": "phrozen_sonicmini",
+    "series": "Sonic",
+    "support_lidar": false,
+    "support_ams": false,
+    "support_ams_lite": false
+  }
+}

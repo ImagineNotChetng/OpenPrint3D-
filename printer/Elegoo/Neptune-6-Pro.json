@@ -1,0 +1,78 @@
+{
+  "op3d_schema": "printer",
+  "op3d_schema_version": "0.1.0",
+  "id": "Elegoo/Neptune-6-Pro",
+  "maintainer": {
+    "name": "OpenPrint3D Community",
+    "maintainer_type": "community",
+    "website": "https://github.com/OpenPrint3D/OpenPrint3D"
+  },
+  "manufacturer": "Elegoo",
+  "model": "Neptune 6 Pro",
+  "variant": "Stock",
+  "build_volume": { "x": 480, "y": 480, "z": 520, "shape": "rectangular", "origin": "front_left" },
+  "kinematics": "corexy",
+  "axes": {
+    "x": { "max_speed": 1000, "max_accel": 50000 },
+    "y": { "max_speed": 1000, "max_accel": 50000 },
+    "z": { "max_speed": 40, "max_accel": 3000 }
+  },
+  "extruders": [{
+    "id": "tool0",
+    "nozzle_diameter": 0.4,
+    "nozzle_material": "hardened-steel",
+    "max_temp": 370,
+    "min_temp": 170,
+    "retraction_supported": true
+  }],
+  "bed": { "heated": true, "max_temp": 150, "surface_type": "PEI-textured" },
+  "chamber": { "heated": false, "max_temp": 65, "passive": true },
+  "firmware": { "flavor": "klipper", "identifier": "Elegoo Neptune 6 Pro Firmware" },
+  "network": { "has_wifi": true, "has_ethernet": true, "supports_lan_api": true },
+  "links": {
+    "product_page": "https://www.elegoo.com/products/neptune-6-pro"
+  },
+  "tags": ["high-speed", "corexy", "direct-drive", "ai-monitoring", "1000mm-s", "large-format", "ethernet", "klipper", "input-shaping", "flagship"],
+  "notes": "Elegoo Neptune 6 Pro. Flagship large-format high-speed CoreXY with 480x480x520mm build volume. Features Klipper with advanced input shaping, AI monitoring camera, advanced dual-gear extruder, 370C max temp, and Ethernet connectivity.",
+  "x_cura": {
+    "definition": "elegoo_neptune6pro",
+    "definition_changes": {
+      "machine_width": 480,
+      "machine_depth": 480,
+      "machine_height": 520,
+      "nozzle_size": 0.4,
+      "heated_bed": true,
+      "machine_heated_bed": true,
+      "bed_temperature": 60,
+      "nozzle_temperature": 200
+    }
+  },
+  "x_prusaslicer": {
+    "printer_model": "Neptune 6 Pro",
+    "vendor": "Elegoo",
+    "filament_diameter": 1.75,
+    "nozzle_diameter": 0.4,
+    "bed_shape": "rectangular",
+    "bed_size": "480x480",
+    "print_height": 520
+  },
+  "x_orca": {
+    "machine_name": "Neptune 6 Pro",
+    "machine_manufacturer": "Elegoo",
+    "bed_x": 480,
+    "bed_y": 480,
+    "height": 520,
+    "nozzle_diameter": 0.4,
+    "filament_diameter": 1.75
+  },
+  "x_bambu": {
+    "product_id": "elegoo_neptune6pro",
+    "series": "Neptune",
+    "support_lidar": false,
+    "support_ams": false,
+    "support_ams_lite": false,
+    "max_speed": 1000,
+    "nozzle_type": "hardened-steel",
+    "has_ethernet": true
+  }
+}

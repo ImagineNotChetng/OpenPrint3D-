@@ -1,0 +1,38 @@
+{
+  "op3d_schema": "printer",
+  "op3d_schema_version": "0.1.0",
+  "id": "Voron/V0-2",
+  "maintainer": {
+    "name": "OpenPrint3D Community",
+    "maintainer_type": "community",
+    "website": "https://github.com/OpenPrint3D/OpenPrint3D"
+  },
+  "manufacturer": "Voron Design",
+  "model": "V0.2",
+  "variant": "120mm",
+  "build_volume": { "x": 120, "y": 120, "z": 120, "shape": "rectangular", "origin": "front_left" },
+  "kinematics": "corexy",
+  "axes": {
+    "x": { "max_speed": 500, "max_accel": 20000 },
+    "y": { "max_speed": 500, "max_accel": 20000 },
+    "z": { "max_speed": 10, "max_accel": 100 }
+  },
+  "extruders": [{
+    "id": "tool0",
+    "nozzle_diameter": 0.4,
+    "nozzle_material": "hardened-steel",
+    "max_temp": 300,
+    "min_temp": 170,
+    "retraction_supported": true
+  }],
+  "bed": { "heated": true, "max_temp": 120, "surface_type": "PEI-spring-steel" },
+  "chamber": { "heated": false, "max_temp": 65, "passive": true },
+  "firmware": { "flavor": "klipper", "identifier": "Klipper (community)" },
+  "network": { "has_wifi": true, "has_ethernet": true, "supports_lan_api": true },
+  "links": {
+    "project_page": "https://vorondesign.com/voron0",
+    "github": "https://github.com/VoronDesign/Voron-0"
+  },
+  "tags": ["diy", "corexy", "enclosed", "klipper", "high-speed", "compact", "open-source", "community"],
+  "notes": "Voron 0.2 (120mm build). Updated V0.1 with improved design. Tiny, fully enclosed CoreXY designed for small format high-speed printing. Self-sourced or kit. Typical builds use Klipper with input shaper and pressure advance."
+}

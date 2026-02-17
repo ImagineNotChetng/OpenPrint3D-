@@ -1,0 +1,324 @@
+{
+  "op3d_schema": "recipe_book",
+  "op3d_schema_version": "0.1.0",
+  "id": "common_prints_recipe_book",
+  "maintainer": {
+    "name": "OpenPrint3D",
+    "maintainer_type": "community",
+    "website": "https://github.com/OpenPrint3D/OpenPrint3D/"
+  },
+  "name": "3D Printing Recipe Book",
+  "description": "Complete profiles for common 3D printing test prints and calibration objects",
+  "version": "1.0.0",
+  "recipes": [
+    {
+      "id": "benchy",
+      "name": "3D Benchy",
+      "description": "The classic 3D printing torture test. Evaluates overall print quality, bridging, overhangs, small details, and surface finish.",
+      "print_type": "test_print",
+      "model_source": "https://www.thingiverse.com/thing:763622",
+      "estimated_print_time": "45-90 minutes",
+      "layer_height": {
+        "default": 0.16,
+        "high_quality": 0.12,
+        "draft": 0.28
+      },
+      "wall_settings": {
+        "wall_count": 3,
+        "top_layers": 5,
+        "bottom_layers": 5
+      },
+      "infill": {
+        "density_default": 20,
+        "pattern": "gyroid"
+      },
+      "speed": {
+        "outer_wall": 40,
+        "inner_wall": 60,
+        "infill": 80,
+        "top_bottom": 50,
+        "travel": 150
+      },
+      "cooling": {
+        "fan_default": 100,
+        "fan_min_layer_time": 5,
+        "fan_overhang": 100
+      },
+      "supports": {
+        "enabled": true,
+        "placement": "everywhere",
+        "overhang_threshold": 60,
+        "support_density": 15
+      },
+      "adhesion": {
+        "type": "brim",
+        "brim_width": 5
+      },
+      "temperature": {
+        "nozzle": 210,
+        "bed": 60
+      },
+      "tips": [
+        "Enable ironing on top layers for smoother hull",
+        "Increase wall count to 4 for better hull definition",
+        "Use brim to prevent warping on the bow tower",
+        "Slow down outer wall for better bridging"
+      ],
+      "evaluation_points": [
+        "Bridge quality over cabin",
+        "Hull definition on bow",
+        "Smoke stack hole roundness",
+        "Overall surface finish",
+        "No stringing or blobbing"
+      ]
+    },
+    {
+      "id": "calibration_cube",
+      "name": "XYZ Calibration Cube",
+      "description": "Simple 20mm cube for verifying dimensional accuracy and calibrating steps/mm on X, Y, and Z axes.",
+      "print_type": "calibration",
+      "model_source": "https://www.thingiverse.com/thing:1278865",
+      "estimated_print_time": "15-25 minutes",
+      "layer_height": {
+        "default": 0.2,
+        "high_quality": 0.12,
+        "draft": 0.28
+      },
+      "wall_settings": {
+        "wall_count": 4,
+        "top_layers": 5,
+        "bottom_layers": 5
+      },
+      "infill": {
+        "density_default": 0,
+        "pattern": "rectilinear"
+      },
+      "speed": {
+        "outer_wall": 50,
+        "inner_wall": 80,
+        "infill": 100,
+        "top_bottom": 60,
+        "travel": 200
+      },
+      "cooling": {
+        "fan_default": 100,
+        "fan_min_layer_time": 3
+      },
+      "supports": {
+        "enabled": false
+      },
+      "adhesion": {
+        "type": "none",
+        "brim_width": 0
+      },
+      "temperature": {
+        "nozzle": 200,
+        "bed": 55
+      },
+      "tips": [
+        "Print with no infill for true dimensional accuracy",
+        "Measure all three axes - X should be ~20mm, Y ~20mm, Z ~20mm",
+        "If X or Y is undersized, adjust steps/mm for that axis",
+        "If Z is undersized, adjust steps/mm for Z axis",
+        "Use brim if bed adhesion is poor"
+      ],
+      "evaluation_points": [
+        "X dimension accuracy (target: 20mm)",
+        "Y dimension accuracy (target: 20mm)",
+        "Z dimension accuracy (target: 20mm)",
+        "Corner sharpness",
+        "No layer delamination"
+      ]
+    },
+    {
+      "id": "tension_tower",
+      "name": "Resonance/Tension Tower",
+      "description": "Tower with varying acceleration settings to identify optimal acceleration and reduce ringing artifacts on prints.",
+      "print_type": "calibration",
+      "model_source": "https://www.thingiverse.com/thing:2723356",
+      "estimated_print_time": "60-90 minutes",
+      "layer_height": {
+        "default": 0.2,
+        "fast": 0.28
+      },
+      "wall_settings": {
+        "wall_count": 2,
+        "top_layers": 3,
+        "bottom_layers": 3
+      },
+      "infill": {
+        "density_default": 0,
+        "pattern": "rectilinear"
+      },
+      "speed": {
+        "outer_wall": 100,
+        "inner_wall": 100,
+        "infill": 100,
+        "top_bottom": 100,
+        "travel": 300
+      },
+      "cooling": {
+        "fan_default": 100,
+        "fan_min_layer_time": 2
+      },
+      "supports": {
+        "enabled": false
+      },
+      "adhesion": {
+        "type": "brim",
+        "brim_width": 6
+      },
+      "temperature": {
+        "nozzle": 205,
+        "bed": 55
+      },
+      "tips": [
+        "Slicer should generate stepped acceleration values automatically",
+        "Look for the height where ringing disappears or minimizes",
+        "Mark the optimal height and note the acceleration setting",
+        "Apply this acceleration limit to your regular profiles",
+        "Print direction matters - towers are typically labeled"
+      ],
+      "evaluation_points": [
+        "Find minimum height with no visible ringing",
+        "Note the acceleration value at that point",
+        "Check all four faces for consistency",
+        "Compare results at different print speeds"
+      ]
+    },
+    {
+      "id": "retraction_tower",
+      "name": "Retraction Tower",
+      "description": "Tower that varies retraction distance and/or speed to find optimal settings and minimize stringing.",
+      "print_type": "calibration",
+      "model_source": "https://www.thingiverse.com/thing:2752826",
+      "estimated_print_time": "45-75 minutes",
+      "layer_height": {
+        "default": 0.2,
+        "fast": 0.28
+      },
+      "wall_settings": {
+        "wall_count": 2,
+        "top_layers": 3,
+        "bottom_layers": 3
+      },
+      "infill": {
+        "density_default": 0,
+        "pattern": "rectilinear"
+      },
+      "speed": {
+        "outer_wall": 60,
+        "inner_wall": 80,
+        "infill": 80,
+        "top_bottom": 60,
+        "travel": 150
+      },
+      "cooling": {
+        "fan_default": 100,
+        "fan_min_layer_time": 2
+      },
+      "supports": {
+        "enabled": false
+      },
+      "adhesion": {
+        "type": "brim",
+        "brim_width": 6
+      },
+      "temperature": {
+        "nozzle": 205,
+        "bed": 55
+      },
+      "tips": [
+        "Configure slicer to vary retraction distance or speed in steps",
+        "Typical range: 0-8mm retraction distance, 20-60mm/s speed",
+        "Look for cleanest tower section with minimal stringing",
+        "Too much retraction can cause grinding or clogging",
+        "Combine with temperature tower for best results",
+        "Enable combing to reduce travel moves through model"
+      ],
+      "evaluation_points": [
+        "Find section with minimal stringing between features",
+        "Check for blobbing or scrubbing marks",
+        "Ensure no under-extrusion from excessive retraction",
+        "Test both retraction distance and speed variations"
+      ]
+    },
+    {
+      "id": "temperature_vase",
+      "name": "Temperature Calibration Vase",
+      "description": "Spiral vase mode print that tests extrusion temperature. Find the lowest temperature that still gives good layer adhesion.",
+      "print_type": "calibration",
+      "model_source": "https://www.thingiverse.com/thing:2654064",
+      "estimated_print_time": "20-40 minutes",
+      "layer_height": {
+        "default": 0.2,
+        "high_quality": 0.12
+      },
+      "wall_settings": {
+        "wall_count": 1,
+        "top_layers": 0,
+        "bottom_layers": 0
+      },
+      "infill": {
+        "density_default": 0,
+        "pattern": "none"
+      },
+      "speed": {
+        "outer_wall": 40,
+        "inner_wall": 40,
+        "infill": 40,
+        "top_bottom": 40,
+        "travel": 120
+      },
+      "cooling": {
+        "fan_default": 100,
+        "fan_min_layer_time": 0
+      },
+      "supports": {
+        "enabled": false
+      },
+      "adhesion": {
+        "type": "skirt",
+        "brim_width": 0
+      },
+      "temperature": {
+        "nozzle": 205,
+        "bed": 55
+      },
+      "tips": [
+        "Print in spiral vase mode (single continuous spiral)",
+        "Start at your normal printing temperature",
+        "Lower temperature in 5°C increments on successive prints",
+        "Look for the lowest temperature with good layer bonding",
+        "Too cold = poor bonding, layer splits, rough surface",
+        "Too hot = drooping, stringing, blobbing",
+        "Optimal temp gives smooth surface and strong layers"
+      ],
+      "evaluation_points": [
+        "Check for layer splitting or delamination",
+        "Surface should be smooth, not shiny or drooping",
+        "Test by gently pulling - should not separate layers",
+        "Find minimum viable temperature for less stringing"
+      ],
+      "special_modes": {
+        "spiral_vase": true,
+        "continuous_print": true
+      }
+    }
+  ],
+  "common_settings": {
+    "filament_diameter": 1.75,
+    "nozzle_diameter": 0.4,
+    "z_hop": false,
+    "retract_at_layer_change": false,
+    "seam_position": "nearest"
+  },
+  "tags": [
+    "calibration",
+    "test_prints",
+    "benchy",
+    "towers",
+    "recipes"
+  ],
+  "notes": "These profiles serve as starting points. Always tune based on your specific printer, filament, and environmental conditions. For best results, calibrate your esteps, PID tune your heater, and level your bed before running calibration prints."
+}

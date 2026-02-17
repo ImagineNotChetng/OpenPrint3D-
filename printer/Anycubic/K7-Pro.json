@@ -1,0 +1,78 @@
+{
+  "op3d_schema": "printer",
+  "op3d_schema_version": "0.1.0",
+  "id": "Anycubic/K7-Pro",
+  "maintainer": {
+    "name": "OpenPrint3D Community",
+    "maintainer_type": "community",
+    "website": "https://github.com/OpenPrint3D/OpenPrint3D"
+  },
+  "manufacturer": "Anycubic",
+  "model": "K7 Pro",
+  "variant": "Stock",
+  "build_volume": { "x": 350, "y": 350, "z": 400, "shape": "rectangular", "origin": "front_left" },
+  "kinematics": "corexy",
+  "axes": {
+    "x": { "max_speed": 700, "max_accel": 25000 },
+    "y": { "max_speed": 700, "max_accel": 25000 },
+    "z": { "max_speed": 25, "max_accel": 1000 }
+  },
+  "extruders": [{
+    "id": "tool0",
+    "nozzle_diameter": 0.4,
+    "nozzle_material": "hardened-steel",
+    "max_temp": 350,
+    "min_temp": 170,
+    "retraction_supported": true
+  }],
+  "bed": { "heated": true, "max_temp": 130, "surface_type": "PEI-textured" },
+  "chamber": { "heated": false, "max_temp": 55, "passive": true },
+  "firmware": { "flavor": "klipper", "identifier": "Anycubic K7 Pro Firmware" },
+  "network": { "has_wifi": true, "has_ethernet": true, "supports_lan_api": true },
+  "links": {
+    "product_page": "https://www.anycubic.com/products/k7-pro"
+  },
+  "tags": ["large-format", "high-speed", "corexy", "direct-drive", "auto-leveling", "klipper", "input-shaping", "ethernet", "700mm-s"],
+  "notes": "Anycubic K7 Pro. Flagship high-speed CoreXY with 350x350x400mm build volume. Features Klipper firmware with input shaping, LeviQ 4.0 auto-leveling, dual-gear direct drive, 350C max nozzle temp, and Ethernet connectivity.",
+  "x_cura": {
+    "definition": "anycubic_k7pro",
+    "definition_changes": {
+      "machine_width": 350,
+      "machine_depth": 350,
+      "machine_height": 400,
+      "nozzle_size": 0.4,
+      "heated_bed": true,
+      "machine_heated_bed": true,
+      "bed_temperature": 60,
+      "nozzle_temperature": 200
+    }
+  },
+  "x_prusaslicer": {
+    "printer_model": "K7 Pro",
+    "vendor": "Anycubic",
+    "filament_diameter": 1.75,
+    "nozzle_diameter": 0.4,
+    "bed_shape": "rectangular",
+    "bed_size": "350x350",
+    "print_height": 400
+  },
+  "x_orca": {
+    "machine_name": "K7 Pro",
+    "machine_manufacturer": "Anycubic",
+    "bed_x": 350,
+    "bed_y": 350,
+    "height": 400,
+    "nozzle_diameter": 0.4,
+    "filament_diameter": 1.75
+  },
+  "x_bambu": {
+    "product_id": "anycubic_k7pro",
+    "series": "K",
+    "support_lidar": false,
+    "support_ams": false,
+    "support_ams_lite": false,
+    "max_speed": 700,
+    "nozzle_type": "hardened-steel",
+    "has_ethernet": true
+  }
+}

@@ -1,0 +1,37 @@
+{
+  "op3d_schema": "printer",
+  "op3d_schema_version": "0.1.0",
+  "id": "Creality/Ender-3-V3-Plus-0.6mm",
+  "maintainer": {
+    "name": "OpenPrint3D Community",
+    "maintainer_type": "community",
+    "website": "https://github.com/OpenPrint3D/OpenPrint3D"
+  },
+  "manufacturer": "Creality",
+  "model": "Ender-3 V3 Plus",
+  "variant": "0.6mm Nozzle",
+  "build_volume": { "x": 300, "y": 300, "z": 330, "shape": "rectangular", "origin": "front_left" },
+  "kinematics": "cartesian",
+  "axes": {
+    "x": { "max_speed": 250, "max_accel": 8000 },
+    "y": { "max_speed": 250, "max_accel": 8000 },
+    "z": { "max_speed": 20, "max_accel": 1000 }
+  },
+  "extruders": [{
+    "id": "tool0",
+    "nozzle_diameter": 0.6,
+    "nozzle_material": "brass",
+    "max_temp": 260,
+    "min_temp": 170,
+    "retraction_supported": true
+  }],
+  "bed": { "heated": true, "max_temp": 110, "surface_type": "PEI-textured" },
+  "chamber": { "heated": false, "max_temp": 100, "passive": true },
+  "firmware": { "flavor": "marlin", "identifier": "Creality Ender-3 V3 Plus" },
+  "network": { "has_wifi": true, "has_ethernet": false, "supports_lan_api": false },
+  "links": {
+    "product_page": "https://www.creality.com/pages/ender-3-v3-plus"
+  },
+  "tags": ["fdm", "cartesian", "direct-drive", "auto-leveling", "large-format", "high-flow"],
+  "notes": "Creality Ender-3 V3 Plus with 0.6mm nozzle. Larger V3 with 300x300x330mm build volume for faster volumetric printing and structural parts."
+}

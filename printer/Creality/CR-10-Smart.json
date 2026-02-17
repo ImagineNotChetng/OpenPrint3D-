@@ -1,0 +1,37 @@
+{
+  "op3d_schema": "printer",
+  "op3d_schema_version": "0.1.0",
+  "id": "Creality/CR-10-Smart",
+  "maintainer": {
+    "name": "OpenPrint3D Community",
+    "maintainer_type": "community",
+    "website": "https://github.com/OpenPrint3D/OpenPrint3D"
+  },
+  "manufacturer": "Creality",
+  "model": "CR-10 Smart",
+  "variant": "Stock",
+  "build_volume": { "x": 300, "y": 300, "z": 400, "shape": "rectangular", "origin": "front_left" },
+  "kinematics": "cartesian",
+  "axes": {
+    "x": { "max_speed": 200, "max_accel": 5000 },
+    "y": { "max_speed": 200, "max_accel": 5000 },
+    "z": { "max_speed": 15, "max_accel": 500 }
+  },
+  "extruders": [{
+    "id": "tool0",
+    "nozzle_diameter": 0.4,
+    "nozzle_material": "brass",
+    "max_temp": 260,
+    "min_temp": 170,
+    "retraction_supported": true
+  }],
+  "bed": { "heated": true, "max_temp": 110, "surface_type": "glass" },
+  "chamber": { "heated": false, "max_temp": 100, "passive": true },
+  "firmware": { "flavor": "marlin", "identifier": "Creality CR-10 Smart" },
+  "network": { "has_wifi": true, "has_ethernet": false, "supports_lan_api": false },
+  "links": {
+    "product_page": "https://www.creality.com/pages/cr-10-smart"
+  },
+  "tags": ["fdm", "cartesian", "large-format", "wi-fi", "touchscreen", "auto-leveling"],
+  "notes": "Creality CR-10 Smart. Feature-rich CR-10 with 300x300x400mm build volume, Wi-Fi connectivity, 4.3-inch touchscreen, and CR-Touch auto-leveling."
+}

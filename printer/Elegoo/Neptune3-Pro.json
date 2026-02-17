@@ -1,0 +1,80 @@
+{
+  "op3d_schema": "printer",
+  "op3d_schema_version": "0.1.0",
+  "id": "Elegoo/Neptune3-Pro",
+  "maintainer": {
+    "name": "OpenPrint3D Community",
+    "maintainer_type": "community",
+    "website": "https://github.com/OpenPrint3D/OpenPrint3D"
+  },
+  "manufacturer": "Elegoo",
+  "model": "Neptune 3 Pro",
+  "variant": "Stock",
+  "build_volume": { "x": 225, "y": 225, "z": 265, "shape": "rectangular", "origin": "front_left" },
+  "kinematics": "cartesian",
+  "axes": {
+    "x": { "max_speed": 150, "max_accel": 5000 },
+    "y": { "max_speed": 150, "max_accel": 5000 },
+    "z": { "max_speed": 12, "max_accel": 500 }
+  },
+  "extruders": [{
+    "id": "tool0",
+    "nozzle_diameter": 0.4,
+    "nozzle_material": "brass",
+    "max_temp": 300,
+    "min_temp": 170,
+    "retraction_supported": true
+  }],
+  "bed": { "heated": true, "max_temp": 100, "surface_type": "PEI" },
+  "chamber": { "heated": false, "max_temp": 35, "passive": false },
+  "firmware": { "flavor": "marlin", "identifier": "Elegoo Neptune 3 Pro Firmware" },
+  "network": { "has_wifi": true, "has_ethernet": false, "supports_lan_api": false },
+  "links": {
+    "product_page": "https://www.elegoo.com/products/neptune-3-pro-3d-printer"
+  },
+  "tags": ["cartesian", "direct-drive", "auto-leveling", "budget-friendly"],
+  "notes": "Elegoo Neptune 3 Pro. Budget-friendly Cartesian printer with direct extruder, auto-leveling, and magnetic build plate.",
+  "x_cura": {
+    "definition": "elegoo_neptune3_pro",
+    "definition_changes": {
+      "machine_width": 225,
+      "machine_depth": 225,
+      "machine_height": 265,
+      "nozzle_size": 0.4,
+      "heated_bed": true,
+      "machine_heated_bed": true,
+      "bed_temperature": 60,
+      "nozzle_temperature": 200
+    }
+  },
+  "x_prusaslicer": {
+    "printer_model": "Neptune 3 Pro",
+    "vendor": "Elegoo",
+    "filament_diameter": 1.75,
+    "nozzle_diameter": 0.4,
+    "bed_shape": "rectangular",
+    "bed_size": "225x225",
+    "print_height": 265,
+    "printer_technology": "FFF"
+  },
+  "x_orca": {
+    "machine_name": "Neptune 3 Pro",
+    "machine_manufacturer": "Elegoo",
+    "bed_x": 225,
+    "bed_y": 225,
+    "height": 265,
+    "nozzle_diameter": 0.4,
+    "filament_diameter": 1.75
+  },
+  "x_simplify3d": {
+    "machine_name": "Elegoo Neptune 3 Pro",
+    "build_width": 225,
+    "build_depth": 225,
+    "build_height": 265,
+    "nozzle_diameter": 0.4,
+    "filament_diameter": 1.75,
+    "heated_bed": true,
+    "bed_temperature": 60,
+    "nozzle_temperature": 200
+  }
+}

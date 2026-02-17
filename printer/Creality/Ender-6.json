@@ -1,0 +1,78 @@
+{
+  "op3d_schema": "printer",
+  "op3d_schema_version": "0.1.0",
+  "id": "Creality/Ender-6",
+  "maintainer": {
+    "name": "OpenPrint3D Community",
+    "maintainer_type": "community",
+    "website": "https://github.com/OpenPrint3D/OpenPrint3D"
+  },
+  "manufacturer": "Creality",
+  "model": "Ender-6",
+  "variant": "Stock",
+  "build_volume": { "x": 220, "y": 220, "z": 220, "shape": "rectangular", "origin": "front_left" },
+  "kinematics": "corexy",
+  "axes": {
+    "x": { "max_speed": 250, "max_accel": 5000 },
+    "y": { "max_speed": 250, "max_accel": 5000 },
+    "z": { "max_speed": 12, "max_accel": 200 }
+  },
+  "extruders": [{
+    "id": "tool0",
+    "nozzle_diameter": 0.4,
+    "nozzle_material": "brass",
+    "max_temp": 260,
+    "min_temp": 170,
+    "retraction_supported": true
+  }],
+  "bed": { "heated": true, "max_temp": 100, "surface_type": "carborundum-glass" },
+  "chamber": { "heated": false, "passive": false },
+  "firmware": { "flavor": "marlin", "identifier": "Marlin 2.x (Creality)" },
+  "network": { "has_wifi": false, "has_ethernet": false, "supports_lan_api": false },
+  "links": {
+    "product_page": "https://www.creality.com/products/ender-6"
+  },
+  "tags": ["corexy", "direct-drive", "box-printer", "budget"],
+  "notes": "Creality Ender-6. First Ender series CoreXY printer. Box-style enclosed design with direct drive extruder. 250mm/s max speed.",
+  "x_cura": {
+    "definition": "creality_ender6",
+    "definition_changes": {
+      "machine_width": 220,
+      "machine_depth": 220,
+      "machine_height": 220,
+      "nozzle_size": 0.4,
+      "heated_bed": true,
+      "machine_heated_bed": true,
+      "bed_temperature": 60,
+      "nozzle_temperature": 200
+    }
+  },
+  "x_prusaslicer": {
+    "printer_model": "Ender-6",
+    "vendor": "Creality",
+    "filament_diameter": 1.75,
+    "nozzle_diameter": 0.4,
+    "bed_shape": "rectangular",
+    "bed_size": "220x220",
+    "print_height": 220,
+    "printer_technology": "FFF"
+  },
+  "x_orca": {
+    "machine_name": "Ender-6",
+    "machine_manufacturer": "Creality",
+    "bed_x": 220,
+    "bed_y": 220,
+    "height": 220,
+    "nozzle_diameter": 0.4,
+    "filament_diameter": 1.75,
+    "kinematics": "corexy"
+  },
+  "x_bambu": {
+    "product_id": "creality_ender6",
+    "series": "Ender-6",
+    "support_lidar": false,
+    "support_ams": false,
+    "support_ams_lite": false,
+    "max_speed": 250
+  }
+}

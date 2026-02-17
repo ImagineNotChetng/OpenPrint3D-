@@ -11,27 +11,65 @@
   "model": "Ender-3 V3 SE",
   "variant": "Stock",
   "build_volume": { "x": 220, "y": 220, "z": 250, "shape": "rectangular", "origin": "front_left" },
-  "kinematics": "bed_slinger",
+  "kinematics": "corexz",
   "axes": {
     "x": { "max_speed": 250, "max_accel": 2500 },
     "y": { "max_speed": 250, "max_accel": 2500 },
-    "z": { "max_speed": 10, "max_accel": 100 }
+    "z": { "max_speed": 40, "max_accel": 500 }
   },
   "extruders": [{
     "id": "tool0",
     "nozzle_diameter": 0.4,
     "nozzle_material": "brass",
-    "max_temp": 260,
-    "min_temp": 170,
+    "max_temp": 300,
+    "min_temp": 180,
     "retraction_supported": true
   }],
-  "bed": { "heated": true, "max_temp": 100, "surface_type": "PEI-textured" },
+  "bed": { "heated": true, "max_temp": 110, "surface_type": "PEI-textured" },
   "chamber": { "heated": false, "passive": false },
-  "firmware": { "flavor": "marlin", "identifier": "Marlin 2.x (Creality)" },
-  "network": { "has_wifi": false, "has_ethernet": false, "supports_lan_api": false },
+  "firmware": { "flavor": "klipper", "identifier": "Creality K7.2" },
+  "network": { "has_wifi": true, "has_ethernet": false, "supports_lan_api": false },
   "links": {
     "product_page": "https://www.creality.com/products/ender-3-v3-se"
   },
-  "tags": ["budget", "beginner", "bed-slinger", "auto-level", "direct-drive"],
-  "notes": "Creality Ender-3 V3 SE. Budget-friendly with auto bed leveling, direct drive Sprite extruder, and PEI build plate. Great entry-level printer."
+  "tags": ["budget", "corexz", "high-speed", "klipper", "newcomer"],
+  "notes": "Creality Ender-3 V3 SE. CoreXZ design with up to 250mm/s print speed. Smart filament runout sensor included.",
+  "x_cura": {
+    "definition": "creality_ender3v3se",
+    "definition_changes": {
+      "machine_width": 220,
+      "machine_depth": 220,
+      "machine_height": 250,
+      "nozzle_size": 0.4,
+      "heated_bed": true,
+      "machine_heated_bed": true,
+      "bed_temperature": 60,
+      "nozzle_temperature": 200
+    }
+  },
+  "x_prusaslicer": {
+    "printer_model": "Ender-3 V3 SE",
+    "vendor": "Creality",
+    "filament_diameter": 1.75,
+    "nozzle_diameter": 0.4,
+    "bed_shape": "rectangular",
+    "bed_size": "220x220",
+    "print_height": 250
+  },
+  "x_orca": {
+    "machine_name": "Ender-3 V3 SE",
+    "machine_manufacturer": "Creality",
+    "bed_x": 220,
+    "bed_y": 220,
+    "height": 250,
+    "nozzle_diameter": 0.4,
+    "filament_diameter": 1.75
+  },
+  "x_bambu": {
+    "product_id": "creality_ender3v3se",
+    "series": "Ender",
+    "support_lidar": false,
+    "support_ams": false,
+    "support_ams_lite": false
+  }
 }

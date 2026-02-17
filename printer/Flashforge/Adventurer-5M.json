@@ -1,0 +1,76 @@
+{
+  "op3d_schema": "printer",
+  "op3d_schema_version": "0.1.0",
+  "id": "Flashforge/Adventurer-5M",
+  "maintainer": {
+    "name": "OpenPrint3D Community",
+    "maintainer_type": "community",
+    "website": "https://github.com/OpenPrint3D/OpenPrint3D"
+  },
+  "manufacturer": "Flashforge",
+  "model": "Adventurer 5M",
+  "variant": "Stock",
+  "build_volume": { "x": 220, "y": 220, "z": 220, "shape": "rectangular", "origin": "front_left" },
+  "kinematics": "cartesian",
+  "axes": {
+    "x": { "max_speed": 200, "max_accel": 2000 },
+    "y": { "max_speed": 200, "max_accel": 2000 },
+    "z": { "max_speed": 15, "max_accel": 200 }
+  },
+  "extruders": [{
+    "id": "tool0",
+    "nozzle_diameter": 0.4,
+    "nozzle_material": "brass",
+    "max_temp": 280,
+    "min_temp": 170,
+    "retraction_supported": true
+  }],
+  "bed": { "heated": true, "max_temp": 110, "surface_type": "peI" },
+  "chamber": { "heated": false, "passive": false },
+  "firmware": { "flavor": "marlin", "identifier": "Flashforge FW" },
+  "network": { "has_wifi": true, "has_ethernet": false, "supports_lan_api": true },
+  "links": {
+    "product_page": "https://www.flashforge.com/adventurer-5m-3d-printer"
+  },
+  "tags": ["enclosed", "wifi", "beginner-friendly", "filament-sensor"],
+  "notes": "Flashforge Adventurer 5M. Fully enclosed 220x220x220mm Cartesian printer with built-in camera, auto-leveling, and WiFi connectivity. Great for beginners.",
+  "x_cura": {
+    "definition": "flashforge_adventurer_5m",
+    "definition_changes": {
+      "machine_width": 220,
+      "machine_depth": 220,
+      "machine_height": 220,
+      "nozzle_size": 0.4,
+      "heated_bed": true,
+      "machine_heated_bed": true,
+      "bed_temperature": 80,
+      "nozzle_temperature": 210,
+      "build_volume": "220x220x220"
+    }
+  },
+  "x_prusaslicer": {
+    "printer_model": "Adventurer 5M",
+    "vendor": "Flashforge",
+    "filament_diameter": 1.75,
+    "nozzle_diameter": 0.4,
+    "bed_shape": "rectangular",
+    "bed_size": "220x220",
+    "print_height": 220
+  },
+  "x_orca": {
+    "machine_name": "Adventurer_5M",
+    "machine_manufacturer": "Flashforge",
+    "bed_x": 220,
+    "bed_y": 220,
+    "height": 220,
+    "nozzle_diameter": 0.4,
+    "filament_diameter": 1.75
+  },
+  "x_bambu": {
+    "product_id": "flashforge_adventurer_5m",
+    "series": "Adventurer",
+    "support_lidar": false,
+    "support_ams": false,
+    "support_ams_lite": false
+  }
+}

@@ -1,0 +1,80 @@
+{
+  "op3d_schema": "printer",
+  "op3d_schema_version": "0.1.0",
+  "id": "Sovol/SV16-Pro",
+  "maintainer": {
+    "name": "OpenPrint3D Community",
+    "maintainer_type": "community",
+    "website": "https://github.com/OpenPrint3D/OpenPrint3D"
+  },
+  "manufacturer": "Sovol",
+  "model": "SV16 Pro",
+  "variant": "Stock",
+  "build_volume": { "x": 350, "y": 350, "z": 400, "shape": "rectangular", "origin": "front_left" },
+  "kinematics": "corexy",
+  "axes": {
+    "x": { "max_speed": 600, "max_accel": 25000 },
+    "y": { "max_speed": 600, "max_accel": 25000 },
+    "z": { "max_speed": 20, "max_accel": 500 }
+  },
+  "extruders": [{
+    "id": "tool0",
+    "nozzle_diameter": 0.4,
+    "nozzle_material": "hardened-steel",
+    "max_temp": 350,
+    "min_temp": 180,
+    "retraction_supported": true
+  }],
+  "bed": { "heated": true, "max_temp": 130, "surface_type": "PEI-textured" },
+  "chamber": { "heated": false, "max_temp": 55, "passive": true },
+  "firmware": { "flavor": "klipper", "identifier": "Sovol SV16 Pro Firmware" },
+  "network": { "has_wifi": true, "has_ethernet": true, "supports_lan_api": true },
+  "links": {
+    "product_page": "https://sovol3d.com/products/sv16-pro-3d-printer"
+  },
+  "tags": ["premium", "corexy", "direct-drive", "high-speed", "600mm-s", "large-build", "350c-capable", "enclosed", "input-shaping"],
+  "notes": "Sovol SV16 Pro. Large-format flagship CoreXY with 350x350x400mm build volume, Klipper firmware with input shaping, up to 600mm/s speed, and 350°C hotend for high-temp materials. Enclosed build chamber.",
+  "x_cura": {
+    "definition": "sovol_sv16pro",
+    "definition_changes": {
+      "machine_width": 350,
+      "machine_depth": 350,
+      "machine_height": 400,
+      "nozzle_size": 0.4,
+      "heated_bed": true,
+      "machine_heated_bed": true,
+      "bed_temperature": 60,
+      "nozzle_temperature": 200
+    }
+  },
+  "x_prusaslicer": {
+    "printer_model": "SV16 Pro",
+    "vendor": "Sovol",
+    "filament_diameter": 1.75,
+    "nozzle_diameter": 0.4,
+    "bed_shape": "rectangular",
+    "bed_size": "350x350",
+    "print_height": 400,
+    "printer_technology": "FFF"
+  },
+  "x_orca": {
+    "machine_name": "SV16 Pro",
+    "machine_manufacturer": "Sovol",
+    "bed_x": 350,
+    "bed_y": 350,
+    "height": 400,
+    "nozzle_diameter": 0.4,
+    "filament_diameter": 1.75,
+    "kinematics": "corexy"
+  },
+  "x_bambu": {
+    "product_id": "sovol_sv16pro",
+    "series": "SV",
+    "support_lidar": false,
+    "support_ams": false,
+    "support_ams_lite": true,
+    "max_speed": 600,
+    "nozzle_type": "hardened-steel",
+    "max_temp": 350
+  }
+}

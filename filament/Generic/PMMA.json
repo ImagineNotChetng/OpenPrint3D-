@@ -1,0 +1,61 @@
+{
+  "op3d_schema": "filament",
+  "op3d_schema_version": "0.1.0",
+  "id": "Generic/PMMA",
+
+  "maintainer": {
+    "name": "OpenPrint3D",
+    "maintainer_type": "community",
+    "website": "https://github.com/OpenPrint3D/OpenPrint3D"
+  },
+
+  "brand": "Generic",
+  "name": "Generic PMMA 1.75mm",
+  "material": "PMMA",
+
+  "color": "clear",
+  "diameter": 1.75,
+  "density": 1.18,
+
+  "nozzle": {
+    "min": 230,
+    "max": 270,
+    "recommended": 250
+  },
+
+  "bed": {
+    "min": 70,
+    "max": 100,
+    "recommended": 85
+  },
+
+  "fan": {
+    "min": 30,
+    "max": 100,
+    "recommended": 70
+  },
+
+  "drying": {
+    "temperature": 70,
+    "duration_hours": 4
+  },
+
+  "environment": {
+    "sensitive_to_moisture": true,
+    "enclosure_recommended": false,
+    "max_ambient_temp": 35
+  },
+
+  "volumetric_speed": 6,
+
+  "external_ids": {},
+  "links": {},
+  "tags": ["pmma", "acrylic", "transparent", "optical", "1.75mm"],
+
+  "notes": "PMMA (Polymethyl Methacrylate/Acrylic) is known for excellent optical clarity and UV resistance. Can achieve transparent prints with proper settings. More brittle than other materials. Requires good cooling and slower print speeds for clarity. Can be polished for improved transparency.",
+
+  "x_cura": {},
+  "x_prusaslicer": {},
+  "x_orca": {},
+  "x_bambu": {}
+}

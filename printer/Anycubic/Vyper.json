@@ -1,0 +1,90 @@
+{
+  "op3d_schema": "printer",
+  "op3d_schema_version": "0.1.0",
+  "id": "Anycubic/Vyper",
+  "maintainer": {
+    "name": "OpenPrint3D Community",
+    "maintainer_type": "community",
+    "website": "https://github.com/OpenPrint3D/OpenPrint3D"
+  },
+  "manufacturer": "Anycubic",
+  "model": "Vyper",
+  "variant": "Stock",
+  "build_volume": { "x": 245, "y": 260, "z": 260, "shape": "rectangular", "origin": "front_left" },
+  "kinematics": "i3",
+  "axes": {
+    "x": { "max_speed": 300, "max_accel": 2000 },
+    "y": { "max_speed": 300, "max_accel": 2000 },
+    "z": { "max_speed": 10, "max_accel": 200 }
+  },
+  "extruders": [{
+    "id": "tool0",
+    "nozzle_diameter": 0.4,
+    "nozzle_material": "brass",
+    "max_temp": 260,
+    "min_temp": 170,
+    "retraction_supported": true
+  }],
+  "bed": { "heated": true, "max_temp": 100, "surface_type": "PEI-spring" },
+  "chamber": { "heated": false, "max_temp": 35, "passive": false },
+  "firmware": { "flavor": "marlin", "identifier": "Anycubic Vyper" },
+  "network": { "has_wifi": true, "has_ethernet": false, "supports_lan_api": false },
+  "links": {
+    "product_page": "https://www.anycubic.com/products/vyper"
+  },
+  "tags": ["i3-style", "auto-leveling", "budget-friendly", "quiet"],
+  "notes": "Anycubic Vyper. Reliable i3-style printer with automatic bed leveling, silent steppers, and PEI spring sheet.",
+  "x_cura": {
+    "definition": "anycubic_vyper",
+    "definition_changes": {
+      "machine_width": 245,
+      "machine_depth": 260,
+      "machine_height": 260,
+      "nozzle_size": 0.4,
+      "heated_bed": true,
+      "machine_heated_bed": true,
+      "bed_temperature": 60,
+      "nozzle_temperature": 200
+    }
+  },
+  "x_prusaslicer": {
+    "printer_model": "Vyper",
+    "vendor": "Anycubic",
+    "filament_diameter": 1.75,
+    "nozzle_diameter": 0.4,
+    "bed_shape": "rectangular",
+    "bed_size": "245x260",
+    "print_height": 260,
+    "printer_technology": "FFF"
+  },
+  "x_orca": {
+    "machine_name": "Vyper",
+    "machine_manufacturer": "Anycubic",
+    "bed_x": 245,
+    "bed_y": 260,
+    "height": 260,
+    "nozzle_diameter": 0.4,
+    "filament_diameter": 1.75,
+    "support_ams": false,
+    "support_xc": false
+  },
+  "x_bambu": {
+    "product_id": "anycubic_vyper_00",
+    "series": "Vyper",
+    "support_lidar": false,
+    "support_ams": false,
+    "support_ams_lite": false,
+    "support_xc": false,
+    "active_chamber_heating": false,
+    "max_speed": 100,
+    "nozzle_type": "brass"
+  },
+  "x_simplify3d": {
+    "machine_name": "Anycubic Vyper",
+    "build_volume": "245x260x260",
+    "nozzle_diameter": 0.4,
+    "filament_diameter": 1.75,
+    "heated_bed": true,
+    "bed_temperature": 60
+  }
+}

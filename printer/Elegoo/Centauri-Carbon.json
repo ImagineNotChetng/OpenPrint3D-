@@ -1,0 +1,37 @@
+{
+  "op3d_schema": "printer",
+  "op3d_schema_version": "0.1.0",
+  "id": "Elegoo/Centauri-Carbon",
+  "maintainer": {
+    "name": "OpenPrint3D Community",
+    "maintainer_type": "community",
+    "website": "https://github.com/OpenPrint3D/OpenPrint3D"
+  },
+  "manufacturer": "Elegoo",
+  "model": "Centauri Carbon",
+  "variant": "Stock",
+  "build_volume": { "x": 256, "y": 256, "z": 256, "shape": "rectangular", "origin": "front_left" },
+  "kinematics": "corexy",
+  "axes": {
+    "x": { "max_speed": 600, "max_accel": 25000 },
+    "y": { "max_speed": 600, "max_accel": 25000 },
+    "z": { "max_speed": 20, "max_accel": 500 }
+  },
+  "extruders": [{
+    "id": "tool0",
+    "nozzle_diameter": 0.4,
+    "nozzle_material": "hardened-steel",
+    "max_temp": 350,
+    "min_temp": 170,
+    "retraction_supported": true
+  }],
+  "bed": { "heated": true, "max_temp": 120, "surface_type": "PEI-textured" },
+  "chamber": { "heated": true, "max_temp": 60, "passive": true },
+  "firmware": { "flavor": "klipper", "identifier": "Klipper (Elegoo Centauri)" },
+  "network": { "has_wifi": true, "has_ethernet": true, "supports_lan_api": true },
+  "links": {
+    "product_page": "https://www.elegoo.com/products/elegoo-centauri-carbon"
+  },
+  "tags": ["premium", "corexy", "enclosed", "high-speed", "direct-drive", "350c-hotend", "active-heating", "ethernet", "ams-compatible"],
+  "notes": "Elegoo Centauri Carbon. Premium CoreXY enclosed printer with 256mm³ build volume, active chamber heating, 600mm/s speed, 350C hotend for carbon fiber printing, and multi-material AMS support."
+}

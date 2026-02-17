@@ -1,0 +1,80 @@
+{
+  "op3d_schema": "printer",
+  "op3d_schema_version": "0.1.0",
+  "id": "Ultimaker/S3-AA08-BB04",
+  "maintainer": {
+    "name": "OpenPrint3D Community",
+    "maintainer_type": "community",
+    "website": "https://github.com/OpenPrint3D/OpenPrint3D"
+  },
+  "manufacturer": "Ultimaker",
+  "model": "S3",
+  "variant": "AA 0.8 / BB 0.4",
+  "build_volume": { "x": 230, "y": 190, "z": 200, "shape": "rectangular", "origin": "center" },
+  "kinematics": "corexy",
+  "axes": {
+    "x": { "max_speed": 150, "max_accel": 3000 },
+    "y": { "max_speed": 150, "max_accel": 3000 },
+    "z": { "max_speed": 20, "max_accel": 500 }
+  },
+  "extruders": [{
+    "id": "tool0",
+    "nozzle_diameter": 0.8,
+    "nozzle_material": "brass",
+    "max_temp": 280,
+    "min_temp": 180,
+    "retraction_supported": true
+  }, {
+    "id": "tool1",
+    "nozzle_diameter": 0.4,
+    "nozzle_material": "brass",
+    "max_temp": 280,
+    "min_temp": 180,
+    "retraction_supported": true
+  }],
+  "bed": { "heated": true, "max_temp": 120, "surface_type": "glass" },
+  "chamber": { "heated": false, "passive": true },
+  "firmware": { "flavor": "proprietary", "identifier": "Ultimaker S3 Firmware" },
+  "network": { "has_wifi": true, "has_ethernet": true, "supports_lan_api": true },
+  "links": {
+    "product_page": "https://ultimaker.com/3d-printers/s-series/ultimaker-s3/"
+  },
+  "tags": ["premium", "corexy", "dual-extruder", "enclosed", "professional", "fast-printing"],
+  "notes": "Ultimaker S3 with AA 0.8mm (build, fast/draft) and BB 0.4mm (support) print cores. Ideal for rapid prototyping and large parts.",
+  "x_cura": {
+    "definition": "ultimaker_s3",
+    "definition_changes": {
+      "machine_width": 230,
+      "machine_depth": 190,
+      "machine_height": 200,
+      "nozzle_size": 0.8,
+      "heated_bed": true,
+      "machine_heated_bed": true
+    }
+  },
+  "x_prusaslicer": {
+    "printer_model": "S3",
+    "vendor": "Ultimaker",
+    "filament_diameter": 2.85,
+    "nozzle_diameter": 0.8,
+    "bed_shape": "rectangular",
+    "bed_size": "230x190",
+    "print_height": 200
+  },
+  "x_orca": {
+    "machine_name": "S3",
+    "machine_manufacturer": "Ultimaker",
+    "bed_x": 230,
+    "bed_y": 190,
+    "height": 200,
+    "nozzle_diameter": 0.8,
+    "filament_diameter": 2.85
+  },
+  "x_bambu": {
+    "product_id": "ultimaker_s3",
+    "series": "S",
+    "support_lidar": false,
+    "support_ams": false,
+    "support_ams_lite": false
+  }
+}

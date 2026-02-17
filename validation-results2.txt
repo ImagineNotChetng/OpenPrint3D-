@@ -1,0 +1,823 @@
+Found 340 printer profiles and 209 filament profiles
+
+=== Validating Printer Profiles ===
+OK:  printer\Anycubic\i3-Mega-X.json
+OK:  printer\Anycubic\i3-Mega.json
+OK:  printer\Anycubic\K1-0.4mm.json
+OK:  printer\Anycubic\K1-Pro.json
+OK:  printer\Anycubic\K1.json
+OK:  printer\Anycubic\K2-Max-Pro.json
+OK:  printer\Anycubic\K2-Max.json
+FAIL: printer\Anycubic\K2-Pro-0.2mm.json
+  - /extruders/0/min_temp: must be >= 100
+  - /chamber/max_temp: must be >= 20
+  - /firmware/flavor: must be equal to one of the allowed values
+FAIL: printer\Anycubic\K2-Pro-0.6mm.json
+  - /extruders/0/min_temp: must be >= 100
+  - /chamber/max_temp: must be >= 20
+  - /firmware/flavor: must be equal to one of the allowed values
+OK:  printer\Anycubic\K2-Pro-MS.json
+OK:  printer\Anycubic\K2-Pro-Neo.json
+OK:  printer\Anycubic\K2-Pro.json
+OK:  printer\Anycubic\K3-Pro.json
+OK:  printer\Anycubic\K4.json
+OK:  printer\Anycubic\K5.json
+OK:  printer\Anycubic\K6-Pro.json
+OK:  printer\Anycubic\K6.json
+OK:  printer\Anycubic\K7-Pro.json
+OK:  printer\Anycubic\K8-Pro.json
+OK:  printer\Anycubic\K9.json
+OK:  printer\Anycubic\Kobra-2-Max.json
+OK:  printer\Anycubic\Kobra-2-Neo.json
+OK:  printer\Anycubic\Kobra-2-Plus.json
+OK:  printer\Anycubic\Kobra-2-Pro.json
+OK:  printer\Anycubic\Kobra-3.json
+OK:  printer\Anycubic\Kobra-4.json
+OK:  printer\Anycubic\Kobra-Max.json
+OK:  printer\Anycubic\Vyper-2.json
+OK:  printer\Anycubic\Vyper-Pro.json
+OK:  printer\Anycubic\Vyper.json
+OK:  printer\Apium\P220.json
+OK:  printer\Artillery\Genius-2.json
+OK:  printer\Artillery\Genius-3.json
+OK:  printer\Artillery\Genius-4.json
+OK:  printer\Artillery\Genius-Pro.json
+OK:  printer\Artillery\Genius.json
+OK:  printer\Artillery\Hornet.json
+OK:  printer\BambuLab\A1-2024.json
+OK:  printer\BambuLab\A1-2025.json
+OK:  printer\BambuLab\A1-2026.json
+OK:  printer\BambuLab\A1-Mini-2024.json
+OK:  printer\BambuLab\A1-Mini-2026.json
+OK:  printer\BambuLab\A1-Mini-Combo-2026.json
+OK:  printer\BambuLab\A1-Mini-Combo.json
+OK:  printer\BambuLab\A1-Mini.json
+OK:  printer\BambuLab\A1.json
+OK:  printer\BambuLab\H2D.json
+FAIL: printer\BambuLab\P1P-0.2mm.json
+  - /extruders/0/min_temp: must be >= 100
+  - /firmware/flavor: must be equal to one of the allowed values
+FAIL: printer\BambuLab\P1P-0.6mm.json
+  - /extruders/0/min_temp: must be >= 100
+  - /firmware/flavor: must be equal to one of the allowed values
+FAIL: printer\BambuLab\P1P-0.8mm.json
+  - /extruders/0/min_temp: must be >= 100
+  - /firmware/flavor: must be equal to one of the allowed values
+OK:  printer\BambuLab\P1P-2025.json
+OK:  printer\BambuLab\P1P-2026.json
+OK:  printer\BambuLab\P1P-Combo-2026.json
+OK:  printer\BambuLab\P1P-Combo.json
+FAIL: printer\BambuLab\P1P-Hardened.json
+  - /extruders/0/nozzle_material: must be equal to one of the allowed values
+  - /extruders/0/min_temp: must be >= 100
+  - /firmware/flavor: must be equal to one of the allowed values
+OK:  printer\BambuLab\P1P.json
+OK:  printer\BambuLab\P1S-2024.json
+OK:  printer\BambuLab\P1S-2025.json
+OK:  printer\BambuLab\P1S-2026-Ultra.json
+OK:  printer\BambuLab\P1S-2026.json
+OK:  printer\BambuLab\P1S-AMS.json
+OK:  printer\BambuLab\P1S-Max.json
+OK:  printer\BambuLab\P1S.json
+OK:  printer\BambuLab\P1SC.json
+OK:  printer\BambuLab\X1-Carbon.json
+FAIL: printer\BambuLab\X1C-0.2mm.json
+  - /extruders/0/min_temp: must be >= 100
+  - /firmware/flavor: must be equal to one of the allowed values
+FAIL: printer\BambuLab\X1C-0.6mm.json
+  - /extruders/0/min_temp: must be >= 100
+  - /firmware/flavor: must be equal to one of the allowed values
+FAIL: printer\BambuLab\X1C-0.8mm.json
+  - /extruders/0/min_temp: must be >= 100
+  - /firmware/flavor: must be equal to one of the allowed values
+OK:  printer\BambuLab\X1C-2024.json
+OK:  printer\BambuLab\X1C-2025.json
+FAIL: printer\BambuLab\X1C-2026-Ultra.json
+  - /extruders/0/nozzle_material: must be equal to one of the allowed values
+OK:  printer\BambuLab\X1C-2026.json
+OK:  printer\BambuLab\X1C-AMS-Lite.json
+OK:  printer\BambuLab\X1C-Combo.json
+FAIL: printer\BambuLab\X1C-Hardened.json
+  - /extruders/0/nozzle_material: must be equal to one of the allowed values
+  - /extruders/0/min_temp: must be >= 100
+  - /firmware/flavor: must be equal to one of the allowed values
+OK:  printer\BambuLab\X1C-Plus.json
+OK:  printer\BambuLab\X1C-Ultra.json
+OK:  printer\BambuLab\X1C.json
+OK:  printer\BambuLab\X1E-2024.json
+OK:  printer\BambuLab\X1E.json
+OK:  printer\BambuLab\X2-Combo.json
+OK:  printer\BambuLab\X2-Plus.json
+OK:  printer\BambuLab\X2C-2025.json
+OK:  printer\BambuLab\X2C.json
+FAIL: printer\BCN3D\Sigma-R19.json
+  - /kinematics: must be equal to one of the allowed values
+FAIL: printer\BCN3D\SigmaD25.json
+  - /kinematics: must be equal to one of the allowed values
+  - /firmware/flavor: must be equal to one of the allowed values
+FAIL: printer\Beamhaus\D4.json
+  - /axes/z/max_speed: must be <= 100
+  - /axes/z/max_accel: must be <= 5000
+OK:  printer\BigTreeTech\Geeets.json
+OK:  printer\BIQU\B1.json
+OK:  printer\Creality\CR-10-SE.json
+FAIL: printer\Creality\CR-10-Smart-Pro.json
+  - /firmware/flavor: must be equal to one of the allowed values
+FAIL: printer\Creality\CR-10-Smart.json
+  - /extruders/0/min_temp: must be >= 100
+  - /chamber/max_temp: must be >= 20
+  - /firmware/flavor: must be equal to one of the allowed values
+OK:  printer\Creality\CR-10-V2.json
+OK:  printer\Creality\CR-10-V3-Max.json
+OK:  printer\Creality\CR-10-V3-Pro.json
+OK:  printer\Creality\CR-10-V3.json
+OK:  printer\Creality\CR-10-V4.json
+OK:  printer\Creality\CR-10-V5.json
+OK:  printer\Creality\CR-10-V6.json
+FAIL: printer\Creality\CR-10-V7.json
+  - /extruders/0/min_temp: must be >= 100
+  - /chamber/max_temp: must be >= 20
+  - /firmware/flavor: must be equal to one of the allowed values
+FAIL: printer\Creality\CR-30.json
+  - /build_volume/z: must be number
+  - /build_volume/shape: must be equal to one of the allowed values
+  - /kinematics: must be equal to one of the allowed values
+  - /extruders/0/min_temp: must be >= 100
+  - /bed/max_temp: must be >= 40
+  - /chamber/max_temp: must be >= 20
+  - /firmware/flavor: must be equal to one of the allowed values
+OK:  printer\Creality\Ender-3-Neo.json
+FAIL: printer\Creality\Ender-3-S1-0.4mm.json
+  - /extruders/0/min_temp: must be >= 100
+  - /chamber/max_temp: must be >= 20
+  - /firmware/flavor: must be equal to one of the allowed values
+FAIL: printer\Creality\Ender-3-S1-Plus-0.6mm.json
+  - /extruders/0/min_temp: must be >= 100
+  - /chamber/max_temp: must be >= 20
+  - /firmware/flavor: must be equal to one of the allowed values
+OK:  printer\Creality\Ender-3-S1-Plus.json
+FAIL: printer\Creality\Ender-3-S1-Pro-0.2mm.json
+  - /extruders/0/min_temp: must be >= 100
+  - /chamber/max_temp: must be >= 20
+  - /firmware/flavor: must be equal to one of the allowed values
+OK:  printer\Creality\Ender-3-S1-Pro.json
+OK:  printer\Creality\Ender-3-S1-Ultra.json
+OK:  printer\Creality\Ender-3-S1.json
+FAIL: printer\Creality\Ender-3-V2-0.4mm.json
+  - /extruders/0/min_temp: must be >= 100
+  - /chamber/max_temp: must be >= 20
+  - /firmware/flavor: must be equal to one of the allowed values
+OK:  printer\Creality\Ender-3-V2.json
+FAIL: printer\Creality\Ender-3-V3-KE-0.4mm.json
+  - /extruders/0/min_temp: must be >= 100
+  - /chamber/max_temp: must be >= 20
+  - /firmware/flavor: must be equal to one of the allowed values
+OK:  printer\Creality\Ender-3-V3-KE.json
+FAIL: printer\Creality\Ender-3-V3-Plus-0.6mm.json
+  - /extruders/0/min_temp: must be >= 100
+  - /chamber/max_temp: must be >= 20
+  - /firmware/flavor: must be equal to one of the allowed values
+OK:  printer\Creality\Ender-3-V3-Plus.json
+OK:  printer\Creality\Ender-3-V3-SE.json
+FAIL: printer\Creality\Ender-3-V3.json
+  - /extruders/0/min_temp: must be >= 100
+  - /chamber/max_temp: must be >= 20
+  - /firmware/flavor: must be equal to one of the allowed values
+OK:  printer\Creality\Ender-4.json
+OK:  printer\Creality\Ender-5-Plus.json
+FAIL: printer\Creality\Ender-5-S1-0.4mm.json
+  - /extruders/0/min_temp: must be >= 100
+  - /chamber/max_temp: must be >= 20
+  - /firmware/flavor: must be equal to one of the allowed values
+OK:  printer\Creality\Ender-5-S1-Pro.json
+FAIL: printer\Creality\Ender-5.json
+  - /extruders/0/min_temp: must be >= 100
+  - /chamber/max_temp: must be >= 20
+  - /firmware/flavor: must be equal to one of the allowed values
+FAIL: printer\Creality\Ender-6-0.4mm.json
+  - /extruders/0/min_temp: must be >= 100
+  - /chamber/max_temp: must be >= 20
+  - /firmware/flavor: must be equal to one of the allowed values
+OK:  printer\Creality\Ender-6.json
+OK:  printer\Creality\Ender-7-Max.json
+FAIL: printer\Creality\Ender-7-Pro.json
+  - /firmware/flavor: must be equal to one of the allowed values
+OK:  printer\Creality\Ender-7.json
+OK:  printer\Creality\Ender-8.json
+OK:  printer\Creality\Ender3-V2.json
+FAIL: printer\Creality\Ender3S1.json
+  - /kinematics: must be equal to one of the allowed values
+FAIL: printer\Creality\K1-Max-2024.json
+  - /firmware/flavor: must be equal to one of the allowed values
+FAIL: printer\Creality\K1-Max-Pro.json
+  - /firmware/flavor: must be equal to one of the allowed values
+FAIL: printer\Creality\K1-Max.json
+  - /firmware/flavor: must be equal to one of the allowed values
+OK:  printer\Creality\K1-SE-Plus.json
+FAIL: printer\Creality\K1-SE-Pro.json
+  - /firmware/flavor: must be equal to one of the allowed values
+FAIL: printer\Creality\K1-SE-Ultra.json
+  - /firmware/flavor: must be equal to one of the allowed values
+FAIL: printer\Creality\K1-SE.json
+  - /firmware/flavor: must be equal to one of the allowed values
+OK:  printer\Creality\K1.json
+FAIL: printer\Creality\K1C-Hardened.json
+  - /extruders/0/min_temp: must be >= 100
+  - /firmware/flavor: must be equal to one of the allowed values
+OK:  printer\Creality\K1C.json
+FAIL: printer\Creality\K2-Plus.json
+  - /firmware/flavor: must be equal to one of the allowed values
+FAIL: printer\Creality\K2-Pro-Max.json
+  - /firmware/flavor: must be equal to one of the allowed values
+OK:  printer\Creality\K2-Ultra.json
+OK:  printer\Elegoo\Centauri-Carbon.json
+FAIL: printer\Elegoo\Jupiter-Pro.json
+  - /extruders/0/nozzle_material: must be equal to one of the allowed values
+  - /extruders/0/max_temp: must be >= 150
+  - /extruders/0/min_temp: must be >= 100
+  - /bed/max_temp: must be >= 40
+FAIL: printer\Elegoo\Jupiter.json
+  - /extruders/0/nozzle_material: must be equal to one of the allowed values
+  - /extruders/0/max_temp: must be >= 150
+  - /extruders/0/min_temp: must be >= 100
+  - /bed/max_temp: must be >= 40
+OK:  printer\Elegoo\Neptune-10-Pro.json
+OK:  printer\Elegoo\Neptune-11.json
+OK:  printer\Elegoo\Neptune-12.json
+OK:  printer\Elegoo\Neptune-3-Pro.json
+OK:  printer\Elegoo\Neptune-3.json
+FAIL: printer\Elegoo\Neptune-4-0.4mm.json
+  - /extruders/0/min_temp: must be >= 100
+  - /chamber/max_temp: must be >= 20
+  - /firmware/flavor: must be equal to one of the allowed values
+OK:  printer\Elegoo\Neptune-4-Max.json
+FAIL: printer\Elegoo\Neptune-4-Pro-0.4mm.json
+  - /extruders/0/min_temp: must be >= 100
+  - /chamber/max_temp: must be >= 20
+  - /firmware/flavor: must be equal to one of the allowed values
+OK:  printer\Elegoo\Neptune-4-Pro-Max.json
+OK:  printer\Elegoo\Neptune-4-Pro.json
+OK:  printer\Elegoo\Neptune-4.json
+OK:  printer\Elegoo\Neptune-5-Pro-Max.json
+OK:  printer\Elegoo\Neptune-5-Pro.json
+OK:  printer\Elegoo\Neptune-5-Ultra.json
+OK:  printer\Elegoo\Neptune-5.json
+OK:  printer\Elegoo\Neptune-6-Pro.json
+OK:  printer\Elegoo\Neptune-7-Pro.json
+OK:  printer\Elegoo\Neptune-7.json
+OK:  printer\Elegoo\Neptune-8.json
+OK:  printer\Elegoo\Neptune-9.json
+OK:  printer\Elegoo\Neptune3-Pro.json
+FAIL: printer\Elegoo\Neptune3Pro.json
+  - /kinematics: must be equal to one of the allowed values
+FAIL: printer\Elegoo\Saturn-10.json
+  - /axes/z/max_speed: must be <= 100
+  - /extruders/0/max_temp: must be >= 150
+  - /extruders/0/min_temp: must be >= 100
+  - /bed/max_temp: must be >= 40
+FAIL: printer\Elegoo\Saturn-12.json
+  - /axes/z/max_speed: must be <= 100
+  - /extruders/0/max_temp: must be >= 150
+  - /extruders/0/min_temp: must be >= 100
+  - /bed/max_temp: must be >= 40
+FAIL: printer\Elegoo\Saturn-15.json
+  - /axes/z/max_speed: must be <= 100
+  - /extruders/0/max_temp: must be >= 150
+  - /extruders/0/min_temp: must be >= 100
+  - /bed/max_temp: must be >= 40
+FAIL: printer\Elegoo\Saturn-3-0.05mm.json
+  - /extruders/0/max_temp: must be >= 150
+  - /extruders/0/min_temp: must be >= 100
+  - /bed/max_temp: must be >= 40
+FAIL: printer\Elegoo\Saturn-3-Pro.json
+  - /extruders/0/max_temp: must be >= 150
+  - /extruders/0/min_temp: must be >= 100
+  - /bed/max_temp: must be >= 40
+FAIL: printer\Elegoo\Saturn-3.json
+  - /extruders/0/max_temp: must be >= 150
+  - /extruders/0/min_temp: must be >= 100
+  - /bed/max_temp: must be >= 40
+FAIL: printer\Elegoo\Saturn-4-0.05mm.json
+  - /extruders/0/max_temp: must be >= 150
+  - /extruders/0/min_temp: must be >= 100
+  - /bed/max_temp: must be >= 40
+FAIL: printer\Elegoo\Saturn-4-Pro.json
+  - /extruders/0/max_temp: must be >= 150
+  - /extruders/0/min_temp: must be >= 100
+  - /bed/max_temp: must be >= 40
+FAIL: printer\Elegoo\Saturn-4-Ultra.json
+  - /extruders/0/max_temp: must be >= 150
+  - /extruders/0/min_temp: must be >= 100
+  - /bed/max_temp: must be >= 40
+OK:  printer\Elegoo\Saturn-4.json
+FAIL: printer\Elegoo\Saturn-5-Ultra.json
+  - /extruders/0/max_temp: must be >= 150
+  - /extruders/0/min_temp: must be >= 100
+  - /bed/max_temp: must be >= 40
+FAIL: printer\Elegoo\Saturn-6-Pro.json
+  - /extruders/0/max_temp: must be >= 150
+  - /extruders/0/min_temp: must be >= 100
+  - /bed/max_temp: must be >= 40
+FAIL: printer\Elegoo\Saturn-6-Ultra.json
+  - /extruders/0/max_temp: must be >= 150
+  - /extruders/0/min_temp: must be >= 100
+  - /bed/max_temp: must be >= 40
+FAIL: printer\Elegoo\Saturn-6.json
+  - /extruders/0/max_temp: must be >= 150
+  - /extruders/0/min_temp: must be >= 100
+  - /bed/max_temp: must be >= 40
+FAIL: printer\Elegoo\Saturn-8.json
+  - /extruders/0/max_temp: must be >= 150
+  - /extruders/0/min_temp: must be >= 100
+  - /bed/max_temp: must be >= 40
+OK:  printer\Elegoo\Saturn-Pro.json
+OK:  printer\Elegoo\Saturn.json
+OK:  printer\Flashforge\Adventurer-5M-Pro-2026.json
+OK:  printer\Flashforge\Adventurer-5M.json
+FAIL: printer\Formlabs\Form-3-Plus.json
+  - /kinematics: must be equal to one of the allowed values
+  - /extruders/0: must NOT have additional properties
+  - /extruders/0/max_temp: must be >= 150
+  - /extruders/0/min_temp: must be >= 100
+  - /bed/max_temp: must be >= 40
+  - /firmware/flavor: must be equal to one of the allowed values
+FAIL: printer\Formlabs\Form-3.json
+  - /extruders: must NOT have fewer than 1 items
+  - /bed/max_temp: must be >= 40
+  - /firmware/flavor: must be equal to one of the allowed values
+FAIL: printer\Formlabs\Form-4.json
+  - /extruders/0/max_temp: must be >= 150
+  - /extruders/0/min_temp: must be >= 100
+FAIL: printer\Formlabs\Form-4L.json
+  - /extruders/0/max_temp: must be >= 150
+  - /extruders/0/min_temp: must be >= 100
+FAIL: printer\Formlabs\Form3Plus.json
+  - /kinematics: must be equal to one of the allowed values
+  - /extruders/0/nozzle_material: must be equal to one of the allowed values
+  - /extruders/0/max_temp: must be >= 150
+  - /extruders/0/min_temp: must be >= 100
+  - /firmware/flavor: must be equal to one of the allowed values
+OK:  printer\Generic\High-Temp-Printer.json
+OK:  printer\Hypercube\Evolution-2.json
+FAIL: printer\Hyrel3D\Engine.json
+  - /firmware/flavor: must be equal to one of the allowed values
+FAIL: printer\IdeaForge\Maker.json
+  - /firmware/flavor: must be equal to one of the allowed values
+OK:  printer\Intamsys\Funmat-HT-Enhanced.json
+OK:  printer\Intamsys\Funmat-HT.json
+OK:  printer\Longer\LK4.json
+OK:  printer\Longer\LK5-Pro.json
+FAIL: printer\Makerbot\Method-X.json
+  - /firmware/flavor: must be equal to one of the allowed values
+OK:  printer\Makerbot\Method-XL.json
+FAIL: printer\Makerbot\Method.json
+  - /firmware/flavor: must be equal to one of the allowed values
+FAIL: printer\Makerbot\MethodX.json
+  - /firmware/flavor: must be equal to one of the allowed values
+OK:  printer\Monoprice\Cadet.json
+FAIL: printer\Peopoly\Mo2.json
+  - : must NOT have additional properties
+  - : must NOT have additional properties
+  - /extruders: must NOT have fewer than 1 items
+  - /bed/max_temp: must be >= 40
+  - /firmware/flavor: must be equal to one of the allowed values
+FAIL: printer\Peopoly\Phenom.json
+  - /extruders/0/max_temp: must be >= 150
+  - /extruders/0/min_temp: must be >= 100
+FAIL: printer\Phrozen\Sonic-Mighty-4K.json
+  - : must NOT have additional properties
+  - : must NOT have additional properties
+  - /extruders: must NOT have fewer than 1 items
+  - /bed/max_temp: must be >= 40
+  - /firmware/flavor: must be equal to one of the allowed values
+FAIL: printer\Phrozen\Sonic-Mighty-8K.json
+  - : must NOT have additional properties
+  - : must NOT have additional properties
+  - /extruders/0/max_temp: must be >= 150
+  - /extruders/0/min_temp: must be >= 100
+  - /bed/max_temp: must be >= 40
+  - /firmware/flavor: must be equal to one of the allowed values
+FAIL: printer\Phrozen\Sonic-Mini-4K.json
+  - : must NOT have additional properties
+  - : must NOT have additional properties
+  - /extruders/0/max_temp: must be >= 150
+  - /extruders/0/min_temp: must be >= 100
+  - /bed/max_temp: must be >= 40
+  - /firmware/flavor: must be equal to one of the allowed values
+FAIL: printer\Phrozen\Sonic-Mini-8K.json
+  - : must NOT have additional properties
+  - : must NOT have additional properties
+  - /extruders/0/max_temp: must be >= 150
+  - /extruders/0/min_temp: must be >= 100
+  - /bed/max_temp: must be >= 40
+  - /firmware/flavor: must be equal to one of the allowed values
+FAIL: printer\Phrozen\Sonic-Mini.json
+  - : must NOT have additional properties
+  - : must NOT have additional properties
+  - /extruders/0/max_temp: must be >= 150
+  - /extruders/0/min_temp: must be >= 100
+  - /bed/max_temp: must be >= 40
+  - /firmware/flavor: must be equal to one of the allowed values
+FAIL: printer\Phrozen\Sonic-XL-4K.json
+  - : must NOT have additional properties
+  - : must NOT have additional properties
+  - /extruders/0/max_temp: must be >= 150
+  - /extruders/0/min_temp: must be >= 100
+  - /bed/max_temp: must be >= 40
+  - /firmware/flavor: must be equal to one of the allowed values
+FAIL: printer\Phrozen\Transform.json
+  - /extruders/0/max_temp: must be >= 150
+  - /extruders/0/min_temp: must be >= 100
+OK:  printer\Pollar\MK4.json
+OK:  printer\Prusa\i3-MK2-5.json
+OK:  printer\Prusa\i3-MK2-5S.json
+OK:  printer\Prusa\i3-MK2.json
+OK:  printer\Prusa\i3-MK2S.json
+OK:  printer\Prusa\i3-MK3S-Plus.json
+OK:  printer\Prusa\i3-MK3S.json
+OK:  printer\Prusa\Mini-Plus.json
+FAIL: printer\Prusa\MK3.5.json
+  - /firmware/flavor: must be equal to one of the allowed values
+OK:  printer\Prusa\MK3.5S.json
+FAIL: printer\Prusa\MK3S+.json
+  - /id: must match pattern "^[A-Za-z0-9]+/[A-Za-z0-9-_.]+$"
+OK:  printer\Prusa\MK3S-Plus-2024.json
+OK:  printer\Prusa\MK3S-Plus-MMU3.json
+OK:  printer\Prusa\MK3S-Plus-Multi-Material.json
+OK:  printer\Prusa\MK3S-Plus.json
+FAIL: printer\Prusa\MK4-2024.json
+  - /firmware/flavor: must be equal to one of the allowed values
+FAIL: printer\Prusa\MK4-XL.json
+  - /firmware/flavor: must be equal to one of the allowed values
+FAIL: printer\Prusa\MK4.json
+  - /kinematics: must be equal to one of the allowed values
+  - /firmware/flavor: must be equal to one of the allowed values
+OK:  printer\Prusa\MK4S-Plus-MMU3.json
+OK:  printer\Prusa\MK4S-Plus.json
+OK:  printer\Prusa\MK4S.json
+OK:  printer\Prusa\XL-1-Tool.json
+OK:  printer\Prusa\XL-2-Tool.json
+OK:  printer\Prusa\XL-2024.json
+OK:  printer\Prusa\XL-4-Tool.json
+OK:  printer\Prusa\XL-5-Tool.json
+OK:  printer\Prusa\XL.json
+OK:  printer\Qidi\I-Fast.json
+FAIL: printer\Qidi\X-Max-0.4mm.json
+  - /extruders/0/min_temp: must be >= 100
+  - /chamber/max_temp: must be >= 20
+  - /firmware/flavor: must be equal to one of the allowed values
+OK:  printer\Qidi\X-Max-10.json
+FAIL: printer\Qidi\X-Max-3-0.6mm.json
+  - /extruders/0/min_temp: must be >= 100
+  - /chamber/max_temp: must be >= 20
+  - /firmware/flavor: must be equal to one of the allowed values
+OK:  printer\Qidi\X-Max-3-Plus.json
+OK:  printer\Qidi\X-Max-4.json
+OK:  printer\Qidi\X-Max-5.json
+OK:  printer\Qidi\X-Max-6.json
+OK:  printer\Qidi\X-Max-7.json
+OK:  printer\Qidi\X-Max-8.json
+OK:  printer\Qidi\X-Max-Pro-2.json
+OK:  printer\Qidi\X-Max-Pro-2026.json
+OK:  printer\Qidi\X-Max-Pro-Max.json
+OK:  printer\Qidi\X-Max-Pro-Plus.json
+OK:  printer\Qidi\X-Max-Pro.json
+OK:  printer\Qidi\X-Max.json
+OK:  printer\Qidi\X-Max3.json
+FAIL: printer\Qidi\X-Plus-0.4mm.json
+  - /extruders/0/min_temp: must be >= 100
+  - /chamber/max_temp: must be >= 20
+  - /firmware/flavor: must be equal to one of the allowed values
+OK:  printer\Qidi\X-Plus-2.json
+OK:  printer\Qidi\X-Plus-3.json
+OK:  printer\Qidi\X-Plus-5.json
+OK:  printer\Qidi\X-Plus-Pro.json
+OK:  printer\Qidi\X-Plus.json
+FAIL: printer\Raise3D\E2.json
+  - /firmware/flavor: must be equal to one of the allowed values
+OK:  printer\Raise3D\E2CF.json
+FAIL: printer\Raise3D\Pro3.json
+  - /firmware/flavor: must be equal to one of the allowed values
+OK:  printer\RatRig\V-Core-3-250.json
+OK:  printer\RatRig\V-Core-3-350.json
+OK:  printer\RatRig\V-Core-3-400.json
+OK:  printer\RatRig\V-Core-3.json
+OK:  printer\RatRig\V-Core-4-300.json
+OK:  printer\RatRig\V-Core-4-350.json
+OK:  printer\RatRig\V-Core-4-500.json
+OK:  printer\RatRig\V-Core-4.json
+OK:  printer\RatRig\V-Minion-Pro.json
+OK:  printer\RatRig\V-Minion.json
+OK:  printer\Sidewinder\X1.json
+OK:  printer\Sidewinder\X2.json
+OK:  printer\Sidewinder\X3.json
+OK:  printer\Sidewinder\X4.json
+OK:  printer\Sindoh\3DWOX-DP200.json
+OK:  printer\Sovol\SV01.json
+OK:  printer\Sovol\SV02.json
+OK:  printer\Sovol\SV06-Pro.json
+OK:  printer\Sovol\SV06.json
+OK:  printer\Sovol\SV07.json
+OK:  printer\Sovol\SV08-Pro-Max.json
+OK:  printer\Sovol\SV08-Pro.json
+OK:  printer\Sovol\SV08.json
+OK:  printer\Sovol\SV09-Pro.json
+OK:  printer\Sovol\SV09.json
+OK:  printer\Sovol\SV10.json
+OK:  printer\Sovol\SV11.json
+OK:  printer\Sovol\SV12.json
+OK:  printer\Sovol\SV15.json
+OK:  printer\Sovol\SV16-Pro.json
+OK:  printer\Sovol\SV17.json
+OK:  printer\Sovol\SV18.json
+OK:  printer\Sovol\SV20.json
+FAIL: printer\Stratasys\Dimension.json
+  - /firmware/flavor: must be equal to one of the allowed values
+OK:  printer\Tenlog\TL-D3-Pro.json
+OK:  printer\Tronxy\X1.json
+OK:  printer\Tronxy\X10.json
+OK:  printer\Tronxy\X20.json
+OK:  printer\Tronxy\X25.json
+OK:  printer\Tronxy\X5.json
+OK:  printer\Tronxy\X5SA.json
+FAIL: printer\TypeA\Series1.json
+  - /firmware/flavor: must be equal to one of the allowed values
+OK:  printer\Ultimaker\S3-AA025-BB04.json
+OK:  printer\Ultimaker\S3-AA04-BB04.json
+OK:  printer\Ultimaker\S3-AA08-BB04.json
+OK:  printer\Ultimaker\S5-AA025-BB04.json
+OK:  printer\Ultimaker\S5-AA04-BB04.json
+OK:  printer\Ultimaker\S5-AA06-BB04.json
+OK:  printer\Ultimaker\S5-AA08-BB04.json
+FAIL: printer\Ultimaker\S5Pro.json
+  - /firmware/flavor: must be equal to one of the allowed values
+FAIL: printer\UniFormation\GKOne.json
+  - /extruders/0/max_temp: must be >= 150
+  - /extruders/0/min_temp: must be >= 100
+FAIL: printer\UniFormation\uOne.json
+  - /kinematics: must be equal to one of the allowed values
+  - /extruders/0/max_temp: must be >= 150
+  - /extruders/0/min_temp: must be >= 100
+  - /bed/max_temp: must be >= 40
+OK:  printer\Voron\Switchwire-200.json
+OK:  printer\Voron\Switchwire-250.json
+OK:  printer\Voron\Switchwire-300.json
+OK:  printer\Voron\Switchwire-350.json
+OK:  printer\Voron\Trident-150.json
+OK:  printer\Voron\Trident-200.json
+OK:  printer\Voron\Trident-250.json
+OK:  printer\Voron\Trident-300.json
+OK:  printer\Voron\Trident-350.json
+OK:  printer\Voron\V0.1.json
+OK:  printer\Voron\V0.2.json
+OK:  printer\Voron\V0.2r1.json
+OK:  printer\Voron\V1.8-200.json
+OK:  printer\Voron\V1.8-250.json
+OK:  printer\Voron\V1.8-300.json
+OK:  printer\Voron\V1.8-350.json
+OK:  printer\Voron\V2.4-200.json
+OK:  printer\Voron\V2.4-250.json
+OK:  printer\Voron\V2.4-300.json
+OK:  printer\Voron\V2.4-350.json
+OK:  printer\Voron\V2.4-HT.json
+
+=== Validating Filament Profiles ===
+OK:  filament\3DXTech\PA-CF.json
+OK:  filament\AmazonBasics\PETG-Black.json
+OK:  filament\AmazonBasics\PETG-Plus.json
+OK:  filament\AmazonBasics\PETG-White.json
+OK:  filament\AmazonBasics\PETG.json
+OK:  filament\AmazonBasics\PLA-Black.json
+OK:  filament\AmazonBasics\PLA-Blue.json
+OK:  filament\AmazonBasics\PLA-White.json
+OK:  filament\AmazonBasics\PLA.json
+OK:  filament\Atomax\PETG.json
+OK:  filament\Atomax\PLA.json
+OK:  filament\Atomic\ABS.json
+OK:  filament\Atomic\PETG.json
+OK:  filament\Atomic\PLA.json
+OK:  filament\AzureFilm\PETG-Carbon.json
+OK:  filament\AzureFilm\PETG.json
+OK:  filament\AzureFilm\PLA.json
+OK:  filament\AzureFilm\TPU.json
+OK:  filament\BambuLab\ABS.json
+OK:  filament\BambuLab\PETG-Basic.json
+OK:  filament\BambuLab\PLA-Basic.json
+OK:  filament\BASF\PEEK.json
+OK:  filament\BASF\PEKK.json
+FAIL: filament\BASF\ULTEM-9085.json
+  - /material: must be equal to one of the allowed values
+OK:  filament\Botbot\PETG.json
+OK:  filament\Cheetah\PETG.json
+OK:  filament\Cheetah\PLA.json
+OK:  filament\ColorFabb\PETG.json
+OK:  filament\ColorFabb\XT.json
+FAIL: filament\Corbion\PBAT.json
+  - /material: must be equal to one of the allowed values
+OK:  filament\Corbion\Purgo-PLA.json
+FAIL: filament\Covestro\Apec-PC-HT.json
+  - /material: must be equal to one of the allowed values
+OK:  filament\Covestro\Desmopan-TPU.json
+OK:  filament\Covestro\Makrolon-PC.json
+OK:  filament\Crystal\PETG.json
+OK:  filament\Crystal\PLA.json
+OK:  filament\DasFilament\ABS.json
+OK:  filament\DasFilament\ASA.json
+OK:  filament\DasFilament\PETG.json
+OK:  filament\DasFilament\PLA.json
+OK:  filament\DasFilament\TPU.json
+FAIL: filament\Devil Design\PETG.json
+  - /id: must match pattern "^[A-Za-z0-9]+/[A-Za-z0-9-_]+$"
+FAIL: filament\Devil Design\PLA.json
+  - /id: must match pattern "^[A-Za-z0-9]+/[A-Za-z0-9-_]+$"
+FAIL: filament\Devil Design\TPU.json
+  - /id: must match pattern "^[A-Za-z0-9]+/[A-Za-z0-9-_]+$"
+OK:  filament\Dremel\PETG.json
+FAIL: filament\DuPont\Delrin-POM.json
+  - /material: must be equal to one of the allowed values
+FAIL: filament\DuPont\Zytel-HTN.json
+  - /material: must be equal to one of the allowed values
+OK:  filament\DuPont\Zytel-PA66.json
+OK:  filament\eSUN\ABS-Plus.json
+OK:  filament\eSUN\ABS.json
+OK:  filament\eSUN\ePLA-CF.json
+OK:  filament\eSUN\PA-CF.json
+OK:  filament\eSUN\PET-CF.json
+OK:  filament\eSUN\PETG-Black.json
+OK:  filament\eSUN\PETG-Blue.json
+FAIL: filament\eSUN\PETG-CF.json
+  - : must NOT have additional properties
+OK:  filament\eSUN\PETG-Green.json
+OK:  filament\eSUN\PETG-Orange.json
+OK:  filament\eSUN\PETG-Red.json
+OK:  filament\eSUN\PETG-White.json
+OK:  filament\eSUN\PETG.json
+OK:  filament\eSUN\PLA-Plus-Black.json
+OK:  filament\eSUN\PLA-Plus-Blue.json
+OK:  filament\eSUN\PLA-Plus-Green.json
+OK:  filament\eSUN\PLA-Plus-Grey.json
+OK:  filament\eSUN\PLA-Plus-Orange.json
+OK:  filament\eSUN\PLA-Plus-Purple.json
+OK:  filament\eSUN\PLA-Plus-Red.json
+OK:  filament\eSUN\PLA-Plus-Silver.json
+OK:  filament\eSUN\PLA-Plus-White.json
+OK:  filament\eSUN\PLA-Plus-Yellow.json
+OK:  filament\eSUN\PLA-Plus.json
+OK:  filament\eSUN\TPU.json
+OK:  filament\Extrudr\ABS.json
+FAIL: filament\Extrudr\PEEK.json
+  - /environment/max_ambient_temp: must be <= 50
+OK:  filament\Extrudr\PETG.json
+OK:  filament\Extrudr\PLA.json
+OK:  filament\Extrudr\TPU.json
+OK:  filament\Fiberlogy\Basic-PLA.json
+OK:  filament\Fiberlogy\Easy-PLA.json
+OK:  filament\Fiberlogy\PETG.json
+OK:  filament\Fillamentum\ASA.json
+OK:  filament\Fillamentum\PETG.json
+OK:  filament\Fillamentum\PLA-Premium.json
+OK:  filament\Fillamentum\PLA.json
+OK:  filament\FlexCo\TPU-85A.json
+OK:  filament\Formfutura\ABS.json
+OK:  filament\Formfutura\PETG.json
+OK:  filament\Formfutura\PLA.json
+OK:  filament\Formfutura\TPU.json
+OK:  filament\Generic\ABS.json
+OK:  filament\Generic\ASA.json
+OK:  filament\Generic\CA.json
+OK:  filament\Generic\CPE.json
+OK:  filament\Generic\HIPS.json
+OK:  filament\Generic\PA-CF.json
+OK:  filament\Generic\PCTG.json
+FAIL: filament\Generic\PEEK.json
+  - /environment/max_ambient_temp: must be <= 50
+FAIL: filament\Generic\PEKK.json
+  - /environment/max_ambient_temp: must be <= 50
+OK:  filament\Generic\PETG.json
+OK:  filament\Generic\PLA.json
+OK:  filament\Generic\PMMA.json
+OK:  filament\Generic\PVB.json
+OK:  filament\Generic\TPU.json
+OK:  filament\Hatchbox\ABS.json
+OK:  filament\Hatchbox\ASA.json
+OK:  filament\Hatchbox\PETG-Black.json
+OK:  filament\Hatchbox\PETG-Blue.json
+OK:  filament\Hatchbox\PETG-CF.json
+OK:  filament\Hatchbox\PETG-Green.json
+OK:  filament\Hatchbox\PETG-Grey.json
+OK:  filament\Hatchbox\PETG-Orange.json
+OK:  filament\Hatchbox\PETG-Plus.json
+OK:  filament\Hatchbox\PETG-Red.json
+OK:  filament\Hatchbox\PETG-White.json
+OK:  filament\Hatchbox\PETG.json
+OK:  filament\Hatchbox\PLA-Black.json
+OK:  filament\Hatchbox\PLA-Blue.json
+OK:  filament\Hatchbox\PLA-Green.json
+OK:  filament\Hatchbox\PLA-Grey.json
+OK:  filament\Hatchbox\PLA-Natural.json
+OK:  filament\Hatchbox\PLA-Orange.json
+OK:  filament\Hatchbox\PLA-Pink.json
+OK:  filament\Hatchbox\PLA-Purple.json
+OK:  filament\Hatchbox\PLA-Red.json
+OK:  filament\Hatchbox\PLA-White.json
+OK:  filament\Hatchbox\PLA-Yellow.json
+OK:  filament\Hatchbox\PLA.json
+OK:  filament\Hatchbox\TPU.json
+FAIL: filament\Igus\iglidur-I150.json
+  - /material: must be equal to one of the allowed values
+FAIL: filament\Igus\iglidur-I180.json
+  - /material: must be equal to one of the allowed values
+OK:  filament\Inno3D\PLA.json
+FAIL: filament\MatterHackers\Carbon-Fiber-Nylon.json
+  - /material: must be equal to one of the allowed values
+OK:  filament\MatterHackers\PETG.json
+OK:  filament\MatterHackers\PLA-Black.json
+OK:  filament\MatterHackers\PLA-White.json
+OK:  filament\MatterHackers\PLA.json
+OK:  filament\MatterHackers\TPU.json
+FAIL: filament\MaxNylon\Nylon.json
+  - /material: must be equal to one of the allowed values
+OK:  filament\MGChemical\PETG.json
+OK:  filament\MGChemical\PLA.json
+OK:  filament\NatureWorks\Ingeo-3D850.json
+OK:  filament\NatureWorks\Ingeo-PLA-4043D.json
+FAIL: filament\NinjaTek\Nylon.json
+  - /material: must be equal to one of the allowed values
+OK:  filament\NinjaTek\TPU.json
+OK:  filament\Novamaker\ABS.json
+OK:  filament\Overture\PETG.json
+OK:  filament\Overture\PLA-Black.json
+OK:  filament\Overture\PLA-White.json
+OK:  filament\Overture\PLA.json
+OK:  filament\PlastyMuelle\ABS.json
+OK:  filament\PlastyMuelle\ASA.json
+OK:  filament\PlastyMuelle\PETG.json
+OK:  filament\PlastyMuelle\PLA.json
+OK:  filament\PlastyMuelle\TPU.json
+OK:  filament\Polymaker\PA12-CF.json
+FAIL: filament\Polymaker\PA12-Grey.json
+  - /diameter: must be equal to one of the allowed values
+OK:  filament\Polymaker\PETG-CF.json
+OK:  filament\Polymaker\PolyLite-PETG.json
+OK:  filament\Polymaker\PolyLite-PLA.json
+OK:  filament\Polymaker\TPU.json
+OK:  filament\PPPrint\PP.json
+OK:  filament\PrimaCademy\PETG.json
+OK:  filament\PrintFil\PETG.json
+OK:  filament\PrintFil\PLA.json
+OK:  filament\Prusament\ASA.json
+OK:  filament\Prusament\PA-CF.json
+OK:  filament\Prusament\PETG-Black.json
+OK:  filament\Prusament\PETG-Orange.json
+OK:  filament\Prusament\PETG-White.json
+OK:  filament\Prusament\PETG-Yellow.json
+OK:  filament\Prusament\PETG.json
+OK:  filament\Prusament\PLA.json
+OK:  filament\Quantum\ABS.json
+OK:  filament\Quantum\PETG.json
+OK:  filament\Quantum\PLA.json
+OK:  filament\R3D\ABS.json
+OK:  filament\R3D\PETG.json
+OK:  filament\R3D\PLA.json
+OK:  filament\R3D\TPU.json
+FAIL: filament\Real Filament\PETG.json
+  - /id: must match pattern "^[A-Za-z0-9]+/[A-Za-z0-9-_]+$"
+FAIL: filament\Real Filament\PLA.json
+  - /id: must match pattern "^[A-Za-z0-9]+/[A-Za-z0-9-_]+$"
+OK:  filament\Renful\PLA.json
+OK:  filament\Renkforce\PETG.json
+OK:  filament\Renkforce\PLA.json
+FAIL: filament\Rosa Filament\PETG.json
+  - /id: must match pattern "^[A-Za-z0-9]+/[A-Za-z0-9-_]+$"
+OK:  filament\Sabic\PEEK.json
+OK:  filament\Sabic\PEKK.json
+FAIL: filament\Sabic\ULTEM-9085.json
+  - /material: must be equal to one of the allowed values
+OK:  filament\Solvay\PEEK-KetaSpire.json
+OK:  filament\Solvay\PEKK-Primospire.json
+FAIL: filament\Solvay\Ryton-PPS.json
+  - /material: must be equal to one of the allowed values
+OK:  filament\Sunlu\ABS-Plus.json
+OK:  filament\Sunlu\ABS.json
+OK:  filament\Sunlu\ASA-Plus.json
+OK:  filament\Sunlu\PETG.json
+OK:  filament\Sunlu\PLA.json
+OK:  filament\Sunlu\Silk-PLA.json
+OK:  filament\Sunlu\TPU.json
+FAIL: filament\Taulman\645.json
+  - /material: must be equal to one of the allowed values
+OK:  filament\TreeD\PETG.json
+OK:  filament\TreeD\PLA.json
+OK:  filament\Verbatim\PLA-Plus.json
+OK:  filament\Vertex\Diamond.json
+OK:  filament\Vertex\PETG.json
+OK:  filament\Vertex\PLA.json
+OK:  filament\Virtual\Filament.json
+OK:  filament\VolcanoFil\PETG.json
+OK:  filament\VolcanoFil\PLA.json
+
+=== Summary ===
+Printer profiles: 248/340 valid
+Filament profiles: 185/209 valid
+
+Total errors: 116

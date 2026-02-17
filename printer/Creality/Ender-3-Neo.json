@@ -1,0 +1,75 @@
+{
+  "op3d_schema": "printer",
+  "op3d_schema_version": "0.1.0",
+  "id": "Creality/Ender-3-Neo",
+  "maintainer": {
+    "name": "OpenPrint3D Community",
+    "maintainer_type": "community",
+    "website": "https://github.com/OpenPrint3D/OpenPrint3D"
+  },
+  "manufacturer": "Creality",
+  "model": "Ender-3 Neo",
+  "variant": "Stock",
+  "build_volume": { "x": 220, "y": 220, "z": 250, "shape": "rectangular", "origin": "front_left" },
+  "kinematics": "bed_slinger",
+  "axes": {
+    "x": { "max_speed": 100, "max_accel": 500 },
+    "y": { "max_speed": 100, "max_accel": 500 },
+    "z": { "max_speed": 10, "max_accel": 100 }
+  },
+  "extruders": [{
+    "id": "tool0",
+    "nozzle_diameter": 0.4,
+    "nozzle_material": "brass",
+    "max_temp": 260,
+    "min_temp": 180,
+    "retraction_supported": true
+  }],
+  "bed": { "heated": true, "max_temp": 100, "surface_type": "carborundum-glass" },
+  "chamber": { "heated": false, "passive": false },
+  "firmware": { "flavor": "marlin", "identifier": "Marlin 2.0.x (Creality Silent)" },
+  "network": { "has_wifi": false, "has_ethernet": false, "supports_lan_api": false },
+  "links": {
+    "product_page": "https://www.creality.com/products/ender-3-neo-3d-printer"
+  },
+  "tags": ["budget", "bed-slinger", "beginner-friendly", "auto-leveling"],
+  "notes": "Creality Ender-3 Neo. Updated Ender-3 with CR Touch auto bed leveling, silent mainboard 4.2.2, and carborundum glass bed.",
+  "x_cura": {
+    "definition": "creality_ender3neo",
+    "definition_changes": {
+      "machine_width": 220,
+      "machine_depth": 220,
+      "machine_height": 250,
+      "nozzle_size": 0.4,
+      "heated_bed": true,
+      "machine_heated_bed": true,
+      "bed_temperature": 60,
+      "nozzle_temperature": 200
+    }
+  },
+  "x_prusaslicer": {
+    "printer_model": "Ender-3 Neo",
+    "vendor": "Creality",
+    "filament_diameter": 1.75,
+    "nozzle_diameter": 0.4,
+    "bed_shape": "rectangular",
+    "bed_size": "220x220",
+    "print_height": 250
+  },
+  "x_orca": {
+    "machine_name": "Ender-3 Neo",
+    "machine_manufacturer": "Creality",
+    "bed_x": 220,
+    "bed_y": 220,
+    "height": 250,
+    "nozzle_diameter": 0.4,
+    "filament_diameter": 1.75
+  },
+  "x_bambu": {
+    "product_id": "creality_ender3neo",
+    "series": "Ender",
+    "support_lidar": false,
+    "support_ams": false,
+    "support_ams_lite": false
+  }
+}

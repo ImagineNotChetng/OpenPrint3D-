@@ -1,0 +1,59 @@
+{
+  "op3d_schema": "filament",
+  "op3d_schema_version": "0.1.0",
+  "id": "Devil_Design/TPU",
+
+  "maintainer": {
+    "name": "OpenPrint3D",
+    "maintainer_type": "community",
+    "website": "https://github.com/OpenPrint3D/OpenPrint3D"
+  },
+
+  "brand": "Devil Design",
+  "name": "Devil Design TPU 1.75mm",
+  "material": "TPU",
+
+  "color": "",
+  "diameter": 1.75,
+  "density": 1.21,
+
+  "nozzle": {
+    "min": 210,
+    "max": 240,
+    "recommended": 225
+  },
+
+  "bed": {
+    "min": 30,
+    "max": 50,
+    "recommended": 40
+  },
+
+  "fan": {
+    "min": 40,
+    "max": 80,
+    "recommended": 60
+  },
+
+  "drying": {
+    "temperature": 50,
+    "duration_hours": 6
+  },
+
+  "environment": {
+    "sensitive_to_moisture": true,
+    "enclosure_recommended": false,
+    "max_ambient_temp": 30
+  },
+
+  "external_ids": {},
+  "links": {},
+  "tags": ["tpu", "devil design", "1.75mm", "flexible", "polish"],
+
+  "notes": "Devil Design TPU. Polish manufacturer with flexible TPU. Excellent abrasion resistance and flexibility.",
+
+  "x_cura": {},
+  "x_prusaslicer": {},
+  "x_orca": {},
+  "x_bambu": {}
+}

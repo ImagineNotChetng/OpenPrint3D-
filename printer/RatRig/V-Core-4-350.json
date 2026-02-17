@@ -1,0 +1,37 @@
+{
+  "op3d_schema": "printer",
+  "op3d_schema_version": "0.1.0",
+  "id": "RatRig/V-Core-4-350",
+  "maintainer": {
+    "name": "OpenPrint3D Community",
+    "maintainer_type": "community",
+    "website": "https://github.com/OpenPrint3D/OpenPrint3D"
+  },
+  "manufacturer": "RatRig",
+  "model": "V-Core 4",
+  "variant": "350",
+  "build_volume": { "x": 350, "y": 350, "z": 350, "shape": "rectangular", "origin": "center" },
+  "kinematics": "corexy",
+  "axes": {
+    "x": { "max_speed": 500, "max_accel": 20000 },
+    "y": { "max_speed": 500, "max_accel": 20000 },
+    "z": { "max_speed": 25, "max_accel": 1500 }
+  },
+  "extruders": [{
+    "id": "tool0",
+    "nozzle_diameter": 0.4,
+    "nozzle_material": "hardened-steel",
+    "max_temp": 300,
+    "min_temp": 170,
+    "retraction_supported": true
+  }],
+  "bed": { "heated": true, "max_temp": 130, "surface_type": "PEI-textured" },
+  "chamber": { "heated": false, "passive": true },
+  "firmware": { "flavor": "klipper", "identifier": "Klipper (RatRig)" },
+  "network": { "has_wifi": true, "has_ethernet": true, "supports_lan_api": true },
+  "links": {
+    "product_page": "https://ratrig.com/v-core-4.html"
+  },
+  "tags": ["corexy", "high-performance", "diy", "eva3", "next-gen", "high-speed", "large-format"],
+  "notes": "RatRig V-Core 4 (350 variant). Next-generation CoreXY with 350x350x350mm build volume. Features EVA3 toolhead, improved motion system, and Klipper via RatOS."
+}

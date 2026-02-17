@@ -1,0 +1,38 @@
+{
+  "op3d_schema": "printer",
+  "op3d_schema_version": "0.1.0",
+  "id": "Prusa/MK3-5",
+  "maintainer": {
+    "name": "OpenPrint3D Community",
+    "maintainer_type": "community",
+    "website": "https://github.com/OpenPrint3D/OpenPrint3D"
+  },
+  "manufacturer": "Prusa Research",
+  "model": "MK3.5",
+  "variant": "Stock",
+  "build_volume": { "x": 250, "y": 210, "z": 210, "shape": "rectangular", "origin": "front_left" },
+  "kinematics": "bed_slinger",
+  "axes": {
+    "x": { "max_speed": 200, "max_accel": 2500 },
+    "y": { "max_speed": 200, "max_accel": 2500 },
+    "z": { "max_speed": 12, "max_accel": 1000 }
+  },
+  "extruders": [{
+    "id": "tool0",
+    "nozzle_diameter": 0.4,
+    "nozzle_material": "brass",
+    "max_temp": 300,
+    "min_temp": 170,
+    "retraction_supported": true
+  }],
+  "bed": { "heated": true, "max_temp": 120, "surface_type": "smooth-pei" },
+  "chamber": { "heated": false, "passive": false },
+  "firmware": { "flavor": "marlin", "identifier": "Prusa Firmware 3.14 (MK3.5)" },
+  "network": { "has_wifi": true, "has_ethernet": false, "supports_lan_api": true },
+  "links": {
+    "product_page": "https://www.prusa3d.com/product/original-prusa-mk3-5/",
+    "documentation": "https://help.prusa3d.com/category/mk3-5_342"
+  },
+  "tags": ["premium", "bed-slinger", "direct-drive", "mk4-upgrade", "nextruder"],
+  "notes": "Prusa MK3.5. Upgraded MK3 platform with Nextruder from MK4. Features new extruder design and upgraded electronics with Wi-Fi support via Prusa Connect."
+}

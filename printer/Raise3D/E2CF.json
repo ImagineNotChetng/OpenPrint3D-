@@ -1,0 +1,88 @@
+{
+  "op3d_schema": "printer",
+  "op3d_schema_version": "0.1.0",
+  "id": "Raise3D/E2CF",
+  "maintainer": {
+    "name": "OpenPrint3D Community",
+    "maintainer_type": "community",
+    "website": "https://github.com/OpenPrint3D/OpenPrint3D"
+  },
+  "manufacturer": "Raise3D",
+  "model": "E2CF",
+  "variant": "Stock",
+  "build_volume": { "x": 330, "y": 240, "z": 240, "shape": "rectangular", "origin": "front_left" },
+  "kinematics": "corexy",
+  "axes": {
+    "x": { "max_speed": 150, "max_accel": 5000 },
+    "y": { "max_speed": 150, "max_accel": 5000 },
+    "z": { "max_speed": 15, "max_accel": 500 }
+  },
+  "extruders": [{
+    "id": "tool0",
+    "nozzle_diameter": 0.4,
+    "nozzle_material": "hardened-steel",
+    "max_temp": 300,
+    "min_temp": 180,
+    "retraction_supported": true
+  }, {
+    "id": "tool1",
+    "nozzle_diameter": 0.4,
+    "nozzle_material": "hardened-steel",
+    "max_temp": 300,
+    "min_temp": 180,
+    "retraction_supported": true
+  }],
+  "bed": { "heated": true, "max_temp": 120, "surface_type": "PEI-flexible" },
+  "chamber": { "heated": true, "max_temp": 70, "passive": false },
+  "firmware": { "flavor": "proprietary", "identifier": "Raise3D IdeaMaker" },
+  "network": { "has_wifi": true, "has_ethernet": true, "supports_lan_api": true },
+  "links": {
+    "product_page": "https://www.raise3d.com/products/e2cf/"
+  },
+  "tags": ["professional", "dual-extruder", "corexy", "enclosed", "carbon-fiber", "heated-chamber"],
+  "notes": "Raise3D E2CF. Professional dual-extruder CoreXY printer optimized for carbon fiber reinforced materials. Heated chamber up to 70°C, independent dual extruders for multi-material printing.",
+  "x_cura": {
+    "definition": "raise3d_e2cf",
+    "definition_changes": {
+      "machine_width": 330,
+      "machine_depth": 240,
+      "machine_height": 240,
+      "nozzle_size": 0.4,
+      "heated_bed": true,
+      "machine_heated_bed": true,
+      "bed_temperature": 60,
+      "nozzle_temperature": 200,
+      "machine_extruder_count": 2
+    }
+  },
+  "x_prusaslicer": {
+    "printer_model": "E2CF",
+    "vendor": "Raise3D",
+    "filament_diameter": 1.75,
+    "nozzle_diameter": 0.4,
+    "bed_shape": "rectangular",
+    "bed_size": "330x240",
+    "print_height": 240,
+    "printer_technology": "FFF",
+    "extruder_count": 2
+  },
+  "x_orca": {
+    "machine_name": "E2CF",
+    "machine_manufacturer": "Raise3D",
+    "bed_x": 330,
+    "bed_y": 240,
+    "height": 240,
+    "nozzle_diameter": 0.4,
+    "filament_diameter": 1.75,
+    "extruder_count": 2
+  },
+  "x_bambu": {
+    "product_id": "raise3d_e2cf",
+    "series": "E2",
+    "support_lidar": false,
+    "support_ams": false,
+    "support_ams_lite": false,
+    "extruder_count": 2,
+    "carbon_fiber_capable": true
+  }
+}

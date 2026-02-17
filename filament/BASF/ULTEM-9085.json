@@ -1,0 +1,69 @@
+{
+  "op3d_schema": "filament",
+  "op3d_schema_version": "0.1.0",
+  "id": "BASF/ULTEM",
+  "maintainer": {
+    "name": "OpenPrint3D Community",
+    "maintainer_type": "community",
+    "website": "https://github.com/OpenPrint3D/OpenPrint3D"
+  },
+  "brand": "BASF",
+  "name": "BASF ULTEM 9085 1.75mm",
+  "material": "Other",
+  "diameter": 1.75,
+  "density": 1.34,
+  "nozzle": { "min": 340, "max": 390, "recommended": 370 },
+  "bed": { "min": 130, "max": 160, "recommended": 145 },
+  "fan": { "min": 0, "max": 25, "recommended": 10 },
+  "drying": { "temperature": 120, "duration_hours": 4 },
+  "environment": {
+    "sensitive_to_moisture": true,
+    "enclosure_recommended": true,
+    "heated_chamber_recommended": true,
+    "max_ambient_temp": 22
+  },
+  "volumetric_speed": 8,
+  "printing_speed": { "min": 15, "max": 50, "recommended": 35 },
+  "links": {
+    "datasheet": "https://www.sabic.com/specialties/ultem"
+  },
+  "tags": ["ultem", "pei", "high-performance", "engineering", "1.75mm", "basf"],
+  "notes": "BASF ULTEM 9085 (PEI - Polyetherimide) is a high-performance amorphous thermoplastic with excellent flame retardancy and FDA compliance for food contact applications.",
+  "x_cura": {
+    "material": "petg",
+    "print_temperature": 370,
+    "print_temperature_layer_0": 385,
+    "bed_temperature": 145,
+    "bed_temperature_layer_0": 160,
+    "fan_speed": 10,
+    "fan_speed_layer_0": 0,
+    "cooling": "minimum"
+  },
+  "x_prusaslicer": {
+    "filament_type": "PEI",
+    "temperature": 370,
+    "bed_temperature": 145,
+    "fan_speed": 10,
+    "first_layer_bed_temperature": 160,
+    "first_layer_temperature": 385
+  },
+  "x_orca": {
+    "filament_type": "PEI",
+    "nozzle_temperature": 370,
+    "nozzle_temperature_initial_layer": 385,
+    "bed_temperature": 145,
+    "bed_temperature_initial_layer": 160,
+    "fan_speed": 10,
+    "fan_speed_initial_layer": 0
+  },
+  "x_bambu": {
+    "filament_type_id": "GPEI",
+    "drying_temperature": 120,
+    "drying_time": 4,
+    "nozzle_temperature": [340, 390],
+    "nozzle_temperature_initial_layer": [360, 400],
+    "bed_temperature": [130, 160],
+    "bed_temperature_initial_layer": [140, 170],
+    "fan_speed": [0, 25]
+  }
+}

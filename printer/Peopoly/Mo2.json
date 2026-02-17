@@ -1,0 +1,54 @@
+{
+  "op3d_schema": "printer",
+  "op3d_schema_version": "0.1.0",
+  "id": "Peopoly/Mo2",
+  "maintainer": {
+    "name": "OpenPrint3D Community",
+    "maintainer_type": "community",
+    "website": "https://github.com/OpenPrint3D/OpenPrint3D"
+  },
+  "manufacturer": "Peopoly",
+  "model": "Mo2",
+  "variant": "Stock",
+  "build_volume": { "x": 260, "y": 130, "z": 200, "shape": "rectangular", "origin": "front_left" },
+  "kinematics": "msla",
+  "axes": {
+    "x": { "max_speed": 20, "max_accel": 100 },
+    "y": { "max_speed": 20, "max_accel": 100 },
+    "z": { "max_speed": 50, "max_accel": 200 }
+  },
+  "extruders": [],
+  "resin_tank": { "type": "fep", "lifetime_hours": 200 },
+  "light_source": { "type": "lcd-led", "wavelength": 405, "xy_resolution": 0.05 },
+  "bed": { "heated": false, "max_temp": 100, "surface_type": "metal-plate" },
+  "chamber": { "heated": false, "passive": false },
+  "firmware": { "flavor": "proprietary", "identifier": "Peopoly Mo2 Firmware" },
+  "network": { "has_wifi": false, "has_ethernet": false, "supports_lan_api": false },
+  "links": { "product_page": "https://peopoly.net/products/moai" },
+  "tags": ["sla", "msla", "large-format", "high-resolution", "lcd-resin"],
+  "notes": "Peopoly Mo2. Large-format MSLA resin printer with 260x130x200mm build volume and 50 micron XY resolution.",
+  "x_cura": {
+    "definition": "peopoly_mo2",
+    "definition_changes": {}
+  },
+  "x_prusaslicer": {
+    "printer_model": "Mo2",
+    "vendor": "Peopoly",
+    "printer_technology": "SLA",
+    "bed_shape": "rectangular",
+    "bed_size": "260x130",
+    "print_height": 200
+  },
+  "x_orca": {
+    "machine_name": "Mo2",
+    "machine_manufacturer": "Peopoly",
+    "printer_technology": "SLA"
+  },
+  "x_bambu": {
+    "product_id": "peopoly_mo2",
+    "series": "Mo",
+    "support_lidar": false,
+    "support_ams": false,
+    "support_ams_lite": false
+  }
+}

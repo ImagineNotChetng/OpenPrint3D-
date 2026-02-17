@@ -1,0 +1,37 @@
+{
+  "op3d_schema": "printer",
+  "op3d_schema_version": "0.1.0",
+  "id": "Creality/K1C-Hardened",
+  "maintainer": {
+    "name": "OpenPrint3D Community",
+    "maintainer_type": "community",
+    "website": "https://github.com/OpenPrint3D/OpenPrint3D"
+  },
+  "manufacturer": "Creality",
+  "model": "K1C",
+  "variant": "Hardened Nozzle",
+  "build_volume": { "x": 220, "y": 220, "z": 250, "shape": "rectangular", "origin": "front_left" },
+  "kinematics": "corexy",
+  "axes": {
+    "x": { "max_speed": 600, "max_accel": 20000 },
+    "y": { "max_speed": 600, "max_accel": 20000 },
+    "z": { "max_speed": 20, "max_accel": 1000 }
+  },
+  "extruders": [{
+    "id": "tool0",
+    "nozzle_diameter": 0.4,
+    "nozzle_material": "hardened-steel",
+    "max_temp": 300,
+    "min_temp": 170,
+    "retraction_supported": true
+  }],
+  "bed": { "heated": true, "max_temp": 110, "surface_type": "PEI-textured" },
+  "chamber": { "heated": false, "max_temp": 45, "passive": true },
+  "firmware": { "flavor": "klipper", "identifier": "Creality K1C" },
+  "network": { "has_wifi": true, "has_ethernet": true, "supports_lan_api": true },
+  "links": {
+    "product_page": "https://www.creality.com/pages/k1c"
+  },
+  "tags": ["fdm", "corexy", "enclosed", "high-speed", "carbon-fiber", "klipper-based"],
+  "notes": "Creality K1C with hardened steel nozzle. High-speed CoreXY for carbon fiber and abrasive filaments. 300°C max nozzle, 600mm/s speed, Klipper-based CrealityOS."
+}

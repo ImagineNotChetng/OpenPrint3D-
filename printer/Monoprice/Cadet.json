@@ -1,0 +1,75 @@
+{
+  "op3d_schema": "printer",
+  "op3d_schema_version": "0.1.0",
+  "id": "Monoprice/Cadet",
+  "maintainer": {
+    "name": "OpenPrint3D Community",
+    "maintainer_type": "community",
+    "website": "https://github.com/OpenPrint3D/OpenPrint3D"
+  },
+  "manufacturer": "Monoprice",
+  "model": "Cadet",
+  "variant": "Stock",
+  "build_volume": { "x": 150, "y": 150, "z": 150, "shape": "rectangular", "origin": "front_left" },
+  "kinematics": "cartesian",
+  "axes": {
+    "x": { "max_speed": 100, "max_accel": 1000 },
+    "y": { "max_speed": 100, "max_accel": 1000 },
+    "z": { "max_speed": 8, "max_accel": 100 }
+  },
+  "extruders": [{
+    "id": "tool0",
+    "nozzle_diameter": 0.4,
+    "nozzle_material": "brass",
+    "max_temp": 240,
+    "min_temp": 170,
+    "retraction_supported": true
+  }],
+  "bed": { "heated": true, "max_temp": 80, "surface_type": "glass" },
+  "chamber": { "heated": false, "passive": false },
+  "firmware": { "flavor": "marlin", "identifier": "Marlin 2.x (Monoprice)" },
+  "network": { "has_wifi": false, "has_ethernet": false, "supports_lan_api": false },
+  "links": {
+    "product_page": "https://www.monoprice.com/product?p_id=38061"
+  },
+  "tags": ["compact", "budget", "beginner-friendly", "fully-assembled"],
+  "notes": "Monoprice Cadet. Compact, fully-assembled budget 3D printer with 150x150x150mm build volume. Great for beginners or as a starter printer. Fully enclosed frame design.",
+  "x_cura": {
+    "definition": "monoprice_cadet",
+    "definition_changes": {
+      "machine_width": 150,
+      "machine_depth": 150,
+      "machine_height": 150,
+      "nozzle_size": 0.4,
+      "heated_bed": true,
+      "machine_heated_bed": true,
+      "bed_temperature": 60,
+      "nozzle_temperature": 200
+    }
+  },
+  "x_prusaslicer": {
+    "printer_model": "Cadet",
+    "vendor": "Monoprice",
+    "filament_diameter": 1.75,
+    "nozzle_diameter": 0.4,
+    "bed_shape": "rectangular",
+    "bed_size": "150x150",
+    "print_height": 150
+  },
+  "x_orca": {
+    "machine_name": "Cadet",
+    "machine_manufacturer": "Monoprice",
+    "bed_x": 150,
+    "bed_y": 150,
+    "height": 150,
+    "nozzle_diameter": 0.4,
+    "filament_diameter": 1.75
+  },
+  "x_bambu": {
+    "product_id": "monoprice_cadet",
+    "series": "Cadet",
+    "support_lidar": false,
+    "support_ams": false,
+    "support_ams_lite": false
+  }
+}

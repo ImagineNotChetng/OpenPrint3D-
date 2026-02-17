@@ -1,0 +1,32 @@
+{
+  "op3d_schema": "filament",
+  "op3d_schema_version": "0.1.0",
+  "id": "DuPont/Zytel",
+  "maintainer": {
+    "name": "OpenPrint3D Community",
+    "maintainer_type": "community",
+    "website": "https://github.com/OpenPrint3D/OpenPrint3D"
+  },
+  "brand": "DuPont",
+  "name": "DuPont Zytel PA66 1.75mm",
+  "material": "PA6",
+  "diameter": 1.75,
+  "density": 1.14,
+  "nozzle": { "min": 240, "max": 280, "recommended": 260 },
+  "bed": { "min": 70, "max": 100, "recommended": 90 },
+  "fan": { "min": 30, "max": 80, "recommended": 50 },
+  "drying": { "temperature": 80, "duration_hours": 4 },
+  "environment": {
+    "sensitive_to_moisture": true,
+    "enclosure_recommended": false,
+    "heated_chamber_recommended": false,
+    "max_ambient_temp": 25
+  },
+  "volumetric_speed": 12,
+  "printing_speed": { "min": 30, "max": 80, "recommended": 55 },
+  "links": {
+    "datasheet": "https://www.dupont.com/brands/zytel.html"
+  },
+  "tags": ["nylon", "pa66", "zytel", "engineering", "1.75mm", "dupont"],
+  "notes": "DuPont Zytel PA66 is a high-performance polyamide with excellent mechanical strength, abrasion resistance, and chemical resistance. Requires careful moisture management."
+}

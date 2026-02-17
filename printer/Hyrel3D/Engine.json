@@ -1,0 +1,75 @@
+{
+  "op3d_schema": "printer",
+  "op3d_schema_version": "0.1.0",
+  "id": "Hyrel3D/Engine",
+  "maintainer": {
+    "name": "OpenPrint3D Community",
+    "maintainer_type": "community",
+    "website": "https://github.com/OpenPrint3D/OpenPrint3D"
+  },
+  "manufacturer": "Hyrel 3D",
+  "model": "Engine",
+  "variant": "Stock",
+  "build_volume": { "x": 300, "y": 300, "z": 300, "shape": "rectangular", "origin": "front_left" },
+  "kinematics": "corexy",
+  "axes": {
+    "x": { "max_speed": 150, "max_accel": 3000 },
+    "y": { "max_speed": 150, "max_accel": 3000 },
+    "z": { "max_speed": 20, "max_accel": 500 }
+  },
+  "extruders": [{
+    "id": "tool0",
+    "nozzle_diameter": 0.5,
+    "nozzle_material": "brass",
+    "max_temp": 300,
+    "min_temp": 180,
+    "retraction_supported": true
+  }],
+  "bed": { "heated": true, "max_temp": 120, "surface_type": "glass" },
+  "chamber": { "heated": false, "passive": true },
+  "firmware": { "flavor": "hyrel", "identifier": "Hyrel 3D Engine Firmware" },
+  "network": { "has_wifi": true, "has_ethernet": true, "supports_lan_api": true },
+  "links": {
+    "product_page": "https://www.hyrel3d.com/"
+  },
+  "tags": ["premium", "corexy", "large-build", "professional", "modular"],
+  "notes": "Hyrel 3D Engine. Professional modular CoreXY 3D printer with interchangeable extruders.",
+  "x_cura": {
+    "definition": "hyrel3d_engine",
+    "definition_changes": {
+      "machine_width": 300,
+      "machine_depth": 300,
+      "machine_height": 300,
+      "nozzle_size": 0.5,
+      "heated_bed": true,
+      "machine_heated_bed": true,
+      "bed_temperature": 70,
+      "nozzle_temperature": 210
+    }
+  },
+  "x_prusaslicer": {
+    "printer_model": "Engine",
+    "vendor": "Hyrel 3D",
+    "filament_diameter": 1.75,
+    "nozzle_diameter": 0.5,
+    "bed_shape": "rectangular",
+    "bed_size": "300x300",
+    "print_height": 300
+  },
+  "x_orca": {
+    "machine_name": "Engine",
+    "machine_manufacturer": "Hyrel 3D",
+    "bed_x": 300,
+    "bed_y": 300,
+    "height": 300,
+    "nozzle_diameter": 0.5,
+    "filament_diameter": 1.75
+  },
+  "x_bambu": {
+    "product_id": "hyrel3d_engine",
+    "series": "Engine",
+    "support_lidar": false,
+    "support_ams": false,
+    "support_ams_lite": false
+  }
+}

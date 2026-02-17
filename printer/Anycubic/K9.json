@@ -1,0 +1,79 @@
+{
+  "op3d_schema": "printer",
+  "op3d_schema_version": "0.1.0",
+  "id": "Anycubic/K9",
+  "maintainer": {
+    "name": "OpenPrint3D Community",
+    "maintainer_type": "community",
+    "website": "https://github.com/OpenPrint3D/OpenPrint3D"
+  },
+  "manufacturer": "Anycubic",
+  "model": "K9",
+  "variant": "Stock",
+  "build_volume": { "x": 450, "y": 450, "z": 500, "shape": "rectangular", "origin": "front_left" },
+  "kinematics": "corexy",
+  "axes": {
+    "x": { "max_speed": 900, "max_accel": 40000 },
+    "y": { "max_speed": 900, "max_accel": 40000 },
+    "z": { "max_speed": 40, "max_accel": 2500 }
+  },
+  "extruders": [{
+    "id": "tool0",
+    "nozzle_diameter": 0.4,
+    "nozzle_material": "hardened-steel",
+    "max_temp": 380,
+    "min_temp": 170,
+    "retraction_supported": true
+  }],
+  "bed": { "heated": true, "max_temp": 150, "surface_type": "PEI-textured" },
+  "chamber": { "heated": true, "max_temp": 70, "passive": true },
+  "firmware": { "flavor": "klipper", "identifier": "Anycubic K9 Firmware" },
+  "network": { "has_wifi": true, "has_ethernet": true, "supports_lan_api": true },
+  "links": {
+    "product_page": "https://www.anycubic.com/products/k9"
+  },
+  "tags": ["large-format", "high-speed", "corexy", "direct-drive", "auto-leveling", "klipper", "input-shaping", "ethernet", "900mm-s", "active-chamber", "high-temp"],
+  "notes": "Anycubic K9. Next-generation flagship high-speed CoreXY with massive 450x450x500mm build volume. Features Klipper firmware with advanced input shaping, LeviQ 6.0 auto-leveling, high-flow dual-gear direct drive, 380C max nozzle temp for PEEK and advanced materials, active chamber heating up to 70C, and Ethernet connectivity.",
+  "x_cura": {
+    "definition": "anycubic_k9",
+    "definition_changes": {
+      "machine_width": 450,
+      "machine_depth": 450,
+      "machine_height": 500,
+      "nozzle_size": 0.4,
+      "heated_bed": true,
+      "machine_heated_bed": true,
+      "bed_temperature": 60,
+      "nozzle_temperature": 200
+    }
+  },
+  "x_prusaslicer": {
+    "printer_model": "K9",
+    "vendor": "Anycubic",
+    "filament_diameter": 1.75,
+    "nozzle_diameter": 0.4,
+    "bed_shape": "rectangular",
+    "bed_size": "450x450",
+    "print_height": 500
+  },
+  "x_orca": {
+    "machine_name": "K9",
+    "machine_manufacturer": "Anycubic",
+    "bed_x": 450,
+    "bed_y": 450,
+    "height": 500,
+    "nozzle_diameter": 0.4,
+    "filament_diameter": 1.75
+  },
+  "x_bambu": {
+    "product_id": "anycubic_k9",
+    "series": "K",
+    "support_lidar": false,
+    "support_ams": false,
+    "support_ams_lite": false,
+    "max_speed": 900,
+    "nozzle_type": "hardened-steel",
+    "has_ethernet": true,
+    "active_chamber_heating": true
+  }
+}

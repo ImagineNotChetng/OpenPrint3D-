@@ -1,0 +1,77 @@
+{
+  "op3d_schema": "printer",
+  "op3d_schema_version": "0.1.0",
+  "id": "Elegoo/Neptune-4-Max",
+  "maintainer": {
+    "name": "OpenPrint3D Community",
+    "maintainer_type": "community",
+    "website": "https://github.com/OpenPrint3D/OpenPrint3D"
+  },
+  "manufacturer": "Elegoo",
+  "model": "Neptune 4 Max",
+  "variant": "Stock",
+  "build_volume": { "x": 420, "y": 420, "z": 480, "shape": "rectangular", "origin": "front_left" },
+  "kinematics": "bed_slinger",
+  "axes": {
+    "x": { "max_speed": 500, "max_accel": 12000 },
+    "y": { "max_speed": 500, "max_accel": 12000 },
+    "z": { "max_speed": 15, "max_accel": 200 }
+  },
+  "extruders": [{
+    "id": "tool0",
+    "nozzle_diameter": 0.4,
+    "nozzle_material": "hardened-steel",
+    "max_temp": 300,
+    "min_temp": 170,
+    "retraction_supported": true
+  }],
+  "bed": { "heated": true, "max_temp": 110, "surface_type": "PEI-spring-steel" },
+  "chamber": { "heated": false, "passive": false },
+  "firmware": { "flavor": "klipper", "identifier": "Klipper (Elegoo)" },
+  "network": { "has_wifi": true, "has_ethernet": false, "supports_lan_api": true },
+  "links": {
+    "product_page": "https://www.elegoo.com/products/neptune-4-max-fdm-3d-printer"
+  },
+  "tags": ["large-format", "klipper", "high-speed", "direct-drive", "auto-level", "all-metal-hotend", "500mm-s"],
+  "notes": "Elegoo Neptune 4 Max. Massive build volume Klipper-based printer with 420x420x480mm, 500mm/s max speed, 121-point auto bed leveling, and 300°C all-metal hotend.",
+  "x_cura": {
+    "definition": "elegoo_neptune4max",
+    "definition_changes": {
+      "machine_width": 420,
+      "machine_depth": 420,
+      "machine_height": 480,
+      "nozzle_size": 0.4,
+      "heated_bed": true,
+      "machine_heated_bed": true,
+      "bed_temperature": 60,
+      "nozzle_temperature": 200
+    }
+  },
+  "x_prusaslicer": {
+    "printer_model": "Neptune 4 Max",
+    "vendor": "Elegoo",
+    "filament_diameter": 1.75,
+    "nozzle_diameter": 0.4,
+    "bed_shape": "rectangular",
+    "bed_size": "420x420",
+    "print_height": 480,
+    "printer_technology": "FFF"
+  },
+  "x_orca": {
+    "machine_name": "Neptune 4 Max",
+    "machine_manufacturer": "Elegoo",
+    "bed_x": 420,
+    "bed_y": 420,
+    "height": 480,
+    "nozzle_diameter": 0.4,
+    "filament_diameter": 1.75
+  },
+  "x_bambu": {
+    "product_id": "elegoo_neptune4max",
+    "series": "Neptune",
+    "support_lidar": false,
+    "support_ams": false,
+    "support_ams_lite": false,
+    "max_speed": 500
+  }
+}

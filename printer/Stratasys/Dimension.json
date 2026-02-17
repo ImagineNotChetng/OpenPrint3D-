@@ -1,0 +1,75 @@
+{
+  "op3d_schema": "printer",
+  "op3d_schema_version": "0.1.0",
+  "id": "Stratasys/Dimension",
+  "maintainer": {
+    "name": "OpenPrint3D Community",
+    "maintainer_type": "community",
+    "website": "https://github.com/OpenPrint3D/OpenPrint3D"
+  },
+  "manufacturer": "Stratasys",
+  "model": "Dimension",
+  "variant": "BST",
+  "build_volume": { "x": 254, "y": 254, "z": 305, "shape": "rectangular", "origin": "center" },
+  "kinematics": "cartesian",
+  "axes": {
+    "x": { "max_speed": 100, "max_accel": 1000 },
+    "y": { "max_speed": 100, "max_accel": 1000 },
+    "z": { "max_speed": 25, "max_accel": 250 }
+  },
+  "extruders": [{
+    "id": "tool0",
+    "nozzle_diameter": 0.178,
+    "nozzle_material": "brass",
+    "max_temp": 270,
+    "min_temp": 180,
+    "retraction_supported": false
+  }],
+  "bed": { "heated": true, "max_temp": 120, "surface_type": "SR-30" },
+  "chamber": { "heated": true, "max_temp": 70, "passive": false },
+  "firmware": { "flavor": "stratasys", "identifier": "Stratasys Dimension Firmware" },
+  "network": { "has_wifi": false, "has_ethernet": true, "supports_lan_api": false },
+  "links": {
+    "product_page": "https://www.stratasys.com/3d-printers/dimension"
+  },
+  "tags": ["premium", "industrial", "fused-deposition", "heated-chamber", "abs"],
+  "notes": "Stratasys Dimension. Professional FDM 3D printer using ABS material with soluble supports.",
+  "x_cura": {
+    "definition": "stratasys_dimension",
+    "definition_changes": {
+      "machine_width": 254,
+      "machine_depth": 254,
+      "machine_height": 305,
+      "nozzle_size": 0.178,
+      "heated_bed": true,
+      "machine_heated_bed": true,
+      "bed_temperature": 70,
+      "nozzle_temperature": 230
+    }
+  },
+  "x_prusaslicer": {
+    "printer_model": "Dimension",
+    "vendor": "Stratasys",
+    "filament_diameter": 1.75,
+    "nozzle_diameter": 0.178,
+    "bed_shape": "rectangular",
+    "bed_size": "254x254",
+    "print_height": 305
+  },
+  "x_orca": {
+    "machine_name": "Dimension",
+    "machine_manufacturer": "Stratasys",
+    "bed_x": 254,
+    "bed_y": 254,
+    "height": 305,
+    "nozzle_diameter": 0.178,
+    "filament_diameter": 1.75
+  },
+  "x_bambu": {
+    "product_id": "stratasys_dimension",
+    "series": "Dimension",
+    "support_lidar": false,
+    "support_ams": false,
+    "support_ams_lite": false
+  }
+}

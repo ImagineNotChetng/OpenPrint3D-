@@ -1,0 +1,77 @@
+{
+  "op3d_schema": "printer",
+  "op3d_schema_version": "0.1.0",
+  "id": "Creality/K1C",
+  "maintainer": {
+    "name": "OpenPrint3D Community",
+    "maintainer_type": "community",
+    "website": "https://github.com/OpenPrint3D/OpenPrint3D"
+  },
+  "manufacturer": "Creality",
+  "model": "K1C",
+  "variant": "Stock",
+  "build_volume": { "x": 256, "y": 256, "z": 256, "shape": "rectangular", "origin": "front_left" },
+  "kinematics": "corexy",
+  "axes": {
+    "x": { "max_speed": 600, "max_accel": 20000 },
+    "y": { "max_speed": 600, "max_accel": 20000 },
+    "z": { "max_speed": 20, "max_accel": 1000 }
+  },
+  "extruders": [{
+    "id": "tool0",
+    "nozzle_diameter": 0.4,
+    "nozzle_material": "hardened-steel",
+    "max_temp": 300,
+    "min_temp": 170,
+    "retraction_supported": true
+  }],
+  "bed": { "heated": true, "max_temp": 120, "surface_type": "PEI-textured" },
+  "chamber": { "heated": true, "max_temp": 60, "passive": true },
+  "firmware": { "flavor": "klipper", "identifier": "Creality OS (Klipper)" },
+  "network": { "has_wifi": true, "has_ethernet": false, "supports_lan_api": true },
+  "links": {
+    "product_page": "https://www.creality.com/products/k1c"
+  },
+  "tags": ["high-speed", "corexy", "direct-drive", "carbon-fiber", "enclosed", "ai-monitoring"],
+  "notes": "Creality K1C. Carbon fiber capable CoreXY printer with hardened steel nozzle up to 300°C, active chamber heating, and 600mm/s max speed. Designed for engineering materials.",
+  "x_cura": {
+    "definition": "creality_k1c",
+    "definition_changes": {
+      "machine_width": 256,
+      "machine_depth": 256,
+      "machine_height": 256,
+      "nozzle_size": 0.4,
+      "heated_bed": true,
+      "machine_heated_bed": true,
+      "bed_temperature": 60,
+      "nozzle_temperature": 200
+    }
+  },
+  "x_prusaslicer": {
+    "printer_model": "K1C",
+    "vendor": "Creality",
+    "filament_diameter": 1.75,
+    "nozzle_diameter": 0.4,
+    "bed_shape": "rectangular",
+    "bed_size": "256x256",
+    "print_height": 256,
+    "printer_technology": "FFF"
+  },
+  "x_orca": {
+    "machine_name": "K1C",
+    "machine_manufacturer": "Creality",
+    "bed_x": 256,
+    "bed_y": 256,
+    "height": 256,
+    "nozzle_diameter": 0.4,
+    "filament_diameter": 1.75
+  },
+  "x_bambu": {
+    "product_id": "creality_k1c",
+    "series": "K1",
+    "support_lidar": false,
+    "support_ams": false,
+    "support_ams_lite": false,
+    "carbon_fiber_capable": true
+  }
+}

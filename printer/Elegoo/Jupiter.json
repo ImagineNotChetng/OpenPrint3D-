@@ -1,0 +1,57 @@
+{
+  "op3d_schema": "printer",
+  "op3d_schema_version": "0.1.0",
+  "id": "Elegoo/Jupiter",
+  "maintainer": {
+    "name": "OpenPrint3D Community",
+    "maintainer_type": "community",
+    "website": "https://github.com/OpenPrint3D/OpenPrint3D"
+  },
+  "manufacturer": "Elegoo",
+  "model": "Jupiter",
+  "variant": "6K",
+  "build_volume": { "x": 277, "y": 156, "z": 300, "shape": "rectangular", "origin": "front_left" },
+  "kinematics": "cartesian",
+  "axes": {
+    "x": { "max_speed": 30, "max_accel": 1000 },
+    "y": { "max_speed": 30, "max_accel": 1000 },
+    "z": { "max_speed": 6, "max_accel": 200 }
+  },
+  "extruders": [{
+    "id": "tool0",
+    "nozzle_diameter": 0.4,
+    "nozzle_material": "resin",
+    "max_temp": 100,
+    "min_temp": 170,
+    "retraction_supported": false
+  }],
+  "bed": { "heated": false, "max_temp": 100, "surface_type": "plate" },
+  "chamber": { "heated": false, "passive": false },
+  "firmware": { "flavor": "proprietary", "identifier": "Elegoo Jupiter Firmware" },
+  "network": { "has_wifi": false, "has_ethernet": false, "supports_lan_api": false },
+  "links": {
+    "product_page": "https://www.elegoo.com/products/elegoo-jupiter-12-8-6k-mono-msla-3d-printer"
+  },
+  "tags": ["resin", "msla", "6k", "large-format", "auto-refill"],
+  "notes": "Elegoo Jupiter. Large-format 6K MSLA resin printer with 277x156x300mm build volume. Features 12.8-inch 6K monochrome LCD, 51 micron XY resolution, automatic resin feeding, and built-in air purification.",
+  "x_cura": {
+    "definition": "elegoo_jupiter",
+    "definition_changes": {
+      "machine_width": 277,
+      "machine_depth": 156,
+      "machine_height": 300,
+      "nozzle_size": 0.4,
+      "machine_type": "mSLA"
+    }
+  },
+  "x_prusaslicer": {
+    "printer_model": "Jupiter",
+    "vendor": "Elegoo",
+    "filament_diameter": 0,
+    "nozzle_diameter": 0.4,
+    "bed_shape": "rectangular",
+    "bed_size": "277x156",
+    "print_height": 300,
+    "printer_technology": "MSLA"
+  }
+}

@@ -1,0 +1,37 @@
+{
+  "op3d_schema": "printer",
+  "op3d_schema_version": "0.1.0",
+  "id": "Prusa/MK4S-Plus-MMU3",
+  "maintainer": {
+    "name": "OpenPrint3D Community",
+    "maintainer_type": "community",
+    "website": "https://github.com/OpenPrint3D/OpenPrint3D"
+  },
+  "manufacturer": "Prusa Research",
+  "model": "MK4S+ MMU3",
+  "variant": "MMU3",
+  "build_volume": { "x": 250, "y": 220, "z": 230, "shape": "rectangular", "origin": "front_left" },
+  "kinematics": "bed_slinger",
+  "axes": {
+    "x": { "max_speed": 400, "max_accel": 12000 },
+    "y": { "max_speed": 400, "max_accel": 12000 },
+    "z": { "max_speed": 15, "max_accel": 300 }
+  },
+  "extruders": [
+    { "id": "tool0", "nozzle_diameter": 0.4, "nozzle_material": "hardened-steel", "max_temp": 320, "min_temp": 170, "retraction_supported": true },
+    { "id": "tool1", "nozzle_diameter": 0.4, "nozzle_material": "hardened-steel", "max_temp": 320, "min_temp": 170, "retraction_supported": true },
+    { "id": "tool2", "nozzle_diameter": 0.4, "nozzle_material": "hardened-steel", "max_temp": 320, "min_temp": 170, "retraction_supported": true },
+    { "id": "tool3", "nozzle_diameter": 0.4, "nozzle_material": "hardened-steel", "max_temp": 320, "min_temp": 170, "retraction_supported": true },
+    { "id": "tool4", "nozzle_diameter": 0.4, "nozzle_material": "hardened-steel", "max_temp": 320, "min_temp": 170, "retraction_supported": true }
+  ],
+  "bed": { "heated": true, "max_temp": 125, "surface_type": "PEI-spring-steel" },
+  "chamber": { "heated": false, "passive": true },
+  "firmware": { "flavor": "klipper", "identifier": "Prusa Firmware (Buddy board, MMU3)" },
+  "network": { "has_wifi": true, "has_ethernet": true, "supports_lan_api": true },
+  "links": {
+    "product_page": "https://www.prusa3d.com/product/original-prusa-mk4s-plus-mmu3/",
+    "documentation": "https://help.prusa3d.com/tag/mk4s-plus-mmu3"
+  },
+  "tags": ["premium", "input-shaper", "direct-drive", "open-source", "loadcell", "nextruder", "ethernet", "mmu3", "multi-material", "5-filament"],
+  "notes": "Prusa MK4S+ with MMU3. Multi-material upgrade enabling 5-filament printing. Enhanced hardened steel hotend (320C), improved input shaper, ethernet connectivity."
+}

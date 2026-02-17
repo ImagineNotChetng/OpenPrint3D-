@@ -1,0 +1,79 @@
+{
+  "op3d_schema": "printer",
+  "op3d_schema_version": "0.1.0",
+  "id": "Elegoo/Neptune-12",
+  "maintainer": {
+    "name": "OpenPrint3D Community",
+    "maintainer_type": "community",
+    "website": "https://github.com/OpenPrint3D/OpenPrint3D"
+  },
+  "manufacturer": "Elegoo",
+  "model": "Neptune 12",
+  "variant": "Stock",
+  "build_volume": { "x": 500, "y": 500, "z": 550, "shape": "rectangular", "origin": "front_left" },
+  "kinematics": "corexy",
+  "axes": {
+    "x": { "max_speed": 900, "max_accel": 40000 },
+    "y": { "max_speed": 900, "max_accel": 40000 },
+    "z": { "max_speed": 40, "max_accel": 2500 }
+  },
+  "extruders": [{
+    "id": "tool0",
+    "nozzle_diameter": 0.4,
+    "nozzle_material": "hardened-steel",
+    "max_temp": 380,
+    "min_temp": 170,
+    "retraction_supported": true
+  }],
+  "bed": { "heated": true, "max_temp": 160, "surface_type": "PEI-textured" },
+  "chamber": { "heated": true, "max_temp": 70, "passive": true },
+  "firmware": { "flavor": "klipper", "identifier": "Elegoo Neptune 12 Firmware" },
+  "network": { "has_wifi": true, "has_ethernet": true, "supports_lan_api": true },
+  "links": {
+    "product_page": "https://www.elegoo.com/products/neptune-12"
+  },
+  "tags": ["high-speed", "corexy", "direct-drive", "ai-monitoring", "900mm-s", "large-format", "ethernet", "klipper", "input-shaping", "active-chamber", "high-temp"],
+  "notes": "Elegoo Neptune 12. Flagship high-speed CoreXY with massive 500x500x550mm build volume. Features Klipper with advanced input shaping, AI monitoring camera, high-flow dual-gear extruder, 380C max temp for advanced materials, active chamber heating up to 70C, and Ethernet connectivity.",
+  "x_cura": {
+    "definition": "elegoo_neptune12",
+    "definition_changes": {
+      "machine_width": 500,
+      "machine_depth": 500,
+      "machine_height": 550,
+      "nozzle_size": 0.4,
+      "heated_bed": true,
+      "machine_heated_bed": true,
+      "bed_temperature": 60,
+      "nozzle_temperature": 200
+    }
+  },
+  "x_prusaslicer": {
+    "printer_model": "Neptune 12",
+    "vendor": "Elegoo",
+    "filament_diameter": 1.75,
+    "nozzle_diameter": 0.4,
+    "bed_shape": "rectangular",
+    "bed_size": "500x500",
+    "print_height": 550
+  },
+  "x_orca": {
+    "machine_name": "Neptune 12",
+    "machine_manufacturer": "Elegoo",
+    "bed_x": 500,
+    "bed_y": 500,
+    "height": 550,
+    "nozzle_diameter": 0.4,
+    "filament_diameter": 1.75
+  },
+  "x_bambu": {
+    "product_id": "elegoo_neptune12",
+    "series": "Neptune",
+    "support_lidar": false,
+    "support_ams": false,
+    "support_ams_lite": false,
+    "max_speed": 900,
+    "nozzle_type": "hardened-steel",
+    "has_ethernet": true,
+    "active_chamber_heating": true
+  }
+}

@@ -1,0 +1,82 @@
+{
+  "op3d_schema": "printer",
+  "op3d_schema_version": "0.1.0",
+  "id": "BambuLab/P1S-2026",
+  "maintainer": {
+    "name": "OpenPrint3D Community",
+    "maintainer_type": "community",
+    "website": "https://github.com/OpenPrint3D/OpenPrint3D"
+  },
+  "manufacturer": "Bambu Lab",
+  "model": "P1S 2026",
+  "variant": "Stock",
+  "build_volume": { "x": 280, "y": 280, "z": 280, "shape": "rectangular", "origin": "front_left" },
+  "kinematics": "corexy",
+  "axes": {
+    "x": { "max_speed": 700, "max_accel": 30000 },
+    "y": { "max_speed": 700, "max_accel": 30000 },
+    "z": { "max_speed": 30, "max_accel": 800 }
+  },
+  "extruders": [{
+    "id": "tool0",
+    "nozzle_diameter": 0.4,
+    "nozzle_material": "hardened-steel",
+    "max_temp": 340,
+    "min_temp": 170,
+    "retraction_supported": true
+  }],
+  "bed": { "heated": true, "max_temp": 125, "surface_type": "PEI-textured" },
+  "chamber": { "heated": true, "max_temp": 60, "passive": true },
+  "firmware": { "flavor": "bambu", "identifier": "Bambu Lab proprietary" },
+  "network": { "has_wifi": true, "has_ethernet": false, "supports_lan_api": true },
+  "links": {
+    "product_page": "https://bambulab.com/en/p1-series"
+  },
+  "tags": ["premium", "corexy", "enclosed", "ams-compatible", "high-speed", "multi-material", "input-shaping", "next-gen"],
+  "notes": "Bambu Lab P1S 2026. Updated enclosed CoreXY with expanded 280x280x280mm build volume, 700mm/s speed capability with 30000mm/s² acceleration, improved input shaping, enhanced hotend up to 340C, and passive chamber heating for better print quality. AMS 2.0 compatible.",
+  "x_cura": {
+    "definition": "bambulab_p1s_2026",
+    "definition_changes": {
+      "machine_width": 280,
+      "machine_depth": 280,
+      "machine_height": 280,
+      "nozzle_size": 0.4,
+      "heated_bed": true,
+      "machine_heated_bed": true,
+      "bed_temperature": 60,
+      "nozzle_temperature": 200
+    }
+  },
+  "x_prusaslicer": {
+    "printer_model": "P1S 2026",
+    "vendor": "Bambu Lab",
+    "filament_diameter": 1.75,
+    "nozzle_diameter": 0.4,
+    "bed_shape": "rectangular",
+    "bed_size": "280x280",
+    "print_height": 280,
+    "printer_technology": "FFF"
+  },
+  "x_orca": {
+    "machine_name": "P1S 2026",
+    "machine_manufacturer": "Bambu Lab",
+    "bed_x": 280,
+    "bed_y": 280,
+    "height": 280,
+    "nozzle_diameter": 0.4,
+    "filament_diameter": 1.75,
+    "support_ams": true,
+    "support_xc": false
+  },
+  "x_bambu": {
+    "product_id": "bambulab_p1s_2026_00",
+    "series": "P1",
+    "support_lidar": false,
+    "support_ams": true,
+    "support_ams_lite": false,
+    "support_xc": false,
+    "active_chamber_heating": true,
+    "max_speed": 700,
+    "nozzle_type": "hardened-steel"
+  }
+}

@@ -1,0 +1,76 @@
+{
+  "op3d_schema": "printer",
+  "op3d_schema_version": "0.1.0",
+  "id": "Creality/Ender-4",
+  "maintainer": {
+    "name": "OpenPrint3D Community",
+    "maintainer_type": "community",
+    "website": "https://github.com/OpenPrint3D/OpenPrint3D"
+  },
+  "manufacturer": "Creality",
+  "model": "Ender-4",
+  "variant": "Stock",
+  "build_volume": { "x": 220, "y": 220, "z": 300, "shape": "rectangular", "origin": "front_left" },
+  "kinematics": "corexy",
+  "axes": {
+    "x": { "max_speed": 150, "max_accel": 3000 },
+    "y": { "max_speed": 150, "max_accel": 3000 },
+    "z": { "max_speed": 10, "max_accel": 500 }
+  },
+  "extruders": [{
+    "id": "tool0",
+    "nozzle_diameter": 0.4,
+    "nozzle_material": "brass",
+    "max_temp": 260,
+    "min_temp": 170,
+    "retraction_supported": true
+  }],
+  "bed": { "heated": true, "max_temp": 110, "surface_type": "carborundum-glass" },
+  "chamber": { "heated": false, "passive": false },
+  "firmware": { "flavor": "marlin", "identifier": "Creality Marlin" },
+  "network": { "has_wifi": false, "has_ethernet": false, "supports_lan_api": false },
+  "links": {
+    "product_page": "https://www.creality.com/products/ender-4"
+  },
+  "tags": ["corexy", "budget", "compact", "enclosed"],
+  "notes": "Creality Ender-4. Compact CoreXY printer with enclosed frame design, 220x220x300mm build volume.",
+  "x_cura": {
+    "definition": "creality_ender4",
+    "definition_changes": {
+      "machine_width": 220,
+      "machine_depth": 220,
+      "machine_height": 300,
+      "nozzle_size": 0.4,
+      "heated_bed": true,
+      "machine_heated_bed": true,
+      "bed_temperature": 60,
+      "nozzle_temperature": 200
+    }
+  },
+  "x_prusaslicer": {
+    "printer_model": "Ender-4",
+    "vendor": "Creality",
+    "filament_diameter": 1.75,
+    "nozzle_diameter": 0.4,
+    "bed_shape": "rectangular",
+    "bed_size": "220x220",
+    "print_height": 300,
+    "printer_technology": "FFF"
+  },
+  "x_orca": {
+    "machine_name": "Ender-4",
+    "machine_manufacturer": "Creality",
+    "bed_x": 220,
+    "bed_y": 220,
+    "height": 300,
+    "nozzle_diameter": 0.4,
+    "filament_diameter": 1.75
+  },
+  "x_bambu": {
+    "product_id": "creality_ender4",
+    "series": "Ender",
+    "support_lidar": false,
+    "support_ams": false,
+    "support_ams_lite": false
+  }
+}

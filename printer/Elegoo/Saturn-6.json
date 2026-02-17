@@ -1,0 +1,37 @@
+{
+  "op3d_schema": "printer",
+  "op3d_schema_version": "0.1.0",
+  "id": "Elegoo/Saturn-6",
+  "maintainer": {
+    "name": "OpenPrint3D Community",
+    "maintainer_type": "community",
+    "website": "https://github.com/OpenPrint3D/OpenPrint3D"
+  },
+  "manufacturer": "Elegoo",
+  "model": "Saturn 6",
+  "variant": "Stock",
+  "build_volume": { "x": 245.76, "y": 138.24, "z": 260, "shape": "rectangular", "origin": "front_left" },
+  "kinematics": "other",
+  "axes": {
+    "x": { "max_speed": 150, "max_accel": 1000 },
+    "y": { "max_speed": 150, "max_accel": 1000 },
+    "z": { "max_speed": 80, "max_accel": 500 }
+  },
+  "extruders": [{
+    "id": "tool0",
+    "nozzle_diameter": 0.1,
+    "nozzle_material": "other",
+    "max_temp": 150,
+    "min_temp": 100,
+    "retraction_supported": false
+  }],
+  "bed": { "heated": false, "max_temp": 100, "surface_type": "build-plate" },
+  "chamber": { "heated": true, "max_temp": 32, "passive": false },
+  "firmware": { "flavor": "proprietary", "identifier": "Elegoo Saturn 6 Firmware" },
+  "network": { "has_wifi": true, "has_ethernet": false, "supports_lan_api": false },
+  "links": {
+    "product_page": "https://www.elegoo.com/products/elegoo-saturn-6"
+  },
+  "tags": ["msla", "resin", "16k", "high-resolution", "large-format", "tilt-release", "auto-leveling"],
+  "notes": "Elegoo Saturn 6. 16K resolution MSLA resin printer with 245.76x138.24x260mm build volume. Features tilt release technology, smart tank heating at 32°C, and auto leveling."
+}

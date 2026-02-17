@@ -1,0 +1,76 @@
+{
+  "op3d_schema": "printer",
+  "op3d_schema_version": "0.1.0",
+  "id": "Makerbot/Method-XL",
+  "maintainer": {
+    "name": "OpenPrint3D Community",
+    "maintainer_type": "community",
+    "website": "https://github.com/OpenPrint3D/OpenPrint3D"
+  },
+  "manufacturer": "Makerbot",
+  "model": "Method XL",
+  "variant": "Stock",
+  "build_volume": { "x": 406, "y": 355, "z": 406, "shape": "rectangular", "origin": "front_left" },
+  "kinematics": "corexy",
+  "axes": {
+    "x": { "max_speed": 150, "max_accel": 5000 },
+    "y": { "max_speed": 150, "max_accel": 5000 },
+    "z": { "max_speed": 15, "max_accel": 500 }
+  },
+  "extruders": [{
+    "id": "tool0",
+    "nozzle_diameter": 0.4,
+    "nozzle_material": "hardened-steel",
+    "max_temp": 300,
+    "min_temp": 180,
+    "retraction_supported": true
+  }],
+  "bed": { "heated": true, "max_temp": 120, "surface_type": "flexible-steel" },
+  "chamber": { "heated": true, "max_temp": 100, "passive": false },
+  "firmware": { "flavor": "proprietary", "identifier": "MakerBot OS" },
+  "network": { "has_wifi": true, "has_ethernet": true, "supports_lan_api": true },
+  "links": {
+    "product_page": "https://www.makerbot.com/method-xl/"
+  },
+  "tags": ["professional", "large-format", "corexy", "enclosed", "heated-chamber", "production"],
+  "notes": "MakerBot Method XL. Professional large-format CoreXY printer with 406x355x406mm build volume, heated chamber up to 100°C. Designed for engineering and production applications.",
+  "x_cura": {
+    "definition": "makerbot_methodxl",
+    "definition_changes": {
+      "machine_width": 406,
+      "machine_depth": 355,
+      "machine_height": 406,
+      "nozzle_size": 0.4,
+      "heated_bed": true,
+      "machine_heated_bed": true,
+      "bed_temperature": 60,
+      "nozzle_temperature": 200
+    }
+  },
+  "x_prusaslicer": {
+    "printer_model": "Method XL",
+    "vendor": "MakerBot",
+    "filament_diameter": 1.75,
+    "nozzle_diameter": 0.4,
+    "bed_shape": "rectangular",
+    "bed_size": "406x355",
+    "print_height": 406,
+    "printer_technology": "FFF"
+  },
+  "x_orca": {
+    "machine_name": "Method XL",
+    "machine_manufacturer": "MakerBot",
+    "bed_x": 406,
+    "bed_y": 355,
+    "height": 406,
+    "nozzle_diameter": 0.4,
+    "filament_diameter": 1.75
+  },
+  "x_bambu": {
+    "product_id": "makerbot_methodxl",
+    "series": "Method",
+    "support_lidar": false,
+    "support_ams": false,
+    "support_ams_lite": false
+  }
+}

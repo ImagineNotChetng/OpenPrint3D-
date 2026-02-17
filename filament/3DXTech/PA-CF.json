@@ -1,0 +1,30 @@
+{
+  "op3d_schema": "filament",
+  "op3d_schema_version": "0.1.0",
+  "id": "3DXTech/PA-CF",
+  "maintainer": {
+    "name": "OpenPrint3D Community",
+    "maintainer_type": "community",
+    "website": "https://github.com/OpenPrint3D/OpenPrint3D"
+  },
+  "brand": "3DXTech",
+  "name": "3DXTech Carbon Fiber (PA-CF) 1.75mm",
+  "material": "PA-CF",
+  "diameter": 1.75,
+  "density": 1.15,
+  "nozzle": { "min": 260, "max": 290, "recommended": 275 },
+  "bed": { "min": 80, "max": 100, "recommended": 90 },
+  "fan": { "min": 0, "max": 30, "recommended": 0 },
+  "drying": { "temperature": 80, "duration_hours": 12 },
+  "environment": {
+    "sensitive_to_moisture": true,
+    "enclosure_recommended": true,
+    "max_ambient_temp": 45
+  },
+  "volumetric_speed": 8,
+  "links": {
+    "product_page": "https://3dxtech.com/carbon-fiber-filament/"
+  },
+  "tags": ["pa-cf", "nylon", "carbon-fiber", "3dxtech", "1.75mm", "engineering", "high-performance", "hardened-nozzle-required"],
+  "notes": "3DXTech Carbon Fiber (PA-CF). High-performance nylon carbon fiber with exceptional strength-to-weight ratio and stiffness. Requires hardened steel nozzle and thorough drying. Excellent for functional aerospace and automotive parts."
+}

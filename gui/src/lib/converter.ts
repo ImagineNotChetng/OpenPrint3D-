@@ -1,10 +1,12 @@
 /**
- * OpenPrint3D → Slicer Profile Converter v2
+ * OpenPrint3D → Slicer Profile Converter v3
  *
  * Generates importable profiles for:
  * - OrcaSlicer / BambuStudio (user preset JSON — File > Import > Import Configs)
  * - PrusaSlicer / SuperSlicer (.ini config — File > Import > Import Config)
  * - Cura (.cfg profile — Preferences > Profiles > Import)
+ * - YAML (native OpenPrint3D format)
+ * - JSON (native OpenPrint3D format)
  *
  * Based on:
  * - OrcaSlicer wiki: https://github.com/OrcaSlicer/OrcaSlicer/wiki/How-to-create-profiles
@@ -13,6 +15,7 @@
  * - Cura 5.x .cfg quality_changes format
  */
 
+import yaml from "js-yaml";
 import type { FilamentProfile, PrinterProfile, ProcessProfile } from "./profiles";
 
 // ═══════════════════════════════════════════════════════
@@ -540,45 +543,83 @@ function mapAdhesionToCura(type?: string): string {
 }
 
 // ═══════════════════════════════════════════════════════
+// YAML Export - OpenPrint3D Native Format
+// ═══════════════════════════════════════════════════════
+
+export function toYaml(obj: unknown): string {
+  return yaml.dump(obj, {
+    default_flow_style: false,
+    sort_keys: false,
+    allow_unicode: true,
+    indent: 2,
+  });
+}
+
+export function toJsonString(obj: unknown): string {
+  return JSON.stringify(obj, null, 2);
+}
+
+// ═══════════════════════════════════════════════════════
 // Public API
 // ═══════════════════════════════════════════════════════
 
 export type SlicerTarget = "orcaslicer" | "prusaslicer" | "cura";
+export type FormatTarget = "orcaslicer" | "prusaslicer" | "cura" | "yaml" | "json";
 
-export function getFileExtension(slicer: SlicerTarget, _profileType: string): string {
-  if (slicer === "orcaslicer") return ".json";
-  if (slicer === "prusaslicer") return ".ini";
-  if (slicer === "cura") return ".cfg";
+export function getFileExtension(format: FormatTarget, _profileType: string): string {
+  if (format === "orcaslicer") return ".json";
+  if (format === "prusaslicer") return ".ini";
+  if (format === "cura") return ".cfg";
+  if (format === "yaml") return ".yaml";
+  if (format === "json") return ".json";
   return ".txt";
 }
 
-export function getSlicerLabel(slicer: SlicerTarget): string {
-  const labels: Record<SlicerTarget, string> = {
+export function getFormatLabel(format: FormatTarget): string {
+  const labels: Record<FormatTarget, string> = {
     orcaslicer: "OrcaSlicer / BambuStudio",
     prusaslicer: "PrusaSlicer / SuperSlicer",
     cura: "UltiMaker Cura 5.x",
+    yaml: "YAML (OpenPrint3D)",
+    json: "JSON (OpenPrint3D)",
   };
-  return labels[slicer];
+  return labels[format];
 }
 
-export function convertFilament(f: FilamentProfile, slicer: SlicerTarget): string {
-  switch (slicer) {
+export function getAllFormats(): { id: FormatTarget; name: string; desc: string; icon: string }[] {
+  return [
+    { id: "yaml", name: "YAML", desc: "OpenPrint3D native YAML format — human-readable", icon: "📄" },
+    { id: "json", name: "JSON", desc: "OpenPrint3D native JSON format", icon: "📋" },
+    { id: "orcaslicer", name: "OrcaSlicer / BambuStudio", desc: "JSON format — compatible with OrcaSlicer, BambuStudio", icon: "🦈" },
+    { id: "prusaslicer", name: "PrusaSlicer / SuperSlicer", desc: "INI config bundle format", icon: "🔶" },
+    { id: "cura", name: "UltiMaker Cura", desc: "CFG profile format for Cura 5.x+", icon: "⬡" },
+  ];
+}
+
+export function convertFilament(f: FilamentProfile, format: FormatTarget): string {
+  switch (format) {
+    case "yaml": return toYaml(f);
+    case "json": return toJsonString(f);
     case "orcaslicer": return JSON.stringify(toOrcaFilament(f), null, 2);
     case "prusaslicer": return toPrusaFilament(f);
     case "cura": return toCuraFilament(f);
   }
 }
 
-export function convertPrinter(p: PrinterProfile, slicer: SlicerTarget): string {
-  switch (slicer) {
+export function convertPrinter(p: PrinterProfile, format: FormatTarget): string {
+  switch (format) {
+    case "yaml": return toYaml(p);
+    case "json": return toJsonString(p);
     case "orcaslicer": return JSON.stringify(toOrcaPrinter(p), null, 2);
     case "prusaslicer": return toPrusaPrinter(p);
     case "cura": return toCuraPrinter(p);
   }
 }
 
-export function convertProcess(proc: ProcessProfile, slicer: SlicerTarget): string {
-  switch (slicer) {
+export function convertProcess(proc: ProcessProfile, format: FormatTarget): string {
+  switch (format) {
+    case "yaml": return toYaml(proc);
+    case "json": return toJsonString(proc);
     case "orcaslicer": return JSON.stringify(toOrcaProcess(proc), null, 2);
     case "prusaslicer": return toPrusaProcess(proc);
     case "cura": return toCuraProcess(proc);

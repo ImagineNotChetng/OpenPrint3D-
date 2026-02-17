@@ -1,0 +1,73 @@
+{
+  "op3d_schema": "printer",
+  "op3d_schema_version": "0.1.0",
+  "id": "UniFormation/GKOne",
+  "maintainer": {
+    "name": "OpenPrint3D Community",
+    "maintainer_type": "community",
+    "website": "https://github.com/OpenPrint3D/OpenPrint3D"
+  },
+  "manufacturer": "UniFormation",
+  "model": "GKOne",
+  "variant": "Stock",
+  "build_volume": { "x": 192, "y": 120, "z": 200, "shape": "rectangular", "origin": "center" },
+  "kinematics": "msla",
+  "axes": {
+    "x": { "max_speed": 100, "max_accel": 1000 },
+    "y": { "max_speed": 100, "max_accel": 1000 },
+    "z": { "max_speed": 30, "max_accel": 300 }
+  },
+  "extruders": [{
+    "id": "tool0",
+    "nozzle_diameter": 0.025,
+    "nozzle_material": "stainless-steel",
+    "max_temp": 30,
+    "min_temp": 20,
+    "retraction_supported": false
+  }],
+  "bed": { "heated": true, "max_temp": 50, "surface_type": "fep" },
+  "chamber": { "heated": false, "passive": false },
+  "firmware": { "flavor": "other", "identifier": "UniFormation Firmware" },
+  "network": { "has_wifi": true, "has_ethernet": false, "supports_lan_api": false },
+  "links": {
+    "product_page": "https://unifformation.com/gkone"
+  },
+  "tags": ["msla", "resin", "wifi", "portable"],
+  "notes": "UniFormation GKOne. Compact MSLA 3D printer with 192x120x200mm build volume. Features 25-micron XY resolution, WiFi connectivity, and 4K LCD. Great entry-level resin printer.",
+  "x_cura": {
+    "definition": "unif_ormation_gkone",
+    "definition_changes": {
+      "machine_width": 192,
+      "machine_depth": 120,
+      "machine_height": 200,
+      "nozzle_size": 0.025,
+      "heated_bed": true,
+      "printer_technology": "MSLA"
+    }
+  },
+  "x_prusaslicer": {
+    "printer_model": "GKOne",
+    "vendor": "UniFormation",
+    "filament_diameter": 1.75,
+    "nozzle_diameter": 0.025,
+    "bed_shape": "rectangular",
+    "bed_size": "192x120",
+    "print_height": 200
+  },
+  "x_orca": {
+    "machine_name": "GKOne",
+    "machine_manufacturer": "UniFormation",
+    "bed_x": 192,
+    "bed_y": 120,
+    "height": 200,
+    "nozzle_diameter": 0.025,
+    "filament_diameter": 1.75
+  },
+  "x_bambu": {
+    "product_id": "unif_ormation_gkone",
+    "series": "GK",
+    "support_lidar": false,
+    "support_ams": false,
+    "support_ams_lite": false
+  }
+}

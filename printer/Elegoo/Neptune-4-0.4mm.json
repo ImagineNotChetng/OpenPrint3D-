@@ -1,0 +1,37 @@
+{
+  "op3d_schema": "printer",
+  "op3d_schema_version": "0.1.0",
+  "id": "Elegoo/Neptune-4-0.4mm",
+  "maintainer": {
+    "name": "OpenPrint3D Community",
+    "maintainer_type": "community",
+    "website": "https://github.com/OpenPrint3D/OpenPrint3D"
+  },
+  "manufacturer": "Elegoo",
+  "model": "Neptune 4",
+  "variant": "0.4mm Nozzle",
+  "build_volume": { "x": 220, "y": 220, "z": 250, "shape": "rectangular", "origin": "front_left" },
+  "kinematics": "cartesian",
+  "axes": {
+    "x": { "max_speed": 200, "max_accel": 10000 },
+    "y": { "max_speed": 200, "max_accel": 10000 },
+    "z": { "max_speed": 20, "max_accel": 500 }
+  },
+  "extruders": [{
+    "id": "tool0",
+    "nozzle_diameter": 0.4,
+    "nozzle_material": "brass",
+    "max_temp": 300,
+    "min_temp": 170,
+    "retraction_supported": true
+  }],
+  "bed": { "heated": true, "max_temp": 100, "surface_type": "pei" },
+  "chamber": { "heated": false, "max_temp": 100, "passive": true },
+  "firmware": { "flavor": "marlin", "identifier": "Elegoo Neptune 4" },
+  "network": { "has_wifi": true, "has_ethernet": false, "supports_lan_api": false },
+  "links": {
+    "product_page": "https://www.elegoo.com/products/elegoo-neptune-4"
+  },
+  "tags": ["fdm", "cartesian", "direct-drive", "auto-leveling", "0.4mm", "high-speed"],
+  "notes": "Neptune 4 with 0.4mm brass nozzle for standard printing."
+}

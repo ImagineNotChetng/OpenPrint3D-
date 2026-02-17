@@ -1,0 +1,75 @@
+{
+  "op3d_schema": "printer",
+  "op3d_schema_version": "0.1.0",
+  "id": "Qidi/X-Plus",
+  "maintainer": {
+    "name": "OpenPrint3D Community",
+    "maintainer_type": "community",
+    "website": "https://github.com/OpenPrint3D/OpenPrint3D"
+  },
+  "manufacturer": "Qidi",
+  "model": "X-Plus",
+  "variant": "Stock",
+  "build_volume": { "x": 270, "y": 270, "z": 300, "shape": "rectangular", "origin": "front_left" },
+  "kinematics": "corexy",
+  "axes": {
+    "x": { "max_speed": 200, "max_accel": 5000 },
+    "y": { "max_speed": 200, "max_accel": 5000 },
+    "z": { "max_speed": 20, "max_accel": 500 }
+  },
+  "extruders": [{
+    "id": "tool0",
+    "nozzle_diameter": 0.4,
+    "nozzle_material": "hardened-steel",
+    "max_temp": 300,
+    "min_temp": 180,
+    "retraction_supported": true
+  }],
+  "bed": { "heated": true, "max_temp": 120, "surface_type": "PEI-textured" },
+  "chamber": { "heated": false, "passive": true },
+  "firmware": { "flavor": "klipper", "identifier": "Qidi X-Plus Firmware" },
+  "network": { "has_wifi": true, "has_ethernet": false, "supports_lan_api": false },
+  "links": {
+    "product_page": "https://www.qidipro.com/x-plus"
+  },
+  "tags": ["corexy", "direct-drive", "large-build", "enclosed"],
+  "notes": "Qidi X-Plus. Large format CoreXY with enclosed build chamber.",
+  "x_cura": {
+    "definition": "qidi_xplus",
+    "definition_changes": {
+      "machine_width": 270,
+      "machine_depth": 270,
+      "machine_height": 300,
+      "nozzle_size": 0.4,
+      "heated_bed": true,
+      "machine_heated_bed": true,
+      "bed_temperature": 60,
+      "nozzle_temperature": 200
+    }
+  },
+  "x_prusaslicer": {
+    "printer_model": "X-Plus",
+    "vendor": "Qidi",
+    "filament_diameter": 1.75,
+    "nozzle_diameter": 0.4,
+    "bed_shape": "rectangular",
+    "bed_size": "270x270",
+    "print_height": 300
+  },
+  "x_orca": {
+    "machine_name": "X-Plus",
+    "machine_manufacturer": "Qidi",
+    "bed_x": 270,
+    "bed_y": 270,
+    "height": 300,
+    "nozzle_diameter": 0.4,
+    "filament_diameter": 1.75
+  },
+  "x_bambu": {
+    "product_id": "qidi_xplus",
+    "series": "X-Plus",
+    "support_lidar": false,
+    "support_ams": false,
+    "support_ams_lite": false
+  }
+}

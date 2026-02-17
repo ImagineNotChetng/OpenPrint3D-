@@ -1,0 +1,81 @@
+{
+  "op3d_schema": "printer",
+  "op3d_schema_version": "0.1.0",
+  "id": "BambuLab/P1SC",
+  "maintainer": {
+    "name": "OpenPrint3D Community",
+    "maintainer_type": "community",
+    "website": "https://github.com/OpenPrint3D/OpenPrint3D"
+  },
+  "manufacturer": "Bambu Lab",
+  "model": "P1SC",
+  "variant": "Stock",
+  "build_volume": { "x": 256, "y": 256, "z": 256, "shape": "rectangular", "origin": "front_left" },
+  "kinematics": "corexy",
+  "axes": {
+    "x": { "max_speed": 500, "max_accel": 20000 },
+    "y": { "max_speed": 500, "max_accel": 20000 },
+    "z": { "max_speed": 20, "max_accel": 500 }
+  },
+  "extruders": [{
+    "id": "tool0",
+    "nozzle_diameter": 0.4,
+    "nozzle_material": "hardened-steel",
+    "max_temp": 300,
+    "min_temp": 170,
+    "retraction_supported": true
+  }],
+  "bed": { "heated": true, "max_temp": 120, "surface_type": "PEI-textured" },
+  "chamber": { "heated": true, "max_temp": 60, "passive": true },
+  "firmware": { "flavor": "bambu", "identifier": "Bambu Lab proprietary" },
+  "network": { "has_wifi": true, "has_ethernet": false, "supports_lan_api": true },
+  "links": {
+    "product_page": "https://bambulab.com/en/p1s"
+  },
+  "tags": ["high-speed", "corexy", "enclosed", "ams-compatible", "carbon-fiber"],
+  "notes": "Bambu Lab P1SC. Carbon-fiber capable P1S variant with hardened steel nozzle up to 300°C. CoreXY high-speed printer with AMS multi-material support.",
+  "x_cura": {
+    "definition": "bambulab_p1sc",
+    "definition_changes": {
+      "machine_width": 256,
+      "machine_depth": 256,
+      "machine_height": 256,
+      "nozzle_size": 0.4,
+      "heated_bed": true,
+      "machine_heated_bed": true,
+      "bed_temperature": 60,
+      "nozzle_temperature": 200
+    }
+  },
+  "x_prusaslicer": {
+    "printer_model": "P1SC",
+    "vendor": "Bambu Lab",
+    "filament_diameter": 1.75,
+    "nozzle_diameter": 0.4,
+    "bed_shape": "rectangular",
+    "bed_size": "256x256",
+    "print_height": 256,
+    "printer_technology": "FFF"
+  },
+  "x_orca": {
+    "machine_name": "P1SC",
+    "machine_manufacturer": "Bambu Lab",
+    "bed_x": 256,
+    "bed_y": 256,
+    "height": 256,
+    "nozzle_diameter": 0.4,
+    "filament_diameter": 1.75,
+    "support_ams": true
+  },
+  "x_bambu": {
+    "product_id": "bambulab_p1sc_00",
+    "series": "P1",
+    "support_lidar": false,
+    "support_ams": true,
+    "support_ams_lite": false,
+    "support_xc": false,
+    "carbon_fiber_capable": true,
+    "max_speed": 500,
+    "nozzle_type": "hardened-steel"
+  }
+}

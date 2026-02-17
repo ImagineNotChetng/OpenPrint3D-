@@ -1,0 +1,31 @@
+{
+  "op3d_schema": "filament",
+  "op3d_schema_version": "0.1.0",
+  "id": "NatureWorks/Ingeo3D850",
+  "maintainer": {
+    "name": "OpenPrint3D Community",
+    "maintainer_type": "community",
+    "website": "https://github.com/OpenPrint3D/OpenPrint3D"
+  },
+  "brand": "NatureWorks",
+  "name": "NatureWorks Ingeo 3D850 1.75mm",
+  "material": "PLA",
+  "diameter": 1.75,
+  "density": 1.25,
+  "nozzle": { "min": 210, "max": 245, "recommended": 230 },
+  "bed": { "min": 55, "max": 75, "recommended": 65 },
+  "fan": { "min": 40, "max": 80, "recommended": 60 },
+  "drying": { "temperature": 50, "duration_hours": 4 },
+  "environment": {
+    "sensitive_to_moisture": true,
+    "enclosure_recommended": false,
+    "max_ambient_temp": 28
+  },
+  "volumetric_speed": 14,
+  "printing_speed": { "min": 50, "max": 120, "recommended": 80 },
+  "links": {
+    "datasheet": "https://www.natureworksllc.com/Products/Ingeo-Biopolymers"
+  },
+  "tags": ["pla", "ingeo", "3d850", "high-heat", "biopolymer", "1.75mm", "natureworks"],
+  "notes": "NatureWorks Ingeo 3D850 is a high-heat PLA designed for 3D printing with higher thermal resistance and faster crystallization for reduced warping."
+}

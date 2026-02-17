@@ -1,0 +1,30 @@
+{
+  "op3d_schema": "filament",
+  "op3d_schema_version": "0.1.0",
+  "id": "Quantum/ABS",
+  "maintainer": {
+    "name": "OpenPrint3D Community",
+    "maintainer_type": "community",
+    "website": "https://github.com/OpenPrint3D/OpenPrint3D"
+  },
+  "brand": "Quantum",
+  "name": "ABS 1.75mm",
+  "material": "ABS",
+  "diameter": 1.75,
+  "density": 1.04,
+  "nozzle": { "min": 220, "max": 270, "recommended": 250 },
+  "bed": { "min": 80, "max": 110, "recommended": 100 },
+  "fan": { "min": 0, "max": 40, "recommended": 20 },
+  "drying": { "temperature": 60, "duration_hours": 4 },
+  "environment": {
+    "sensitive_to_moisture": true,
+    "enclosure_recommended": true,
+    "max_ambient_temp": 25
+  },
+  "volumetric_speed": 10,
+  "links": {
+    "product_page": "https://quantum-3d.com/"
+  },
+  "tags": ["abs", "quantum", "1.75mm", "premium"],
+  "notes": "Quantum ABS. Premium ABS with excellent impact resistance."
+}

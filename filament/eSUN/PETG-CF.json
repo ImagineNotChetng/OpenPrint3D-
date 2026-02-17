@@ -22,10 +22,10 @@
     "enclosure_recommended": false,
     "max_ambient_temp": 32
   },
-  "volumistic_speed": 10,
+  "volumetric_speed": 10,
   "printing_speed": { "min": 30, "max": 80, "recommended": 50 },
   "links": {
-    "product_page": "https://www.esun3d.net/"
+    "datasheet": "https://www.esun3d.net/"
   },
   "tags": ["petg", "esun", "1.75mm", "carbon-fiber", "carbon", "engineering"],
   "notes": "eSUN PETG-CF. PETG reinforced with carbon fiber. Improved strength and stiffness compared to standard PETG with good chemical resistance.",

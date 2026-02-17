@@ -1,0 +1,30 @@
+{
+  "op3d_schema": "filament",
+  "op3d_schema_version": "0.1.0",
+  "id": "DasFilament/ASA",
+  "maintainer": {
+    "name": "OpenPrint3D Community",
+    "maintainer_type": "community",
+    "website": "https://github.com/OpenPrint3D/OpenPrint3D"
+  },
+  "brand": "DasFilament",
+  "name": "ASA 1.75mm",
+  "material": "ASA",
+  "diameter": 1.75,
+  "density": 1.07,
+  "nozzle": { "min": 230, "max": 275, "recommended": 255 },
+  "bed": { "min": 80, "max": 110, "recommended": 95 },
+  "fan": { "min": 0, "max": 50, "recommended": 30 },
+  "drying": { "temperature": 60, "duration_hours": 4 },
+  "environment": {
+    "sensitive_to_moisture": true,
+    "enclosure_recommended": true,
+    "max_ambient_temp": 30
+  },
+  "volumetric_speed": 10,
+  "links": {
+    "product_page": "https://dasfilament.pl/"
+  },
+  "tags": ["asa", "dasfilament", "1.75mm", "weather-resistant", "poland", "polish"],
+  "notes": "DasFilament ASA. UV-resistant filament ideal for outdoor use."
+}

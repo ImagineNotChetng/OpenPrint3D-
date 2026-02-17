@@ -1,0 +1,76 @@
+{
+  "op3d_schema": "printer",
+  "op3d_schema_version": "0.1.0",
+  "id": "RatRig/V-Core-4",
+  "maintainer": {
+    "name": "OpenPrint3D Community",
+    "maintainer_type": "community",
+    "website": "https://github.com/OpenPrint3D/OpenPrint3D"
+  },
+  "manufacturer": "RatRig",
+  "model": "V-Core 4",
+  "variant": "300",
+  "build_volume": { "x": 300, "y": 300, "z": 400, "shape": "rectangular", "origin": "center" },
+  "kinematics": "corexy",
+  "axes": {
+    "x": { "max_speed": 350, "max_accel": 15000 },
+    "y": { "max_speed": 350, "max_accel": 15000 },
+    "z": { "max_speed": 25, "max_accel": 1000 }
+  },
+  "extruders": [{
+    "id": "tool0",
+    "nozzle_diameter": 0.4,
+    "nozzle_material": "brass",
+    "max_temp": 300,
+    "min_temp": 170,
+    "retraction_supported": true
+  }],
+  "bed": { "heated": true, "max_temp": 130, "surface_type": "smooth-pei" },
+  "chamber": { "heated": false, "passive": true },
+  "firmware": { "flavor": "klipper", "identifier": "Klipper (RatRig)" },
+  "network": { "has_wifi": true, "has_ethernet": true, "supports_lan_api": true },
+  "links": {
+    "product_page": "https://ratrig.com/v-core-4/"
+  },
+  "tags": ["corexy", "high-performance", "idler", "stealthburner", "voron-derived", "toolhead-boards"],
+  "notes": "RatRig V-Core 4. High-performance CoreXY kit with 300x300x400mm build volume (300 variant). Features StealthBurner toolhead, Voron-style idlers, input shaping, and Klipper firmware. Extremely fast and quiet.",
+  "x_cura": {
+    "definition": "ratrig_v_core_4",
+    "definition_changes": {
+      "machine_width": 300,
+      "machine_depth": 300,
+      "machine_height": 400,
+      "nozzle_size": 0.4,
+      "heated_bed": true,
+      "machine_heated_bed": true,
+      "bed_temperature": 100,
+      "nozzle_temperature": 210,
+      "build_volume": "300x300x400"
+    }
+  },
+  "x_prusaslicer": {
+    "printer_model": "V-Core 4 300",
+    "vendor": "RatRig",
+    "filament_diameter": 1.75,
+    "nozzle_diameter": 0.4,
+    "bed_shape": "rectangular",
+    "bed_size": "300x300",
+    "print_height": 400
+  },
+  "x_orca": {
+    "machine_name": "V_Core_4_300",
+    "machine_manufacturer": "RatRig",
+    "bed_x": 300,
+    "bed_y": 300,
+    "height": 400,
+    "nozzle_diameter": 0.4,
+    "filament_diameter": 1.75
+  },
+  "x_bambu": {
+    "product_id": "ratrig_v_core_4",
+    "series": "V-Core",
+    "support_lidar": false,
+    "support_ams": false,
+    "support_ams_lite": false
+  }
+}

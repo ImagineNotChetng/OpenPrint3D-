@@ -1,0 +1,77 @@
+{
+  "op3d_schema": "printer",
+  "op3d_schema_version": "0.1.0",
+  "id": "Elegoo/Saturn-3",
+  "maintainer": {
+    "name": "OpenPrint3D Community",
+    "maintainer_type": "community",
+    "website": "https://github.com/OpenPrint3D/OpenPrint3D"
+  },
+  "manufacturer": "Elegoo",
+  "model": "Saturn 3",
+  "variant": "Stock",
+  "build_volume": { "x": 218.88, "y": 123.2, "z": 260, "shape": "rectangular", "origin": "front_left" },
+  "kinematics": "other",
+  "axes": {
+    "x": { "max_speed": 150, "max_accel": 1000 },
+    "y": { "max_speed": 150, "max_accel": 1000 },
+    "z": { "max_speed": 80, "max_accel": 500 }
+  },
+  "extruders": [{
+    "id": "tool0",
+    "nozzle_diameter": 0.1,
+    "nozzle_material": "other",
+    "max_temp": 150,
+    "min_temp": 100,
+    "retraction_supported": false
+  }],
+  "bed": { "heated": false, "max_temp": 100, "surface_type": "build-plate" },
+  "chamber": { "heated": false, "passive": false },
+  "firmware": { "flavor": "proprietary", "identifier": "Elegoo Saturn Firmware" },
+  "network": { "has_wifi": true, "has_ethernet": true, "supports_lan_api": true },
+  "links": {
+    "product_page": "https://www.elegoo.com/products/elegoo-saturn-3"
+  },
+  "tags": ["msla", "resin", "12k", "high-resolution", "large-format"],
+  "notes": "Elegoo Saturn 3. 12K resolution MSLA resin printer with 218.88x123.2x260mm build volume. 19x24μm XY resolution for ultra-detailed prints.",
+  "x_cura": {
+    "definition": "elegoo_saturn3",
+    "definition_changes": {
+      "machine_width": 219,
+      "machine_depth": 123,
+      "machine_height": 260,
+      "nozzle_size": 0.05,
+      "heated_bed": false,
+      "machine_heated_bed": false,
+      "printer_technology": "SLA"
+    }
+  },
+  "x_prusaslicer": {
+    "printer_model": "Saturn 3",
+    "vendor": "Elegoo",
+    "bed_shape": "rectangular",
+    "bed_size": "219x123",
+    "print_height": 260,
+    "printer_technology": "SLA",
+    "display_width": 218.88,
+    "display_height": 123.2,
+    "display_pixels_x": 11520,
+    "display_pixels_y": 5120
+  },
+  "x_orca": {
+    "machine_name": "Saturn 3",
+    "machine_manufacturer": "Elegoo",
+    "bed_x": 219,
+    "bed_y": 123,
+    "height": 260,
+    "printer_type": "MSLA",
+    "resolution_x": 11520,
+    "resolution_y": 5120
+  },
+  "x_bambu": {
+    "product_id": "elegoo_saturn3",
+    "series": "Saturn",
+    "printer_type": "MSLA",
+    "resolution": "12K"
+  }
+}

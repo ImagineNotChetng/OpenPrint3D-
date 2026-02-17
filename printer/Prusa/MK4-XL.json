@@ -1,0 +1,76 @@
+{
+  "op3d_schema": "printer",
+  "op3d_schema_version": "0.1.0",
+  "id": "Prusa/MK4-XL",
+  "maintainer": {
+    "name": "OpenPrint3D Community",
+    "maintainer_type": "community",
+    "website": "https://github.com/OpenPrint3D/OpenPrint3D"
+  },
+  "manufacturer": "Prusa",
+  "model": "MK4 XL",
+  "variant": "Stock",
+  "build_volume": { "x": 360, "y": 360, "z": 360, "shape": "rectangular", "origin": "front_left" },
+  "kinematics": "cartesian",
+  "axes": {
+    "x": { "max_speed": 200, "max_accel": 10000 },
+    "y": { "max_speed": 200, "max_accel": 10000 },
+    "z": { "max_speed": 20, "max_accel": 1000 }
+  },
+  "extruders": [{
+    "id": "tool0",
+    "nozzle_diameter": 0.4,
+    "nozzle_material": "hardened-steel",
+    "max_temp": 300,
+    "min_temp": 180,
+    "retraction_supported": true
+  }],
+  "bed": { "heated": true, "max_temp": 120, "surface_type": "smooth-pei" },
+  "chamber": { "heated": false, "passive": false },
+  "firmware": { "flavor": "marlin", "identifier": "Prusa MK4 XL Firmware" },
+  "network": { "has_wifi": true, "has_ethernet": false, "supports_lan_api": true },
+  "links": {
+    "product_page": "https://www.prusa3d.com/category/prusa-mk4-xl/"
+  },
+  "tags": ["premium", "large-format", "cartesian", "direct-drive", "300c-capable", "high-speed"],
+  "notes": "Prusa MK4 XL. Large format version of the MK4 with 360x360x360mm build volume. Direct drive with hardened steel nozzle up to 300°C.",
+  "x_cura": {
+    "definition": "prusa_mk4xl",
+    "definition_changes": {
+      "machine_width": 360,
+      "machine_depth": 360,
+      "machine_height": 360,
+      "nozzle_size": 0.4,
+      "heated_bed": true,
+      "machine_heated_bed": true,
+      "bed_temperature": 60,
+      "nozzle_temperature": 200
+    }
+  },
+  "x_prusaslicer": {
+    "printer_model": "MK4 XL",
+    "vendor": "Prusa",
+    "filament_diameter": 1.75,
+    "nozzle_diameter": 0.4,
+    "bed_shape": "rectangular",
+    "bed_size": "360x360",
+    "print_height": 360,
+    "printer_technology": "FFF"
+  },
+  "x_orca": {
+    "machine_name": "MK4 XL",
+    "machine_manufacturer": "Prusa",
+    "bed_x": 360,
+    "bed_y": 360,
+    "height": 360,
+    "nozzle_diameter": 0.4,
+    "filament_diameter": 1.75
+  },
+  "x_bambu": {
+    "product_id": "prusa_mk4xl",
+    "series": "MK4",
+    "support_lidar": false,
+    "support_ams": false,
+    "support_ams_lite": false
+  }
+}

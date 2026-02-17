@@ -1,0 +1,77 @@
+{
+  "op3d_schema": "printer",
+  "op3d_schema_version": "0.1.0",
+  "id": "Anycubic/K3-Pro",
+  "maintainer": {
+    "name": "OpenPrint3D Community",
+    "maintainer_type": "community",
+    "website": "https://github.com/OpenPrint3D/OpenPrint3D"
+  },
+  "manufacturer": "Anycubic",
+  "model": "K3 Pro",
+  "variant": "Stock",
+  "build_volume": { "x": 280, "y": 280, "z": 300, "shape": "rectangular", "origin": "front_left" },
+  "kinematics": "corexy",
+  "axes": {
+    "x": { "max_speed": 600, "max_accel": 25000 },
+    "y": { "max_speed": 600, "max_accel": 25000 },
+    "z": { "max_speed": 25, "max_accel": 800 }
+  },
+  "extruders": [{
+    "id": "tool0",
+    "nozzle_diameter": 0.4,
+    "nozzle_material": "hardened-steel",
+    "max_temp": 350,
+    "min_temp": 170,
+    "retraction_supported": true
+  }],
+  "bed": { "heated": true, "max_temp": 120, "surface_type": "PEI-textured" },
+  "chamber": { "heated": false, "max_temp": 50, "passive": true },
+  "firmware": { "flavor": "klipper", "identifier": "Anycubic K3 Pro Firmware" },
+  "network": { "has_wifi": true, "has_ethernet": false, "supports_lan_api": true },
+  "links": {
+    "product_page": "https://www.anycubic.com/products/k3-pro"
+  },
+  "tags": ["high-speed", "corexy", "direct-drive", "auto-leveling", "klipper", "mid-size", "multi-color"],
+  "notes": "Anycubic K3 Pro. High-speed CoreXY printer with 280x280x300mm build volume. Features Klipper firmware with input shaping, LeviQ auto-leveling, dual-gear direct drive extruder, 350C max nozzle temp, and ACE Pro multi-color support.",
+  "x_cura": {
+    "definition": "anycubic_k3pro",
+    "definition_changes": {
+      "machine_width": 280,
+      "machine_depth": 280,
+      "machine_height": 300,
+      "nozzle_size": 0.4,
+      "heated_bed": true,
+      "machine_heated_bed": true,
+      "bed_temperature": 60,
+      "nozzle_temperature": 200
+    }
+  },
+  "x_prusaslicer": {
+    "printer_model": "K3 Pro",
+    "vendor": "Anycubic",
+    "filament_diameter": 1.75,
+    "nozzle_diameter": 0.4,
+    "bed_shape": "rectangular",
+    "bed_size": "280x280",
+    "print_height": 300
+  },
+  "x_orca": {
+    "machine_name": "K3 Pro",
+    "machine_manufacturer": "Anycubic",
+    "bed_x": 280,
+    "bed_y": 280,
+    "height": 300,
+    "nozzle_diameter": 0.4,
+    "filament_diameter": 1.75
+  },
+  "x_bambu": {
+    "product_id": "anycubic_k3pro",
+    "series": "K",
+    "support_lidar": false,
+    "support_ams": false,
+    "support_ams_lite": false,
+    "max_speed": 600,
+    "nozzle_type": "hardened-steel"
+  }
+}

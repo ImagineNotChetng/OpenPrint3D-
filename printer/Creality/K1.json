@@ -1,0 +1,90 @@
+{
+  "op3d_schema": "printer",
+  "op3d_schema_version": "0.1.0",
+  "id": "Creality/K1",
+  "maintainer": {
+    "name": "OpenPrint3D Community",
+    "maintainer_type": "community",
+    "website": "https://github.com/OpenPrint3D/OpenPrint3D"
+  },
+  "manufacturer": "Creality",
+  "model": "K1",
+  "variant": "Stock",
+  "build_volume": { "x": 220, "y": 220, "z": 250, "shape": "rectangular", "origin": "front_left" },
+  "kinematics": "corexy",
+  "axes": {
+    "x": { "max_speed": 600, "max_accel": 15000 },
+    "y": { "max_speed": 600, "max_accel": 15000 },
+    "z": { "max_speed": 20, "max_accel": 500 }
+  },
+  "extruders": [{
+    "id": "tool0",
+    "nozzle_diameter": 0.4,
+    "nozzle_material": "brass",
+    "max_temp": 300,
+    "min_temp": 170,
+    "retraction_supported": true
+  }],
+  "bed": { "heated": true, "max_temp": 100, "surface_type": "PEI-spring" },
+  "chamber": { "heated": false, "max_temp": 40, "passive": false },
+  "firmware": { "flavor": "marlin", "identifier": "Creality K1" },
+  "network": { "has_wifi": true, "has_ethernet": false, "supports_lan_api": false },
+  "links": {
+    "product_page": "https://www.creality.com/pages/k1-series"
+  },
+  "tags": ["corexy", "high-speed", "budget-friendly"],
+  "notes": "Creality K1. Entry-level CoreXY with 600mm/s max speed. Compact design with direct drive extruder.",
+  "x_cura": {
+    "definition": "creality_k1",
+    "definition_changes": {
+      "machine_width": 220,
+      "machine_depth": 220,
+      "machine_height": 250,
+      "nozzle_size": 0.4,
+      "heated_bed": true,
+      "machine_heated_bed": true,
+      "bed_temperature": 60,
+      "nozzle_temperature": 200
+    }
+  },
+  "x_prusaslicer": {
+    "printer_model": "K1",
+    "vendor": "Creality",
+    "filament_diameter": 1.75,
+    "nozzle_diameter": 0.4,
+    "bed_shape": "rectangular",
+    "bed_size": "220x220",
+    "print_height": 250,
+    "printer_technology": "FFF"
+  },
+  "x_orca": {
+    "machine_name": "K1",
+    "machine_manufacturer": "Creality",
+    "bed_x": 220,
+    "bed_y": 220,
+    "height": 250,
+    "nozzle_diameter": 0.4,
+    "filament_diameter": 1.75,
+    "support_ams": false,
+    "support_xc": false
+  },
+  "x_bambu": {
+    "product_id": "creality_k1_00",
+    "series": "K1",
+    "support_lidar": false,
+    "support_ams": false,
+    "support_ams_lite": false,
+    "support_xc": false,
+    "active_chamber_heating": false,
+    "max_speed": 600,
+    "nozzle_type": "brass"
+  },
+  "x_simplify3d": {
+    "machine_name": "Creality K1",
+    "build_volume": "220x220x250",
+    "nozzle_diameter": 0.4,
+    "filament_diameter": 1.75,
+    "heated_bed": true,
+    "bed_temperature": 60
+  }
+}

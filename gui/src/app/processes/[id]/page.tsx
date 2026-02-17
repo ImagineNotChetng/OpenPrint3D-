@@ -28,9 +28,24 @@ export default async function ProcessDetail({ params }: { params: Promise<{ id: 
           <div className="flex items-center gap-3 mb-3">
             <Badge variant={intentColors[process.intent] ?? "default"}>{process.intent.replace("_", " ")}</Badge>
             {process.quality_bias?.priority && <Badge>{process.quality_bias.priority} priority</Badge>}
+            {process.license && <Badge variant="success">License: {process.license}</Badge>}
+            {process.profile_version && <Badge>v{process.profile_version}</Badge>}
           </div>
           <h1 className="text-3xl font-bold mb-1">{process.name}</h1>
         </div>
+
+        {/* Relative Overrides (Discussion #42) */}
+        {process.relative_overrides && Object.keys(process.relative_overrides).length > 0 && (
+          <div className="p-5 rounded-2xl bg-accent/10 border border-accent/30">
+            <h3 className="font-semibold text-sm mb-2 flex items-center gap-2">
+              <span>🔗</span> Relative Overrides
+            </h3>
+            <p className="text-xs text-muted mb-3">Chain overrides for this process</p>
+            <div className="text-xs font-mono bg-background p-3 rounded-lg overflow-auto">
+              {JSON.stringify(process.relative_overrides, null, 2)}
+            </div>
+          </div>
+        )}
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
           {/* Layer Height */}

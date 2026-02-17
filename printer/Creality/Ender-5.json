@@ -1,0 +1,37 @@
+{
+  "op3d_schema": "printer",
+  "op3d_schema_version": "0.1.0",
+  "id": "Creality/Ender-5",
+  "maintainer": {
+    "name": "OpenPrint3D Community",
+    "maintainer_type": "community",
+    "website": "https://github.com/OpenPrint3D/OpenPrint3D"
+  },
+  "manufacturer": "Creality",
+  "model": "Ender-5",
+  "variant": "Stock",
+  "build_volume": { "x": 220, "y": 220, "z": 300, "shape": "rectangular", "origin": "front_left" },
+  "kinematics": "cartesian",
+  "axes": {
+    "x": { "max_speed": 150, "max_accel": 3000 },
+    "y": { "max_speed": 150, "max_accel": 3000 },
+    "z": { "max_speed": 10, "max_accel": 500 }
+  },
+  "extruders": [{
+    "id": "tool0",
+    "nozzle_diameter": 0.4,
+    "nozzle_material": "brass",
+    "max_temp": 260,
+    "min_temp": 170,
+    "retraction_supported": true
+  }],
+  "bed": { "heated": true, "max_temp": 100, "surface_type": "glass" },
+  "chamber": { "heated": false, "max_temp": 100, "passive": true },
+  "firmware": { "flavor": "marlin", "identifier": "Creality Ender-5" },
+  "network": { "has_wifi": false, "has_ethernet": false, "supports_lan_api": false },
+  "links": {
+    "product_page": "https://www.creality.com/pages/ender-5"
+  },
+  "tags": ["fdm", "cartesian", "bowden", "corexy-like", "tall-build"],
+  "notes": "Creality Ender-5. Unique Cartesian with moving bed on Z and X/Y on top. 220x220x300mm build volume with tall print capability. Bowden extruder setup."
+}

@@ -1,0 +1,61 @@
+{
+  "op3d_schema": "filament",
+  "op3d_schema_version": "0.1.0",
+  "id": "Generic/HIPS",
+
+  "maintainer": {
+    "name": "OpenPrint3D",
+    "maintainer_type": "community",
+    "website": "https://github.com/OpenPrint3D/OpenPrint3D"
+  },
+
+  "brand": "Generic",
+  "name": "Generic HIPS 1.75mm",
+  "material": "HIPS",
+
+  "color": "natural",
+  "diameter": 1.75,
+  "density": 1.04,
+
+  "nozzle": {
+    "min": 220,
+    "max": 260,
+    "recommended": 240
+  },
+
+  "bed": {
+    "min": 90,
+    "max": 115,
+    "recommended": 100
+  },
+
+  "fan": {
+    "min": 0,
+    "max": 50,
+    "recommended": 20
+  },
+
+  "drying": {
+    "temperature": 60,
+    "duration_hours": 4
+  },
+
+  "environment": {
+    "sensitive_to_moisture": false,
+    "enclosure_recommended": true,
+    "max_ambient_temp": 40
+  },
+
+  "volumetric_speed": 8,
+
+  "external_ids": {},
+  "links": {},
+  "tags": ["hips", "soluble", "support", "dissolvable", "1.75mm"],
+
+  "notes": "HIPS (High Impact Polystyrene) is a dissolvable support material. Soluble in d-limonene (citrus-based solvent). Similar printing characteristics to ABS. Requires enclosure to prevent warping. Can be used as primary material or for soluble supports with ABS and similar materials.",
+
+  "x_cura": {},
+  "x_prusaslicer": {},
+  "x_orca": {},
+  "x_bambu": {}
+}

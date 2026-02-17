@@ -2,30 +2,81 @@
   "op3d_schema": "filament",
   "op3d_schema_version": "0.1.0",
   "id": "Prusament/ASA",
+
   "maintainer": {
-    "name": "OpenPrint3D Community",
+    "name": "OpenPrint3D",
     "maintainer_type": "community",
     "website": "https://github.com/OpenPrint3D/OpenPrint3D"
   },
+
   "brand": "Prusament",
   "name": "Prusament ASA 1.75mm",
   "material": "ASA",
+
+  "color": "ivory",
+  "color_variants": [
+    { "name": "Ivory", "hex": "FFFFF0" },
+    { "name": "Black", "hex": "1A1A1A" },
+    { "name": "White", "hex": "F5F5F5" },
+    { "name": "Orange", "hex": "F4A261" },
+    { "name": "Red", "hex": "E63946" },
+    { "name": "Blue", "hex": "457B9D" },
+    { "name": "Grey", "hex": "6B7280" }
+  ],
   "diameter": 1.75,
   "density": 1.07,
-  "nozzle": { "min": 240, "max": 260, "recommended": 255 },
-  "bed": { "min": 95, "max": 110, "recommended": 105 },
-  "fan": { "min": 0, "max": 20, "recommended": 10 },
-  "drying": { "temperature": 65, "duration_hours": 6 },
+
+  "nozzle": {
+    "min": 240,
+    "max": 280,
+    "recommended": 260
+  },
+
+  "bed": {
+    "min": 90,
+    "max": 110,
+    "recommended": 100
+  },
+
+  "fan": {
+    "min": 20,
+    "max": 50,
+    "recommended": 30
+  },
+
+  "drying": {
+    "temperature": 60,
+    "duration_hours": 4
+  },
+
   "environment": {
     "sensitive_to_moisture": true,
     "enclosure_recommended": true,
     "max_ambient_temp": 40
   },
-  "volumetric_speed": 11,
-  "links": {
-    "product_page": "https://www.prusa3d.com/category/prusament-asa/",
-    "datasheet": "https://prusament.com/media/2024/04/TDS_ASA_EN.pdf"
+
+  "printing_speed": {
+    "min": 40,
+    "max": 80,
+    "recommended": 60
   },
-  "tags": ["asa", "prusament", "prusa", "1.75mm", "uv-resistant", "outdoor", "enclosure-required"],
-  "notes": "Prusament ASA. UV-stable alternative to ABS. Excellent for outdoor functional parts. Requires enclosure to prevent warping and cracking."
+
+  "external_ids": {},
+  "links": {
+    "product_page": "https://shop.prusa3d.com/en/filament/985-prusament-asa.html"
+  },
+  "tags": ["asa", "prusament", "1.75mm", "outdoor", "uv-resistant"],
+
+  "release": {
+    "version": "1.0.0",
+    "date": "2026-02-17T00:00:00Z",
+    "notes": "Prusament ASA profile - excellent UV and weather resistance"
+  },
+
+  "notes": "Prusament ASA is Prusa's premium ASA filament, excellent for outdoor use due to UV and weather resistance. Requires enclosure to prevent warping. Low fan for better layer adhesion.",
+
+  "x_cura": {},
+  "x_prusaslicer": {},
+  "x_orca": {},
+  "x_bambu": {}
 }

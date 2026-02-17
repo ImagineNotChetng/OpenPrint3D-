@@ -14,6 +14,11 @@
   "material": "PLA",
 
   "color": "white",
+  "color_variants": [
+    { "name": "Natural", "hex": "F5F5DC" },
+    { "name": "Black", "hex": "000000" },
+    { "name": "Silver", "hex": "C0C0C0" }
+  ],
   "diameter": 1.75,
   "density": 1.24,
 
@@ -46,9 +51,21 @@
     "max_ambient_temp": 30
   },
 
+  "printing_speed": {
+    "min": 30,
+    "max": 80,
+    "recommended": 50
+  },
+
   "external_ids": {},
   "links": {},
   "tags": ["pla", "generic", "1.75mm"],
+
+  "release": {
+    "version": "1.0.0",
+    "date": "2026-02-17T00:00:00Z",
+    "notes": "Initial release with color_variants and printing_speed support"
+  },
 
   "notes": "Generic PLA profile. Good for beginners, low warping, no enclosure needed.",
 

@@ -1,0 +1,32 @@
+{
+  "op3d_schema": "filament",
+  "op3d_schema_version": "0.1.0",
+  "id": "Solvay/PEEK",
+  "maintainer": {
+    "name": "OpenPrint3D Community",
+    "maintainer_type": "community",
+    "website": "https://github.com/OpenPrint3D/OpenPrint3D"
+  },
+  "brand": "Solvay",
+  "name": "Solvay KetaSpire PEEK 1.75mm",
+  "material": "PEEK",
+  "diameter": 1.75,
+  "density": 1.30,
+  "nozzle": { "min": 370, "max": 420, "recommended": 400 },
+  "bed": { "min": 120, "max": 150, "recommended": 140 },
+  "fan": { "min": 0, "max": 30, "recommended": 10 },
+  "drying": { "temperature": 120, "duration_hours": 4 },
+  "environment": {
+    "sensitive_to_moisture": true,
+    "enclosure_recommended": true,
+    "heated_chamber_recommended": true,
+    "max_ambient_temp": 50
+  },
+  "volumetric_speed": 8,
+  "printing_speed": { "min": 20, "max": 60, "recommended": 40 },
+  "links": {
+    "datasheet": "https://www.solvay.com/en/chemical-substances/peek"
+  },
+  "tags": ["peek", "ketaspire", "high-performance", "engineering", "1.75mm", "solvay"],
+  "notes": "Solvay KetaSpire PEEK is a high-performance engineering polymer with excellent chemical resistance and mechanical properties at elevated temperatures."
+}

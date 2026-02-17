@@ -1,0 +1,82 @@
+{
+  "op3d_schema": "printer",
+  "op3d_schema_version": "0.1.0",
+  "id": "Raise3D/Pro3",
+  "maintainer": {
+    "name": "OpenPrint3D Community",
+    "maintainer_type": "community",
+    "website": "https://github.com/OpenPrint3D/OpenPrint3D"
+  },
+  "manufacturer": "Raise3D",
+  "model": "Pro3",
+  "variant": "Stock",
+  "build_volume": { "x": 300, "y": 300, "z": 400, "shape": "rectangular", "origin": "center" },
+  "kinematics": "corexy",
+  "axes": {
+    "x": { "max_speed": 200, "max_accel": 5000 },
+    "y": { "max_speed": 200, "max_accel": 5000 },
+    "z": { "max_speed": 20, "max_accel": 500 }
+  },
+  "extruders": [{
+    "id": "tool0",
+    "nozzle_diameter": 0.4,
+    "nozzle_material": "brass",
+    "max_temp": 300,
+    "min_temp": 180,
+    "retraction_supported": true
+  }, {
+    "id": "tool1",
+    "nozzle_diameter": 0.4,
+    "nozzle_material": "brass",
+    "max_temp": 300,
+    "min_temp": 180,
+    "retraction_supported": true
+  }],
+  "bed": { "heated": true, "max_temp": 120, "surface_type": "PEI-textured" },
+  "chamber": { "heated": true, "max_temp": 65, "passive": false },
+  "firmware": { "flavor": "raise3d", "identifier": "Raise3D Pro3 Firmware" },
+  "network": { "has_wifi": true, "has_ethernet": true, "supports_lan_api": true },
+  "links": {
+    "product_page": "https://www.raise3d.com/pro3/"
+  },
+  "tags": ["premium", "corexy", "dual-extruder", "large-build", "enclosed", "heated-chamber"],
+  "notes": "Raise3D Pro3. Professional large-format dual-extruder CoreXY 3D printer with heated chamber.",
+  "x_cura": {
+    "definition": "raise3d_pro3",
+    "definition_changes": {
+      "machine_width": 300,
+      "machine_depth": 300,
+      "machine_height": 400,
+      "nozzle_size": 0.4,
+      "heated_bed": true,
+      "machine_heated_bed": true,
+      "bed_temperature": 80,
+      "nozzle_temperature": 210
+    }
+  },
+  "x_prusaslicer": {
+    "printer_model": "Pro3",
+    "vendor": "Raise3D",
+    "filament_diameter": 1.75,
+    "nozzle_diameter": 0.4,
+    "bed_shape": "rectangular",
+    "bed_size": "300x300",
+    "print_height": 400
+  },
+  "x_orca": {
+    "machine_name": "Pro3",
+    "machine_manufacturer": "Raise3D",
+    "bed_x": 300,
+    "bed_y": 300,
+    "height": 400,
+    "nozzle_diameter": 0.4,
+    "filament_diameter": 1.75
+  },
+  "x_bambu": {
+    "product_id": "raise3d_pro3",
+    "series": "Pro",
+    "support_lidar": false,
+    "support_ams": false,
+    "support_ams_lite": false
+  }
+}

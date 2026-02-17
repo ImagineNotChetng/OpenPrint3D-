@@ -66,3 +66,4 @@
     "bed_temperature_initial_layer": [60, 80],
     "fan_speed": [20, 50]
   }
+}

@@ -1,0 +1,77 @@
+{
+  "op3d_schema": "printer",
+  "op3d_schema_version": "0.1.0",
+  "id": "Elegoo/Saturn-10",
+  "maintainer": {
+    "name": "OpenPrint3D Community",
+    "maintainer_type": "community",
+    "website": "https://github.com/OpenPrint3D/OpenPrint3D"
+  },
+  "manufacturer": "Elegoo",
+  "model": "Saturn 10",
+  "variant": "Stock",
+  "build_volume": { "x": 320, "y": 180, "z": 300, "shape": "rectangular", "origin": "front_left" },
+  "kinematics": "other",
+  "axes": {
+    "x": { "max_speed": 150, "max_accel": 1000 },
+    "y": { "max_speed": 150, "max_accel": 1000 },
+    "z": { "max_speed": 120, "max_accel": 800 }
+  },
+  "extruders": [{
+    "id": "tool0",
+    "nozzle_diameter": 0.1,
+    "nozzle_material": "other",
+    "max_temp": 100,
+    "min_temp": 170,
+    "retraction_supported": false
+  }],
+  "bed": { "heated": false, "max_temp": 100, "surface_type": "build-plate" },
+  "chamber": { "heated": true, "max_temp": 40, "passive": false },
+  "firmware": { "flavor": "proprietary", "identifier": "Elegoo Saturn 10 Firmware" },
+  "network": { "has_wifi": true, "has_ethernet": true, "supports_lan_api": true },
+  "links": {
+    "product_page": "https://www.elegoo.com/products/saturn-10"
+  },
+  "tags": ["msla", "resin", "24k", "high-resolution", "tilt-release", "auto-leveling", "large-format", "ethernet"],
+  "notes": "Elegoo Saturn 10. 24K resolution MSLA resin printer with 320x180x300mm build volume. Features tilt release technology, smart tank heating up to 40C, auto leveling, WiFi and Ethernet connectivity.",
+  "x_cura": {
+    "definition": "elegoo_saturn10",
+    "definition_changes": {
+      "machine_width": 320,
+      "machine_depth": 180,
+      "machine_height": 300,
+      "nozzle_size": 0.025,
+      "heated_bed": false,
+      "machine_heated_bed": false,
+      "printer_technology": "SLA"
+    }
+  },
+  "x_prusaslicer": {
+    "printer_model": "Saturn 10",
+    "vendor": "Elegoo",
+    "bed_shape": "rectangular",
+    "bed_size": "320x180",
+    "print_height": 300,
+    "printer_technology": "SLA",
+    "display_width": 320,
+    "display_height": 180,
+    "display_pixels_x": 20480,
+    "display_pixels_y": 11520
+  },
+  "x_orca": {
+    "machine_name": "Saturn 10",
+    "machine_manufacturer": "Elegoo",
+    "bed_x": 320,
+    "bed_y": 180,
+    "height": 300,
+    "printer_type": "MSLA",
+    "resolution_x": 20480,
+    "resolution_y": 11520
+  },
+  "x_bambu": {
+    "product_id": "elegoo_saturn10",
+    "series": "Saturn",
+    "printer_type": "MSLA",
+    "resolution": "24K"
+  }
+}

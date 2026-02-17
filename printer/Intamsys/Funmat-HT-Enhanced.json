@@ -1,0 +1,41 @@
+{
+  "op3d_schema": "printer",
+  "op3d_schema_version": "0.1.0",
+  "id": "Intamsys/Funmat-HT-Enhanced",
+  "maintainer": {
+    "name": "OpenPrint3D Community",
+    "maintainer_type": "community",
+    "website": "https://github.com/OpenPrint3D/OpenPrint3D"
+  },
+  "manufacturer": "Intamsys",
+  "model": "Funmat HT Enhanced",
+  "variant": "Stock",
+  "build_volume": { "x": 310, "y": 310, "z": 310, "shape": "rectangular", "origin": "center" },
+  "kinematics": "corexy",
+  "axes": {
+    "x": { "max_speed": 150, "max_accel": 3000 },
+    "y": { "max_speed": 150, "max_accel": 3000 },
+    "z": { "max_speed": 10, "max_accel": 200 }
+  },
+  "extruders": [{
+    "id": "tool0",
+    "nozzle_diameter": 0.4,
+    "nozzle_material": "hardened-steel",
+    "max_temp": 500,
+    "min_temp": 180,
+    "retraction_supported": true
+  }],
+  "bed": { "heated": true, "max_temp": 180, "surface_type": "PEI-spring-steel" },
+  "chamber": { "heated": true, "max_temp": 120, "passive": false },
+  "firmware": { "flavor": "proprietary", "identifier": "Intamsys Funmat Enhanced Firmware" },
+  "network": { "has_wifi": true, "has_ethernet": true, "supports_lan_api": true },
+  "links": {
+    "product_page": "https://www.intamsys.com/funmat-ht/"
+  },
+  "tags": ["industrial", "corexy", "enclosed", "high-temp", "peek", "pekk", "heated-chamber", "ul-tra-temp"],
+  "notes": "Intamsys Funmat HT Enhanced - upgraded version with larger build volume and higher temperature capabilities. Nozzle up to 500C, bed to 180C, chamber to 120C. Designed for demanding engineering applications with PEEK, PEKK, PEI (Ultem), and other ultra-polymers.",
+  "x_cura": {},
+  "x_prusaslicer": {},
+  "x_orca": {},
+  "x_bambu": {}
+}

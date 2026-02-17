@@ -1,0 +1,32 @@
+{
+  "op3d_schema": "filament",
+  "op3d_schema_version": "0.1.0",
+  "id": "Solvay/Ryton",
+  "maintainer": {
+    "name": "OpenPrint3D Community",
+    "maintainer_type": "community",
+    "website": "https://github.com/OpenPrint3D/OpenPrint3D"
+  },
+  "brand": "Solvay",
+  "name": "Solvay Ryton PPS 1.75mm",
+  "material": "PPS",
+  "diameter": 1.75,
+  "density": 1.35,
+  "nozzle": { "min": 290, "max": 340, "recommended": 315 },
+  "bed": { "min": 100, "max": 130, "recommended": 120 },
+  "fan": { "min": 0, "max": 40, "recommended": 20 },
+  "drying": { "temperature": 120, "duration_hours": 4 },
+  "environment": {
+    "sensitive_to_moisture": true,
+    "enclosure_recommended": true,
+    "heated_chamber_recommended": false,
+    "max_ambient_temp": 25
+  },
+  "volumetric_speed": 10,
+  "printing_speed": { "min": 20, "max": 70, "recommended": 50 },
+  "links": {
+    "datasheet": "https://www.solvay.com/en/chemical-substances/pps"
+  },
+  "tags": ["pps", "ryton", "high-performance", "engineering", "1.75mm", "solvay"],
+  "notes": "Solvay Ryton PPS (Polyphenylene Sulfide) offers exceptional chemical resistance and dimensional stability. Excellent for automotive and industrial applications."
+}

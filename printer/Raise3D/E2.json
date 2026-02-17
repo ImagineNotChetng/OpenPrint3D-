@@ -1,0 +1,97 @@
+{
+  "op3d_schema": "printer",
+  "op3d_schema_version": "0.1.0",
+  "id": "Raise3D/E2",
+  "maintainer": {
+    "name": "OpenPrint3D Community",
+    "maintainer_type": "community",
+    "website": "https://github.com/OpenPrint3D/OpenPrint3D"
+  },
+  "manufacturer": "Raise3D",
+  "model": "E2",
+  "variant": "Stock",
+  "build_volume": { "x": 330, "y": 240, "z": 240, "shape": "rectangular", "origin": "front_left" },
+  "kinematics": "i3",
+  "axes": {
+    "x": { "max_speed": 300, "max_accel": 3000 },
+    "y": { "max_speed": 300, "max_accel": 3000 },
+    "z": { "max_speed": 10, "max_accel": 200 }
+  },
+  "extruders": [{
+    "id": "tool0",
+    "nozzle_diameter": 0.4,
+    "nozzle_material": "brass",
+    "max_temp": 300,
+    "min_temp": 170,
+    "retraction_supported": true
+  }, {
+    "id": "tool1",
+    "nozzle_diameter": 0.4,
+    "nozzle_material": "brass",
+    "max_temp": 300,
+    "min_temp": 170,
+    "retraction_supported": true
+  }],
+  "bed": { "heated": true, "max_temp": 100, "surface_type": "glass" },
+  "chamber": { "heated": false, "max_temp": 40, "passive": false },
+  "firmware": { "flavor": "raise3d", "identifier": "Raise3D E2" },
+  "network": { "has_wifi": true, "has_ethernet": true, "supports_lan_api": true },
+  "links": {
+    "product_page": "https://www.raise3d.com/e2/"
+  },
+  "tags": ["idex", "dual-extruder", "professional", "filament-sensor"],
+  "notes": "Raise3D E2. Professional IDEX printer with dual independent extruders, 330x240x240mm build volume, and filament runout sensors.",
+  "x_cura": {
+    "definition": "raise3d_e2",
+    "definition_changes": {
+      "machine_width": 330,
+      "machine_depth": 240,
+      "machine_height": 240,
+      "nozzle_size": 0.4,
+      "heated_bed": true,
+      "machine_heated_bed": true,
+      "bed_temperature": 60,
+      "nozzle_temperature": 200
+    }
+  },
+  "x_prusaslicer": {
+    "printer_model": "E2",
+    "vendor": "Raise3D",
+    "filament_diameter": 1.75,
+    "nozzle_diameter": 0.4,
+    "bed_shape": "rectangular",
+    "bed_size": "330x240",
+    "print_height": 240,
+    "printer_technology": "FFF"
+  },
+  "x_orca": {
+    "machine_name": "E2",
+    "machine_manufacturer": "Raise3D",
+    "bed_x": 330,
+    "bed_y": 240,
+    "height": 240,
+    "nozzle_diameter": 0.4,
+    "filament_diameter": 1.75,
+    "support_ams": false,
+    "support_xc": false
+  },
+  "x_bambu": {
+    "product_id": "raise3d_e2_00",
+    "series": "E2",
+    "support_lidar": false,
+    "support_ams": false,
+    "support_ams_lite": false,
+    "support_xc": false,
+    "active_chamber_heating": false,
+    "max_speed": 150,
+    "nozzle_type": "brass"
+  },
+  "x_simplify3d": {
+    "machine_name": "Raise3D E2",
+    "build_volume": "330x240x240",
+    "nozzle_diameter": 0.4,
+    "filament_diameter": 1.75,
+    "heated_bed": true,
+    "bed_temperature": 60
+  }
+}

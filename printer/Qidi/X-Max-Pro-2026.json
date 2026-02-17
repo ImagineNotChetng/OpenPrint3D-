@@ -1,0 +1,37 @@
+{
+  "op3d_schema": "printer",
+  "op3d_schema_version": "0.1.0",
+  "id": "Qidi/X-Max-Pro-2026",
+  "maintainer": {
+    "name": "OpenPrint3D Community",
+    "maintainer_type": "community",
+    "website": "https://github.com/OpenPrint3D/OpenPrint3D"
+  },
+  "manufacturer": "Qidi Tech",
+  "model": "X-Max Pro 2026",
+  "variant": "Stock",
+  "build_volume": { "x": 325, "y": 325, "z": 340, "shape": "rectangular", "origin": "front_left" },
+  "kinematics": "corexy",
+  "axes": {
+    "x": { "max_speed": 600, "max_accel": 25000 },
+    "y": { "max_speed": 600, "max_accel": 25000 },
+    "z": { "max_speed": 20, "max_accel": 600 }
+  },
+  "extruders": [{
+    "id": "tool0",
+    "nozzle_diameter": 0.4,
+    "nozzle_material": "hardened-steel",
+    "max_temp": 350,
+    "min_temp": 180,
+    "retraction_supported": true
+  }],
+  "bed": { "heated": true, "max_temp": 130, "surface_type": "PEI-textured" },
+  "chamber": { "heated": true, "max_temp": 70, "passive": true },
+  "firmware": { "flavor": "klipper", "identifier": "Qidi Tech X-Max Pro 2026 Firmware" },
+  "network": { "has_wifi": true, "has_ethernet": true, "supports_lan_api": true },
+  "links": {
+    "product_page": "https://qidi3d.com/products/x-max-pro-2026"
+  },
+  "tags": ["premium", "corexy", "direct-drive", "high-speed", "600mm-s", "large-build", "350c-capable", "enclosed", "active-heating", "ethernet"],
+  "notes": "Qidi Tech X-Max Pro 2026. Premium CoreXY with 325x325x340mm build volume, active chamber heating to 70C, 350C hotend for ABS/ASA/PC, ethernet connectivity, and improved input shaper."
+}

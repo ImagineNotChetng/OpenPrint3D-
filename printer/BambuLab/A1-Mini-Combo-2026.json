@@ -1,0 +1,45 @@
+{
+  "op3d_schema": "printer",
+  "op3d_schema_version": "0.1.0",
+  "id": "BambuLab/A1-Mini-Combo-2026",
+  "maintainer": {
+    "name": "OpenPrint3D Community",
+    "maintainer_type": "community",
+    "website": "https://github.com/OpenPrint3D/OpenPrint3D"
+  },
+  "manufacturer": "Bambu Lab",
+  "model": "A1 Mini Combo",
+  "variant": "2026",
+  "build_volume": { "x": 180, "y": 180, "z": 180, "shape": "rectangular", "origin": "front_left" },
+  "kinematics": "cartesian",
+  "axes": {
+    "x": { "max_speed": 500, "max_accel": 20000 },
+    "y": { "max_speed": 500, "max_accel": 20000 },
+    "z": { "max_speed": 25, "max_accel": 2000 }
+  },
+  "extruders": [{
+    "id": "tool0",
+    "nozzle_diameter": 0.4,
+    "nozzle_material": "hardened-steel",
+    "max_temp": 300,
+    "min_temp": 170,
+    "retraction_supported": true
+  }],
+  "bed": { "heated": true, "max_temp": 110, "surface_type": "PEI-textured" },
+  "chamber": { "heated": false, "passive": true },
+  "firmware": { "flavor": "bambu", "identifier": "Bambu Lab proprietary" },
+  "network": { "has_wifi": true, "has_ethernet": false, "supports_lan_api": true },
+  "links": {
+    "product_page": "https://bambulab.com/en/a1-mini"
+  },
+  "tags": ["fdm", "cartesian", "compact", "ams-lite", "high-speed", "beginner-friendly"],
+  "notes": "Bambu Lab A1 Mini Combo (2026). Compact bed-slinger with AMS Lite for multi-material. 180x180x180mm build volume, 500mm/s speed, beginner-friendly design.",
+  "x_bambu": {
+    "product_id": "bambulab_a1_mini_combo_00",
+    "series": "A1 Mini",
+    "support_ams": false,
+    "support_ams_lite": true,
+    "support_lidar": false,
+    "max_speed": 500
+  }
+}

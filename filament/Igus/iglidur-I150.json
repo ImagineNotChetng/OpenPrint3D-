@@ -1,0 +1,30 @@
+{
+  "op3d_schema": "filament",
+  "op3d_schema_version": "0.1.0",
+  "id": "Igus/iglidur-I150",
+  "maintainer": {
+    "name": "OpenPrint3D Community",
+    "maintainer_type": "community",
+    "website": "https://github.com/OpenPrint3D/OpenPrint3D"
+  },
+  "brand": "Igus",
+  "name": "iglidur I150 1.75mm",
+  "material": "iglidur I150",
+  "diameter": 1.75,
+  "density": 1.38,
+  "nozzle": { "min": 220, "max": 280, "recommended": 250 },
+  "bed": { "min": 40, "max": 80, "recommended": 60 },
+  "fan": { "min": 30, "max": 70, "recommended": 50 },
+  "drying": { "temperature": 60, "duration_hours": 4 },
+  "environment": {
+    "sensitive_to_moisture": false,
+    "enclosure_recommended": false,
+    "max_ambient_temp": 40
+  },
+  "volumetric_speed": 8,
+  "links": {
+    "product_page": "https://www.igus.com/"
+  },
+  "tags": ["iglidur", "igus", "1.75mm", "high-performance", "wear-resistant", "tribo"],
+  "notes": "Igus iglidur I150. High-performance tribological filament with excellent wear resistance. Lubricant-free operation."
+}

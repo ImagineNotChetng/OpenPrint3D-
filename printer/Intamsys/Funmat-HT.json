@@ -1,0 +1,41 @@
+{
+  "op3d_schema": "printer",
+  "op3d_schema_version": "0.1.0",
+  "id": "Intamsys/Funmat-HT",
+  "maintainer": {
+    "name": "OpenPrint3D Community",
+    "maintainer_type": "community",
+    "website": "https://github.com/OpenPrint3D/OpenPrint3D"
+  },
+  "manufacturer": "Intamsys",
+  "model": "Funmat HT",
+  "variant": "Stock",
+  "build_volume": { "x": 260, "y": 260, "z": 260, "shape": "rectangular", "origin": "center" },
+  "kinematics": "corexy",
+  "axes": {
+    "x": { "max_speed": 150, "max_accel": 3000 },
+    "y": { "max_speed": 150, "max_accel": 3000 },
+    "z": { "max_speed": 10, "max_accel": 200 }
+  },
+  "extruders": [{
+    "id": "tool0",
+    "nozzle_diameter": 0.4,
+    "nozzle_material": "hardened-steel",
+    "max_temp": 450,
+    "min_temp": 180,
+    "retraction_supported": true
+  }],
+  "bed": { "heated": true, "max_temp": 160, "surface_type": "PEI-spring-steel" },
+  "chamber": { "heated": true, "max_temp": 90, "passive": false },
+  "firmware": { "flavor": "proprietary", "identifier": "Intamsys Funmat Firmware" },
+  "network": { "has_wifi": true, "has_ethernet": true, "supports_lan_api": true },
+  "links": {
+    "product_page": "https://www.intamsys.com/funmat-ht/"
+  },
+  "tags": ["industrial", "corexy", "enclosed", "high-temp", "peek", "pekk", "heated-chamber"],
+  "notes": "Intamsys Funmat HT - purpose-built high-temperature FFF printer for PEEK, PEKK, PEI, and other high-performance polymers. Features all-metal hotend (up to 450C), heated bed (up to 160C), and actively heated chamber (up to 90C). Ideal for functional prototyping with engineering thermoplastics.",
+  "x_cura": {},
+  "x_prusaslicer": {},
+  "x_orca": {},
+  "x_bambu": {}
+}

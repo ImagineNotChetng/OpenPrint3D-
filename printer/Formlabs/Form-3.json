@@ -1,0 +1,57 @@
+{
+  "op3d_schema": "printer",
+  "op3d_schema_version": "0.1.0",
+  "id": "Formlabs/Form-3",
+  "maintainer": {
+    "name": "OpenPrint3D Community",
+    "maintainer_type": "community",
+    "website": "https://github.com/OpenPrint3D/OpenPrint3D"
+  },
+  "manufacturer": "Formlabs",
+  "model": "Form 3",
+  "variant": "Stock",
+  "build_volume": { "x": 145, "y": 145, "z": 196, "shape": "cylindrical", "origin": "center" },
+  "kinematics": "lfs",
+  "axes": {
+    "x": { "max_speed": 20, "max_accel": 100 },
+    "y": { "max_speed": 20, "max_accel": 100 },
+    "z": { "max_speed": 15, "max_accel": 100 }
+  },
+  "extruders": [{
+    "id": "laser",
+    "nozzle_diameter": 0.025,
+    "nozzle_material": "n/a",
+    "max_temp": 150,
+    "min_temp": 100,
+    "retraction_supported": false
+  }],
+  "bed": { "heated": false, "max_temp": 100, "surface_type": "pdms" },
+  "chamber": { "heated": false, "passive": false },
+  "firmware": { "flavor": "proprietary", "identifier": "Formlabs Form 3 Firmware" },
+  "network": { "has_wifi": true, "has_ethernet": true, "supports_lan_api": true },
+  "links": {
+    "product_page": "https://formlabs.com/3d-printers/form-3/"
+  },
+  "tags": ["sla", "laser-sla", "high-resolution", "professional", "cylindrical"],
+  "notes": "Formlabs Form 3. Stereolithography (SLA) 3D printer using low-force stereolithography. 25 micron XY resolution.",
+  "x_cura": {
+    "definition": "formlabs_form3",
+    "definition_changes": {}
+  },
+  "x_prusaslicer": {
+    "printer_model": "Form 3",
+    "vendor": "Formlabs",
+    "printer_technology": "SLA"
+  },
+  "x_orca": {
+    "machine_name": "Form 3",
+    "machine_manufacturer": "Formlabs"
+  },
+  "x_bambu": {
+    "product_id": "formlabs_form3",
+    "series": "Form",
+    "support_lidar": false,
+    "support_ams": false,
+    "support_ams_lite": false
+  }
+}

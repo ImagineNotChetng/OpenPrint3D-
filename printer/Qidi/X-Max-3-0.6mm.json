@@ -1,0 +1,37 @@
+{
+  "op3d_schema": "printer",
+  "op3d_schema_version": "0.1.0",
+  "id": "Qidi/X-Max-3-0.6mm",
+  "maintainer": {
+    "name": "OpenPrint3D Community",
+    "maintainer_type": "community",
+    "website": "https://github.com/OpenPrint3D/OpenPrint3D"
+  },
+  "manufacturer": "Qidi",
+  "model": "X-Max 3",
+  "variant": "0.6mm Nozzle",
+  "build_volume": { "x": 300, "y": 300, "z": 400, "shape": "rectangular", "origin": "front_left" },
+  "kinematics": "cartesian",
+  "axes": {
+    "x": { "max_speed": 200, "max_accel": 8000 },
+    "y": { "max_speed": 200, "max_accel": 8000 },
+    "z": { "max_speed": 12, "max_accel": 500 }
+  },
+  "extruders": [{
+    "id": "tool0",
+    "nozzle_diameter": 0.6,
+    "nozzle_material": "brass",
+    "max_temp": 260,
+    "min_temp": 170,
+    "retraction_supported": true
+  }],
+  "bed": { "heated": true, "max_temp": 100, "surface_type": "pei" },
+  "chamber": { "heated": false, "max_temp": 100, "passive": true },
+  "firmware": { "flavor": "marlin", "identifier": "Qidi X-Max 3" },
+  "network": { "has_wifi": true, "has_ethernet": true, "supports_lan_api": false },
+  "links": {
+    "product_page": "https://www.qiditech.com/x-max-3"
+  },
+  "tags": ["fdm", "cartesian", "direct-drive", "auto-leveling", "0.6mm", "large-build"],
+  "notes": "X-Max 3 configured with 0.6mm nozzle for faster printing."
+}

@@ -1,0 +1,65 @@
+{
+  "op3d_schema": "printer",
+  "op3d_schema_version": "0.1.0",
+  "id": "Phrozen/Sonic-Mighty-8K",
+  "maintainer": {
+    "name": "OpenPrint3D Community",
+    "maintainer_type": "community",
+    "website": "https://github.com/OpenPrint3D/OpenPrint3D"
+  },
+  "manufacturer": "Phrozen",
+  "model": "Sonic Mighty 8K",
+  "variant": "Stock",
+  "build_volume": { "x": 218, "y": 123, "z": 235, "shape": "rectangular", "origin": "center" },
+  "kinematics": "other",
+  "axes": {
+    "x": { "max_speed": 30, "max_accel": 150 },
+    "y": { "max_speed": 30, "max_accel": 150 },
+    "z": { "max_speed": 80, "max_accel": 400 }
+  },
+  "extruders": [],
+  "resolution": { "x": 0.028, "y": 0.028, "z": 0.01 },
+  "resin_tank": { "type": "nfep", "lifetime_hours": 2000 },
+  "light_source": { "type": "lcd-monochrome", "wavelength": 405, "xy_resolution": 0.028 },
+  "bed": { "heated": false, "max_temp": 100, "surface_type": "metal-plate" },
+  "chamber": { "heated": false, "passive": false },
+  "firmware": { "flavor": "proprietary", "identifier": "Phrozen OS" },
+  "network": { "has_wifi": true, "has_ethernet": true, "supports_lan_api": false },
+  "links": { "product_page": "https://phrozen3d.com/products/sonic-mighty-8k" },
+  "tags": ["sla", "msla", "8k", "high-resolution", "monochrome-lcd", "large-format", "resin"],
+  "notes": "Phrozen Sonic Mighty 8K. Professional MSLA resin printer with 10.1\" 8K monochrome LCD, 28 micron XY resolution, and 218x123x235mm build volume. Features dual linear rails and up to 70mm/hr print speed.",
+  "x_cura": {
+    "definition": "phrozen_sonightmighty8k",
+    "definition_changes": {
+      "machine_width": 218,
+      "machine_depth": 123,
+      "machine_height": 235,
+      "nozzle_size": 0.035,
+      "printer_technology": "MSLA"
+    }
+  },
+  "x_prusaslicer": {
+    "printer_model": "Sonic Mighty 8K",
+    "vendor": "Phrozen",
+    "printer_technology": "SLA",
+    "bed_shape": "rectangular",
+    "bed_size": "218x123",
+    "print_height": 235
+  },
+  "x_orca": {
+    "machine_name": "Sonic Mighty 8K",
+    "machine_manufacturer": "Phrozen",
+    "bed_x": 218,
+    "bed_y": 123,
+    "height": 235,
+    "nozzle_diameter": 0.035,
+    "printer_technology": "SLA"
+  },
+  "x_bambu": {
+    "product_id": "phrozen_sonightmighty8k",
+    "series": "Sonic",
+    "support_lidar": false,
+    "support_ams": false,
+    "support_ams_lite": false
+  }
+}

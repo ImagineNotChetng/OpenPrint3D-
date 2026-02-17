@@ -1,0 +1,37 @@
+{
+  "op3d_schema": "printer",
+  "op3d_schema_version": "0.1.0",
+  "id": "Qidi/X-Max-0.4mm",
+  "maintainer": {
+    "name": "OpenPrint3D Community",
+    "maintainer_type": "community",
+    "website": "https://github.com/OpenPrint3D/OpenPrint3D"
+  },
+  "manufacturer": "Qidi",
+  "model": "X-Max",
+  "variant": "0.4mm Nozzle",
+  "build_volume": { "x": 300, "y": 300, "z": 400, "shape": "rectangular", "origin": "front_left" },
+  "kinematics": "cartesian",
+  "axes": {
+    "x": { "max_speed": 200, "max_accel": 8000 },
+    "y": { "max_speed": 200, "max_accel": 8000 },
+    "z": { "max_speed": 12, "max_accel": 500 }
+  },
+  "extruders": [{
+    "id": "tool0",
+    "nozzle_diameter": 0.4,
+    "nozzle_material": "brass",
+    "max_temp": 260,
+    "min_temp": 170,
+    "retraction_supported": true
+  }],
+  "bed": { "heated": true, "max_temp": 100, "surface_type": "pei" },
+  "chamber": { "heated": false, "max_temp": 100, "passive": true },
+  "firmware": { "flavor": "marlin", "identifier": "Qidi X-Max" },
+  "network": { "has_wifi": true, "has_ethernet": true, "supports_lan_api": false },
+  "links": {
+    "product_page": "https://www.qiditech.com/x-max"
+  },
+  "tags": ["fdm", "cartesian", "direct-drive", "auto-leveling", "0.4mm", "large-build"],
+  "notes": "X-Max with 0.4mm brass nozzle for standard printing."
+}

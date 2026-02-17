@@ -24,10 +24,25 @@ export default async function PrinterDetail({ params }: { params: Promise<{ id: 
           <div className="flex items-center gap-3 mb-3">
             <Badge variant="accent">{printer.kinematics}</Badge>
             {printer.variant && <span className="text-sm text-muted">{printer.variant}</span>}
+            {printer.license && <Badge variant="success">License: {printer.license}</Badge>}
+            {printer.profile_version && <Badge>v{printer.profile_version}</Badge>}
           </div>
           <h1 className="text-3xl font-bold mb-1">{printer.model}</h1>
           <p className="text-muted">{printer.manufacturer}</p>
         </div>
+
+        {/* Personal Preferences (Discussion #44) */}
+        {printer.personal_preferences && Object.keys(printer.personal_preferences).length > 0 && (
+          <div className="p-5 rounded-2xl bg-warning/10 border border-warning/30">
+            <h3 className="font-semibold text-sm mb-2 flex items-center gap-2">
+              <span>👤</span> Personal Preferences
+            </h3>
+            <p className="text-xs text-muted mb-3">User-specific overrides for this printer</p>
+            <div className="text-xs font-mono bg-background p-3 rounded-lg overflow-auto">
+              {JSON.stringify(printer.personal_preferences, null, 2)}
+            </div>
+          </div>
+        )}
 
         {/* Build Volume */}
         <div className="p-6 rounded-2xl bg-card border border-border">
@@ -67,13 +82,13 @@ export default async function PrinterDetail({ params }: { params: Promise<{ id: 
           {/* Extruders */}
           <div className="p-5 rounded-2xl bg-card border border-border space-y-3">
             <h3 className="font-semibold text-sm">Extruder</h3>
-            {printer.extruders.map((ext) => (
+            {printer.extruders && printer.extruders.length > 0 ? printer.extruders.map((ext) => (
               <div key={ext.id} className="space-y-1.5 text-sm">
                 <div className="flex justify-between"><span className="text-muted">Nozzle</span><span className="font-mono">{ext.nozzle_diameter}mm {ext.nozzle_material ?? ""}</span></div>
                 {ext.max_temp && <div className="flex justify-between"><span className="text-muted">Max Temp</span><span className="font-mono">{ext.max_temp}°C</span></div>}
                 {ext.min_temp && <div className="flex justify-between"><span className="text-muted">Min Temp</span><span className="font-mono">{ext.min_temp}°C</span></div>}
               </div>
-            ))}
+            )) : <div className="text-sm text-muted">No extruder data available</div>}
           </div>
 
           {/* Bed */}

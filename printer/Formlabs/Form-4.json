@@ -1,0 +1,74 @@
+{
+  "op3d_schema": "printer",
+  "op3d_schema_version": "0.1.0",
+  "id": "Formlabs/Form-4",
+  "maintainer": {
+    "name": "OpenPrint3D Community",
+    "maintainer_type": "community",
+    "website": "https://github.com/OpenPrint3D/OpenPrint3D"
+  },
+  "manufacturer": "Formlabs",
+  "model": "Form 4",
+  "variant": "Stock",
+  "build_volume": { "x": 200, "y": 125, "z": 200, "shape": "rectangular", "origin": "center" },
+  "kinematics": "sla",
+  "axes": {
+    "x": { "max_speed": 150, "max_accel": 3000 },
+    "y": { "max_speed": 150, "max_accel": 3000 },
+    "z": { "max_speed": 50, "max_accel": 500 }
+  },
+  "extruders": [{
+    "id": "laser",
+    "nozzle_diameter": 0.025,
+    "nozzle_material": "n/a",
+    "max_temp": 150,
+    "min_temp": 100,
+    "retraction_supported": false
+  }],
+  "bed": { "heated": true, "max_temp": 60, "surface_type": "flexible-film" },
+  "chamber": { "heated": true, "max_temp": 35, "passive": false },
+  "firmware": { "flavor": "other", "identifier": "Formlabs Form 4 OS" },
+  "network": { "has_wifi": true, "has_ethernet": false, "supports_lan_api": false },
+  "links": {
+    "product_page": "https://formlabs.com/3d-printers/form-4/"
+  },
+  "tags": ["sla", "resin", "enclosed", "auto-leveling", "wifi", "post-processing"],
+  "notes": "Formlabs Form 4. Desktop SLA resin 3D printer with 200x125x200mm build volume. Features 25-micron XY resolution, auto-resin handling, 4-second peel time, and WiFi connectivity. Requires post-processing.",
+  "x_cura": {
+    "definition": "formlabs_form_4",
+    "definition_changes": {
+      "machine_width": 200,
+      "machine_depth": 125,
+      "machine_height": 200,
+      "nozzle_size": 0.025,
+      "heated_bed": true,
+      "machine_heated_bed": true,
+      "printer_technology": "SLA"
+    }
+  },
+  "x_prusaslicer": {
+    "printer_model": "Form 4",
+    "vendor": "Formlabs",
+    "filament_diameter": 1.75,
+    "nozzle_diameter": 0.025,
+    "bed_shape": "rectangular",
+    "bed_size": "200x125",
+    "print_height": 200
+  },
+  "x_orca": {
+    "machine_name": "Form_4",
+    "machine_manufacturer": "Formlabs",
+    "bed_x": 200,
+    "bed_y": 125,
+    "height": 200,
+    "nozzle_diameter": 0.025,
+    "filament_diameter": 1.75
+  },
+  "x_bambu": {
+    "product_id": "formlabs_form_4",
+    "series": "Form",
+    "support_lidar": false,
+    "support_ams": false,
+    "support_ams_lite": false
+  }
+}

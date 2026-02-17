@@ -1,0 +1,78 @@
+{
+  "op3d_schema": "printer",
+  "op3d_schema_version": "0.1.0",
+  "id": "Elegoo/Neptune-11",
+  "maintainer": {
+    "name": "OpenPrint3D Community",
+    "maintainer_type": "community",
+    "website": "https://github.com/OpenPrint3D/OpenPrint3D"
+  },
+  "manufacturer": "Elegoo",
+  "model": "Neptune 11",
+  "variant": "Stock",
+  "build_volume": { "x": 305, "y": 305, "z": 405, "shape": "rectangular", "origin": "front_left" },
+  "kinematics": "corexy",
+  "axes": {
+    "x": { "max_speed": 600, "max_accel": 20000 },
+    "y": { "max_speed": 600, "max_accel": 20000 },
+    "z": { "max_speed": 20, "max_accel": 500 }
+  },
+  "extruders": [{
+    "id": "tool0",
+    "nozzle_diameter": 0.4,
+    "nozzle_material": "hardened-steel",
+    "max_temp": 350,
+    "min_temp": 170,
+    "retraction_supported": true
+  }],
+  "bed": { "heated": true, "max_temp": 130, "surface_type": "PEI-textured" },
+  "chamber": { "heated": false, "max_temp": 50, "passive": true },
+  "firmware": { "flavor": "klipper", "identifier": "Klipper (Elegoo)" },
+  "network": { "has_wifi": true, "has_ethernet": true, "supports_lan_api": true },
+  "links": {
+    "product_page": "https://www.elegoo.com/products/elegoo-neptune-11"
+  },
+  "tags": ["large-format", "corexy", "klipper", "high-speed", "direct-drive", "auto-level", "all-metal-hotend", "ethernet"],
+  "notes": "Elegoo Neptune 11. Large-format CoreXY with 305x305x405mm build volume. Klipper-based with input shaper, direct drive, all-metal hotend (350°C), linear rails on X/Y, and Ethernet connectivity.",
+  "x_cura": {
+    "definition": "elegoo_neptune11",
+    "definition_changes": {
+      "machine_width": 305,
+      "machine_depth": 305,
+      "machine_height": 405,
+      "nozzle_size": 0.4,
+      "heated_bed": true,
+      "machine_heated_bed": true,
+      "bed_temperature": 60,
+      "nozzle_temperature": 200
+    }
+  },
+  "x_prusaslicer": {
+    "printer_model": "Neptune 11",
+    "vendor": "Elegoo",
+    "filament_diameter": 1.75,
+    "nozzle_diameter": 0.4,
+    "bed_shape": "rectangular",
+    "bed_size": "305x305",
+    "print_height": 405
+  },
+  "x_orca": {
+    "machine_name": "Neptune 11",
+    "machine_manufacturer": "Elegoo",
+    "bed_x": 305,
+    "bed_y": 305,
+    "height": 405,
+    "nozzle_diameter": 0.4,
+    "filament_diameter": 1.75
+  },
+  "x_bambu": {
+    "product_id": "elegoo_neptune11",
+    "series": "Neptune",
+    "support_lidar": false,
+    "support_ams": false,
+    "support_ams_lite": false,
+    "max_speed": 600,
+    "nozzle_type": "hardened-steel",
+    "has_ethernet": true
+  }
+}

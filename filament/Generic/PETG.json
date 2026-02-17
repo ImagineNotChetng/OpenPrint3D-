@@ -46,9 +46,21 @@
     "max_ambient_temp": 35
   },
 
+  "printing_speed": {
+    "min": 20,
+    "max": 60,
+    "recommended": 40
+  },
+
   "external_ids": {},
   "links": {},
   "tags": ["petg", "generic", "1.75mm"],
+
+  "release": {
+    "version": "1.0.0",
+    "date": "2026-02-17T00:00:00Z",
+    "notes": "Initial release with printing_speed support"
+  },
 
   "notes": "Generic PETG profile. Good balance of strength and ease of use. Slight warping, better layer adhesion than PLA.",
 

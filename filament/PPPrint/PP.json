@@ -1,0 +1,30 @@
+{
+  "op3d_schema": "filament",
+  "op3d_schema_version": "0.1.0",
+  "id": "PPPrint/PP",
+  "maintainer": {
+    "name": "OpenPrint3D Community",
+    "maintainer_type": "community",
+    "website": "https://github.com/OpenPrint3D/OpenPrint3D"
+  },
+  "brand": "PP Print",
+  "name": "Polypropylene 1.75mm",
+  "material": "PP",
+  "diameter": 1.75,
+  "density": 0.9,
+  "nozzle": { "min": 210, "max": 250, "recommended": 230 },
+  "bed": { "min": 80, "max": 110, "recommended": 100 },
+  "fan": { "min": 0, "max": 50, "recommended": 30 },
+  "drying": { "temperature": 60, "duration_hours": 4 },
+  "environment": {
+    "sensitive_to_moisture": true,
+    "enclosure_recommended": true,
+    "max_ambient_temp": 35
+  },
+  "volumetric_speed": 8,
+  "links": {
+    "product_page": "https://www.ppprint3d.com/"
+  },
+  "tags": ["ppprint", "polypropylene", "pp", "1.75mm", "flexible", "food-safe"],
+  "notes": "PP Print Polypropylene. Flexible and food-safe material. Requires heated bed and enclosure for best results."
+}

@@ -1,0 +1,68 @@
+{
+  "op3d_schema": "printer",
+  "op3d_schema_version": "0.1.0",
+  "id": "Formlabs/Form3Plus",
+  "maintainer": {
+    "name": "OpenPrint3D Community",
+    "maintainer_type": "community",
+    "website": "https://github.com/OpenPrint3D/OpenPrint3D"
+  },
+  "manufacturer": "Formlabs",
+  "model": "Form 3+",
+  "variant": "Stock",
+  "build_volume": { "x": 145, "y": 145, "z": 185, "shape": "rectangular", "origin": "center" },
+  "kinematics": "lfs",
+  "axes": {
+    "x": { "max_speed": 50, "max_accel": 500 },
+    "y": { "max_speed": 50, "max_accel": 500 },
+    "z": { "max_speed": 15, "max_accel": 200 }
+  },
+  "extruders": [{
+    "id": "laser",
+    "nozzle_diameter": 0.025,
+    "nozzle_material": "n/a",
+    "max_temp": 150,
+    "min_temp": 100,
+    "retraction_supported": false
+  }],
+  "bed": { "heated": true, "max_temp": 60, "surface_type": "platform" },
+  "chamber": { "heated": true, "max_temp": 35, "passive": false },
+  "firmware": { "flavor": "proprietary", "identifier": "Formlabs Form 3+" },
+  "network": { "has_wifi": true, "has_ethernet": true, "supports_lan_api": true },
+  "links": {
+    "product_page": "https://formlabs.com/3d-printers/form-3-plus/"
+  },
+  "tags": ["sla", "laser", "high-resolution", "professional", "post-process"],
+  "notes": "Formlabs Form 3+. Low Force Stereolithography (LFS) printer with 25μm XY resolution. Uses resin materials.",
+  "x_cura": {
+    "definition": "formlabs_form3plus",
+    "definition_changes": {
+      "machine_width": 145,
+      "machine_depth": 145,
+      "machine_height": 185,
+      "machine_type": "sla",
+      "laser_count": 1,
+      "resolution": 25
+    }
+  },
+  "x_prusaslicer": {
+    "printer_model": "Form 3+",
+    "vendor": "Formlabs",
+    "filament_diameter": 0,
+    "nozzle_diameter": 0.25,
+    "bed_shape": "rectangular",
+    "bed_size": "145x145",
+    "print_height": 185,
+    "printer_technology": "SLA"
+  },
+  "x_orca": {
+    "machine_name": "Form 3+",
+    "machine_manufacturer": "Formlabs",
+    "bed_x": 145,
+    "bed_y": 145,
+    "height": 185,
+    "nozzle_diameter": 0.25,
+    "filament_diameter": 0,
+    "printer_technology": "SLA"
+  }
+}

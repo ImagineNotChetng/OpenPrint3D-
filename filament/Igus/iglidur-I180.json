@@ -1,0 +1,30 @@
+{
+  "op3d_schema": "filament",
+  "op3d_schema_version": "0.1.0",
+  "id": "Igus/iglidur-I180",
+  "maintainer": {
+    "name": "OpenPrint3D Community",
+    "maintainer_type": "community",
+    "website": "https://github.com/OpenPrint3D/OpenPrint3D"
+  },
+  "brand": "Igus",
+  "name": "iglidur I180 1.75mm",
+  "material": "iglidur I180",
+  "diameter": 1.75,
+  "density": 1.37,
+  "nozzle": { "min": 230, "max": 290, "recommended": 260 },
+  "bed": { "min": 50, "max": 90, "recommended": 70 },
+  "fan": { "min": 30, "max": 70, "recommended": 50 },
+  "drying": { "temperature": 60, "duration_hours": 4 },
+  "environment": {
+    "sensitive_to_moisture": false,
+    "enclosure_recommended": false,
+    "max_ambient_temp": 45
+  },
+  "volumetric_speed": 8,
+  "links": {
+    "product_page": "https://www.igus.com/"
+  },
+  "tags": ["iglidur", "igus", "1.75mm", "high-performance", "wear-resistant", "tribo"],
+  "notes": "Igus iglidur I180. High-temperature tribological filament with excellent wear resistance at elevated temperatures."
+}

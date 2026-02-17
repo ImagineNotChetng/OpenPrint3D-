@@ -3,18 +3,14 @@ import { useState, useEffect } from "react";
 import type { FilamentProfile, PrinterProfile, ProcessProfile } from "@/lib/profiles";
 import {
   convertFilament, convertPrinter, convertProcess,
-  getFileExtension, getSlicerLabel,
-  type SlicerTarget,
+  getFileExtension, getFormatLabel, getAllFormats,
+  type FormatTarget,
 } from "@/lib/converter";
 import { Badge } from "@/components/badge";
 
-type Step = "slicer" | "profiles" | "preview";
+type Step = "format" | "profiles" | "preview";
 
-const slicers: { id: SlicerTarget; name: string; desc: string; icon: string }[] = [
-  { id: "orcaslicer", name: "OrcaSlicer / BambuStudio", desc: "JSON format — compatible with OrcaSlicer, BambuStudio, and forks", icon: "🦈" },
-  { id: "prusaslicer", name: "PrusaSlicer / SuperSlicer", desc: "INI config bundle format", icon: "🔶" },
-  { id: "cura", name: "UltiMaker Cura", desc: "CFG profile format for Cura 5.x+", icon: "⬡" },
-];
+const formats = getAllFormats();
 
 export function ExportClient({
   filaments, printers, processes,
@@ -23,8 +19,8 @@ export function ExportClient({
   printers: PrinterProfile[];
   processes: ProcessProfile[];
 }) {
-  const [step, setStep] = useState<Step>("slicer");
-  const [slicer, setSlicer] = useState<SlicerTarget | null>(null);
+  const [step, setStep] = useState<Step>("format");
+  const [format, setFormat] = useState<FormatTarget | null>(null);
   const [selectedFilament, setSelectedFilament] = useState<string | null>(null);
   const [selectedPrinter, setSelectedPrinter] = useState<string | null>(null);
   const [selectedProcess, setSelectedProcess] = useState<string | null>(null);
@@ -113,11 +109,11 @@ export function ExportClient({
   };
 
   const downloadAll = () => {
-    if (!slicer) return;
-    const ext = getFileExtension(slicer, "");
-    if (fil) download(convertFilament(fil, slicer), `filament-${fil.id.replace(/\//g, "-")}${ext}`);
-    if (prt) download(convertPrinter(prt, slicer), `printer-${prt.id.replace(/\//g, "-")}${ext}`);
-    if (proc) download(convertProcess(proc, slicer), `process-${proc.id.replace(/\//g, "-")}${ext}`);
+    if (!format) return;
+    const ext = getFileExtension(format, "");
+    if (fil) download(convertFilament(fil, format), `filament-${fil.id.replace(/\//g, "-")}${ext}`);
+    if (prt) download(convertPrinter(prt, format), `printer-${prt.id.replace(/\//g, "-")}${ext}`);
+    if (proc) download(convertProcess(proc, format), `process-${proc.id.replace(/\//g, "-")}${ext}`);
   };
 
   const copyToClipboard = (text: string) => {
@@ -128,44 +124,44 @@ export function ExportClient({
     <div className="space-y-8">
       {/* Progress Steps */}
       <div className="flex items-center gap-4">
-        {(["slicer", "profiles", "preview"] as Step[]).map((s, i) => (
+        {(["format", "profiles", "preview"] as Step[]).map((s, i) => (
           <button
             key={s}
-            onClick={() => { if (s === "slicer" || (s === "profiles" && slicer) || (s === "preview" && slicer && hasSelection)) setStep(s); }}
+            onClick={() => { if (s === "format" || (s === "profiles" && format) || (s === "preview" && format && hasSelection)) setStep(s); }}
             className={`flex items-center gap-2 px-4 py-2 rounded-xl text-sm font-medium transition-colors ${
               step === s ? "bg-accent text-white" : "bg-card text-muted border border-border hover:bg-card-hover"
             }`}
           >
             <span className="w-5 h-5 rounded-full bg-background/20 flex items-center justify-center text-xs">{i + 1}</span>
-            {s === "slicer" ? "Choose Slicer" : s === "profiles" ? "Select Profiles" : "Preview & Download"}
+            {s === "format" ? "Choose Format" : s === "profiles" ? "Select Profiles" : "Preview & Download"}
           </button>
         ))}
       </div>
 
-      {/* Step 1: Choose Slicer */}
-      {step === "slicer" && (
+      {/* Step 1: Choose Format */}
+      {step === "format" && (
         <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
-          {slicers.map((s) => (
+          {formats.map((f) => (
             <button
-              key={s.id}
-              onClick={() => { setSlicer(s.id); setStep("profiles"); }}
+              key={f.id}
+              onClick={() => { setFormat(f.id); setStep("profiles"); }}
               className={`p-6 rounded-2xl border text-left transition-all duration-300 glow-hover ${
-                slicer === s.id ? "bg-accent/10 border-accent" : "bg-card border-border hover:border-border-hover"
+                format === f.id ? "bg-accent/10 border-accent" : "bg-card border-border hover:border-border-hover"
               }`}
             >
-              <span className="text-3xl mb-3 block">{s.icon}</span>
-              <h3 className="font-semibold mb-1">{s.name}</h3>
-              <p className="text-xs text-muted">{s.desc}</p>
+              <span className="text-3xl mb-3 block">{f.icon}</span>
+              <h3 className="font-semibold mb-1">{f.name}</h3>
+              <p className="text-xs text-muted">{f.desc}</p>
             </button>
           ))}
         </div>
       )}
 
       {/* Step 2: Select Profiles */}
-      {step === "profiles" && slicer && (
+      {step === "profiles" && format && (
         <div className="space-y-6">
           <div className="flex items-center gap-4 mb-4">
-            <Badge variant="accent">{getSlicerLabel(slicer)}</Badge>
+            <Badge variant="accent">{getFormatLabel(format)}</Badge>
             <div className="flex-1 relative">
               <svg className="absolute left-3 top-1/2 -translate-y-1/2 w-4 h-4 text-muted" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
@@ -300,8 +296,8 @@ export function ExportClient({
           <div>
             <h3 className="text-sm font-semibold mb-3">🖨️ Printer</h3>
             <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-2 max-h-60 overflow-y-auto pr-2">
-              {filteredPrinters.map((p) => (
-                <div key={p.id} className="relative">
+              {filteredPrinters.map((p, i) => (
+                <div key={`${p.id}-${i}`} className="relative">
                   <button
                     onClick={() => setSelectedPrinter(selectedPrinter === p.id ? null : p.id)}
                     className={`w-full p-3 rounded-xl border text-left text-sm transition-colors ${
@@ -327,8 +323,8 @@ export function ExportClient({
           <div>
             <h3 className="text-sm font-semibold mb-3">🧵 Filament</h3>
             <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-2 max-h-60 overflow-y-auto pr-2">
-              {filteredFilaments.map((f) => (
-                <div key={f.id} className="relative">
+              {filteredFilaments.map((f, i) => (
+                <div key={`${f.id}-${i}`} className="relative">
                   <button
                     onClick={() => setSelectedFilament(selectedFilament === f.id ? null : f.id)}
                     className={`w-full p-3 rounded-xl border text-left text-sm transition-colors ${
@@ -383,11 +379,11 @@ export function ExportClient({
       )}
 
       {/* Step 3: Preview & Download */}
-      {step === "preview" && slicer && hasSelection && (
+      {step === "preview" && format && hasSelection && (
         <div className="space-y-6">
           <div className="flex items-center justify-between">
             <div className="flex items-center gap-2">
-              <Badge variant="accent">{getSlicerLabel(slicer)}</Badge>
+              <Badge variant="accent">{getFormatLabel(format)}</Badge>
               <span className="text-sm text-muted">
                 {[fil && "Filament", prt && "Printer", proc && "Process"].filter(Boolean).join(" + ")}
               </span>
@@ -411,16 +407,16 @@ export function ExportClient({
           <div className="rounded-2xl border border-border overflow-hidden">
             <div className="px-4 py-2 bg-card border-b border-border flex items-center justify-between">
               <span className="text-xs font-mono text-muted">
-                {activePreview === "filament" && fil ? `filament-${fil.id.replace(/\//g, "-")}${getFileExtension(slicer, "")}` :
-                 activePreview === "printer" && prt ? `printer-${prt.id.replace(/\//g, "-")}${getFileExtension(slicer, "")}` :
-                 activePreview === "process" && proc ? `process-${proc.id.replace(/\//g, "-")}${getFileExtension(slicer, "")}` : ""}
+                {activePreview === "filament" && fil ? `filament-${fil.id.replace(/\//g, "-")}${getFileExtension(format, "")}` :
+                 activePreview === "printer" && prt ? `printer-${prt.id.replace(/\//g, "-")}${getFileExtension(format, "")}` :
+                 activePreview === "process" && proc ? `process-${proc.id.replace(/\//g, "-")}${getFileExtension(format, "")}` : ""}
               </span>
               <div className="flex gap-2">
                 <button
                   onClick={() => {
-                    const content = activePreview === "filament" && fil ? convertFilament(fil, slicer) :
-                      activePreview === "printer" && prt ? convertPrinter(prt, slicer) :
-                      activePreview === "process" && proc ? convertProcess(proc, slicer) : "";
+                    const content = activePreview === "filament" && fil ? convertFilament(fil, format) :
+                      activePreview === "printer" && prt ? convertPrinter(prt, format) :
+                      activePreview === "process" && proc ? convertProcess(proc, format) : "";
                     copyToClipboard(content);
                   }}
                   className="px-3 py-1 text-xs bg-card-hover text-muted rounded-lg hover:text-foreground transition-colors"
@@ -429,13 +425,13 @@ export function ExportClient({
                 </button>
                 <button
                   onClick={() => {
-                    const content = activePreview === "filament" && fil ? convertFilament(fil, slicer) :
-                      activePreview === "printer" && prt ? convertPrinter(prt, slicer) :
-                      activePreview === "process" && proc ? convertProcess(proc, slicer) : "";
+                    const content = activePreview === "filament" && fil ? convertFilament(fil, format) :
+                      activePreview === "printer" && prt ? convertPrinter(prt, format) :
+                      activePreview === "process" && proc ? convertProcess(proc, format) : "";
                     const name = activePreview === "filament" && fil ? `filament-${fil.id.replace(/\//g, "-")}` :
                       activePreview === "printer" && prt ? `printer-${prt.id.replace(/\//g, "-")}` :
                       activePreview === "process" && proc ? `process-${proc.id.replace(/\//g, "-")}` : "profile";
-                    download(content, `${name}${getFileExtension(slicer, "")}`);
+                    download(content, `${name}${getFileExtension(format, "")}`);
                   }}
                   className="px-3 py-1 text-xs bg-accent/20 text-accent rounded-lg hover:bg-accent/30 transition-colors"
                 >
@@ -444,9 +440,9 @@ export function ExportClient({
               </div>
             </div>
             <pre className="p-4 bg-background text-xs font-mono text-muted overflow-auto max-h-[500px]">
-              {activePreview === "filament" && fil ? convertFilament(fil, slicer) :
-               activePreview === "printer" && prt ? convertPrinter(prt, slicer) :
-               activePreview === "process" && proc ? convertProcess(proc, slicer) :
+              {activePreview === "filament" && fil ? convertFilament(fil, format) :
+               activePreview === "printer" && prt ? convertPrinter(prt, format) :
+               activePreview === "process" && proc ? convertProcess(proc, format) :
                "Select a profile to preview"}
             </pre>
           </div>
@@ -454,7 +450,21 @@ export function ExportClient({
           {/* Import Instructions */}
           <div className="p-5 rounded-2xl bg-card border border-border">
             <h3 className="font-semibold text-sm mb-3">How to Import</h3>
-            {slicer === "orcaslicer" && (
+            {format === "yaml" && (
+              <ol className="text-sm text-muted space-y-1.5 list-decimal list-inside">
+                <li>OpenPrint3D profiles in YAML format are human-readable</li>
+                <li>Use with OpenPrint3D CLI tools: <code className="text-foreground">openprint3d validate profile.yaml</code></li>
+                <li>Import into GUI via the profiles page</li>
+              </ol>
+            )}
+            {format === "json" && (
+              <ol className="text-sm text-muted space-y-1.5 list-decimal list-inside">
+                <li>Standard OpenPrint3D JSON profile format</li>
+                <li>Use with OpenPrint3D CLI tools: <code className="text-foreground">openprint3d validate profile.json</code></li>
+                <li>Import into GUI via the profiles page</li>
+              </ol>
+            )}
+            {format === "orcaslicer" && (
               <ol className="text-sm text-muted space-y-1.5 list-decimal list-inside">
                 <li>Open OrcaSlicer or BambuStudio</li>
                 <li>Go to <strong className="text-foreground">File → Import → Import Configs</strong></li>
@@ -462,7 +472,7 @@ export function ExportClient({
                 <li>The profiles will appear in the respective dropdowns (Printer/Filament/Process)</li>
               </ol>
             )}
-            {slicer === "prusaslicer" && (
+            {format === "prusaslicer" && (
               <ol className="text-sm text-muted space-y-1.5 list-decimal list-inside">
                 <li>Open PrusaSlicer or SuperSlicer</li>
                 <li>Go to <strong className="text-foreground">File → Import → Import Config</strong></li>
@@ -470,7 +480,7 @@ export function ExportClient({
                 <li>Or copy the .ini files into your PrusaSlicer config directory</li>
               </ol>
             )}
-            {slicer === "cura" && (
+            {format === "cura" && (
               <ol className="text-sm text-muted space-y-1.5 list-decimal list-inside">
                 <li>Open UltiMaker Cura</li>
                 <li>Go to <strong className="text-foreground">Preferences → Profiles → Import</strong> (for process profiles)</li>

@@ -1,0 +1,59 @@
+{
+  "op3d_schema": "filament",
+  "op3d_schema_version": "0.1.0",
+  "id": "Fillamentum/ASA",
+
+  "maintainer": {
+    "name": "OpenPrint3D",
+    "maintainer_type": "community",
+    "website": "https://github.com/OpenPrint3D/OpenPrint3D"
+  },
+
+  "brand": "Fillamentum",
+  "name": "Fillamentum ASA 1.75mm",
+  "material": "ASA",
+
+  "color": "traffic yellow",
+  "diameter": 1.75,
+  "density": 1.05,
+
+  "nozzle": {
+    "min": 240,
+    "max": 275,
+    "recommended": 255
+  },
+
+  "bed": {
+    "min": 85,
+    "max": 105,
+    "recommended": 95
+  },
+
+  "fan": {
+    "min": 0,
+    "max": 40,
+    "recommended": 20
+  },
+
+  "drying": {
+    "temperature": 80,
+    "duration_hours": 4
+  },
+
+  "environment": {
+    "sensitive_to_moisture": true,
+    "enclosure_recommended": true,
+    "max_ambient_temp": 38
+  },
+
+  "external_ids": {},
+  "links": {},
+  "tags": ["asa", "fillamentum", "1.75mm", "outdoor", "uv-resistant"],
+
+  "notes": "Fillamentum ASA. Excellent UV resistance for outdoor applications. Requires enclosure, low fan.",
+
+  "x_cura": {},
+  "x_prusaslicer": {},
+  "x_orca": {},
+  "x_bambu": {}
+}

@@ -1,0 +1,37 @@
+{
+  "op3d_schema": "printer",
+  "op3d_schema_version": "0.1.0",
+  "id": "Anycubic/K2-Pro-0.6mm",
+  "maintainer": {
+    "name": "OpenPrint3D Community",
+    "maintainer_type": "community",
+    "website": "https://github.com/OpenPrint3D/OpenPrint3D"
+  },
+  "manufacturer": "Anycubic",
+  "model": "K2 Pro",
+  "variant": "0.6mm Nozzle",
+  "build_volume": { "x": 250, "y": 250, "z": 260, "shape": "rectangular", "origin": "front_left" },
+  "kinematics": "cartesian",
+  "axes": {
+    "x": { "max_speed": 300, "max_accel": 15000 },
+    "y": { "max_speed": 300, "max_accel": 15000 },
+    "z": { "max_speed": 30, "max_accel": 1000 }
+  },
+  "extruders": [{
+    "id": "tool0",
+    "nozzle_diameter": 0.6,
+    "nozzle_material": "brass",
+    "max_temp": 300,
+    "min_temp": 170,
+    "retraction_supported": true
+  }],
+  "bed": { "heated": true, "max_temp": 110, "surface_type": "pei" },
+  "chamber": { "heated": false, "max_temp": 100, "passive": true },
+  "firmware": { "flavor": "marlin", "identifier": "Anycubic K2 Pro" },
+  "network": { "has_wifi": true, "has_ethernet": false, "supports_lan_api": true },
+  "links": {
+    "product_page": "https://www.anycubic.com/products/k2-pro"
+  },
+  "tags": ["fdm", "cartesian", "direct-drive", "auto-leveling", "0.6mm", "fast-printing"],
+  "notes": "K2 Pro configured with 0.6mm nozzle for faster printing."
+}

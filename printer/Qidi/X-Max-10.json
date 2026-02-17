@@ -1,0 +1,79 @@
+{
+  "op3d_schema": "printer",
+  "op3d_schema_version": "0.1.0",
+  "id": "Qidi/X-Max-10",
+  "maintainer": {
+    "name": "OpenPrint3D Community",
+    "maintainer_type": "community",
+    "website": "https://github.com/OpenPrint3D/OpenPrint3D"
+  },
+  "manufacturer": "Qidi",
+  "model": "X-Max 10",
+  "variant": "Stock",
+  "build_volume": { "x": 550, "y": 550, "z": 600, "shape": "rectangular", "origin": "front_left" },
+  "kinematics": "corexy",
+  "axes": {
+    "x": { "max_speed": 700, "max_accel": 35000 },
+    "y": { "max_speed": 700, "max_accel": 35000 },
+    "z": { "max_speed": 35, "max_accel": 2000 }
+  },
+  "extruders": [{
+    "id": "tool0",
+    "nozzle_diameter": 0.4,
+    "nozzle_material": "hardened-steel",
+    "max_temp": 400,
+    "min_temp": 170,
+    "retraction_supported": true
+  }],
+  "bed": { "heated": true, "max_temp": 160, "surface_type": "PEI-textured" },
+  "chamber": { "heated": true, "max_temp": 80, "passive": true },
+  "firmware": { "flavor": "klipper", "identifier": "Qidi X-Max 10 Firmware" },
+  "network": { "has_wifi": true, "has_ethernet": true, "supports_lan_api": true },
+  "links": {
+    "product_page": "https://www.qidimaker.com/x-max-10"
+  },
+  "tags": ["corexy", "direct-drive", "large-format", "ethernet", "high-temp", "klipper", "input-shaping", "air-filtration", "700mm-s", "active-chamber", "peek-capable"],
+  "notes": "Qidi X-Max 10. Large-format CoreXY with massive 550x550x600mm build volume. Features Klipper with advanced input shaping, high-flow dual-gear extruder, 400C max nozzle temp for PEEK and PEKK, active chamber heating up to 80C, air filtration, and Ethernet connectivity.",
+  "x_cura": {
+    "definition": "qidi_xmax10",
+    "definition_changes": {
+      "machine_width": 550,
+      "machine_depth": 550,
+      "machine_height": 600,
+      "nozzle_size": 0.4,
+      "heated_bed": true,
+      "machine_heated_bed": true,
+      "bed_temperature": 60,
+      "nozzle_temperature": 200
+    }
+  },
+  "x_prusaslicer": {
+    "printer_model": "X-Max 10",
+    "vendor": "Qidi",
+    "filament_diameter": 1.75,
+    "nozzle_diameter": 0.4,
+    "bed_shape": "rectangular",
+    "bed_size": "550x550",
+    "print_height": 600
+  },
+  "x_orca": {
+    "machine_name": "X-Max 10",
+    "machine_manufacturer": "Qidi",
+    "bed_x": 550,
+    "bed_y": 550,
+    "height": 600,
+    "nozzle_diameter": 0.4,
+    "filament_diameter": 1.75
+  },
+  "x_bambu": {
+    "product_id": "qidi_xmax10",
+    "series": "X-Max",
+    "support_lidar": false,
+    "support_ams": false,
+    "support_ams_lite": false,
+    "max_speed": 700,
+    "nozzle_type": "hardened-steel",
+    "has_ethernet": true,
+    "active_chamber_heating": true
+  }
+}

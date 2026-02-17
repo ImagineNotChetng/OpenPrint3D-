@@ -1,0 +1,75 @@
+{
+  "op3d_schema": "printer",
+  "op3d_schema_version": "0.1.0",
+  "id": "Tronxy/X5",
+  "maintainer": {
+    "name": "OpenPrint3D Community",
+    "maintainer_type": "community",
+    "website": "https://github.com/OpenPrint3D/OpenPrint3D"
+  },
+  "manufacturer": "Tronxy",
+  "model": "X5",
+  "variant": "Stock",
+  "build_volume": { "x": 280, "y": 280, "z": 300, "shape": "rectangular", "origin": "front_left" },
+  "kinematics": "corexy",
+  "axes": {
+    "x": { "max_speed": 150, "max_accel": 2000 },
+    "y": { "max_speed": 150, "max_accel": 2000 },
+    "z": { "max_speed": 10, "max_accel": 150 }
+  },
+  "extruders": [{
+    "id": "tool0",
+    "nozzle_diameter": 0.4,
+    "nozzle_material": "brass",
+    "max_temp": 250,
+    "min_temp": 170,
+    "retraction_supported": true
+  }],
+  "bed": { "heated": true, "max_temp": 100, "surface_type": "glass" },
+  "chamber": { "heated": false, "passive": false },
+  "firmware": { "flavor": "marlin", "identifier": "Marlin 1.x (Tronxy X5)" },
+  "network": { "has_wifi": false, "has_ethernet": false, "supports_lan_api": false },
+  "links": {
+    "product_page": "https://www.tronxy.com/product/x5-3d-printer/"
+  },
+  "tags": ["corexy", "budget", "large-build"],
+  "notes": "Tronxy X5. Budget CoreXY printer with 280x280x300mm build volume. Early generation CoreXY kit with basic features.",
+  "x_cura": {
+    "definition": "tronxy_x5",
+    "definition_changes": {
+      "machine_width": 280,
+      "machine_depth": 280,
+      "machine_height": 300,
+      "nozzle_size": 0.4,
+      "heated_bed": true,
+      "machine_heated_bed": true,
+      "bed_temperature": 60,
+      "nozzle_temperature": 200
+    }
+  },
+  "x_prusaslicer": {
+    "printer_model": "X5",
+    "vendor": "Tronxy",
+    "filament_diameter": 1.75,
+    "nozzle_diameter": 0.4,
+    "bed_shape": "rectangular",
+    "bed_size": "280x280",
+    "print_height": 300
+  },
+  "x_orca": {
+    "machine_name": "X5",
+    "machine_manufacturer": "Tronxy",
+    "bed_x": 280,
+    "bed_y": 280,
+    "height": 300,
+    "nozzle_diameter": 0.4,
+    "filament_diameter": 1.75
+  },
+  "x_bambu": {
+    "product_id": "tronxy_x5",
+    "series": "X5",
+    "support_lidar": false,
+    "support_ams": false,
+    "support_ams_lite": false
+  }
+}

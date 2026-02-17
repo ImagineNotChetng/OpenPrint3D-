@@ -1,0 +1,31 @@
+{
+  "op3d_schema": "filament",
+  "op3d_schema_version": "0.1.0",
+  "id": "Corbion/PBAT",
+  "maintainer": {
+    "name": "OpenPrint3D Community",
+    "maintainer_type": "community",
+    "website": "https://github.com/OpenPrint3D/OpenPrint3D"
+  },
+  "brand": "Corbion",
+  "name": "Corbion PBAT 1.75mm",
+  "material": "PVOH",
+  "diameter": 1.75,
+  "density": 1.25,
+  "nozzle": { "min": 180, "max": 220, "recommended": 200 },
+  "bed": { "min": 50, "max": 70, "recommended": 60 },
+  "fan": { "min": 60, "max": 100, "recommended": 80 },
+  "drying": { "temperature": 50, "duration_hours": 4 },
+  "environment": {
+    "sensitive_to_moisture": true,
+    "enclosure_recommended": false,
+    "max_ambient_temp": 28
+  },
+  "volumetric_speed": 10,
+  "printing_speed": { "min": 20, "max": 60, "recommended": 40 },
+  "links": {
+    "datasheet": "https://www.corbion.com/bioplastics"
+  },
+  "tags": ["pbat", "bioplastic", "biodegradable", "flexible", "1.75mm", "corbion"],
+  "notes": "Corbion PBAT is a biodegradable and compostable aliphatic-aromatic copolyester with excellent flexibility and impact resistance. Fully biodegradable in industrial composting conditions."
+}

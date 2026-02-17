@@ -1,0 +1,68 @@
+{
+  "op3d_schema": "filament",
+  "op3d_schema_version": "0.1.0",
+  "id": "MaxNylon/Nylon",
+  "maintainer": {
+    "name": "OpenPrint3D Community",
+    "maintainer_type": "community",
+    "website": "https://github.com/OpenPrint3D/OpenPrint3D"
+  },
+  "brand": "MaxNylon",
+  "name": "MaxNylon Nylon 1.75mm",
+  "material": "Nylon",
+  "diameter": 1.75,
+  "density": 1.14,
+  "nozzle": { "min": 240, "max": 275, "recommended": 255 },
+  "bed": { "min": 70, "max": 100, "recommended": 85 },
+  "fan": { "min": 0, "max": 20, "recommended": 0 },
+  "drying": { "temperature": 80, "duration_hours": 12 },
+  "environment": {
+    "sensitive_to_moisture": true,
+    "enclosure_recommended": true,
+    "max_ambient_temp": 40
+  },
+  "volumetric_speed": 8,
+  "printing_speed": { "min": 30, "max": 70, "recommended": 50 },
+  "links": {
+    "product_page": "https://maxnylon.com/"
+  },
+  "tags": ["nylon", "maxnylon", "1.75mm", "engineering", "high-performance", "durable"],
+  "notes": "MaxNylon. High-performance nylon filament with excellent tensile strength and chemical resistance. Requires hot enclosure and thorough drying for optimal results.",
+  "x_cura": {
+    "material": "nylon",
+    "print_temperature": 255,
+    "print_temperature_layer_0": 255,
+    "bed_temperature": 85,
+    "bed_temperature_layer_0": 85,
+    "fan_speed": 0,
+    "fan_speed_layer_0": 0,
+    "cooling": "limited"
+  },
+  "x_prusaslicer": {
+    "filament_type": "Nylon",
+    "temperature": 255,
+    "bed_temperature": 85,
+    "fan_speed": 0,
+    "first_layer_bed_temperature": 85,
+    "first_layer_temperature": 255
+  },
+  "x_orca": {
+    "filament_type": "Nylon",
+    "nozzle_temperature": 255,
+    "nozzle_temperature_initial_layer": 255,
+    "bed_temperature": 85,
+    "bed_temperature_initial_layer": 85,
+    "fan_speed": 0,
+    "fan_speed_initial_layer": 0
+  },
+  "x_bambu": {
+    "filament_type_id": "GNYL",
+    "drying_temperature": 80,
+    "drying_time": 12,
+    "nozzle_temperature": [240, 275],
+    "nozzle_temperature_initial_layer": [240, 275],
+    "bed_temperature": [70, 100],
+    "bed_temperature_initial_layer": [70, 100],
+    "fan_speed": [0, 20]
+  }
+}

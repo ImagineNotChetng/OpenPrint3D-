@@ -1,0 +1,75 @@
+{
+  "op3d_schema": "printer",
+  "op3d_schema_version": "0.1.0",
+  "id": "Anycubic/i3-Mega-X",
+  "maintainer": {
+    "name": "OpenPrint3D Community",
+    "maintainer_type": "community",
+    "website": "https://github.com/OpenPrint3D/OpenPrint3D"
+  },
+  "manufacturer": "Anycubic",
+  "model": "i3 Mega X",
+  "variant": "Stock",
+  "build_volume": { "x": 310, "y": 310, "z": 305, "shape": "rectangular", "origin": "front_left" },
+  "kinematics": "bed_slinger",
+  "axes": {
+    "x": { "max_speed": 80, "max_accel": 500 },
+    "y": { "max_speed": 80, "max_accel": 500 },
+    "z": { "max_speed": 10, "max_accel": 100 }
+  },
+  "extruders": [{
+    "id": "tool0",
+    "nozzle_diameter": 0.4,
+    "nozzle_material": "brass",
+    "max_temp": 260,
+    "min_temp": 170,
+    "retraction_supported": true
+  }],
+  "bed": { "heated": true, "max_temp": 110, "surface_type": "ultrabase" },
+  "chamber": { "heated": false, "passive": false },
+  "firmware": { "flavor": "marlin", "identifier": "Marlin 2.0.x (Anycubic)" },
+  "network": { "has_wifi": false, "has_ethernet": false, "supports_lan_api": false },
+  "links": {
+    "product_page": "https://www.anycubic.com/products/i3-mega-x"
+  },
+  "tags": ["large-format", "bed-slinger", "budget", "ultrabase"],
+  "notes": "Anycubic i3 Mega X. Larger version of i3 Mega with 310x310x305mm build volume. Titan extruder clone and Ultrabase heated bed.",
+  "x_cura": {
+    "definition": "anycubic_i3megax",
+    "definition_changes": {
+      "machine_width": 310,
+      "machine_depth": 310,
+      "machine_height": 305,
+      "nozzle_size": 0.4,
+      "heated_bed": true,
+      "machine_heated_bed": true,
+      "bed_temperature": 60,
+      "nozzle_temperature": 200
+    }
+  },
+  "x_prusaslicer": {
+    "printer_model": "i3 Mega X",
+    "vendor": "Anycubic",
+    "filament_diameter": 1.75,
+    "nozzle_diameter": 0.4,
+    "bed_shape": "rectangular",
+    "bed_size": "310x310",
+    "print_height": 305
+  },
+  "x_orca": {
+    "machine_name": "i3 Mega X",
+    "machine_manufacturer": "Anycubic",
+    "bed_x": 310,
+    "bed_y": 310,
+    "height": 305,
+    "nozzle_diameter": 0.4,
+    "filament_diameter": 1.75
+  },
+  "x_bambu": {
+    "product_id": "anycubic_i3megax",
+    "series": "i3",
+    "support_lidar": false,
+    "support_ams": false,
+    "support_ams_lite": false
+  }
+}

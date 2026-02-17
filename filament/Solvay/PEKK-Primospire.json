@@ -1,0 +1,32 @@
+{
+  "op3d_schema": "filament",
+  "op3d_schema_version": "0.1.0",
+  "id": "Solvay/PEKK",
+  "maintainer": {
+    "name": "OpenPrint3D Community",
+    "maintainer_type": "community",
+    "website": "https://github.com/OpenPrint3D/OpenPrint3D"
+  },
+  "brand": "Solvay",
+  "name": "Solvay Primospire PEKK 1.75mm",
+  "material": "PEKK",
+  "diameter": 1.75,
+  "density": 1.27,
+  "nozzle": { "min": 345, "max": 410, "recommended": 380 },
+  "bed": { "min": 100, "max": 140, "recommended": 120 },
+  "fan": { "min": 0, "max": 30, "recommended": 15 },
+  "drying": { "temperature": 100, "duration_hours": 4 },
+  "environment": {
+    "sensitive_to_moisture": true,
+    "enclosure_recommended": true,
+    "heated_chamber_recommended": true,
+    "max_ambient_temp": 50
+  },
+  "volumetric_speed": 10,
+  "printing_speed": { "min": 20, "max": 70, "recommended": 45 },
+  "links": {
+    "datasheet": "https://www.solvay.com/en/chemical-substances/pekk"
+  },
+  "tags": ["pekk", "primospire", "high-performance", "engineering", "1.75mm", "solvay"],
+  "notes": "Solvay Primospire PEKK is a high-performance polyether ketone ketone with superior thermal properties and excellent chemical resistance for demanding applications."
+}

@@ -1,0 +1,61 @@
+{
+  "op3d_schema": "filament",
+  "op3d_schema_version": "0.1.0",
+  "id": "Generic/PEKK",
+
+  "maintainer": {
+    "name": "OpenPrint3D",
+    "maintainer_type": "community",
+    "website": "https://github.com/OpenPrint3D/OpenPrint3D"
+  },
+
+  "brand": "Generic",
+  "name": "Generic PEKK 1.75mm",
+  "material": "PEKK",
+
+  "color": "natural",
+  "diameter": 1.75,
+  "density": 1.28,
+
+  "nozzle": {
+    "min": 340,
+    "max": 400,
+    "recommended": 375
+  },
+
+  "bed": {
+    "min": 110,
+    "max": 150,
+    "recommended": 130
+  },
+
+  "fan": {
+    "min": 0,
+    "max": 30,
+    "recommended": 10
+  },
+
+  "drying": {
+    "temperature": 140,
+    "duration_hours": 4
+  },
+
+  "environment": {
+    "sensitive_to_moisture": true,
+    "enclosure_recommended": true,
+    "max_ambient_temp": 100
+  },
+
+  "volumetric_speed": 5,
+
+  "external_ids": {},
+  "links": {},
+  "tags": ["pekk", "high-performance", "high-temp", "industrial", "1.75mm"],
+
+  "notes": "PEKK (Polyetherketoneketone) is similar to PEEK but with slightly lower processing temperatures and improved layer adhesion. Requires nozzle temps 340-400C, bed 110-150C, and heated chamber (70-100C). All-metal hotend required. Excellent chemical resistance and mechanical properties.",
+
+  "x_cura": {},
+  "x_prusaslicer": {},
+  "x_orca": {},
+  "x_bambu": {}
+}

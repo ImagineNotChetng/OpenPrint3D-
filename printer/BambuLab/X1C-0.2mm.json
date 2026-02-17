@@ -1,0 +1,37 @@
+{
+  "op3d_schema": "printer",
+  "op3d_schema_version": "0.1.0",
+  "id": "BambuLab/X1C-0.2mm",
+  "maintainer": {
+    "name": "OpenPrint3D Community",
+    "maintainer_type": "community",
+    "website": "https://github.com/OpenPrint3D/OpenPrint3D"
+  },
+  "manufacturer": "Bambu Lab",
+  "model": "X1 Carbon",
+  "variant": "0.2mm Nozzle",
+  "build_volume": { "x": 256, "y": 256, "z": 256, "shape": "rectangular", "origin": "front_left" },
+  "kinematics": "corexy",
+  "axes": {
+    "x": { "max_speed": 500, "max_accel": 20000 },
+    "y": { "max_speed": 500, "max_accel": 20000 },
+    "z": { "max_speed": 80, "max_accel": 1000 }
+  },
+  "extruders": [{
+    "id": "tool0",
+    "nozzle_diameter": 0.2,
+    "nozzle_material": "brass",
+    "max_temp": 300,
+    "min_temp": 170,
+    "retraction_supported": true
+  }],
+  "bed": { "heated": true, "max_temp": 110, "surface_type": "textured-pei" },
+  "chamber": { "heated": true, "max_temp": 45, "passive": false },
+  "firmware": { "flavor": "bambu", "identifier": "Bambu Lab X1C" },
+  "network": { "has_wifi": true, "has_ethernet": true, "supports_lan_api": true },
+  "links": {
+    "product_page": "https://store.bambulab.com/products/x1-carbon"
+  },
+  "tags": ["fdm", "corexy", "ams", "auto-leveling", "high-resolution", "0.2mm"],
+  "notes": "X1 Carbon configured for high-resolution printing with 0.2mm nozzle for detailed miniatures and precision parts."
+}

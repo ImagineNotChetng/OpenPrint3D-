@@ -1,0 +1,78 @@
+{
+  "op3d_schema": "printer",
+  "op3d_schema_version": "0.1.0",
+  "id": "Anycubic/Kobra-2-Max",
+  "maintainer": {
+    "name": "OpenPrint3D Community",
+    "maintainer_type": "community",
+    "website": "https://github.com/OpenPrint3D/OpenPrint3D"
+  },
+  "manufacturer": "Anycubic",
+  "model": "Kobra 2 Max",
+  "variant": "Stock",
+  "build_volume": { "x": 420, "y": 420, "z": 500, "shape": "rectangular", "origin": "front_left" },
+  "kinematics": "corexy",
+  "axes": {
+    "x": { "max_speed": 300, "max_accel": 10000 },
+    "y": { "max_speed": 300, "max_accel": 10000 },
+    "z": { "max_speed": 20, "max_accel": 500 }
+  },
+  "extruders": [{
+    "id": "tool0",
+    "nozzle_diameter": 0.4,
+    "nozzle_material": "brass",
+    "max_temp": 260,
+    "min_temp": 170,
+    "retraction_supported": true
+  }],
+  "bed": { "heated": true, "max_temp": 110, "surface_type": "PEI-textured" },
+  "chamber": { "heated": false, "passive": false },
+  "firmware": { "flavor": "klipper", "identifier": "Anycubic Kobra 2 Max Firmware" },
+  "network": { "has_wifi": true, "has_ethernet": false, "supports_lan_api": false },
+  "links": {
+    "product_page": "https://www.anycubic.com/products/kobra-2-max"
+  },
+  "tags": ["large-format", "corexy", "direct-drive", "klipper", "300mm-s"],
+  "notes": "Anycubic Kobra 2 Max. Large-format CoreXY with 420x420x500mm build volume, Klipper firmware, and LeviQ 2.0 auto-leveling.",
+  "x_cura": {
+    "definition": "anycubic_kobra2max",
+    "definition_changes": {
+      "machine_width": 420,
+      "machine_depth": 420,
+      "machine_height": 500,
+      "nozzle_size": 0.4,
+      "heated_bed": true,
+      "machine_heated_bed": true,
+      "bed_temperature": 60,
+      "nozzle_temperature": 200
+    }
+  },
+  "x_prusaslicer": {
+    "printer_model": "Kobra 2 Max",
+    "vendor": "Anycubic",
+    "filament_diameter": 1.75,
+    "nozzle_diameter": 0.4,
+    "bed_shape": "rectangular",
+    "bed_size": "420x420",
+    "print_height": 500,
+    "printer_technology": "FFF"
+  },
+  "x_orca": {
+    "machine_name": "Kobra 2 Max",
+    "machine_manufacturer": "Anycubic",
+    "bed_x": 420,
+    "bed_y": 420,
+    "height": 500,
+    "nozzle_diameter": 0.4,
+    "filament_diameter": 1.75,
+    "kinematics": "corexy"
+  },
+  "x_bambu": {
+    "product_id": "anycubic_kobra2max",
+    "series": "Kobra",
+    "support_lidar": false,
+    "support_ams": false,
+    "support_ams_lite": false,
+    "max_speed": 300
+  }
+}

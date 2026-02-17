@@ -1,0 +1,68 @@
+{
+  "op3d_schema": "filament",
+  "op3d_schema_version": "0.1.0",
+  "id": "MatterHackers/PETG",
+  "maintainer": {
+    "name": "OpenPrint3D Community",
+    "maintainer_type": "community",
+    "website": "https://github.com/OpenPrint3D/OpenPrint3D"
+  },
+  "brand": "MatterHackers",
+  "name": "MatterHackers PETG",
+  "material": "PETG",
+  "diameter": 1.75,
+  "density": 1.27,
+  "nozzle": { "min": 220, "max": 260, "recommended": 240 },
+  "bed": { "min": 60, "max": 90, "recommended": 70 },
+  "fan": { "min": 20, "max": 60, "recommended": 40 },
+  "drying": { "temperature": 55, "duration_hours": 4 },
+  "environment": {
+    "sensitive_to_moisture": true,
+    "enclosure_recommended": false,
+    "max_ambient_temp": 35
+  },
+  "volumetric_speed": 10,
+  "printing_speed": { "min": 30, "max": 80, "recommended": 50 },
+  "links": {
+    "product_page": "https://www.matterhackers.com/store/cat/3d-printer-filament"
+  },
+  "tags": ["petg", "matterhackers", "1.75mm", "durable", "water-resistant"],
+  "notes": "MatterHackers PETG. Good balance of strength and ease of use. Great for functional parts.",
+  "x_cura": {
+    "material": "petg",
+    "print_temperature": 240,
+    "print_temperature_layer_0": 240,
+    "bed_temperature": 70,
+    "bed_temperature_layer_0": 70,
+    "fan_speed": 40,
+    "fan_speed_layer_0": 0,
+    "cooling": "enabled"
+  },
+  "x_prusaslicer": {
+    "filament_type": "PETG",
+    "temperature": 240,
+    "bed_temperature": 70,
+    "fan_speed": 40,
+    "first_layer_bed_temperature": 70,
+    "first_layer_temperature": 240
+  },
+  "x_orca": {
+    "filament_type": "PETG",
+    "nozzle_temperature": 240,
+    "nozzle_temperature_initial_layer": 240,
+    "bed_temperature": 70,
+    "bed_temperature_initial_layer": 70,
+    "fan_speed": 40,
+    "fan_speed_initial_layer": 0
+  },
+  "x_bambu": {
+    "filament_type_id": "GPETG00",
+    "drying_temperature": 55,
+    "drying_time": 4,
+    "nozzle_temperature": [220, 260],
+    "nozzle_temperature_initial_layer": [220, 260],
+    "bed_temperature": [60, 80],
+    "bed_temperature_initial_layer": [60, 80],
+    "fan_speed": [20, 60]
+  }
+}

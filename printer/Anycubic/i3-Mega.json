@@ -1,0 +1,75 @@
+{
+  "op3d_schema": "printer",
+  "op3d_schema_version": "0.1.0",
+  "id": "Anycubic/i3-Mega",
+  "maintainer": {
+    "name": "OpenPrint3D Community",
+    "maintainer_type": "community",
+    "website": "https://github.com/OpenPrint3D/OpenPrint3D"
+  },
+  "manufacturer": "Anycubic",
+  "model": "i3 Mega",
+  "variant": "Stock",
+  "build_volume": { "x": 210, "y": 210, "z": 205, "shape": "rectangular", "origin": "front_left" },
+  "kinematics": "cartesian",
+  "axes": {
+    "x": { "max_speed": 60, "max_accel": 500 },
+    "y": { "max_speed": 60, "max_accel": 500 },
+    "z": { "max_speed": 10, "max_accel": 100 }
+  },
+  "extruders": [{
+    "id": "tool0",
+    "nozzle_diameter": 0.4,
+    "nozzle_material": "brass",
+    "max_temp": 260,
+    "min_temp": 170,
+    "retraction_supported": true
+  }],
+  "bed": { "heated": true, "max_temp": 110, "surface_type": "glass" },
+  "chamber": { "heated": false, "passive": false },
+  "firmware": { "flavor": "marlin", "identifier": "Marlin 1.1.x / 2.0.x (Anycubic)" },
+  "network": { "has_wifi": false, "has_ethernet": false, "supports_lan_api": false },
+  "links": {
+    "product_page": "https://www.anycubic.com/products/i3-mega"
+  },
+  "tags": ["mid-range", "cartesian", "budget", "glass-bed"],
+  "notes": "Anycubic i3 Mega. Reliable workhorse with large build volume relative to footprint. Proven design.",
+  "x_cura": {
+    "definition": "anycubic_i3mega",
+    "definition_changes": {
+      "machine_width": 210,
+      "machine_depth": 210,
+      "machine_height": 205,
+      "nozzle_size": 0.4,
+      "heated_bed": true,
+      "machine_heated_bed": true,
+      "bed_temperature": 60,
+      "nozzle_temperature": 200
+    }
+  },
+  "x_prusaslicer": {
+    "printer_model": "i3 Mega",
+    "vendor": "Anycubic",
+    "filament_diameter": 1.75,
+    "nozzle_diameter": 0.4,
+    "bed_shape": "rectangular",
+    "bed_size": "210x210",
+    "print_height": 205
+  },
+  "x_orca": {
+    "machine_name": "i3 Mega",
+    "machine_manufacturer": "Anycubic",
+    "bed_x": 210,
+    "bed_y": 210,
+    "height": 205,
+    "nozzle_diameter": 0.4,
+    "filament_diameter": 1.75
+  },
+  "x_bambu": {
+    "product_id": "anycubic_i3mega",
+    "series": "i3",
+    "support_lidar": false,
+    "support_ams": false,
+    "support_ams_lite": false
+  }
+}

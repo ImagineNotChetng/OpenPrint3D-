@@ -1,0 +1,76 @@
+{
+  "op3d_schema": "printer",
+  "op3d_schema_version": "0.1.0",
+  "id": "Artillery/Hornet",
+  "maintainer": {
+    "name": "OpenPrint3D Community",
+    "maintainer_type": "community",
+    "website": "https://github.com/OpenPrint3D/OpenPrint3D"
+  },
+  "manufacturer": "Artillery",
+  "model": "Hornet",
+  "variant": "Stock",
+  "build_volume": { "x": 220, "y": 220, "z": 250, "shape": "rectangular", "origin": "front_left" },
+  "kinematics": "cartesian",
+  "axes": {
+    "x": { "max_speed": 200, "max_accel": 2000 },
+    "y": { "max_speed": 200, "max_accel": 2000 },
+    "z": { "max_speed": 6, "max_accel": 300 }
+  },
+  "extruders": [{
+    "id": "tool0",
+    "nozzle_diameter": 0.4,
+    "nozzle_material": "brass",
+    "max_temp": 240,
+    "min_temp": 180,
+    "retraction_supported": true
+  }],
+  "bed": { "heated": true, "max_temp": 100, "surface_type": "glass" },
+  "chamber": { "heated": false, "passive": false },
+  "firmware": { "flavor": "marlin", "identifier": "Artillery Marlin" },
+  "network": { "has_wifi": false, "has_ethernet": false, "supports_lan_api": false },
+  "links": {
+    "product_page": "https://artillery3d.com/products/artillery-hornet"
+  },
+  "tags": ["budget", "cartesian", "bowden", "quiet"],
+  "notes": "Artillery Hornet. Budget-friendly cartesian printer with 220x220x250mm build volume. Features ultra-quiet operation and inverted Z-axis design.",
+  "x_cura": {
+    "definition": "artillery_hornet",
+    "definition_changes": {
+      "machine_width": 220,
+      "machine_depth": 220,
+      "machine_height": 250,
+      "nozzle_size": 0.4,
+      "heated_bed": true,
+      "machine_heated_bed": true,
+      "bed_temperature": 60,
+      "nozzle_temperature": 200
+    }
+  },
+  "x_prusaslicer": {
+    "printer_model": "Hornet",
+    "vendor": "Artillery",
+    "filament_diameter": 1.75,
+    "nozzle_diameter": 0.4,
+    "bed_shape": "rectangular",
+    "bed_size": "220x220",
+    "print_height": 250,
+    "printer_technology": "FFF"
+  },
+  "x_orca": {
+    "machine_name": "Hornet",
+    "machine_manufacturer": "Artillery",
+    "bed_x": 220,
+    "bed_y": 220,
+    "height": 250,
+    "nozzle_diameter": 0.4,
+    "filament_diameter": 1.75
+  },
+  "x_bambu": {
+    "product_id": "artillery_hornet",
+    "series": "Hornet",
+    "support_lidar": false,
+    "support_ams": false,
+    "support_ams_lite": false
+  }
+}

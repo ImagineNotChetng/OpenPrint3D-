@@ -1,0 +1,78 @@
+{
+  "op3d_schema": "printer",
+  "op3d_schema_version": "0.1.0",
+  "id": "Qidi/X-Max-7",
+  "maintainer": {
+    "name": "OpenPrint3D Community",
+    "maintainer_type": "community",
+    "website": "https://github.com/OpenPrint3D/OpenPrint3D"
+  },
+  "manufacturer": "Qidi",
+  "model": "X-Max 7",
+  "variant": "Stock",
+  "build_volume": { "x": 500, "y": 500, "z": 550, "shape": "rectangular", "origin": "front_left" },
+  "kinematics": "corexy",
+  "axes": {
+    "x": { "max_speed": 600, "max_accel": 25000 },
+    "y": { "max_speed": 600, "max_accel": 25000 },
+    "z": { "max_speed": 30, "max_accel": 1500 }
+  },
+  "extruders": [{
+    "id": "tool0",
+    "nozzle_diameter": 0.4,
+    "nozzle_material": "hardened-steel",
+    "max_temp": 370,
+    "min_temp": 170,
+    "retraction_supported": true
+  }],
+  "bed": { "heated": true, "max_temp": 150, "surface_type": "PEI-textured" },
+  "chamber": { "heated": true, "max_temp": 70, "passive": true },
+  "firmware": { "flavor": "klipper", "identifier": "Qidi X-Max 7 Firmware" },
+  "network": { "has_wifi": true, "has_ethernet": true, "supports_lan_api": true },
+  "links": {
+    "product_page": "https://www.qidimaker.com/x-max-7"
+  },
+  "tags": ["corexy", "direct-drive", "large-format", "ethernet", "high-temp", "klipper", "input-shaping", "air-filtration", "600mm-s", "active-chamber"],
+  "notes": "Qidi X-Max 7. Large-format CoreXY with 500x500x550mm build volume. Features Klipper with advanced input shaping, dual-gear extruder, 370C max nozzle temp, active chamber heating up to 70C, air filtration, and Ethernet connectivity.",
+  "x_cura": {
+    "definition": "qidi_xmax7",
+    "definition_changes": {
+      "machine_width": 500,
+      "machine_depth": 500,
+      "machine_height": 550,
+      "nozzle_size": 0.4,
+      "heated_bed": true,
+      "machine_heated_bed": true,
+      "bed_temperature": 60,
+      "nozzle_temperature": 200
+    }
+  },
+  "x_prusaslicer": {
+    "printer_model": "X-Max 7",
+    "vendor": "Qidi",
+    "filament_diameter": 1.75,
+    "nozzle_diameter": 0.4,
+    "bed_shape": "rectangular",
+    "bed_size": "500x500",
+    "print_height": 550
+  },
+  "x_orca": {
+    "machine_name": "X-Max 7",
+    "machine_manufacturer": "Qidi",
+    "bed_x": 500,
+    "bed_y": 500,
+    "height": 550,
+    "nozzle_diameter": 0.4,
+    "filament_diameter": 1.75
+  },
+  "x_bambu": {
+    "product_id": "qidi_xmax7",
+    "series": "X-Max",
+    "support_lidar": false,
+    "support_ams": false,
+    "support_ams_lite": false,
+    "max_speed": 600,
+    "nozzle_type": "hardened-steel",
+    "has_ethernet": true
+  }
+}

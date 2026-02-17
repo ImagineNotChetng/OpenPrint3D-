@@ -1,0 +1,31 @@
+{
+  "op3d_schema": "filament",
+  "op3d_schema_version": "0.1.0",
+  "id": "Corbion/Pure",
+  "maintainer": {
+    "name": "OpenPrint3D Community",
+    "maintainer_type": "community",
+    "website": "https://github.com/OpenPrint3D/OpenPrint3D"
+  },
+  "brand": "Corbion",
+  "name": "Corbion Purgo PLA 1.75mm",
+  "material": "PLA",
+  "diameter": 1.75,
+  "density": 1.24,
+  "nozzle": { "min": 190, "max": 220, "recommended": 205 },
+  "bed": { "min": 40, "max": 60, "recommended": 50 },
+  "fan": { "min": 50, "max": 100, "recommended": 100 },
+  "drying": { "temperature": 45, "duration_hours": 4 },
+  "environment": {
+    "sensitive_to_moisture": true,
+    "enclosure_recommended": false,
+    "max_ambient_temp": 28
+  },
+  "volumetric_speed": 12,
+  "printing_speed": { "min": 40, "max": 100, "recommended": 60 },
+  "links": {
+    "datasheet": "https://www.corbion.com/bioplastics"
+  },
+  "tags": ["pla", "bioplastic", "1.75mm", "corbion"],
+  "notes": "Corbion Purgo is a high-quality PLA bioplastic derived from renewable sources with excellent printability and low environmental impact."
+}

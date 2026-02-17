@@ -1,0 +1,76 @@
+{
+  "op3d_schema": "printer",
+  "op3d_schema_version": "0.1.0",
+  "id": "Creality/CR-10-V3-Max",
+  "maintainer": {
+    "name": "OpenPrint3D Community",
+    "maintainer_type": "community",
+    "website": "https://github.com/OpenPrint3D/OpenPrint3D"
+  },
+  "manufacturer": "Creality",
+  "model": "CR-10 V3 Max",
+  "variant": "Stock",
+  "build_volume": { "x": 450, "y": 450, "z": 470, "shape": "rectangular", "origin": "front_left" },
+  "kinematics": "cartesian",
+  "axes": {
+    "x": { "max_speed": 120, "max_accel": 2000 },
+    "y": { "max_speed": 120, "max_accel": 2000 },
+    "z": { "max_speed": 10, "max_accel": 500 }
+  },
+  "extruders": [{
+    "id": "tool0",
+    "nozzle_diameter": 0.4,
+    "nozzle_material": "brass",
+    "max_temp": 260,
+    "min_temp": 170,
+    "retraction_supported": true
+  }],
+  "bed": { "heated": true, "max_temp": 110, "surface_type": "carborundum-glass" },
+  "chamber": { "heated": false, "passive": false },
+  "firmware": { "flavor": "marlin", "identifier": "Creality Marlin" },
+  "network": { "has_wifi": false, "has_ethernet": false, "supports_lan_api": false },
+  "links": {
+    "product_page": "https://www.creality.com/products/cr-10-v3-max"
+  },
+  "tags": ["large-format", "budget", "direct-drive", "beginner-friendly", "450mm-build"],
+  "notes": "Creality CR-10 V3 Max. Extra-large format printer with 450x450x470mm build volume, direct drive Titan extruder, and BLTouch auto-leveling.",
+  "x_cura": {
+    "definition": "creality_cr10v3max",
+    "definition_changes": {
+      "machine_width": 450,
+      "machine_depth": 450,
+      "machine_height": 470,
+      "nozzle_size": 0.4,
+      "heated_bed": true,
+      "machine_heated_bed": true,
+      "bed_temperature": 60,
+      "nozzle_temperature": 200
+    }
+  },
+  "x_prusaslicer": {
+    "printer_model": "CR-10 V3 Max",
+    "vendor": "Creality",
+    "filament_diameter": 1.75,
+    "nozzle_diameter": 0.4,
+    "bed_shape": "rectangular",
+    "bed_size": "450x450",
+    "print_height": 470,
+    "printer_technology": "FFF"
+  },
+  "x_orca": {
+    "machine_name": "CR-10 V3 Max",
+    "machine_manufacturer": "Creality",
+    "bed_x": 450,
+    "bed_y": 450,
+    "height": 470,
+    "nozzle_diameter": 0.4,
+    "filament_diameter": 1.75
+  },
+  "x_bambu": {
+    "product_id": "creality_cr10v3max",
+    "series": "CR-10",
+    "support_lidar": false,
+    "support_ams": false,
+    "support_ams_lite": false
+  }
+}

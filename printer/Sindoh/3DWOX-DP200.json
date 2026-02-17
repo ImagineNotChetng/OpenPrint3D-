@@ -1,0 +1,75 @@
+{
+  "op3d_schema": "printer",
+  "op3d_schema_version": "0.1.0",
+  "id": "Sindoh/3DWOX-DP200",
+  "maintainer": {
+    "name": "OpenPrint3D Community",
+    "maintainer_type": "community",
+    "website": "https://github.com/OpenPrint3D/OpenPrint3D"
+  },
+  "manufacturer": "Sindoh",
+  "model": "3DWOX DP200",
+  "variant": "Stock",
+  "build_volume": { "x": 210, "y": 200, "z": 195, "shape": "rectangular", "origin": "front_left" },
+  "kinematics": "cartesian",
+  "axes": {
+    "x": { "max_speed": 150, "max_accel": 1500 },
+    "y": { "max_speed": 150, "max_accel": 1500 },
+    "z": { "max_speed": 10, "max_accel": 100 }
+  },
+  "extruders": [{
+    "id": "tool0",
+    "nozzle_diameter": 0.4,
+    "nozzle_material": "brass",
+    "max_temp": 260,
+    "min_temp": 170,
+    "retraction_supported": true
+  }],
+  "bed": { "heated": true, "max_temp": 100, "surface_type": "glass" },
+  "chamber": { "heated": false, "passive": false },
+  "firmware": { "flavor": "marlin", "identifier": "Sindoh 3DWOX Firmware" },
+  "network": { "has_wifi": true, "has_ethernet": false, "supports_lan_api": false },
+  "links": {
+    "product_page": "https://www.sindoh.com/product/3dwox/dp200"
+  },
+  "tags": ["enclosed", "wifi", "filament-sensor", "auto-leveling"],
+  "notes": "Sindoh 3DWOX DP200. Enclosed Cartesian 3D printer with 210x200x195mm build volume. Features auto-filament loading, WiFi, and enclosed chamber for ABS printing.",
+  "x_cura": {
+    "definition": "sindoh_3dwox_dp200",
+    "definition_changes": {
+      "machine_width": 210,
+      "machine_depth": 200,
+      "machine_height": 195,
+      "nozzle_size": 0.4,
+      "heated_bed": true,
+      "machine_heated_bed": true,
+      "bed_temperature": 70,
+      "nozzle_temperature": 210
+    }
+  },
+  "x_prusaslicer": {
+    "printer_model": "3DWOX DP200",
+    "vendor": "Sindoh",
+    "filament_diameter": 1.75,
+    "nozzle_diameter": 0.4,
+    "bed_shape": "rectangular",
+    "bed_size": "210x200",
+    "print_height": 195
+  },
+  "x_orca": {
+    "machine_name": "3DWOX_DP200",
+    "machine_manufacturer": "Sindoh",
+    "bed_x": 210,
+    "bed_y": 200,
+    "height": 195,
+    "nozzle_diameter": 0.4,
+    "filament_diameter": 1.75
+  },
+  "x_bambu": {
+    "product_id": "sindoh_3dwox_dp200",
+    "series": "3DWOX",
+    "support_lidar": false,
+    "support_ams": false,
+    "support_ams_lite": false
+  }
+}

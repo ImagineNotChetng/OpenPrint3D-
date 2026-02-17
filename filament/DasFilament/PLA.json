@@ -1,0 +1,30 @@
+{
+  "op3d_schema": "filament",
+  "op3d_schema_version": "0.1.0",
+  "id": "DasFilament/PLA",
+  "maintainer": {
+    "name": "OpenPrint3D Community",
+    "maintainer_type": "community",
+    "website": "https://github.com/OpenPrint3D/OpenPrint3D"
+  },
+  "brand": "DasFilament",
+  "name": "PLA 1.75mm",
+  "material": "PLA",
+  "diameter": 1.75,
+  "density": 1.24,
+  "nozzle": { "min": 190, "max": 230, "recommended": 205 },
+  "bed": { "min": 20, "max": 60, "recommended": 50 },
+  "fan": { "min": 50, "max": 100, "recommended": 100 },
+  "drying": { "temperature": 45, "duration_hours": 4 },
+  "environment": {
+    "sensitive_to_moisture": true,
+    "enclosure_recommended": false,
+    "max_ambient_temp": 30
+  },
+  "volumetric_speed": 12,
+  "links": {
+    "product_page": "https://dasfilament.pl/"
+  },
+  "tags": ["pla", "dasfilament", "1.75mm", "poland", "polish"],
+  "notes": "DasFilament PLA. Polish brand known for consistent diameter and high quality."
+}

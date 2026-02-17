@@ -1,0 +1,30 @@
+{
+  "op3d_schema": "filament",
+  "op3d_schema_version": "0.1.0",
+  "id": "ColorFabb/XT",
+  "maintainer": {
+    "name": "OpenPrint3D Community",
+    "maintainer_type": "community",
+    "website": "https://github.com/OpenPrint3D/OpenPrint3D"
+  },
+  "brand": "ColorFabb",
+  "name": "ColorFabb XT 1.75mm",
+  "material": "PETG",
+  "diameter": 1.75,
+  "density": 1.27,
+  "nozzle": { "min": 240, "max": 260, "recommended": 250 },
+  "bed": { "min": 75, "max": 90, "recommended": 85 },
+  "fan": { "min": 20, "max": 50, "recommended": 30 },
+  "drying": { "temperature": 65, "duration_hours": 4 },
+  "environment": {
+    "sensitive_to_moisture": true,
+    "enclosure_recommended": false,
+    "max_ambient_temp": 35
+  },
+  "volumetric_speed": 11,
+  "links": {
+    "product_page": "https://colorfabb.com/xt-copolyester"
+  },
+  "tags": ["petg", "xt", "colorfabb", "1.75mm", "copolyester", "premium", "engineering"],
+  "notes": "ColorFabb XT. Premium copolyester with higher heat resistance and strength than standard PETG. Excellent for functional and industrial parts."
+}

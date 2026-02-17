@@ -1,0 +1,59 @@
+{
+  "op3d_schema": "filament",
+  "op3d_schema_version": "0.1.0",
+  "id": "Devil_Design/PETG",
+
+  "maintainer": {
+    "name": "OpenPrint3D",
+    "maintainer_type": "community",
+    "website": "https://github.com/OpenPrint3D/OpenPrint3D"
+  },
+
+  "brand": "Devil Design",
+  "name": "Devil Design PETG 1.75mm",
+  "material": "PETG",
+
+  "color": "",
+  "diameter": 1.75,
+  "density": 1.27,
+
+  "nozzle": {
+    "min": 220,
+    "max": 255,
+    "recommended": 235
+  },
+
+  "bed": {
+    "min": 60,
+    "max": 80,
+    "recommended": 70
+  },
+
+  "fan": {
+    "min": 30,
+    "max": 60,
+    "recommended": 45
+  },
+
+  "drying": {
+    "temperature": 55,
+    "duration_hours": 4
+  },
+
+  "environment": {
+    "sensitive_to_moisture": true,
+    "enclosure_recommended": false,
+    "max_ambient_temp": 32
+  },
+
+  "external_ids": {},
+  "links": {},
+  "tags": ["petg", "devil design", "1.75mm", "polish"],
+
+  "notes": "Devil Design PETG. Polish manufacturer with high-quality PETG. Good impact resistance and slightly glossy finish.",
+
+  "x_cura": {},
+  "x_prusaslicer": {},
+  "x_orca": {},
+  "x_bambu": {}
+}

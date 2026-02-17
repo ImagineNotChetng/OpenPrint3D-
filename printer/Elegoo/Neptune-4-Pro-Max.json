@@ -1,0 +1,78 @@
+{
+  "op3d_schema": "printer",
+  "op3d_schema_version": "0.1.0",
+  "id": "Elegoo/Neptune-4-Pro-Max",
+  "maintainer": {
+    "name": "OpenPrint3D Community",
+    "maintainer_type": "community",
+    "website": "https://github.com/OpenPrint3D/OpenPrint3D"
+  },
+  "manufacturer": "Elegoo",
+  "model": "Neptune 4 Pro Max",
+  "variant": "Stock",
+  "build_volume": { "x": 460, "y": 460, "z": 460, "shape": "rectangular", "origin": "front_left" },
+  "kinematics": "corexy",
+  "axes": {
+    "x": { "max_speed": 500, "max_accel": 20000 },
+    "y": { "max_speed": 500, "max_accel": 20000 },
+    "z": { "max_speed": 20, "max_accel": 500 }
+  },
+  "extruders": [{
+    "id": "tool0",
+    "nozzle_diameter": 0.4,
+    "nozzle_material": "hardened-steel",
+    "max_temp": 300,
+    "min_temp": 170,
+    "retraction_supported": true
+  }],
+  "bed": { "heated": true, "max_temp": 110, "surface_type": "PEI-spring-steel" },
+  "chamber": { "heated": false, "passive": false },
+  "firmware": { "flavor": "klipper", "identifier": "Klipper (Elegoo)" },
+  "network": { "has_wifi": true, "has_ethernet": false, "supports_lan_api": true },
+  "links": {
+    "product_page": "https://www.elegoo.com/products/elegoo-neptune-4-pro-max"
+  },
+  "tags": ["large-format", "corexy", "high-speed", "direct-drive", "klipper", "all-metal-hotend"],
+  "notes": "Elegoo Neptune 4 Pro Max. Large-format CoreXY with 460x460x460mm build volume, Klipper firmware, direct drive, and all-metal hotend (300°C).",
+  "x_cura": {
+    "definition": "elegoo_neptune4promax",
+    "definition_changes": {
+      "machine_width": 460,
+      "machine_depth": 460,
+      "machine_height": 460,
+      "nozzle_size": 0.4,
+      "heated_bed": true,
+      "machine_heated_bed": true,
+      "bed_temperature": 60,
+      "nozzle_temperature": 200
+    }
+  },
+  "x_prusaslicer": {
+    "printer_model": "Neptune 4 Pro Max",
+    "vendor": "Elegoo",
+    "filament_diameter": 1.75,
+    "nozzle_diameter": 0.4,
+    "bed_shape": "rectangular",
+    "bed_size": "460x460",
+    "print_height": 460,
+    "printer_technology": "FFF"
+  },
+  "x_orca": {
+    "machine_name": "Neptune 4 Pro Max",
+    "machine_manufacturer": "Elegoo",
+    "bed_x": 460,
+    "bed_y": 460,
+    "height": 460,
+    "nozzle_diameter": 0.4,
+    "filament_diameter": 1.75,
+    "kinematics": "corexy"
+  },
+  "x_bambu": {
+    "product_id": "elegoo_neptune4promax",
+    "series": "Neptune",
+    "support_lidar": false,
+    "support_ams": false,
+    "support_ams_lite": false,
+    "max_speed": 500
+  }
+}

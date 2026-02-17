@@ -1,0 +1,37 @@
+{
+  "op3d_schema": "printer",
+  "op3d_schema_version": "0.1.0",
+  "id": "BambuLab/X1C-2026-Ultra",
+  "maintainer": {
+    "name": "OpenPrint3D Community",
+    "maintainer_type": "community",
+    "website": "https://github.com/OpenPrint3D/OpenPrint3D"
+  },
+  "manufacturer": "Bambu Lab",
+  "model": "X1C 2026 Ultra",
+  "variant": "Ultra",
+  "build_volume": { "x": 300, "y": 300, "z": 300, "shape": "rectangular", "origin": "front_left" },
+  "kinematics": "corexy",
+  "axes": {
+    "x": { "max_speed": 800, "max_accel": 40000 },
+    "y": { "max_speed": 800, "max_accel": 40000 },
+    "z": { "max_speed": 40, "max_accel": 1000 }
+  },
+  "extruders": [{
+    "id": "tool0",
+    "nozzle_diameter": 0.4,
+    "nozzle_material": "ruby-tipped",
+    "max_temp": 400,
+    "min_temp": 170,
+    "retraction_supported": true
+  }],
+  "bed": { "heated": true, "max_temp": 150, "surface_type": "PEI-textured" },
+  "chamber": { "heated": true, "max_temp": 100, "passive": true },
+  "firmware": { "flavor": "bambu", "identifier": "Bambu Lab proprietary" },
+  "network": { "has_wifi": true, "has_ethernet": true, "supports_lan_api": true },
+  "links": {
+    "product_page": "https://bambulab.com/en/x1-series"
+  },
+  "tags": ["premium", "corexy", "enclosed", "ams-compatible", "lidar", "high-speed", "carbon-fiber", "input-shaping", "concept", "next-gen", "ultra", "400c-hotend"],
+  "notes": "Bambu Lab X1C 2026 Ultra. Conceptual ultra-premium flagship with 300mm³ build volume, 800mm/s speed, 40000mm/s² acceleration, ruby-tipped 400C hotend for PEEK/PEI, active chamber heating to 100C, enhanced LiDAR, and AMS 3.0 support."
+}

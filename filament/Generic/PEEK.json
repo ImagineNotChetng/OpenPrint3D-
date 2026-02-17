@@ -1,0 +1,61 @@
+{
+  "op3d_schema": "filament",
+  "op3d_schema_version": "0.1.0",
+  "id": "Generic/PEEK",
+
+  "maintainer": {
+    "name": "OpenPrint3D",
+    "maintainer_type": "community",
+    "website": "https://github.com/OpenPrint3D/OpenPrint3D"
+  },
+
+  "brand": "Generic",
+  "name": "Generic PEEK 1.75mm",
+  "material": "PEEK",
+
+  "color": "natural",
+  "diameter": 1.75,
+  "density": 1.30,
+
+  "nozzle": {
+    "min": 360,
+    "max": 420,
+    "recommended": 400
+  },
+
+  "bed": {
+    "min": 120,
+    "max": 160,
+    "recommended": 140
+  },
+
+  "fan": {
+    "min": 0,
+    "max": 20,
+    "recommended": 0
+  },
+
+  "drying": {
+    "temperature": 150,
+    "duration_hours": 4
+  },
+
+  "environment": {
+    "sensitive_to_moisture": true,
+    "enclosure_recommended": true,
+    "max_ambient_temp": 120
+  },
+
+  "volumetric_speed": 4,
+
+  "external_ids": {},
+  "links": {},
+  "tags": ["peek", "high-performance", "high-temp", "industrial", "1.75mm"],
+
+  "notes": "PEEK (Polyetheretherketone) is a high-performance engineering thermoplastic. Requires nozzle temps 360-420C, bed 120-160C, and heated chamber (80-120C). Requires all-metal hotend with hardened or ruby nozzle. Exceptional strength, chemical resistance, and thermal stability. Used in aerospace, medical, and automotive applications.",
+
+  "x_cura": {},
+  "x_prusaslicer": {},
+  "x_orca": {},
+  "x_bambu": {}
+}

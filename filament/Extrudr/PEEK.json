@@ -1,0 +1,30 @@
+{
+  "op3d_schema": "filament",
+  "op3d_schema_version": "0.1.0",
+  "id": "Extrudr/PEEK",
+  "maintainer": {
+    "name": "OpenPrint3D Community",
+    "maintainer_type": "community",
+    "website": "https://github.com/OpenPrint3D/OpenPrint3D"
+  },
+  "brand": "Extrudr",
+  "name": "PEEK 1.75mm",
+  "material": "PEEK",
+  "diameter": 1.75,
+  "density": 1.32,
+  "nozzle": { "min": 350, "max": 420, "recommended": 380 },
+  "bed": { "min": 100, "max": 145, "recommended": 120 },
+  "fan": { "min": 0, "max": 30, "recommended": 10 },
+  "drying": { "temperature": 120, "duration_hours": 8 },
+  "environment": {
+    "sensitive_to_moisture": true,
+    "enclosure_recommended": true,
+    "max_ambient_temp": 70
+  },
+  "volumetric_speed": 6,
+  "links": {
+    "product_page": "https://www.extrudr.com/en/"
+  },
+  "tags": ["peek", "extrudr", "1.75mm", "high-performance", "austria"],
+  "notes": "Extrudr PEEK. High-performance engineering polymer with excellent thermal and chemical resistance. Requires high-temperature printer with heated chamber."
+}

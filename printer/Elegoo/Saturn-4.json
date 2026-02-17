@@ -1,0 +1,79 @@
+{
+  "op3d_schema": "printer",
+  "op3d_schema_version": "0.1.0",
+  "id": "Elegoo/Saturn-4",
+  "maintainer": {
+    "name": "OpenPrint3D Community",
+    "maintainer_type": "community",
+    "website": "https://github.com/OpenPrint3D/OpenPrint3D"
+  },
+  "manufacturer": "Elegoo",
+  "model": "Saturn 4",
+  "variant": "Stock",
+  "build_volume": { "x": 218.8, "y": 122.8, "z": 220, "shape": "rectangular", "origin": "front_left" },
+  "kinematics": "corexy",
+  "axes": {
+    "x": { "max_speed": 300, "max_accel": 8000 },
+    "y": { "max_speed": 300, "max_accel": 8000 },
+    "z": { "max_speed": 15, "max_accel": 500 }
+  },
+  "extruders": [{
+    "id": "tool0",
+    "nozzle_diameter": 0.4,
+    "nozzle_material": "hardened-steel",
+    "max_temp": 280,
+    "min_temp": 170,
+    "retraction_supported": true
+  }],
+  "bed": { "heated": true, "max_temp": 110, "surface_type": "PEI-textured" },
+  "chamber": { "heated": false, "passive": true },
+  "firmware": { "flavor": "klipper", "identifier": "Elegoo Saturn 4 Firmware" },
+  "network": { "has_wifi": true, "has_ethernet": false, "supports_lan_api": false },
+  "links": {
+    "product_page": "https://www.elegoo.com/products/elegoo-saturn-4-3d-printer"
+  },
+  "tags": ["corexy", "direct-drive", "high-speed", "300mm-s"],
+  "notes": "Elegoo Saturn 4. Upgraded Saturn with 300mm/s max speed, hardened steel nozzle, and improved build plate. Larger XY than Saturn 3.",
+  "x_cura": {
+    "definition": "elegoo_saturn4",
+    "definition_changes": {
+      "machine_width": 218.8,
+      "machine_depth": 122.8,
+      "machine_height": 220,
+      "nozzle_size": 0.4,
+      "heated_bed": true,
+      "machine_heated_bed": true,
+      "bed_temperature": 60,
+      "nozzle_temperature": 200
+    }
+  },
+  "x_prusaslicer": {
+    "printer_model": "Saturn 4",
+    "vendor": "Elegoo",
+    "filament_diameter": 1.75,
+    "nozzle_diameter": 0.4,
+    "bed_shape": "rectangular",
+    "bed_size": "218.8x122.8",
+    "print_height": 220,
+    "printer_technology": "FFF"
+  },
+  "x_orca": {
+    "machine_name": "Saturn 4",
+    "machine_manufacturer": "Elegoo",
+    "bed_x": 218.8,
+    "bed_y": 122.8,
+    "height": 220,
+    "nozzle_diameter": 0.4,
+    "filament_diameter": 1.75,
+    "kinematics": "corexy"
+  },
+  "x_bambu": {
+    "product_id": "elegoo_saturn4",
+    "series": "Saturn",
+    "support_lidar": false,
+    "support_ams": false,
+    "support_ams_lite": false,
+    "max_speed": 300,
+    "nozzle_type": "hardened-steel"
+  }
+}

@@ -1,0 +1,59 @@
+{
+  "op3d_schema": "filament",
+  "op3d_schema_version": "0.1.0",
+  "id": "Novamaker/ABS",
+
+  "maintainer": {
+    "name": "OpenPrint3D",
+    "maintainer_type": "community",
+    "website": "https://github.com/OpenPrint3D/OpenPrint3D"
+  },
+
+  "brand": "Novamaker",
+  "name": "Novamaker ABS 1.75mm",
+  "material": "ABS",
+
+  "color": "",
+  "diameter": 1.75,
+  "density": 1.04,
+
+  "nozzle": {
+    "min": 230,
+    "max": 270,
+    "recommended": 245
+  },
+
+  "bed": {
+    "min": 80,
+    "max": 100,
+    "recommended": 90
+  },
+
+  "fan": {
+    "min": 0,
+    "max": 30,
+    "recommended": 15
+  },
+
+  "drying": {
+    "temperature": 80,
+    "duration_hours": 4
+  },
+
+  "environment": {
+    "sensitive_to_moisture": true,
+    "enclosure_recommended": true,
+    "max_ambient_temp": 35
+  },
+
+  "external_ids": {},
+  "links": {},
+  "tags": ["abs", "novamaker", "1.75mm"],
+
+  "notes": "Novamaker ABS. Requires enclosed printer and heated bed. Good impact resistance and machinability.",
+
+  "x_cura": {},
+  "x_prusaslicer": {},
+  "x_orca": {},
+  "x_bambu": {}
+}

@@ -1,0 +1,59 @@
+{
+  "op3d_schema": "filament",
+  "op3d_schema_version": "0.1.0",
+  "id": "AzureFilm/PETG-Carbon",
+
+  "maintainer": {
+    "name": "OpenPrint3D",
+    "maintainer_type": "community",
+    "website": "https://github.com/OpenPrint3D/OpenPrint3D"
+  },
+
+  "brand": "AzureFilm",
+  "name": "AzureFilm PETG Carbon 1.75mm",
+  "material": "PETG",
+
+  "color": "carbon black",
+  "diameter": 1.75,
+  "density": 1.19,
+
+  "nozzle": {
+    "min": 230,
+    "max": 260,
+    "recommended": 245
+  },
+
+  "bed": {
+    "min": 60,
+    "max": 80,
+    "recommended": 70
+  },
+
+  "fan": {
+    "min": 30,
+    "max": 50,
+    "recommended": 40
+  },
+
+  "drying": {
+    "temperature": 55,
+    "duration_hours": 4
+  },
+
+  "environment": {
+    "sensitive_to_moisture": true,
+    "enclosure_recommended": false,
+    "max_ambient_temp": 32
+  },
+
+  "external_ids": {},
+  "links": {},
+  "tags": ["petg", "carbon fiber", "azurefilm", "1.75mm", "carbon"],
+
+  "notes": "AzureFilm PETG Carbon. PETG reinforced with carbon fiber for increased strength and stiffness.",
+
+  "x_cura": {},
+  "x_prusaslicer": {},
+  "x_orca": {},
+  "x_bambu": {}
+}

@@ -1,0 +1,76 @@
+{
+  "op3d_schema": "printer",
+  "op3d_schema_version": "0.1.0",
+  "id": "Creality/Ender-3-V3-Plus",
+  "maintainer": {
+    "name": "OpenPrint3D Community",
+    "maintainer_type": "community",
+    "website": "https://github.com/OpenPrint3D/OpenPrint3D"
+  },
+  "manufacturer": "Creality",
+  "model": "Ender-3 V3 Plus",
+  "variant": "Stock",
+  "build_volume": { "x": 300, "y": 300, "z": 330, "shape": "rectangular", "origin": "front_left" },
+  "kinematics": "corexz",
+  "axes": {
+    "x": { "max_speed": 300, "max_accel": 3000 },
+    "y": { "max_speed": 300, "max_accel": 3000 },
+    "z": { "max_speed": 40, "max_accel": 500 }
+  },
+  "extruders": [{
+    "id": "tool0",
+    "nozzle_diameter": 0.4,
+    "nozzle_material": "hardened-steel",
+    "max_temp": 300,
+    "min_temp": 180,
+    "retraction_supported": true
+  }],
+  "bed": { "heated": true, "max_temp": 110, "surface_type": "PEI-textured" },
+  "chamber": { "heated": false, "passive": true },
+  "firmware": { "flavor": "klipper", "identifier": "Creality K7.2" },
+  "network": { "has_wifi": true, "has_ethernet": false, "supports_lan_api": false },
+  "links": {
+    "product_page": "https://www.creality.com/products/ender-3-v3-plus"
+  },
+  "tags": ["budget", "corexz", "high-speed", "klipper", "large-format", "direct-drive"],
+  "notes": "Creality Ender-3 V3 Plus. Larger CoreXZ printer with 300x300x330mm build volume. Features Klipper firmware, direct drive extruder, and up to 300mm/s print speed.",
+  "x_cura": {
+    "definition": "creality_ender3v3plus",
+    "definition_changes": {
+      "machine_width": 300,
+      "machine_depth": 300,
+      "machine_height": 330,
+      "nozzle_size": 0.4,
+      "heated_bed": true,
+      "machine_heated_bed": true,
+      "bed_temperature": 60,
+      "nozzle_temperature": 200
+    }
+  },
+  "x_prusaslicer": {
+    "printer_model": "Ender-3 V3 Plus",
+    "vendor": "Creality",
+    "filament_diameter": 1.75,
+    "nozzle_diameter": 0.4,
+    "bed_shape": "rectangular",
+    "bed_size": "300x300",
+    "print_height": 330
+  },
+  "x_orca": {
+    "machine_name": "Ender-3 V3 Plus",
+    "machine_manufacturer": "Creality",
+    "bed_x": 300,
+    "bed_y": 300,
+    "height": 330,
+    "nozzle_diameter": 0.4,
+    "filament_diameter": 1.75
+  },
+  "x_bambu": {
+    "product_id": "creality_ender3v3plus",
+    "series": "Ender",
+    "support_lidar": false,
+    "support_ams": false,
+    "support_ams_lite": false,
+    "max_speed": 300
+  }
+}

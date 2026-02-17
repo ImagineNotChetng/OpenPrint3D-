@@ -1,0 +1,30 @@
+{
+  "op3d_schema": "filament",
+  "op3d_schema_version": "0.1.0",
+  "id": "Polymaker/PA12-Grey",
+  "maintainer": {
+    "name": "OpenPrint3D Community",
+    "maintainer_type": "community",
+    "website": "https://github.com/OpenPrint3D/OpenPrint3D"
+  },
+  "brand": "Polymaker",
+  "name": "Polymaker PA12 Grey 1.75mm",
+  "material": "PA12",
+  "color": "grey",
+  "diameter": 1.14,
+  "nozzle": { "min": 240, "max": 280, "recommended": 260 },
+  "bed": { "min": 60, "max": 90, "recommended": 75 },
+  "fan": { "min": 0, "max": 30, "recommended": 10 },
+  "drying": { "temperature": 80, "duration_hours": 8 },
+  "environment": {
+    "sensitive_to_moisture": true,
+    "enclosure_recommended": true,
+    "max_ambient_temp": 28
+  },
+  "volumetric_speed": 8,
+  "links": {
+    "product_page": "https://www.polymaker.com/"
+  },
+  "tags": ["pa12", "polymaker", "1.75mm", "grey", "engineering", "nylon", "high-strength", "low-moisture-absorption"],
+  "notes": "Polymaker PA12 in grey. Polyamide 12 with excellent moisture resistance, high strength, and good dimensional stability. Lower warping than PA6. Ideal for functional parts exposed to moisture."
+}

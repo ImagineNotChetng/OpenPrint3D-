@@ -1,0 +1,38 @@
+{
+  "op3d_schema": "printer",
+  "op3d_schema_version": "0.1.0",
+  "id": "Prusa/MK3S-Plus-2024",
+  "maintainer": {
+    "name": "OpenPrint3D Community",
+    "maintainer_type": "community",
+    "website": "https://github.com/OpenPrint3D/OpenPrint3D"
+  },
+  "manufacturer": "Prusa Research",
+  "model": "MK3S+ 2024",
+  "variant": "Stock",
+  "build_volume": { "x": 250, "y": 210, "z": 210, "shape": "rectangular", "origin": "front_left" },
+  "kinematics": "bed_slinger",
+  "axes": {
+    "x": { "max_speed": 200, "max_accel": 10000 },
+    "y": { "max_speed": 200, "max_accel": 10000 },
+    "z": { "max_speed": 12, "max_accel": 1000 }
+  },
+  "extruders": [{
+    "id": "tool0",
+    "nozzle_diameter": 0.4,
+    "nozzle_material": "brass",
+    "max_temp": 280,
+    "min_temp": 180,
+    "retraction_supported": true
+  }],
+  "bed": { "heated": true, "max_temp": 100, "surface_type": "smooth-pei" },
+  "chamber": { "heated": false, "passive": false },
+  "firmware": { "flavor": "reprap", "identifier": "Prusa Firmware 3.14.x" },
+  "network": { "has_wifi": true, "has_ethernet": false, "supports_lan_api": true },
+  "links": {
+    "product_page": "https://www.prusa3d.com/category/original-prusa-i3-mk3s-plus/",
+    "documentation": "https://help.prusa3d.com/tag/mk3s"
+  },
+  "tags": ["premium", "bed-slinger", "direct-drive", "open-source", "multi-material-upgrade", "proven-reliability"],
+  "notes": "Prusa MK3S+ 2024. The legendary open-source workhorse with proven reliability. Optional MMU2S multi-material upgrade. Updated 2024 production with latest firmware and Wi-Fi support via Prusa Connect."
+}

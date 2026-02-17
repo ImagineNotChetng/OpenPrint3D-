@@ -1,0 +1,81 @@
+{
+  "op3d_schema": "printer",
+  "op3d_schema_version": "0.1.0",
+  "id": "Anycubic/K6-Pro",
+  "maintainer": {
+    "name": "OpenPrint3D Community",
+    "maintainer_type": "community",
+    "website": "https://github.com/OpenPrint3D/OpenPrint3D"
+  },
+  "manufacturer": "Anycubic",
+  "model": "K6 Pro",
+  "variant": "Stock",
+  "build_volume": { "x": 320, "y": 320, "z": 380, "shape": "rectangular", "origin": "front_left" },
+  "kinematics": "corexy",
+  "axes": {
+    "x": { "max_speed": 600, "max_accel": 30000 },
+    "y": { "max_speed": 600, "max_accel": 30000 },
+    "z": { "max_speed": 25, "max_accel": 800 }
+  },
+  "extruders": [{
+    "id": "tool0",
+    "nozzle_diameter": 0.4,
+    "nozzle_material": "hardened-steel",
+    "max_temp": 350,
+    "min_temp": 170,
+    "retraction_supported": true
+  }],
+  "bed": { "heated": true, "max_temp": 130, "surface_type": "PEI-textured" },
+  "chamber": { "heated": true, "max_temp": 60, "passive": false },
+  "firmware": { "flavor": "klipper", "identifier": "Anycubic K6 Pro Firmware" },
+  "network": { "has_wifi": true, "has_ethernet": true, "supports_lan_api": true },
+  "links": {
+    "product_page": "https://www.anycubic.com/products/k6-pro"
+  },
+  "tags": ["high-speed", "corexy", "direct-drive", "600mm-s", "klipper", "enclosed", "input-shaping", "auto-leveling", "350c-capable", "pro", "active-heating"],
+  "notes": "Anycubic K6 Pro. Pro-series CoreXY with Klipper firmware, input shaping, 600mm/s max speed, 350°C all-metal hotend, active chamber heating (60C), and large 320x320x380mm build volume. Enhanced LeviQ 3.0 auto-leveling.",
+  "x_cura": {
+    "definition": "anycubic_k6pro",
+    "definition_changes": {
+      "machine_width": 320,
+      "machine_depth": 320,
+      "machine_height": 380,
+      "nozzle_size": 0.4,
+      "heated_bed": true,
+      "machine_heated_bed": true,
+      "bed_temperature": 60,
+      "nozzle_temperature": 200
+    }
+  },
+  "x_prusaslicer": {
+    "printer_model": "K6 Pro",
+    "vendor": "Anycubic",
+    "filament_diameter": 1.75,
+    "nozzle_diameter": 0.4,
+    "bed_shape": "rectangular",
+    "bed_size": "320x320",
+    "print_height": 380,
+    "printer_technology": "FFF"
+  },
+  "x_orca": {
+    "machine_name": "K6 Pro",
+    "machine_manufacturer": "Anycubic",
+    "bed_x": 320,
+    "bed_y": 320,
+    "height": 380,
+    "nozzle_diameter": 0.4,
+    "filament_diameter": 1.75,
+    "kinematics": "corexy"
+  },
+  "x_bambu": {
+    "product_id": "anycubic_k6pro",
+    "series": "K",
+    "support_lidar": false,
+    "support_ams": false,
+    "support_ams_lite": false,
+    "max_speed": 600,
+    "nozzle_type": "hardened-steel",
+    "max_temp": 350,
+    "active_chamber_heating": true
+  }
+}

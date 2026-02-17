@@ -1,0 +1,80 @@
+{
+  "op3d_schema": "printer",
+  "op3d_schema_version": "0.1.0",
+  "id": "Ultimaker/S5-AA08-BB04",
+  "maintainer": {
+    "name": "OpenPrint3D Community",
+    "maintainer_type": "community",
+    "website": "https://github.com/OpenPrint3D/OpenPrint3D"
+  },
+  "manufacturer": "Ultimaker",
+  "model": "S5",
+  "variant": "AA 0.8 / BB 0.4",
+  "build_volume": { "x": 330, "y": 240, "z": 300, "shape": "rectangular", "origin": "center" },
+  "kinematics": "corexy",
+  "axes": {
+    "x": { "max_speed": 150, "max_accel": 3000 },
+    "y": { "max_speed": 150, "max_accel": 3000 },
+    "z": { "max_speed": 20, "max_accel": 500 }
+  },
+  "extruders": [{
+    "id": "tool0",
+    "nozzle_diameter": 0.8,
+    "nozzle_material": "brass",
+    "max_temp": 280,
+    "min_temp": 180,
+    "retraction_supported": true
+  }, {
+    "id": "tool1",
+    "nozzle_diameter": 0.4,
+    "nozzle_material": "brass",
+    "max_temp": 280,
+    "min_temp": 180,
+    "retraction_supported": true
+  }],
+  "bed": { "heated": true, "max_temp": 120, "surface_type": "glass" },
+  "chamber": { "heated": false, "passive": true },
+  "firmware": { "flavor": "proprietary", "identifier": "Ultimaker S5 Firmware" },
+  "network": { "has_wifi": true, "has_ethernet": true, "supports_lan_api": true },
+  "links": {
+    "product_page": "https://ultimaker.com/3d-printers/s-series/ultimaker-s5/"
+  },
+  "tags": ["premium", "corexy", "dual-extruder", "large-build", "enclosed", "professional", "draft"],
+  "notes": "Ultimaker S5 with AA 0.8mm (build, draft/fast) and BB 0.4mm (support) print cores. Maximum speed for large prototypes.",
+  "x_cura": {
+    "definition": "ultimaker_s5",
+    "definition_changes": {
+      "machine_width": 330,
+      "machine_depth": 240,
+      "machine_height": 300,
+      "nozzle_size": 0.8,
+      "heated_bed": true,
+      "machine_heated_bed": true
+    }
+  },
+  "x_prusaslicer": {
+    "printer_model": "S5",
+    "vendor": "Ultimaker",
+    "filament_diameter": 2.85,
+    "nozzle_diameter": 0.8,
+    "bed_shape": "rectangular",
+    "bed_size": "330x240",
+    "print_height": 300
+  },
+  "x_orca": {
+    "machine_name": "S5",
+    "machine_manufacturer": "Ultimaker",
+    "bed_x": 330,
+    "bed_y": 240,
+    "height": 300,
+    "nozzle_diameter": 0.8,
+    "filament_diameter": 2.85
+  },
+  "x_bambu": {
+    "product_id": "ultimaker_s5",
+    "series": "S5",
+    "support_lidar": false,
+    "support_ams": false,
+    "support_ams_lite": false
+  }
+}

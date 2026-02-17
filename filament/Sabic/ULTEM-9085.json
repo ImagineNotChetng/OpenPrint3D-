@@ -1,0 +1,32 @@
+{
+  "op3d_schema": "filament",
+  "op3d_schema_version": "0.1.0",
+  "id": "Sabic/ULTEM9085",
+  "maintainer": {
+    "name": "OpenPrint3D Community",
+    "maintainer_type": "community",
+    "website": "https://github.com/OpenPrint3D/OpenPrint3D"
+  },
+  "brand": "Sabic",
+  "name": "Sabic ULTEM 9085 1.75mm",
+  "material": "Other",
+  "diameter": 1.75,
+  "density": 1.34,
+  "nozzle": { "min": 340, "max": 390, "recommended": 365 },
+  "bed": { "min": 130, "max": 160, "recommended": 145 },
+  "fan": { "min": 0, "max": 25, "recommended": 10 },
+  "drying": { "temperature": 120, "duration_hours": 4 },
+  "environment": {
+    "sensitive_to_moisture": true,
+    "enclosure_recommended": true,
+    "heated_chamber_recommended": true,
+    "max_ambient_temp": 22
+  },
+  "volumetric_speed": 8,
+  "printing_speed": { "min": 15, "max": 50, "recommended": 35 },
+  "links": {
+    "datasheet": "https://www.sabic.com/specialties/ultem"
+  },
+  "tags": ["ultem", "pei", "high-performance", "engineering", "1.75mm", "sabic"],
+  "notes": "Sabic ULTEM 9085 is a flame-retardant high-performance PEI resin with excellent strength-to-weight ratio, ideal for aerospace and automotive applications."
+}

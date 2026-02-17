@@ -1,0 +1,41 @@
+{
+  "op3d_schema": "printer",
+  "op3d_schema_version": "0.1.0",
+  "id": "Apium/P220",
+  "maintainer": {
+    "name": "OpenPrint3D Community",
+    "maintainer_type": "community",
+    "website": "https://github.com/OpenPrint3D/OpenPrint3D"
+  },
+  "manufacturer": "Apium",
+  "model": "P220",
+  "variant": "Stock",
+  "build_volume": { "x": 205, "y": 205, "z": 205, "shape": "rectangular", "origin": "center" },
+  "kinematics": "corexy",
+  "axes": {
+    "x": { "max_speed": 120, "max_accel": 2000 },
+    "y": { "max_speed": 120, "max_accel": 2000 },
+    "z": { "max_speed": 8, "max_accel": 150 }
+  },
+  "extruders": [{
+    "id": "tool0",
+    "nozzle_diameter": 0.4,
+    "nozzle_material": "hardened-steel",
+    "max_temp": 500,
+    "min_temp": 180,
+    "retraction_supported": true
+  }],
+  "bed": { "heated": true, "max_temp": 150, "surface_type": "PEI-spring-steel" },
+  "chamber": { "heated": true, "max_temp": 100, "passive": false },
+  "firmware": { "flavor": "proprietary", "identifier": "Apium Firmware" },
+  "network": { "has_wifi": true, "has_ethernet": true, "supports_lan_api": true },
+  "links": {
+    "product_page": "https://apiumtech.com/"
+  },
+  "tags": ["industrial", "corexy", "enclosed", "high-temp", "peek", "pekk", "heated-chamber", "medical"],
+  "notes": "Apium P220 - industrial high-temperature 3D printer specialized for PEEK and other high-performance polymers. Features precise temperature control for medical and aerospace applications. All-metal hotend up to 500C, heated chamber up to 100C. Often used for medical implant prototyping.",
+  "x_cura": {},
+  "x_prusaslicer": {},
+  "x_orca": {},
+  "x_bambu": {}
+}

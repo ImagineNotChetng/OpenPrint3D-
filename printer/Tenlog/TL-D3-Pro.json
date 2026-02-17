@@ -1,0 +1,89 @@
+{
+  "op3d_schema": "printer",
+  "op3d_schema_version": "0.1.0",
+  "id": "Tenlog/TL-D3-Pro",
+  "maintainer": {
+    "name": "OpenPrint3D Community",
+    "maintainer_type": "community",
+    "website": "https://github.com/OpenPrint3D/OpenPrint3D"
+  },
+  "manufacturer": "Tenlog",
+  "model": "TL-D3 Pro",
+  "variant": "Stock",
+  "build_volume": { "x": 300, "y": 300, "z": 350, "shape": "rectangular", "origin": "front_left" },
+  "kinematics": "corexy",
+  "axes": {
+    "x": { "max_speed": 200, "max_accel": 5000 },
+    "y": { "max_speed": 200, "max_accel": 5000 },
+    "z": { "max_speed": 15, "max_accel": 500 }
+  },
+  "extruders": [
+    {
+      "id": "tool0",
+      "nozzle_diameter": 0.4,
+      "nozzle_material": "brass",
+      "max_temp": 260,
+      "min_temp": 170,
+      "retraction_supported": true
+    },
+    {
+      "id": "tool1",
+      "nozzle_diameter": 0.4,
+      "nozzle_material": "brass",
+      "max_temp": 260,
+      "min_temp": 170,
+      "retraction_supported": true
+    }
+  ],
+  "bed": { "heated": true, "max_temp": 110, "surface_type": "carborundum-glass" },
+  "chamber": { "heated": false, "passive": true },
+  "firmware": { "flavor": "marlin", "identifier": "Marlin 2.x (Tenlog)" },
+  "network": { "has_wifi": false, "has_ethernet": false, "supports_lan_api": false },
+  "links": { "product_page": "https://www.tenlog3d.com/products/tenlog-tl-d3-pro" },
+  "tags": ["dual-extruder", "IDEX", "corexy", "large-build", "independent-dual"],
+  "notes": "Tenlog TL-D3 Pro. IDEX (Independent Dual Extruder) printer with 300x300x350mm build volume. Supports duplication and mirror modes.",
+  "x_cura": {
+    "definition": "tenlog_tld3pro",
+    "definition_changes": {
+      "machine_width": 300,
+      "machine_depth": 300,
+      "machine_height": 350,
+      "nozzle_size": 0.4,
+      "heated_bed": true,
+      "machine_heated_bed": true,
+      "bed_temperature": 60,
+      "nozzle_temperature": 200,
+      "machine_extruder_count": 2
+    }
+  },
+  "x_prusaslicer": {
+    "printer_model": "TL-D3 Pro",
+    "vendor": "Tenlog",
+    "filament_diameter": 1.75,
+    "nozzle_diameter": 0.4,
+    "bed_shape": "rectangular",
+    "bed_size": "300x300",
+    "print_height": 350,
+    "printer_technology": "FFF",
+    "extruders_count": 2
+  },
+  "x_orca": {
+    "machine_name": "TL-D3 Pro",
+    "machine_manufacturer": "Tenlog",
+    "bed_x": 300,
+    "bed_y": 300,
+    "height": 350,
+    "nozzle_diameter": 0.4,
+    "filament_diameter": 1.75,
+    "kinematics": "corexy",
+    "extruder_count": 2
+  },
+  "x_bambu": {
+    "product_id": "tenlog_tld3pro",
+    "series": "TL-D3",
+    "support_lidar": false,
+    "support_ams": false,
+    "support_ams_lite": false,
+    "max_speed": 200
+  }
+}

@@ -10,28 +10,81 @@
   "manufacturer": "Creality",
   "model": "Ender-3 V2",
   "variant": "Stock",
-  "build_volume": { "x": 220, "y": 220, "z": 250, "shape": "rectangular", "origin": "front_left" },
-  "kinematics": "bed_slinger",
+  "build_volume": { "x": 220, "y": 220, "z": 240, "shape": "rectangular", "origin": "front_left" },
+  "kinematics": "i3",
   "axes": {
-    "x": { "max_speed": 180, "max_accel": 1500 },
-    "y": { "max_speed": 180, "max_accel": 1500 },
-    "z": { "max_speed": 5, "max_accel": 100 }
+    "x": { "max_speed": 120, "max_accel": 500 },
+    "y": { "max_speed": 120, "max_accel": 500 },
+    "z": { "max_speed": 10, "max_accel": 200 }
   },
   "extruders": [{
     "id": "tool0",
     "nozzle_diameter": 0.4,
     "nozzle_material": "brass",
-    "max_temp": 260,
+    "max_temp": 255,
     "min_temp": 170,
     "retraction_supported": true
   }],
-  "bed": { "heated": true, "max_temp": 100, "surface_type": "glass-carborundum" },
-  "chamber": { "heated": false, "passive": false },
-  "firmware": { "flavor": "marlin", "identifier": "Marlin 2.0.x (Creality)" },
+  "bed": { "heated": true, "max_temp": 100, "surface_type": "glass" },
+  "chamber": { "heated": false, "max_temp": 30, "passive": false },
+  "firmware": { "flavor": "marlin", "identifier": "Creality Ender-3 V2" },
   "network": { "has_wifi": false, "has_ethernet": false, "supports_lan_api": false },
   "links": {
-    "product_page": "https://www.creality.com/products/ender-3-v2"
+    "product_page": "https://www.creality.com/pages/ender-3-v2"
   },
-  "tags": ["budget", "beginner", "bed-slinger", "bowden", "popular", "glass-bed", "silent-board"],
-  "notes": "Creality Ender-3 V2. One of the best-selling 3D printers ever. Bowden extruder, 32-bit silent board, carborundum glass bed. Massive community support and mod ecosystem."
+  "tags": ["i3-style", "budget-friendly", "beginner-friendly", "glass-bed"],
+  "notes": "Creality Ender-3 V2. Popular budget printer with glass bed, silent board, and easy assembly. Great for beginners.",
+  "x_cura": {
+    "definition": "creality_ender3v2",
+    "definition_changes": {
+      "machine_width": 220,
+      "machine_depth": 220,
+      "machine_height": 240,
+      "nozzle_size": 0.4,
+      "heated_bed": true,
+      "machine_heated_bed": true,
+      "bed_temperature": 60,
+      "nozzle_temperature": 200
+    }
+  },
+  "x_prusaslicer": {
+    "printer_model": "Ender-3 V2",
+    "vendor": "Creality",
+    "filament_diameter": 1.75,
+    "nozzle_diameter": 0.4,
+    "bed_shape": "rectangular",
+    "bed_size": "220x220",
+    "print_height": 240,
+    "printer_technology": "FFF"
+  },
+  "x_orca": {
+    "machine_name": "Ender-3 V2",
+    "machine_manufacturer": "Creality",
+    "bed_x": 220,
+    "bed_y": 220,
+    "height": 240,
+    "nozzle_diameter": 0.4,
+    "filament_diameter": 1.75,
+    "support_ams": false,
+    "support_xc": false
+  },
+  "x_bambu": {
+    "product_id": "creality_ender3v2_00",
+    "series": "Ender-3",
+    "support_lidar": false,
+    "support_ams": false,
+    "support_ams_lite": false,
+    "support_xc": false,
+    "active_chamber_heating": false,
+    "max_speed": 60,
+    "nozzle_type": "brass"
+  },
+  "x_simplify3d": {
+    "machine_name": "Creality Ender-3 V2",
+    "build_volume": "220x220x240",
+    "nozzle_diameter": 0.4,
+    "filament_diameter": 1.75,
+    "heated_bed": true,
+    "bed_temperature": 60
+  }
 }

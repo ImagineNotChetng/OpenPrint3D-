@@ -1,0 +1,38 @@
+{
+  "op3d_schema": "printer",
+  "op3d_schema_version": "0.1.0",
+  "id": "Voron/Trident-350",
+  "maintainer": {
+    "name": "OpenPrint3D Community",
+    "maintainer_type": "community",
+    "website": "https://github.com/OpenPrint3D/OpenPrint3D"
+  },
+  "manufacturer": "Voron Design",
+  "model": "Trident",
+  "variant": "350mm",
+  "build_volume": { "x": 350, "y": 350, "z": 350, "shape": "rectangular", "origin": "front_left" },
+  "kinematics": "corexy",
+  "axes": {
+    "x": { "max_speed": 500, "max_accel": 20000 },
+    "y": { "max_speed": 500, "max_accel": 20000 },
+    "z": { "max_speed": 15, "max_accel": 500 }
+  },
+  "extruders": [{
+    "id": "tool0",
+    "nozzle_diameter": 0.4,
+    "nozzle_material": "hardened-steel",
+    "max_temp": 300,
+    "min_temp": 170,
+    "retraction_supported": true
+  }],
+  "bed": { "heated": true, "max_temp": 120, "surface_type": "PEI-spring-steel" },
+  "chamber": { "heated": false, "max_temp": 65, "passive": true },
+  "firmware": { "flavor": "klipper", "identifier": "Klipper (community)" },
+  "network": { "has_wifi": true, "has_ethernet": true, "supports_lan_api": true },
+  "links": {
+    "project_page": "https://vorondesign.com/voron_trident",
+    "github": "https://github.com/VoronDesign/Voron-Trident"
+  },
+  "tags": ["diy", "corexy", "enclosed", "klipper", "high-speed", "large-format", "open-source", "community"],
+  "notes": "Voron Trident (350mm build). Simplified V2.4 with 3-motor Z system (triple Z leadscrew). Auto Z-tilt leveling. Self-sourced or kit. Typical builds use Klipper with input shaper and pressure advance."
+}

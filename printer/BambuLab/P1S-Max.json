@@ -1,0 +1,81 @@
+{
+  "op3d_schema": "printer",
+  "op3d_schema_version": "0.1.0",
+  "id": "BambuLab/P1S-Max",
+  "maintainer": {
+    "name": "OpenPrint3D Community",
+    "maintainer_type": "community",
+    "website": "https://github.com/OpenPrint3D/OpenPrint3D"
+  },
+  "manufacturer": "Bambu Lab",
+  "model": "P1S Max",
+  "variant": "Stock",
+  "build_volume": { "x": 320, "y": 320, "z": 320, "shape": "rectangular", "origin": "front_left" },
+  "kinematics": "corexy",
+  "axes": {
+    "x": { "max_speed": 500, "max_accel": 20000 },
+    "y": { "max_speed": 500, "max_accel": 20000 },
+    "z": { "max_speed": 20, "max_accel": 500 }
+  },
+  "extruders": [{
+    "id": "tool0",
+    "nozzle_diameter": 0.4,
+    "nozzle_material": "hardened-steel",
+    "max_temp": 300,
+    "min_temp": 170,
+    "retraction_supported": true
+  }],
+  "bed": { "heated": true, "max_temp": 120, "surface_type": "PEI-textured" },
+  "chamber": { "heated": true, "max_temp": 60, "passive": true },
+  "firmware": { "flavor": "bambu", "identifier": "Bambu Lab proprietary" },
+  "network": { "has_wifi": true, "has_ethernet": false, "supports_lan_api": true },
+  "links": {
+    "product_page": "https://bambulab.com/en/p1s"
+  },
+  "tags": ["high-speed", "corexy", "enclosed", "ams-compatible", "large-format", "carbon-fiber"],
+  "notes": "Bambu Lab P1S Max. Large-format CoreXY printer with 320x320x320mm build volume. Hardened steel nozzle up to 300°C, enclosed chamber, and AMS multi-material support.",
+  "x_cura": {
+    "definition": "bambulab_p1s_max",
+    "definition_changes": {
+      "machine_width": 320,
+      "machine_depth": 320,
+      "machine_height": 320,
+      "nozzle_size": 0.4,
+      "heated_bed": true,
+      "machine_heated_bed": true,
+      "bed_temperature": 60,
+      "nozzle_temperature": 200
+    }
+  },
+  "x_prusaslicer": {
+    "printer_model": "P1S Max",
+    "vendor": "Bambu Lab",
+    "filament_diameter": 1.75,
+    "nozzle_diameter": 0.4,
+    "bed_shape": "rectangular",
+    "bed_size": "320x320",
+    "print_height": 320,
+    "printer_technology": "FFF"
+  },
+  "x_orca": {
+    "machine_name": "P1S Max",
+    "machine_manufacturer": "Bambu Lab",
+    "bed_x": 320,
+    "bed_y": 320,
+    "height": 320,
+    "nozzle_diameter": 0.4,
+    "filament_diameter": 1.75,
+    "support_ams": true
+  },
+  "x_bambu": {
+    "product_id": "bambulab_p1s_max_00",
+    "series": "P1",
+    "support_lidar": false,
+    "support_ams": true,
+    "support_ams_lite": false,
+    "support_xc": false,
+    "carbon_fiber_capable": true,
+    "max_speed": 500,
+    "nozzle_type": "hardened-steel"
+  }
+}

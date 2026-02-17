@@ -1,0 +1,37 @@
+{
+  "op3d_schema": "printer",
+  "op3d_schema_version": "0.1.0",
+  "id": "Anycubic/K2-Max-Pro",
+  "maintainer": {
+    "name": "OpenPrint3D Community",
+    "maintainer_type": "community",
+    "website": "https://github.com/OpenPrint3D/OpenPrint3D"
+  },
+  "manufacturer": "Anycubic",
+  "model": "K2 Max Pro",
+  "variant": "Pro",
+  "build_volume": { "x": 400, "y": 400, "z": 450, "shape": "rectangular", "origin": "front_left" },
+  "kinematics": "corexy",
+  "axes": {
+    "x": { "max_speed": 700, "max_accel": 35000 },
+    "y": { "max_speed": 700, "max_accel": 35000 },
+    "z": { "max_speed": 25, "max_accel": 1200 }
+  },
+  "extruders": [{
+    "id": "tool0",
+    "nozzle_diameter": 0.4,
+    "nozzle_material": "hardened-steel",
+    "max_temp": 400,
+    "min_temp": 170,
+    "retraction_supported": true
+  }],
+  "bed": { "heated": true, "max_temp": 150, "surface_type": "PEI-textured" },
+  "chamber": { "heated": true, "max_temp": 80, "passive": true },
+  "firmware": { "flavor": "klipper", "identifier": "Anycubic K2 Max Pro Firmware (Klipper)" },
+  "network": { "has_wifi": true, "has_ethernet": true, "supports_lan_api": true },
+  "links": {
+    "product_page": "https://www.anycubic.com/products/k2-max-pro"
+  },
+  "tags": ["large-format", "corexy", "direct-drive", "ai-monitoring", "700mm-s", "enclosed", "ethernet", "filament-sensor", "laser-ld-20", "klipper", "400c-hotend"],
+  "notes": "Anycubic K2 Max Pro. Premium large-format CoreXY with 400x400x450mm build volume. Klipper firmware, AI LiDAR detection, 700mm/s speed, 400C hotend for PEEK/PEI, and active chamber heating to 80C."
+}
