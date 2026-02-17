@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import Link from "next/link";
 import { Navbar } from "@/components/navbar";
 import { Footer } from "@/components/footer";
 
@@ -150,11 +151,9 @@ export default function ToolsViewerPage() {
                 </h2>
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
                   {category.tools.map((tool) => (
-                    <a
+                    <Link
                       key={tool.slug}
-                      href={`https://raw.githubusercontent.com/ImagineNotChetng/OpenPrint3D-/main/tools/${tool.slug}.py`}
-                      target="_blank"
-                      rel="noopener noreferrer"
+                      href={`/tools-viewer/${tool.slug}`}
                       className="p-5 rounded-xl border border-border hover:border-purple-500 hover:bg-purple-500/5 transition-all group"
                     >
                       <div className="flex items-start justify-between mb-2">
@@ -166,7 +165,7 @@ export default function ToolsViewerPage() {
                         </span>
                       </div>
                       <p className="text-sm text-muted">{tool.desc}</p>
-                    </a>
+                    </Link>
                   ))}
                 </div>
               </div>

@@ -141,18 +141,16 @@ export default function GuidesPage() {
                 </h2>
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
                   {category.guides.map((guide) => (
-                    <a
+                    <Link
                       key={guide.slug}
-                      href={`https://raw.githubusercontent.com/ImagineNotChetng/OpenPrint3D-/main/tools/${guide.slug}.md`}
-                      target="_blank"
-                      rel="noopener noreferrer"
+                      href={`/guides/${guide.slug}`}
                       className="p-5 rounded-xl border border-border hover:border-accent hover:bg-accent/5 transition-all group"
                     >
                       <h3 className="font-semibold mb-2 group-hover:text-accent transition-colors">
                         {guide.name}
                       </h3>
                       <p className="text-sm text-muted">{guide.desc}</p>
-                    </a>
+                    </Link>
                   ))}
                 </div>
               </div>
