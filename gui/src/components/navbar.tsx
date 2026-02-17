@@ -31,6 +31,8 @@ export function Navbar() {
     { href: "/processes", label: "Processes" },
     { href: "/relations", label: "Relations" },
     { href: "/tools", label: "Tools" },
+    { href: "/guides", label: "Guides" },
+    { href: "/tools-viewer", label: "Tools Viewer" },
     { href: "/create", label: "Create" },
   ];
 
