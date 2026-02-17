@@ -1,0 +1,68 @@
+{
+  "op3d_schema": "filament",
+  "op3d_schema_version": "0.1.0",
+  "id": "eSUN/TPU",
+  "maintainer": {
+    "name": "OpenPrint3D Community",
+    "maintainer_type": "community",
+    "website": "https://github.com/OpenPrint3D/OpenPrint3D"
+  },
+  "brand": "eSUN",
+  "name": "eSUN TPU",
+  "material": "TPU",
+  "diameter": 1.75,
+  "density": 1.21,
+  "nozzle": { "min": 210, "max": 250, "recommended": 230 },
+  "bed": { "min": 40, "max": 70, "recommended": 55 },
+  "fan": { "min": 30, "max": 70, "recommended": 50 },
+  "drying": { "temperature": 50, "duration_hours": 4 },
+  "environment": {
+    "sensitive_to_moisture": true,
+    "enclosure_recommended": false,
+    "max_ambient_temp": 30
+  },
+  "volumetric_speed": 5,
+  "printing_speed": { "min": 15, "max": 40, "recommended": 25 },
+  "links": {
+    "product_page": "https://www.esun3d.net/"
+  },
+  "tags": ["tpu", "esun", "1.75mm", "flexible", "budget"],
+  "notes": "eSUN TPU. Budget-friendly flexible filament with good quality.",
+  "x_cura": {
+    "material": "tpu",
+    "print_temperature": 230,
+    "print_temperature_layer_0": 230,
+    "bed_temperature": 55,
+    "bed_temperature_layer_0": 55,
+    "fan_speed": 50,
+    "fan_speed_layer_0": 0,
+    "cooling": "enabled"
+  },
+  "x_prusaslicer": {
+    "filament_type": "TPU",
+    "temperature": 230,
+    "bed_temperature": 55,
+    "fan_speed": 50,
+    "first_layer_bed_temperature": 55,
+    "first_layer_temperature": 230
+  },
+  "x_orca": {
+    "filament_type": "TPU",
+    "nozzle_temperature": 230,
+    "nozzle_temperature_initial_layer": 230,
+    "bed_temperature": 55,
+    "bed_temperature_initial_layer": 55,
+    "fan_speed": 50,
+    "fan_speed_initial_layer": 0
+  },
+  "x_bambu": {
+    "filament_type_id": "GTPU00",
+    "drying_temperature": 55,
+    "drying_time": 4,
+    "nozzle_temperature": [210, 250],
+    "nozzle_temperature_initial_layer": [210, 250],
+    "bed_temperature": [40, 60],
+    "bed_temperature_initial_layer": [40, 60],
+    "fan_speed": [30, 70]
+  }
+}

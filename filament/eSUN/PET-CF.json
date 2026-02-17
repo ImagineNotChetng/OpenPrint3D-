@@ -1,0 +1,69 @@
+{
+  "op3d_schema": "filament",
+  "op3d_schema_version": "0.1.0",
+  "id": "eSUN/PET-CF",
+  "maintainer": {
+    "name": "OpenPrint3D Community",
+    "maintainer_type": "community",
+    "website": "https://github.com/OpenPrint3D/OpenPrint3D"
+  },
+  "brand": "eSUN",
+  "name": "eSUN PET-CF",
+  "material": "PET-CF",
+  "variant": "Carbon Fiber",
+  "diameter": 1.75,
+  "density": 1.25,
+  "nozzle": { "min": 240, "max": 280, "recommended": 260 },
+  "bed": { "min": 60, "max": 90, "recommended": 75 },
+  "fan": { "min": 20, "max": 50, "recommended": 30 },
+  "drying": { "temperature": 60, "duration_hours": 4 },
+  "environment": {
+    "sensitive_to_moisture": true,
+    "enclosure_recommended": false,
+    "max_ambient_temp": 35
+  },
+  "volumetric_speed": 9,
+  "printing_speed": { "min": 30, "max": 70, "recommended": 45 },
+  "links": {
+    "product_page": "https://www.esun3d.net/"
+  },
+  "tags": ["pet-cf", "esun", "1.75mm", "carbon-fiber", "engineering", "stiff", "petg-based"],
+  "notes": "eSUN PET-CF. Carbon fiber reinforced PETG. Stiffer than regular PETG with good heat resistance.",
+  "x_cura": {
+    "material": "petg_cf",
+    "print_temperature": 260,
+    "print_temperature_layer_0": 260,
+    "bed_temperature": 75,
+    "bed_temperature_layer_0": 75,
+    "fan_speed": 30,
+    "fan_speed_layer_0": 0,
+    "cooling": "enabled"
+  },
+  "x_prusaslicer": {
+    "filament_type": "PETG-CF",
+    "temperature": 260,
+    "bed_temperature": 75,
+    "fan_speed": 30,
+    "first_layer_bed_temperature": 75,
+    "first_layer_temperature": 260
+  },
+  "x_orca": {
+    "filament_type": "PETG-CF",
+    "nozzle_temperature": 260,
+    "nozzle_temperature_initial_layer": 260,
+    "bed_temperature": 75,
+    "bed_temperature_initial_layer": 75,
+    "fan_speed": 30,
+    "fan_speed_initial_layer": 0
+  },
+  "x_bambu": {
+    "filament_type_id": "GPETG1CF00",
+    "drying_temperature": 60,
+    "drying_time": 4,
+    "nozzle_temperature": [240, 280],
+    "nozzle_temperature_initial_layer": [240, 280],
+    "bed_temperature": [60, 90],
+    "bed_temperature_initial_layer": [60, 90],
+    "fan_speed": [20, 50]
+  }
+}

@@ -1,0 +1,76 @@
+{
+  "op3d_schema": "filament",
+  "op3d_schema_version": "0.1.0",
+  "id": "Prusament/PA-CF",
+
+  "maintainer": {
+    "name": "OpenPrint3D",
+    "maintainer_type": "community",
+    "website": "https://github.com/OpenPrint3D/OpenPrint3D"
+  },
+
+  "brand": "Prusament",
+  "name": "Prusament PA-CF (Nylon Carbon Fiber) 1.75mm",
+  "material": "PA-CF",
+
+  "color": "carbon",
+  "color_variants": [
+    { "name": "Carbon", "hex": "2D2D2D" }
+  ],
+  "diameter": 1.75,
+  "density": 1.24,
+
+  "nozzle": {
+    "min": 260,
+    "max": 300,
+    "recommended": 280
+  },
+
+  "bed": {
+    "min": 100,
+    "max": 130,
+    "recommended": 110
+  },
+
+  "fan": {
+    "min": 0,
+    "max": 30,
+    "recommended": 10
+  },
+
+  "drying": {
+    "temperature": 80,
+    "duration_hours": 8
+  },
+
+  "environment": {
+    "sensitive_to_moisture": true,
+    "enclosure_recommended": true,
+    "max_ambient_temp": 45
+  },
+
+  "printing_speed": {
+    "min": 30,
+    "max": 60,
+    "recommended": 45
+  },
+
+  "external_ids": {},
+  "links": {
+    "product_page": "https://shop.prusa3d.com/en/filament/2518-prusament-pa-carbon-fiber.html"
+  },
+  "tags": ["pa-cf", "nylon", "carbon-fiber", "prusament", "1.75mm", "high-performance", "engineering"],
+
+  "release": {
+    "version": "1.0.0",
+    "date": "2026-02-17T00:00:00Z",
+    "notes": "Prusament PA-CF profile - high-performance engineering filament"
+  },
+
+  "notes": "Prusament PA-CF is a nylon blend with carbon fiber reinforcement. Extremely strong, heat-resistant, and lightweight. Requires high nozzle temp and enclosed build chamber. Dry filament thoroughly before use.",
+
+  "x_cura": {},
+  "x_prusaslicer": {},
+  "x_orca": {},
+  "x_bambu": {}
+}

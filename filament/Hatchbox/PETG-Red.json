@@ -1,0 +1,31 @@
+{
+  "op3d_schema": "filament",
+  "op3d_schema_version": "0.1.0",
+  "id": "Hatchbox/PETG-Red",
+  "maintainer": {
+    "name": "OpenPrint3D Community",
+    "maintainer_type": "community",
+    "website": "https://github.com/OpenPrint3D/OpenPrint3D"
+  },
+  "brand": "Hatchbox",
+  "name": "Hatchbox PETG Red 1.75mm",
+  "material": "PETG",
+  "color": "red",
+  "diameter": 1.75,
+  "density": 1.27,
+  "nozzle": { "min": 220, "max": 250, "recommended": 235 },
+  "bed": { "min": 70, "max": 85, "recommended": 80 },
+  "fan": { "min": 30, "max": 70, "recommended": 50 },
+  "drying": { "temperature": 65, "duration_hours": 4 },
+  "environment": {
+    "sensitive_to_moisture": true,
+    "enclosure_recommended": false,
+    "max_ambient_temp": 35
+  },
+  "volumetric_speed": 11,
+  "links": {
+    "product_page": "https://www.hatchbox3d.com/collections/petg"
+  },
+  "tags": ["petg", "hatchbox", "1.75mm", "red"],
+  "notes": "Hatchbox PETG in Red. Good clarity and chemical resistance."
+}

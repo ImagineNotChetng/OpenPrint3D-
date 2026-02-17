@@ -1,0 +1,31 @@
+{
+  "op3d_schema": "filament",
+  "op3d_schema_version": "0.1.0",
+  "id": "Hatchbox/PLA-Black",
+  "maintainer": {
+    "name": "OpenPrint3D Community",
+    "maintainer_type": "community",
+    "website": "https://github.com/OpenPrint3D/OpenPrint3D"
+  },
+  "brand": "Hatchbox",
+  "name": "Hatchbox PLA Black 1.75mm",
+  "material": "PLA",
+  "color": "black",
+  "diameter": 1.75,
+  "density": 1.24,
+  "nozzle": { "min": 180, "max": 220, "recommended": 200 },
+  "bed": { "min": 40, "max": 60, "recommended": 50 },
+  "fan": { "min": 50, "max": 100, "recommended": 100 },
+  "drying": { "temperature": 45, "duration_hours": 4 },
+  "environment": {
+    "sensitive_to_moisture": true,
+    "enclosure_recommended": false,
+    "max_ambient_temp": 30
+  },
+  "volumetric_speed": 11,
+  "links": {
+    "product_page": "https://www.hatchbox3d.com/collections/pla"
+  },
+  "tags": ["pla", "hatchbox", "1.75mm", "black", "beginner-friendly"],
+  "notes": "Hatchbox PLA in Black. One of the most popular PLA filaments on Amazon. Consistent diameter tolerance (+/- 0.03mm)."
+}

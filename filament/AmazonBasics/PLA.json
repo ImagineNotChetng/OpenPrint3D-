@@ -1,7 +1,7 @@
 {
   "op3d_schema": "filament",
   "op3d_schema_version": "0.1.0",
-  "id": "Hatchbox/PLA",
+  "id": "AmazonBasics/PLA",
 
   "maintainer": {
     "name": "OpenPrint3D",
@@ -9,18 +9,17 @@
     "website": "https://github.com/OpenPrint3D/OpenPrint3D"
   },
 
-  "brand": "Hatchbox",
-  "name": "Hatchbox PLA 1.75mm",
+  "brand": "AmazonBasics",
+  "name": "AmazonBasics PLA 1.75mm",
   "material": "PLA",
 
-  "color": "black",
+  "color": "white",
   "color_variants": [
-    { "name": "Black", "hex": "1A1A1A" },
     { "name": "White", "hex": "F5F5F5" },
+    { "name": "Black", "hex": "1A1A1A" },
     { "name": "Red", "hex": "E63946" },
     { "name": "Blue", "hex": "457B9D" },
-    { "name": "Green", "hex": "2A9D8F" },
-    { "name": "Orange", "hex": "F4A261" }
+    { "name": "Green", "hex": "2A9D8F" }
   ],
   "diameter": 1.75,
   "density": 1.24,
@@ -28,7 +27,7 @@
   "nozzle": {
     "min": 190,
     "max": 230,
-    "recommended": 215
+    "recommended": 210
   },
 
   "bed": {
@@ -62,17 +61,17 @@
 
   "external_ids": {},
   "links": {
-    "product_page": "https://www.hatchbox3d.com/collections/pla-1"
+    "product_page": "https://www.amazon.com/basics-3d-printer-filament"
   },
-  "tags": ["pla", "hatchbox", "1.75mm", "usa-made"],
+  "tags": ["pla", "amazonbasics", "1.75mm", "budget-friendly"],
 
   "release": {
     "version": "1.0.0",
     "date": "2026-02-17T00:00:00Z",
-    "notes": "Hatchbox PLA profile - consistent quality, popular brand"
+    "notes": "AmazonBasics PLA profile - affordable everyday filament"
   },
 
-  "notes": "Hatchbox PLA is a reliable, beginner-friendly filament made in the USA. Good layer adhesion and minimal warping.",
+  "notes": "AmazonBasics PLA is a budget-friendly option for everyday printing. Consistent diameter, reliable quality for the price.",
 
   "x_cura": {},
   "x_prusaslicer": {},

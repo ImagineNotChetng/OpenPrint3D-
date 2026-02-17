@@ -1,7 +1,7 @@
 {
   "op3d_schema": "filament",
   "op3d_schema_version": "0.1.0",
-  "id": "eSUN/PETG",
+  "id": "ColorFabb/PETG",
 
   "maintainer": {
     "name": "OpenPrint3D",
@@ -9,19 +9,19 @@
     "website": "https://github.com/OpenPrint3D/OpenPrint3D"
   },
 
-  "brand": "eSUN",
-  "name": "eSUN PETG 1.75mm",
+  "brand": "ColorFabb",
+  "name": "ColorFabb PETG 1.75mm",
   "material": "PETG",
 
-  "color": "black",
+  "color": "white",
   "color_variants": [
-    { "name": "Black", "hex": "1A1A1A" },
     { "name": "White", "hex": "F5F5F5" },
+    { "name": "Black", "hex": "1A1A1A" },
     { "name": "Red", "hex": "E63946" },
     { "name": "Blue", "hex": "457B9D" },
-    { "name": "Orange", "hex": "F4A261" },
     { "name": "Grey", "hex": "6B7280" },
-    { "name": "Transparent", "hex": "E5E7EB" }
+    { "name": "Yellow", "hex": "E9C46A" },
+    { "name": "Orange", "hex": "F4A261" }
   ],
   "diameter": 1.75,
   "density": 1.27,
@@ -63,17 +63,17 @@
 
   "external_ids": {},
   "links": {
-    "product_page": "https://www.esun3d.net/pla-filament"
+    "product_page": "https://colorfabb.com/petg-1-75mm"
   },
-  "tags": ["petg", "esun", "1.75mm", "budget-friendly"],
+  "tags": ["petg", "colorfabb", "1.75mm", "premium", "european"],
 
   "release": {
     "version": "1.0.0",
     "date": "2026-02-17T00:00:00Z",
-    "notes": "eSUN PETG profile - excellent value, good durability"
+    "notes": "ColorFabb PETG profile - premium European filament"
   },
 
-  "notes": "eSUN PETG offers a great balance of strength and ease of use. Better impact resistance than PLA, good layer adhesion. Reduce fan for better layer bonding.",
+  "notes": "ColorFabb PETG is a premium filament from the Netherlands with excellent quality control. Good layer adhesion and durability. Slightly higher print temperatures recommended.",
 
   "x_cura": {},
   "x_prusaslicer": {},

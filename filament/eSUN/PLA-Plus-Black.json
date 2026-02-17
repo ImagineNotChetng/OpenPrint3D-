@@ -1,0 +1,31 @@
+{
+  "op3d_schema": "filament",
+  "op3d_schema_version": "0.1.0",
+  "id": "eSUN/PLA-Plus-Black",
+  "maintainer": {
+    "name": "OpenPrint3D Community",
+    "maintainer_type": "community",
+    "website": "https://github.com/OpenPrint3D/OpenPrint3D"
+  },
+  "brand": "eSUN",
+  "name": "eSUN PLA+ Black 1.75mm",
+  "material": "PLA",
+  "color": "black",
+  "diameter": 1.75,
+  "density": 1.24,
+  "nozzle": { "min": 205, "max": 225, "recommended": 215 },
+  "bed": { "min": 45, "max": 60, "recommended": 55 },
+  "fan": { "min": 50, "max": 100, "recommended": 100 },
+  "drying": { "temperature": 45, "duration_hours": 4 },
+  "environment": {
+    "sensitive_to_moisture": true,
+    "enclosure_recommended": false,
+    "max_ambient_temp": 30
+  },
+  "volumetric_speed": 12,
+  "links": {
+    "product_page": "https://www.esun3d.com/pla-pro-product/"
+  },
+  "tags": ["pla+", "pla-plus", "esun", "1.75mm", "black", "tougher-than-pla"],
+  "notes": "eSUN PLA+ (PLA Pro) in black. Modified PLA with improved toughness and impact resistance compared to standard PLA. Slightly higher print temps than regular PLA."
+}

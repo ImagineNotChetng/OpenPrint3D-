@@ -1,0 +1,68 @@
+{
+  "op3d_schema": "filament",
+  "op3d_schema_version": "0.1.0",
+  "id": "Hatchbox/ABS",
+  "maintainer": {
+    "name": "OpenPrint3D Community",
+    "maintainer_type": "community",
+    "website": "https://github.com/OpenPrint3D/OpenPrint3D"
+  },
+  "brand": "Hatchbox",
+  "name": "Hatchbox ABS",
+  "material": "ABS",
+  "diameter": 1.75,
+  "density": 1.04,
+  "nozzle": { "min": 220, "max": 260, "recommended": 240 },
+  "bed": { "min": 80, "max": 110, "recommended": 90 },
+  "fan": { "min": 0, "max": 30, "recommended": 10 },
+  "drying": { "temperature": 60, "duration_hours": 4 },
+  "environment": {
+    "sensitive_to_moisture": true,
+    "enclosure_recommended": true,
+    "max_ambient_temp": 25
+  },
+  "volumetric_speed": 10,
+  "printing_speed": { "min": 40, "max": 80, "recommended": 60 },
+  "links": {
+    "product_page": "https://www.hatchbox3d.com/collections/abs"
+  },
+  "tags": ["abs", "hatchbox", "1.75mm", "durable", "heat-resistant", "enclosure-required"],
+  "notes": "Hatchbox ABS. Popular and reliable ABS filament. Consistent diameter and quality.",
+  "x_cura": {
+    "material": "abs",
+    "print_temperature": 240,
+    "print_temperature_layer_0": 240,
+    "bed_temperature": 90,
+    "bed_temperature_layer_0": 90,
+    "fan_speed": 10,
+    "fan_speed_layer_0": 0,
+    "cooling": "limited"
+  },
+  "x_prusaslicer": {
+    "filament_type": "ABS",
+    "temperature": 240,
+    "bed_temperature": 90,
+    "fan_speed": 10,
+    "first_layer_bed_temperature": 90,
+    "first_layer_temperature": 240
+  },
+  "x_orca": {
+    "filament_type": "ABS",
+    "nozzle_temperature": 240,
+    "nozzle_temperature_initial_layer": 240,
+    "bed_temperature": 90,
+    "bed_temperature_initial_layer": 90,
+    "fan_speed": 10,
+    "fan_speed_initial_layer": 0
+  },
+  "x_bambu": {
+    "filament_type_id": "GABS00",
+    "drying_temperature": 70,
+    "drying_time": 4,
+    "nozzle_temperature": [230, 270],
+    "nozzle_temperature_initial_layer": [230, 270],
+    "bed_temperature": [80, 100],
+    "bed_temperature_initial_layer": [80, 100],
+    "fan_speed": [0, 30]
+  }
+}

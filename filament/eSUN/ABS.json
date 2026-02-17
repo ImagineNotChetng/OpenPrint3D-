@@ -1,0 +1,68 @@
+{
+  "op3d_schema": "filament",
+  "op3d_schema_version": "0.1.0",
+  "id": "eSUN/ABS",
+  "maintainer": {
+    "name": "OpenPrint3D Community",
+    "maintainer_type": "community",
+    "website": "https://github.com/OpenPrint3D/OpenPrint3D"
+  },
+  "brand": "eSUN",
+  "name": "eSUN ABS",
+  "material": "ABS",
+  "diameter": 1.75,
+  "density": 1.04,
+  "nozzle": { "min": 220, "max": 260, "recommended": 245 },
+  "bed": { "min": 80, "max": 110, "recommended": 100 },
+  "fan": { "min": 0, "max": 30, "recommended": 10 },
+  "drying": { "temperature": 60, "duration_hours": 4 },
+  "environment": {
+    "sensitive_to_moisture": true,
+    "enclosure_recommended": true,
+    "max_ambient_temp": 25
+  },
+  "volumetric_speed": 10,
+  "printing_speed": { "min": 40, "max": 80, "recommended": 60 },
+  "links": {
+    "product_page": "https://www.esun3d.net/"
+  },
+  "tags": ["abs", "esun", "1.75mm", "durable", "heat-resistant", "enclosure-required"],
+  "notes": "eSUN ABS. Popular budget ABS with good quality and consistency.",
+  "x_cura": {
+    "material": "abs",
+    "print_temperature": 245,
+    "print_temperature_layer_0": 245,
+    "bed_temperature": 100,
+    "bed_temperature_layer_0": 100,
+    "fan_speed": 10,
+    "fan_speed_layer_0": 0,
+    "cooling": "limited"
+  },
+  "x_prusaslicer": {
+    "filament_type": "ABS",
+    "temperature": 245,
+    "bed_temperature": 100,
+    "fan_speed": 10,
+    "first_layer_bed_temperature": 100,
+    "first_layer_temperature": 245
+  },
+  "x_orca": {
+    "filament_type": "ABS",
+    "nozzle_temperature": 245,
+    "nozzle_temperature_initial_layer": 245,
+    "bed_temperature": 100,
+    "bed_temperature_initial_layer": 100,
+    "fan_speed": 10,
+    "fan_speed_initial_layer": 0
+  },
+  "x_bambu": {
+    "filament_type_id": "GABS00",
+    "drying_temperature": 70,
+    "drying_time": 4,
+    "nozzle_temperature": [230, 270],
+    "nozzle_temperature_initial_layer": [230, 270],
+    "bed_temperature": [90, 110],
+    "bed_temperature_initial_layer": [90, 110],
+    "fan_speed": [0, 30]
+  }
+}
