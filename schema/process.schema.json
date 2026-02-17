@@ -277,6 +277,44 @@
       "additionalProperties": false
     },
 
+    "profile_version": {
+      "type": "string",
+      "pattern": "^[0-9]+\\.[0-9]+\\.[0-9]+$",
+      "description": "Version of this specific profile instance, e.g. '1.0.0'."
+    },
+
+    "release": {
+      "type": "object",
+      "description": "Release information for this profile version.",
+      "properties": {
+        "version": {
+          "type": "string",
+          "pattern": "^[0-9]+\\.[0-9]+\\.[0-9]+$",
+          "description": "Semantic version of this profile release."
+        },
+        "date": {
+          "type": "string",
+          "format": "date-time",
+          "description": "ISO 8601 date of this release."
+        },
+        "notes": {
+          "type": "string",
+          "description": "Release notes for this version."
+        }
+      }
+    },
+
+    "license": {
+      "type": "string",
+      "description": "License under which this process profile is published."
+    },
+
+    "documentation_uri": {
+      "type": "string",
+      "format": "uri",
+      "description": "URI to the documentation for this process profile."
+    },
+
     "tags": {
       "type": "array",
       "items": { "type": "string" }
