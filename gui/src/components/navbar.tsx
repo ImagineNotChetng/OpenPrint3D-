@@ -30,6 +30,7 @@ export function Navbar() {
     { href: "/printers", label: "Printers" },
     { href: "/processes", label: "Processes" },
     { href: "/relations", label: "Relations" },
+    { href: "/tools", label: "Tools" },
     { href: "/create", label: "Create" },
   ];
 
@@ -105,6 +106,7 @@ export function Navbar() {
                 {link.label}
               </Link>
             ))}
+            <div className="h-px bg-border my-4" />
             <div className="h-px bg-border my-4" />
             <Link
               href="/export"
